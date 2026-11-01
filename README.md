@@ -36,7 +36,7 @@ The research draws on global settlement and population databases, building data 
 | China POI dataset (CN_POI) | Commercial dataset using the Amap classification system | 2025 and 2026 editions | POI names, activity categories and coordinates for Chinese cities. | Not included (commercial / restricted) |
 | Amap Web Services | Amap | 2026 collection | POI records and AOI information. | Not included (commercial / restricted) |
 | National time-use surveys | National statistical agencies | Survey-specific years | Activity episodes, location records, survey weights, and published hourly or daily activity tables. | Not included as raw records; adopted aggregates / parameters only where supplied |
-| National Household Travel Survey (USA), EOD (Mexico), and São Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; São Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. | Not included as raw records; adopted aggregates / parameters only where supplied |
+| National Household Travel Survey (USA), EOD (Mexico), and SÃ£o Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; SÃ£o Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. | Not included as raw records; adopted aggregates / parameters only where supplied |
 | V11 time-use parameter dataset | Earlier global population-modelling research | V11 | Country-level average-day activity-location profiles. | Not included as raw records; adopted aggregates / parameters only where supplied |
 | Census and mobility-based commuting datasets | National census agencies and mobility-data providers | Source-specific years | Commuting flows and travel-distance information. | Not included as raw records; adopted aggregates / parameters only where supplied |
 
@@ -115,7 +115,7 @@ Parameter values and their evidence are documented in the [Stage 2](06_docs/meth
 
 ## Citation
 
-Zhi-Yong Long, Rui-Yi Yang and Huan-Feng Duan, State Key Laboratory of Climate Resilience for Coastal Cities (SKL-CRCC), Department of Civil and Environmental Engineering, The Hong Kong Polytechnic University. *Human mobility reshapes global urban flood risk patterns*.
+Zhi-Yong Long, Rui-Yi Yang and Huan-Feng Duan, State Key Laboratory of Climate Resilience for Coastal Cities (SKL-CRCC), The Hong Kong Polytechnic University. *Human mobility reshapes global urban flood risk patterns*.
 
 When reusing the data, also cite the relevant original datasets listed under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
 
