@@ -1,0 +1,3 @@
+# Keep checksummed text consistent across Windows and Linux checkouts.
+*.csv text eol=lf
+*.json text eol=lf

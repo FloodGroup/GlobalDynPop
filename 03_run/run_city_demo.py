@@ -9,6 +9,13 @@ OUTPUTS=Path(os.environ.get('DYNAMIC_POPULATION_OUTPUTS',ROOT/'05_outputs/demo')
 DEMO_CONFIGURATION=ROOT/'03_run/demo_configuration'
 STEMS=(DEMO_CONFIGURATION/'city_demo_stems.txt').read_text().split()
 
+def input_checksum(path):
+    """Hash CSV/JSON with LF line endings; hash binary inputs byte for byte."""
+    content=path.read_bytes()
+    if path.suffix.lower() in {'.csv','.json'}:
+        content=content.replace(b'\r\n',b'\n')
+    return hashlib.sha256(content).hexdigest()
+
 def check_inputs(adopted_only=False):
     with (DEMO_CONFIGURATION/'city_demo_files.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
     rows=[r for r in rows if r['path'].startswith('04_intermediate/demo/stage_2/')]
@@ -18,7 +25,7 @@ def check_inputs(adopted_only=False):
         rows=[r for r in rows if r['path'].startswith(prefixes)]
     for row in rows:
         p=STAGE2/Path(row['path']).relative_to('04_intermediate/demo/stage_2')
-        if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:
+        if not p.is_file() or input_checksum(p)!=row['sha256']:
             raise RuntimeError(f"Missing or modified prepared input: {row['path']}")
     return len(rows)
 
