@@ -1,0 +1,12 @@
+name: Three-city data checks
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'  # package requires >=3.11; CI pins one supported minor
+      - run: pip install numpy rasterio "affine<3"
+      - run: python 03_run/run_city_demo.py check

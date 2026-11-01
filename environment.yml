@@ -1,0 +1,27 @@
+# Full geospatial environment; exact platform testing is recorded separately.
+name: dynamic-population
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - numpy
+  - scipy
+  - pandas
+  - pyarrow
+  - geopandas
+  - shapely>=2
+  - pyproj
+  - pyogrio
+  - rasterio
+  - matplotlib
+  - numba
+  - psutil
+  - pillow
+  - affine>=2.4,<3
+  - openpyxl
+  - requests
+  - unidecode
+  - country_converter
+  - pip
+  - pip:
+      - osmium>=4.0
