@@ -1,0 +1,168 @@
+{
+ "stem": "00572_FIN_Helsinki",
+ "name": "Helsinki",
+ "iso3": "FIN",
+ "pop_domain": 1285587.0091246548,
+ "poi_per_1000": 47.81862259315906,
+ "poi_weight": 0.45266820910388916,
+ "stay_share": 0.0,
+ "has_floor_area": true,
+ "has_total_volume": true,
+ "params": {
+  "d0": {
+   "C2": 100000.0,
+   "C3": 10000,
+   "C4": 20000,
+   "C5": 30000,
+   "C7": 30000
+  },
+  "attractor": {
+   "C2": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.1
+   },
+   "C3": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C4": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C5": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C7": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   }
+  },
+  "kind": {
+   "C2": "pow",
+   "C3": "pow",
+   "C4": "pow",
+   "C5": "pow",
+   "C7": "pow"
+  },
+  "beta": {
+   "C2": 1.5,
+   "C3": 2.0,
+   "C4": 1.5,
+   "C5": 2.0,
+   "C7": 2.0
+  },
+  "radius_factor": 6.0,
+  "max_radius_m": 100000.0,
+  "c7_like": "C5",
+  "restday": {
+   "d0": {
+    "C5": 100000,
+    "C7": 100000
+   },
+   "beta": {
+    "C2": 2.0
+   }
+  },
+  "country": {},
+  "transit": "network"
+ },
+ "params_file": "population_allocation_parameters.json",
+ "params_effective": {
+  "workday": {
+   "C2": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 1.5
+   },
+   "C3": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 2.0
+   },
+   "C4": {
+    "kind": "pow",
+    "d0_m": 20000.0,
+    "beta": 1.5
+   },
+   "C5": {
+    "kind": "pow",
+    "d0_m": 30000.0,
+    "beta": 2.0
+   },
+   "C7": {
+    "kind": "pow",
+    "d0_m": 30000.0,
+    "beta": 2.0
+   }
+  },
+  "restday": {
+   "C2": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 2.0
+   },
+   "C3": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 2.0
+   },
+   "C4": {
+    "kind": "pow",
+    "d0_m": 20000.0,
+    "beta": 1.5
+   },
+   "C5": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 2.0
+   },
+   "C7": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 2.0
+   }
+  }
+ },
+ "band_sums": {
+  "C1": 1285587.0091246548,
+  "C2": 1285587.0091246548,
+  "C3": 1285587.0091246546,
+  "C4": 1285587.0091246548,
+  "C5": 1285587.0091246548,
+  "C6": 1285587.009124655,
+  "C7": 1285587.0091246548
+ },
+ "crs_proj4": "+proj=laea +lat_0=60.212655 +lon_0=24.910171 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+ "x0": -26900.0,
+ "y1": 24000.0,
+ "nx": 536,
+ "ny": 434,
+ "cell_m": 100.0,
+ "stay_share_restday": 0.0,
+ "transit": {
+  "workday": "network",
+  "restday": "network"
+ },
+ "poi_source_amap": false
+}

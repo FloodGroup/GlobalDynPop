@@ -1,0 +1,168 @@
+{
+ "stem": "01027_JPN_Kitakyushu",
+ "name": "Kitakyushu",
+ "iso3": "JPN",
+ "pop_domain": 1795042.3255934026,
+ "poi_per_1000": 17.72771569020264,
+ "poi_weight": 0.3900021438987954,
+ "stay_share": 0.0,
+ "has_floor_area": true,
+ "has_total_volume": true,
+ "params": {
+  "d0": {
+   "C2": 10000.0,
+   "C3": 10000,
+   "C4": 20000,
+   "C5": 30000,
+   "C7": 30000
+  },
+  "attractor": {
+   "C2": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.1
+   },
+   "C3": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C4": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C5": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   },
+   "C7": {
+    "poi_w": 0.5,
+    "poi_sigma_m": 300,
+    "ind_w": 0.3,
+    "unk_w": 1.0,
+    "poi_source": "auto",
+    "alpha": 1.0
+   }
+  },
+  "kind": {
+   "C2": "pow",
+   "C3": "pow",
+   "C4": "pow",
+   "C5": "pow",
+   "C7": "pow"
+  },
+  "beta": {
+   "C2": 1.0,
+   "C3": 2.0,
+   "C4": 1.5,
+   "C5": 2.0,
+   "C7": 2.0
+  },
+  "radius_factor": 6.0,
+  "max_radius_m": 100000.0,
+  "c7_like": "C5",
+  "restday": {
+   "d0": {
+    "C5": 100000,
+    "C7": 100000
+   },
+   "beta": {
+    "C2": 2.0
+   }
+  },
+  "country": {},
+  "transit": "network"
+ },
+ "params_file": "population_allocation_parameters.json",
+ "params_effective": {
+  "workday": {
+   "C2": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 1.0
+   },
+   "C3": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 2.0
+   },
+   "C4": {
+    "kind": "pow",
+    "d0_m": 20000.0,
+    "beta": 1.5
+   },
+   "C5": {
+    "kind": "pow",
+    "d0_m": 30000.0,
+    "beta": 2.0
+   },
+   "C7": {
+    "kind": "pow",
+    "d0_m": 30000.0,
+    "beta": 2.0
+   }
+  },
+  "restday": {
+   "C2": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 2.0
+   },
+   "C3": {
+    "kind": "pow",
+    "d0_m": 10000.0,
+    "beta": 2.0
+   },
+   "C4": {
+    "kind": "pow",
+    "d0_m": 20000.0,
+    "beta": 1.5
+   },
+   "C5": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 2.0
+   },
+   "C7": {
+    "kind": "pow",
+    "d0_m": 100000.0,
+    "beta": 2.0
+   }
+  }
+ },
+ "band_sums": {
+  "C1": 1795042.3255934026,
+  "C2": 1795042.3255934026,
+  "C3": 1795042.3255934035,
+  "C4": 1795042.3255934028,
+  "C5": 1795042.3255934028,
+  "C6": 1795042.3255934028,
+  "C7": 1795042.3255934028
+ },
+ "crs_proj4": "+proj=laea +lat_0=33.895714 +lon_0=130.842874 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+ "x0": -28100.0,
+ "y1": 26100.0,
+ "nx": 562,
+ "ny": 538,
+ "cell_m": 100.0,
+ "stay_share_restday": 0.0,
+ "transit": {
+  "workday": "network",
+  "restday": "network"
+ },
+ "poi_source_amap": false
+}
