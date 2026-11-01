@@ -1,0 +1,50 @@
+[
+  {
+    "step": 3,
+    "stem": "01027_JPN_Kitakyushu",
+    "source": "01_inputs/demo/raw/01027_JPN_Kitakyushu",
+    "statistics": {
+      "read": 35308,
+      "C2": 14488,
+      "C3": 1117,
+      "C4": 2912,
+      "C5": 11937,
+      "C6": 1368,
+      "in_domain": 35242,
+      "unclassified": 3420
+    },
+    "seconds": 0.2
+  },
+  {
+    "step": 3,
+    "stem": "00572_FIN_Helsinki",
+    "source": "01_inputs/demo/raw/00572_FIN_Helsinki",
+    "statistics": {
+      "read": 73535,
+      "C2": 36540,
+      "C3": 1698,
+      "C4": 5232,
+      "C5": 13956,
+      "C6": 4049,
+      "in_domain": 73455,
+      "unclassified": 11980
+    },
+    "seconds": 0.3
+  },
+  {
+    "step": 3,
+    "stem": "05685_JPN_Takasaki_Maebashi",
+    "source": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi",
+    "statistics": {
+      "read": 33109,
+      "C2": 15250,
+      "C3": 1050,
+      "C4": 2365,
+      "C5": 10226,
+      "C6": 1278,
+      "in_domain": 33067,
+      "unclassified": 2898
+    },
+    "seconds": 0.1
+  }
+]

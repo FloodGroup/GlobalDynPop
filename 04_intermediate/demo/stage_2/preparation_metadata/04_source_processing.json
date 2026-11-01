@@ -1,0 +1,128 @@
+[
+  {
+    "step": 4,
+    "stem": "01027_JPN_Kitakyushu",
+    "source": "01_inputs/demo/raw/01027_JPN_Kitakyushu",
+    "statistics": {
+      "stem": "01027_JPN_Kitakyushu",
+      "read": 465958,
+      "underground": 0,
+      "obm_buildings": 271199,
+      "split_buildings": 1813,
+      "buildings": 465166,
+      "footprint_km2": 69.64992,
+      "gross_km2": 277.60316607936596,
+      "share_obm": 0.04371127726554205,
+      "share_own_class": 0.020513107149133444,
+      "share_own_subtype": 0.0004858480629263906,
+      "share_land_use": 0.019979964141539235,
+      "share_default": 0.9153098033808923,
+      "share_aoi": 0.0,
+      "floors_known": 0.9971644531199615,
+      "gross_by_class_km2": [
+        10.234652685904361,
+        50.24037940460212,
+        6.133647418882758,
+        4.432368604386419,
+        3.4431161676427573,
+        1.411763545007348,
+        0.8181016878473237,
+        200.8891365650929,
+        39.951691682660275
+      ],
+      "obm_seconds": 1.5,
+      "seconds": 8.2
+    },
+    "sources": [
+      "Overture buildings",
+      "OpenBuildingMap occupancy and height",
+      "GHSL building height",
+      "Overture land-use polygons"
+    ],
+    "seconds": 8.3
+  },
+  {
+    "step": 4,
+    "stem": "00572_FIN_Helsinki",
+    "source": "01_inputs/demo/raw/00572_FIN_Helsinki",
+    "statistics": {
+      "stem": "00572_FIN_Helsinki",
+      "read": 299700,
+      "underground": 8,
+      "obm_buildings": 282768,
+      "split_buildings": 2063,
+      "buildings": 298383,
+      "footprint_km2": 63.969828,
+      "gross_km2": 159.7187565680587,
+      "share_obm": 0.7579989476596687,
+      "share_own_class": 0.07435745334053703,
+      "share_own_subtype": 0.0004624928362383129,
+      "share_land_use": 0.08710952031476753,
+      "share_default": 0.08007158584737276,
+      "share_aoi": 0.0,
+      "floors_known": 0.9431066783295295,
+      "gross_by_class_km2": [
+        89.86588249555692,
+        40.1596465335235,
+        7.6723875980396885,
+        8.825284599095905,
+        3.285912269401815,
+        3.285582385552644,
+        3.2957404278547138,
+        3.3283202590334686,
+        14.667467745288324
+      ],
+      "obm_seconds": 1.7,
+      "seconds": 8.6
+    },
+    "sources": [
+      "Overture buildings",
+      "OpenBuildingMap occupancy and height",
+      "GHSL building height",
+      "Overture land-use polygons"
+    ],
+    "seconds": 8.7
+  },
+  {
+    "step": 4,
+    "stem": "05685_JPN_Takasaki_Maebashi",
+    "source": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi",
+    "statistics": {
+      "stem": "05685_JPN_Takasaki_Maebashi",
+      "read": 847820,
+      "underground": 0,
+      "obm_buildings": 840706,
+      "split_buildings": 2175,
+      "buildings": 845775,
+      "footprint_km2": 116.319576,
+      "gross_km2": 326.77379618657307,
+      "share_obm": 0.05386893677303616,
+      "share_own_class": 0.008384026484715942,
+      "share_own_subtype": 0.00022346368713270346,
+      "share_land_use": 0.014528686707687767,
+      "share_default": 0.9229948863466413,
+      "share_aoi": 0.0,
+      "floors_known": 0.9964092104874228,
+      "gross_by_class_km2": [
+        10.072149213990738,
+        44.81580197986828,
+        7.557870403856159,
+        4.47599849837371,
+        2.9142444217994212,
+        0.8030627513946443,
+        2.894445653680563,
+        253.24022326360958,
+        28.255272167746853
+      ],
+      "obm_seconds": 5.0,
+      "seconds": 18.1
+    },
+    "sources": [
+      "Overture buildings",
+      "OpenBuildingMap occupancy and height",
+      "GHSL building height",
+      "Overture land-use polygons"
+    ],
+    "seconds": 18.2
+  }
+]

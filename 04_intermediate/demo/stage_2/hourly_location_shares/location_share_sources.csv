@@ -1,0 +1,11 @@
+iso3,daytype,file,method,donors,region
+FIN,alldays,FIN_all_days_location_shares.csv,V11 national average day; workday with school children,,western_europe
+FIN,restday,FIN_rest_day_location_shares.csv,V11 national matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,saturday,FIN_saturday_location_shares.csv,V11 national matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,sunday,FIN_sunday_location_shares.csv,V11 national matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,workday,FIN_workday_location_shares.csv,V11 national matrix x donor day-type ratios; + school children E=0.100 (C3 peak 0.083 -> 0.100),GBR+ESP+BEL,western_europe
+JPN,alldays,JPN_all_days_location_shares.csv,own survey (build_daytype.py); workday with school children,,east_asia
+JPN,restday,JPN_rest_day_location_shares.csv,own survey (build_daytype.py),,east_asia
+JPN,saturday,JPN_saturday_location_shares.csv,own survey (build_daytype.py),,east_asia
+JPN,sunday,JPN_sunday_location_shares.csv,own survey (build_daytype.py),,east_asia
+JPN,workday,JPN_workday_location_shares.csv,own survey (build_daytype.py); + school children E=0.081 (C3 peak 0.056 -> 0.081),,east_asia

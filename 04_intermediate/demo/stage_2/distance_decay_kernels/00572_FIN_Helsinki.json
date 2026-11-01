@@ -1,0 +1,81 @@
+{
+  "stem": "00572_FIN_Helsinki",
+  "formula": "(d + 250 m)^(-beta) * exp(-d/kappa)",
+  "parameters": {
+    "workday": {
+      "C2": {
+        "kind": "pow",
+        "kappa_m": 100000.0,
+        "beta": 1.5,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C3": {
+        "kind": "pow",
+        "kappa_m": 10000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 60000.0
+      },
+      "C4": {
+        "kind": "pow",
+        "kappa_m": 20000.0,
+        "beta": 1.5,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C5": {
+        "kind": "pow",
+        "kappa_m": 30000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C7": {
+        "kind": "pow",
+        "kappa_m": 30000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      }
+    },
+    "restday": {
+      "C2": {
+        "kind": "pow",
+        "kappa_m": 100000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C3": {
+        "kind": "pow",
+        "kappa_m": 10000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 60000.0
+      },
+      "C4": {
+        "kind": "pow",
+        "kappa_m": 20000.0,
+        "beta": 1.5,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C5": {
+        "kind": "pow",
+        "kappa_m": 100000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      },
+      "C7": {
+        "kind": "pow",
+        "kappa_m": 100000.0,
+        "beta": 2.0,
+        "distance_offset_m": 250.0,
+        "radius_m": 100000.0
+      }
+    }
+  },
+  "routing_zone_cells": 20
+}

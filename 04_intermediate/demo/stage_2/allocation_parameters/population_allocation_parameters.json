@@ -1,0 +1,192 @@
+{
+  "_comment": "Model settings for the worked city examples. Parameter values, study-calibration sources and study-defined assumptions are described in 06_docs/methods/stage_3_activity_allocation.md.",
+  "attractor": {
+    "C2": {
+      "poi_w": 0.5,
+      "poi_sigma_m": 300,
+      "ind_w": 0.3,
+      "unk_w": 1.0,
+      "poi_source": "auto",
+      "alpha": 1.1
+    },
+    "C3": {
+      "poi_w": 0.5,
+      "poi_sigma_m": 300,
+      "ind_w": 0.3,
+      "unk_w": 1.0,
+      "poi_source": "auto",
+      "alpha": 1.0
+    },
+    "C4": {
+      "poi_w": 0.5,
+      "poi_sigma_m": 300,
+      "ind_w": 0.3,
+      "unk_w": 1.0,
+      "poi_source": "auto",
+      "alpha": 1.0
+    },
+    "C5": {
+      "poi_w": 0.5,
+      "poi_sigma_m": 300,
+      "ind_w": 0.3,
+      "unk_w": 1.0,
+      "poi_source": "auto",
+      "alpha": 1.0
+    },
+    "C7": {
+      "poi_w": 0.5,
+      "poi_sigma_m": 300,
+      "ind_w": 0.3,
+      "unk_w": 1.0,
+      "poi_source": "auto",
+      "alpha": 1.0
+    }
+  },
+  "kind": "pow",
+  "d0": {
+    "C2": 100000.0,
+    "C3": 10000,
+    "C4": 20000,
+    "C5": 30000,
+    "C7": 30000
+  },
+  "beta": {
+    "C2": 1.5,
+    "C3": 2.0,
+    "C4": 1.5,
+    "C5": 2.0,
+    "C7": 2.0
+  },
+  "restday": {
+    "d0": {
+      "C5": 100000,
+      "C7": 100000
+    },
+    "beta": {
+      "C2": 2.0
+    }
+  },
+  "country": {
+    "CHN": {
+      "d0": {
+        "C2": 10000.0
+      },
+      "attractor": {
+        "C2": {
+          "poi_w": 0.5,
+          "poi_sigma_m": 300,
+          "ind_w": 0.3,
+          "unk_w": 1.0,
+          "poi_source": "auto",
+          "shop_w": 0.15,
+          "alpha": 1.1
+        },
+        "C3": {
+          "poi_w": 0.5,
+          "poi_sigma_m": 300,
+          "ind_w": 0.3,
+          "unk_w": 1.0,
+          "poi_source": "auto_noamap",
+          "alpha": 1.0
+        },
+        "C4": {
+          "poi_w": 0.5,
+          "poi_sigma_m": 300,
+          "ind_w": 0.3,
+          "unk_w": 1.0,
+          "poi_source": "auto_noamap",
+          "alpha": 1.0
+        },
+        "C5": {
+          "poi_w": 0.5,
+          "poi_sigma_m": 300,
+          "ind_w": 0.3,
+          "unk_w": 1.0,
+          "poi_source": "auto_noamap",
+          "alpha": 1.0
+        },
+        "C7": {
+          "poi_w": 0.5,
+          "poi_sigma_m": 300,
+          "ind_w": 0.3,
+          "unk_w": 1.0,
+          "poi_source": "auto_noamap",
+          "alpha": 1.0
+        }
+      },
+      "beta": {
+        "C2": 1.25
+      }
+    },
+    "ESP": {
+      "d0": {
+        "C2": 100000.0
+      },
+      "beta": {
+        "C2": 1.75
+      }
+    },
+    "FRA": {
+      "d0": {
+        "C2": 15000.0
+      },
+      "beta": {
+        "C2": 0.75
+      }
+    },
+    "GBR": {
+      "d0": {
+        "C2": 7500.0
+      },
+      "beta": {
+        "C2": 0.75
+      }
+    },
+    "IND": {
+      "d0": {
+        "C2": 10000.0
+      },
+      "beta": {
+        "C2": 0.75
+      }
+    },
+    "ITA": {
+      "d0": {
+        "C2": 10000.0
+      },
+      "beta": {
+        "C2": 1.0
+      }
+    },
+    "JPN": {
+      "d0": {
+        "C2": 10000.0
+      },
+      "beta": {
+        "C2": 1.0
+      }
+    },
+    "POL": {
+      "d0": {
+        "C2": 30000.0
+      },
+      "beta": {
+        "C2": 1.5
+      }
+    },
+    "USA": {
+      "d0": {
+        "C2": 20000.0
+      },
+      "beta": {
+        "C2": 0.5
+      }
+    }
+  },
+  "transit": "network",
+  "_comment_china": "China (CHN): work destinations (C2) from the POI data set CN_POI (2026 release; 2025 release in the north-east and north-west; own Amap download outside the covered part of two border cities), split into work places and shops/services mixed 0.85 : 0.15 (shop_w, fixed from time-use shares); chosen on Shanghai home_to_work (1 km CPC of the work places 0.368 against 0.344 without CN_POI). Education, health/public, leisure and other (C3, C4, C5, C7) keep the global rule (Overture + OSM, 'auto_noamap'): no selection data exist for them in China. The Zhengzhou and Shenzhen mobile-network counts are validation data only.",
+  "_comment_china_kernel": "China work kernel beta 1.25, kappa 10 km from the 2025 commuting report (CN06) on the 20 calibration cities, same two-fold rule.",
+  "_comment_country_kernels": "Work kernels (C2, workday) of ESP beta 1.75, kappa 100 km, FRA beta 0.75, kappa 15 km, GBR beta 0.75, kappa 7.5 km, ITA beta 1, kappa 10 km, JPN beta 1, kappa 10 km, POL beta 1.5, kappa 30 km, USA beta 0.5, kappa 20 km from their commuting OD: two folds of the calibration cities of the country; a country kernel is adopted when the kernel chosen on each fold beats the global kernel on the other fold (the country-kernel selection step).",
+  "_comment_india_kernel": "India work kernel beta 0.75, kappa 10 km from the commuting distances of Census 2011 B-28 on the 61 calibration cities, same two-fold rule.",
+  "_comment_attractiveness": "attractiveness exponents alpha_W = 1.1 (work and commerce, C2), alpha_L = 1 (services, leisure, other: C4, C5, C7; education C3 = 1): highest objective J = 0.8006 of 10 candidate pairs on the calibration cities (the alpha-grid calibration table; alpha = 1: J = 0.7967); commuting-flow check on the calibration cities: mean change of cpc_off -0.0002 over 6 data sets (kept)"
+}
