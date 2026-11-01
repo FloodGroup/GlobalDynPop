@@ -1,0 +1,14 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_resident_population_2025_R5_C30.tif",
+  "city": "01027_JPN_Kitakyushu",
+  "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+  "source_window": [
+    6768,
+    8765,
+    960,
+    560
+  ],
+  "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+  "bytes": 674696,
+  "sha256": "bacd435daa0d948667bd54da442ed664d6f86f45aa97fda25d1f37bfeb5d0b13"
+}

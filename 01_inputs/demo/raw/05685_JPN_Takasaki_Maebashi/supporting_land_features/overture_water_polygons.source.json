@@ -1,0 +1,31 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/supporting_land_features/overture_water_polygons.parquet",
+  "city": "05685_JPN_Takasaki_Maebashi",
+  "layer": "water",
+  "records": 9624,
+  "bounds_wgs84": [
+    138.71634802832565,
+    36.20205061250441,
+    139.3069885473044,
+    36.52420832459432
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00027-ae01f3fc-9546-580d-8cd4-3451d8289240-c000.zstd.parquet",
+      "row_groups": [
+        114,
+        115
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00031-ff57031f-2765-5695-8bea-b3769986c897-c000.zstd.parquet",
+      "row_groups": [
+        161
+      ]
+    }
+  ],
+  "bytes": 8660246,
+  "sha256": "a32a0546279ae7cfd8c8a81e7d9836b02af45d527b5ce47102fd93a8eb61cab0"
+}

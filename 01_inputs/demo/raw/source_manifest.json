@@ -1,0 +1,728 @@
+[
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/urban_centres/urban_centre_boundary.gpkg",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "urban_centre",
+    "records": 1,
+    "source": "GHS_UCDB_GLOBE_R2024A.gpkg / GHSL_UCDB_THEME_GENERAL_CHARACTERISTICS_GLOBE_R2024A",
+    "operation": "Select original city feature by ID_UC_G0; preserve original geometry, attributes and CRS.",
+    "bytes": 102400,
+    "sha256": "99525bd72b1467fe7284c12ace215d642523b8a221f292eb7d871411de44a320"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/urban_centres/urban_centre_boundary.gpkg",
+    "city": "00572_FIN_Helsinki",
+    "layer": "urban_centre",
+    "records": 1,
+    "source": "GHS_UCDB_GLOBE_R2024A.gpkg / GHSL_UCDB_THEME_GENERAL_CHARACTERISTICS_GLOBE_R2024A",
+    "operation": "Select original city feature by ID_UC_G0; preserve original geometry, attributes and CRS.",
+    "bytes": 102400,
+    "sha256": "3d12f04764cdf1c4811c6e22e1c00f8aaf19fca9dfbf3cab7bb3a4e868bb59fe"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/urban_centres/urban_centre_boundary.gpkg",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "urban_centre",
+    "records": 1,
+    "source": "GHS_UCDB_GLOBE_R2024A.gpkg / GHSL_UCDB_THEME_GENERAL_CHARACTERISTICS_GLOBE_R2024A",
+    "operation": "Select original city feature by ID_UC_G0; preserve original geometry, attributes and CRS.",
+    "bytes": 102400,
+    "sha256": "82f40e0ce40a72353137338eb99f515f36e25c637fa4c5f9098b99826cff17e0"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/places/overture_points_of_interest.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "place",
+    "records": 35308,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/part-00015-eb1c1331-f519-5db6-8fef-74a77e5776ff-c000.zstd.parquet",
+        "row_groups": [
+          111,
+          129,
+          132,
+          133
+        ]
+      }
+    ],
+    "bytes": 4742908,
+    "sha256": "4580a35e7981f7b6489402497bf95e5413bab0286d4028757af41daacee17dd8"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/supporting_land_features/overture_infrastructure_features.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "infrastructure",
+    "records": 21379,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00010-9ab89881-a2ff-52f7-b415-6021da1b3a0b-c000.zstd.parquet",
+        "row_groups": [
+          63
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00011-60ec7784-e70a-511e-abf0-200f198d900b-c000.zstd.parquet",
+        "row_groups": [
+          139,
+          144,
+          145
+        ]
+      }
+    ],
+    "bytes": 2192032,
+    "sha256": "461e8278db4a1d6ecfad66791f1707e12f486daea49e65be5b5a00930944c2df"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/supporting_land_features/overture_land_use_polygons.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "land_use",
+    "records": 5504,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00008-542e33fe-998c-5dee-851c-3e25303b9b03-c000.zstd.parquet",
+        "row_groups": [
+          22
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00027-68450557-5887-5c9a-b07a-6c527441894d-c000.zstd.parquet",
+        "row_groups": [
+          120
+        ]
+      }
+    ],
+    "bytes": 1422958,
+    "sha256": "ed186841ff1c7e55bc65e9da5f767ba8f2d80da2782f1a603e1feaf0051eb692"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/buildings/overture_buildings.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "building",
+    "records": 465958,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00497-46137f88-3e6b-525b-8902-4d8885ad7072-c000.zstd.parquet",
+        "row_groups": [
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          128,
+          129,
+          131,
+          132,
+          133,
+          134,
+          135,
+          144,
+          145,
+          148
+        ]
+      }
+    ],
+    "bytes": 43440575,
+    "sha256": "e09e348b09cce22c24f150041a886ad92d7f2dc17f2dbd051422649fb3cfcb9f"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/road_and_rail/overture_transport_segments.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "segment",
+    "records": 168331,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00121-cccfb596-ef68-5733-a09c-003ac5c18c54-c000.zstd.parquet",
+        "row_groups": [
+          35,
+          58,
+          99,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          114,
+          115,
+          122
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00124-63401875-780b-5d6f-9dee-bb3815b7b73b-c000.zstd.parquet",
+        "row_groups": [
+          4,
+          12,
+          68
+        ]
+      }
+    ],
+    "bytes": 21753421,
+    "sha256": "5dba24c9d89db94d4862bc7e7051d3d4dcd549424b092bf5c5f066e1a4dd2b4c"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/places/overture_points_of_interest.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "place",
+    "records": 73535,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/part-00011-472205f3-e3ff-5474-98a4-b9b3361f7306-c000.zstd.parquet",
+        "row_groups": [
+          463,
+          472,
+          473,
+          474,
+          475,
+          496,
+          497,
+          498,
+          499,
+          500
+        ]
+      }
+    ],
+    "bytes": 8590645,
+    "sha256": "d4b7668714d1ddd1a3be9f016ee8841bbe4c18320c341c3d34c3eb5b94f5f67a"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/buildings/overture_buildings.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "building",
+    "records": 299700,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00252-3865ff10-e8f0-506d-926f-fbd0ed371478-c000.zstd.parquet",
+        "row_groups": [
+          244,
+          245,
+          247,
+          253,
+          255
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00254-a703f601-bc01-5fa6-ac12-7a7845903b29-c000.zstd.parquet",
+        "row_groups": [
+          170,
+          171,
+          174
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00255-ec3a067c-a31b-5614-bdbe-1208a1ab0c24-c000.zstd.parquet",
+        "row_groups": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "bytes": 43320375,
+    "sha256": "e90b447aab293c7ed4524f9f56fe047b05040271d36e1623bc40c1db5839aab5"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/supporting_land_features/overture_infrastructure_features.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "infrastructure",
+    "records": 288978,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00014-c66b4c5d-379d-5b64-80a5-f5aaf27d700d-c000.zstd.parquet",
+        "row_groups": [
+          94,
+          117,
+          119,
+          210,
+          216,
+          217,
+          219,
+          220,
+          222,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250
+        ]
+      }
+    ],
+    "bytes": 24271136,
+    "sha256": "7ec1be090ea3710bfc995ec28e3d7d9e392152e209de6d11a7c573200e89f767"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/supporting_land_features/overture_land_use_polygons.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "land_use",
+    "records": 80109,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00015-d1c6401a-cbd3-5961-97e6-135414e82273-c000.zstd.parquet",
+        "row_groups": [
+          58
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00023-f6e665bd-0d1f-559d-8000-5dc93bbb840b-c000.zstd.parquet",
+        "row_groups": [
+          78,
+          79,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ]
+      }
+    ],
+    "bytes": 26841470,
+    "sha256": "2cb026d534a98c34204a7ebd42f79fe8e3678ec76a5fd1429fc7c34c6088d3d2"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/places/overture_points_of_interest.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "place",
+    "records": 33109,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/part-00015-eb1c1331-f519-5db6-8fef-74a77e5776ff-c000.zstd.parquet",
+        "row_groups": [
+          210,
+          211,
+          220,
+          222,
+          223
+        ]
+      }
+    ],
+    "bytes": 4451188,
+    "sha256": "3f857f408cfdddd69c90a6f28e8cbf571a03132959d15bf3923739561c88e1bd"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/road_and_rail/overture_transport_segments.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "segment",
+    "records": 311320,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00086-48d15ca0-b00a-5d21-b45b-45411d918f8a-c000.zstd.parquet",
+        "row_groups": [
+          59
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00087-fd983191-1a0b-59dd-8acf-8c90cf0fe44b-c000.zstd.parquet",
+        "row_groups": [
+          84,
+          85,
+          86,
+          87
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00091-a6694736-1d26-5dcb-a02c-c62cd6fa88a1-c000.zstd.parquet",
+        "row_groups": [
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18,
+          19,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30
+        ]
+      }
+    ],
+    "bytes": 58320748,
+    "sha256": "e13c6783f482d9bbee8c6f1d1f8d96ed85bad851a2273e9ce2c796965b762bed"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/buildings/overture_buildings.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "building",
+    "records": 847820,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00508-3c1ccc10-dba5-5c8a-9951-2b5d322250a2-c000.zstd.parquet",
+        "row_groups": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          108,
+          109,
+          112,
+          114,
+          120
+        ]
+      }
+    ],
+    "bytes": 77912275,
+    "sha256": "d9e4114e660cf9f21d3a47a6a786b2770953d81d866cee3576095ae298018884"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/supporting_land_features/overture_infrastructure_features.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "infrastructure",
+    "records": 37113,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00011-60ec7784-e70a-511e-abf0-200f198d900b-c000.zstd.parquet",
+        "row_groups": [
+          228,
+          229,
+          230,
+          231
+        ]
+      }
+    ],
+    "bytes": 3649787,
+    "sha256": "f795a5393bfd7785f32e6c8f7410d425dd5c0a4fe3704b7cf908b13f9c2814fe"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/supporting_land_features/overture_land_use_polygons.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "land_use",
+    "records": 15938,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00008-542e33fe-998c-5dee-851c-3e25303b9b03-c000.zstd.parquet",
+        "row_groups": [
+          22
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=land_use/part-00031-8393a424-de05-5140-a566-e42d3e701157-c000.zstd.parquet",
+        "row_groups": [
+          37,
+          39,
+          48,
+          50
+        ]
+      }
+    ],
+    "bytes": 3266160,
+    "sha256": "89f6a64effe7d6a503f2839e4c65005d9c1f5761c847dc49598b9b0a04ef805f"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/road_and_rail/overture_transport_segments.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "segment",
+    "records": 209628,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00126-481f0788-772e-59fe-be40-034fa4911dff-c000.zstd.parquet",
+        "row_groups": [
+          20,
+          21,
+          22,
+          23,
+          28,
+          29,
+          30,
+          31,
+          48,
+          58,
+          59,
+          96,
+          97,
+          98,
+          99,
+          104,
+          105,
+          108,
+          110,
+          111
+        ]
+      }
+    ],
+    "bytes": 29861335,
+    "sha256": "d2e163c500ccdd27920a97bd0abfb60d96e973c047c6d21502b2a4a6790a49d5"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/supporting_land_features/overture_water_polygons.parquet",
+    "city": "01027_JPN_Kitakyushu",
+    "layer": "water",
+    "records": 6450,
+    "bounds_wgs84": [
+      130.538245467692,
+      33.645609745690855,
+      131.14750253230798,
+      34.13101379468117
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00027-ae01f3fc-9546-580d-8cd4-3451d8289240-c000.zstd.parquet",
+        "row_groups": [
+          72,
+          73,
+          74,
+          76
+        ]
+      }
+    ],
+    "bytes": 6766767,
+    "sha256": "53a0e2d0e6eba6a84abaf1a4e737493150c2954f63846f1c55ccc3116efc9123"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/supporting_land_features/overture_water_polygons.parquet",
+    "city": "00572_FIN_Helsinki",
+    "layer": "water",
+    "records": 22192,
+    "bounds_wgs84": [
+      24.42178015834014,
+      60.03764981044589,
+      25.394930808618625,
+      60.42806111981316
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00021-2fca8bf6-73a5-5e29-81d9-eebf5db843e9-c000.zstd.parquet",
+        "row_groups": [
+          62
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00029-40bdd602-d4ef-54f7-aa09-1e101195e847-c000.zstd.parquet",
+        "row_groups": [
+          49,
+          96,
+          97,
+          100,
+          101,
+          112
+        ]
+      }
+    ],
+    "bytes": 13341524,
+    "sha256": "7d46f44d936a87d7782a6e6663c97d89c4efaea0df9e3a66b44fd80d5ed396c4"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/supporting_land_features/overture_water_polygons.parquet",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "layer": "water",
+    "records": 9624,
+    "bounds_wgs84": [
+      138.71634802832565,
+      36.20205061250441,
+      139.3069885473044,
+      36.52420832459432
+    ],
+    "source_release": "2026-10-21.0",
+    "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+    "sources": [
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00027-ae01f3fc-9546-580d-8cd4-3451d8289240-c000.zstd.parquet",
+        "row_groups": [
+          114,
+          115
+        ]
+      },
+      {
+        "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00031-ff57031f-2765-5695-8bea-b3769986c897-c000.zstd.parquet",
+        "row_groups": [
+          161
+        ]
+      }
+    ],
+    "bytes": 8660246,
+    "sha256": "a32a0546279ae7cfd8c8a81e7d9836b02af45d527b5ce47102fd93a8eb61cab0"
+  }
+]

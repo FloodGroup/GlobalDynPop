@@ -1,0 +1,170 @@
+[
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_total_building_volume_2025_R5_C30.tif",
+    "city": "01027_JPN_Kitakyushu",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+    "source_window": [
+      6768,
+      8765,
+      960,
+      560
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 415400,
+    "sha256": "c07269ceefde684d2ee878098a88ec7b8cfc44f96fcfcd78cb5ebac382c7ed00"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_resident_population_2025_R5_C30.tif",
+    "city": "01027_JPN_Kitakyushu",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+    "source_window": [
+      6768,
+      8765,
+      960,
+      560
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 674696,
+    "sha256": "bacd435daa0d948667bd54da442ed664d6f86f45aa97fda25d1f37bfeb5d0b13"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_non_residential_building_volume_2025_R5_C30.tif",
+    "city": "01027_JPN_Kitakyushu",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+    "source_window": [
+      6768,
+      8765,
+      960,
+      560
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 48794,
+    "sha256": "c8d16456cc627bf8e34ef52b39889cd6c4fa8bc11e8aac8a1da3408e0a36f8ea"
+  },
+  {
+    "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_building_height_2018_R5_C30.tif",
+    "city": "01027_JPN_Kitakyushu",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+    "source_window": [
+      6768,
+      8765,
+      960,
+      560
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 449146,
+    "sha256": "c971fb45b50adc818b20b0f6ed27665acc3d90aec22703ca2d3ee6f8bd72aedc"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/population/ghsl_resident_population_2025_R3_C20.tif",
+    "city": "00572_FIN_Helsinki",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R3_C20.zip",
+    "source_window": [
+      6117,
+      824,
+      752,
+      373
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 316722,
+    "sha256": "2bec470b6b180d93dc435601e914bc5496c0a548dc630f9d94dbb277eb6b8ebf"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/population/ghsl_non_residential_building_volume_2025_R3_C20.tif",
+    "city": "00572_FIN_Helsinki",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100_V1_0_R3_C20.zip",
+    "source_window": [
+      6117,
+      824,
+      752,
+      373
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 58120,
+    "sha256": "2004b3aadbea107ba9d08fce44a4d204edbb2b262f12f493750861dd8733d287"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/population/ghsl_total_building_volume_2025_R3_C20.tif",
+    "city": "00572_FIN_Helsinki",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0_R3_C20.zip",
+    "source_window": [
+      6117,
+      824,
+      752,
+      373
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 199416,
+    "sha256": "8ea983126a7d9f71742c6624dbfeb56496d565af2ccf02543c0ba1522fffcafd"
+  },
+  {
+    "path": "01_inputs/demo/raw/00572_FIN_Helsinki/population/ghsl_building_height_2018_R3_C20.tif",
+    "city": "00572_FIN_Helsinki",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100_V1_0_R3_C20.zip",
+    "source_window": [
+      6117,
+      824,
+      752,
+      373
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 187386,
+    "sha256": "970e359dc32adb22118e92c42b74fc81aa364a8aaf5a78b7b02e856d831fb030"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/population/ghsl_total_building_volume_2025_R5_C31.tif",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C31.zip",
+    "source_window": [
+      1795,
+      5026,
+      834,
+      368
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 445080,
+    "sha256": "8afc791e1acf9b99e791d07767c04d677c9a5da95171f475606480c2553dde64"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/population/ghsl_non_residential_building_volume_2025_R5_C31.tif",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C31.zip",
+    "source_window": [
+      1795,
+      5026,
+      834,
+      368
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 52692,
+    "sha256": "b7cc549c23082d9aea6228686a76c49d99d88295e3935cba6cf216aa78ae237c"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/population/ghsl_building_height_2018_R5_C31.tif",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100_V1_0_R5_C31.zip",
+    "source_window": [
+      1795,
+      5026,
+      834,
+      368
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 510778,
+    "sha256": "799e18e9998541b2f01386eb63f7d374370f54c15d395753b28c2d32b54acddc"
+  },
+  {
+    "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/population/ghsl_resident_population_2025_R5_C31.tif",
+    "city": "05685_JPN_Takasaki_Maebashi",
+    "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C31.zip",
+    "source_window": [
+      1795,
+      6026,
+      834,
+      368
+    ],
+    "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+    "bytes": 716840,
+    "sha256": "3a176d768f0eae4879476234dd5fb124b110dc46642ab7443ce080fc1c705c84"
+  }
+]

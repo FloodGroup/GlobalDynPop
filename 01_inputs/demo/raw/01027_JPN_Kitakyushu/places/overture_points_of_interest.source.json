@@ -1,0 +1,27 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/places/overture_points_of_interest.parquet",
+  "city": "01027_JPN_Kitakyushu",
+  "layer": "place",
+  "records": 35308,
+  "bounds_wgs84": [
+    130.538245467692,
+    33.645609745690855,
+    131.14750253230798,
+    34.13101379468117
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/part-00015-eb1c1331-f519-5db6-8fef-74a77e5776ff-c000.zstd.parquet",
+      "row_groups": [
+        111,
+        129,
+        132,
+        133
+      ]
+    }
+  ],
+  "bytes": 4742908,
+  "sha256": "4580a35e7981f7b6489402497bf95e5413bab0286d4028757af41daacee17dd8"
+}

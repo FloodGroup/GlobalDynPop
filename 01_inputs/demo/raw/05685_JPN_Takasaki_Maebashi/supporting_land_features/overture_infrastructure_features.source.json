@@ -1,0 +1,27 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/supporting_land_features/overture_infrastructure_features.parquet",
+  "city": "05685_JPN_Takasaki_Maebashi",
+  "layer": "infrastructure",
+  "records": 37113,
+  "bounds_wgs84": [
+    138.71634802832565,
+    36.20205061250441,
+    139.3069885473044,
+    36.52420832459432
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00011-60ec7784-e70a-511e-abf0-200f198d900b-c000.zstd.parquet",
+      "row_groups": [
+        228,
+        229,
+        230,
+        231
+      ]
+    }
+  ],
+  "bytes": 3649787,
+  "sha256": "f795a5393bfd7785f32e6c8f7410d425dd5c0a4fe3704b7cf908b13f9c2814fe"
+}

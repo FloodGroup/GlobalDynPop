@@ -1,0 +1,35 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/supporting_land_features/overture_water_polygons.parquet",
+  "city": "00572_FIN_Helsinki",
+  "layer": "water",
+  "records": 22192,
+  "bounds_wgs84": [
+    24.42178015834014,
+    60.03764981044589,
+    25.394930808618625,
+    60.42806111981316
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00021-2fca8bf6-73a5-5e29-81d9-eebf5db843e9-c000.zstd.parquet",
+      "row_groups": [
+        62
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00029-40bdd602-d4ef-54f7-aa09-1e101195e847-c000.zstd.parquet",
+      "row_groups": [
+        49,
+        96,
+        97,
+        100,
+        101,
+        112
+      ]
+    }
+  ],
+  "bytes": 13341524,
+  "sha256": "7d46f44d936a87d7782a6e6663c97d89c4efaea0df9e3a66b44fd80d5ed396c4"
+}

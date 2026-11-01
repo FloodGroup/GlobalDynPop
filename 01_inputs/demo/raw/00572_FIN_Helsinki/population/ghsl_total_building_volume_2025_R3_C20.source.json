@@ -1,0 +1,14 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/population/ghsl_total_building_volume_2025_R3_C20.tif",
+  "city": "00572_FIN_Helsinki",
+  "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0_R3_C20.zip",
+  "source_window": [
+    6117,
+    824,
+    752,
+    373
+  ],
+  "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+  "bytes": 199416,
+  "sha256": "8ea983126a7d9f71742c6624dbfeb56496d565af2ccf02543c0ba1522fffcafd"
+}

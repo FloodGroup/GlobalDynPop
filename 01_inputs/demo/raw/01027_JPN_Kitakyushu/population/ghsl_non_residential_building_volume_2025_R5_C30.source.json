@@ -1,0 +1,14 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_non_residential_building_volume_2025_R5_C30.tif",
+  "city": "01027_JPN_Kitakyushu",
+  "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+  "source_window": [
+    6768,
+    8765,
+    960,
+    560
+  ],
+  "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+  "bytes": 48794,
+  "sha256": "c8d16456cc627bf8e34ef52b39889cd6c4fa8bc11e8aac8a1da3408e0a36f8ea"
+}

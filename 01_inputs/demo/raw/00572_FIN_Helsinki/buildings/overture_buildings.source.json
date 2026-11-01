@@ -1,0 +1,56 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/buildings/overture_buildings.parquet",
+  "city": "00572_FIN_Helsinki",
+  "layer": "building",
+  "records": 299700,
+  "bounds_wgs84": [
+    24.42178015834014,
+    60.03764981044589,
+    25.394930808618625,
+    60.42806111981316
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00252-3865ff10-e8f0-506d-926f-fbd0ed371478-c000.zstd.parquet",
+      "row_groups": [
+        244,
+        245,
+        247,
+        253,
+        255
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00254-a703f601-bc01-5fa6-ac12-7a7845903b29-c000.zstd.parquet",
+      "row_groups": [
+        170,
+        171,
+        174
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=buildings/type=building/part-00255-ec3a067c-a31b-5614-bdbe-1208a1ab0c24-c000.zstd.parquet",
+      "row_groups": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "bytes": 43320375,
+  "sha256": "e90b447aab293c7ed4524f9f56fe047b05040271d36e1623bc40c1db5839aab5"
+}

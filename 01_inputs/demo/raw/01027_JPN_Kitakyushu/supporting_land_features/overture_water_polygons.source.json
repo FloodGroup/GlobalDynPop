@@ -1,0 +1,27 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/supporting_land_features/overture_water_polygons.parquet",
+  "city": "01027_JPN_Kitakyushu",
+  "layer": "water",
+  "records": 6450,
+  "bounds_wgs84": [
+    130.538245467692,
+    33.645609745690855,
+    131.14750253230798,
+    34.13101379468117
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=water/part-00027-ae01f3fc-9546-580d-8cd4-3451d8289240-c000.zstd.parquet",
+      "row_groups": [
+        72,
+        73,
+        74,
+        76
+      ]
+    }
+  ],
+  "bytes": 6766767,
+  "sha256": "53a0e2d0e6eba6a84abaf1a4e737493150c2954f63846f1c55ccc3116efc9123"
+}

@@ -1,0 +1,58 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/road_and_rail/overture_transport_segments.parquet",
+  "city": "00572_FIN_Helsinki",
+  "layer": "segment",
+  "records": 311320,
+  "bounds_wgs84": [
+    24.42178015834014,
+    60.03764981044589,
+    25.394930808618625,
+    60.42806111981316
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00086-48d15ca0-b00a-5d21-b45b-45411d918f8a-c000.zstd.parquet",
+      "row_groups": [
+        59
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00087-fd983191-1a0b-59dd-8acf-8c90cf0fe44b-c000.zstd.parquet",
+      "row_groups": [
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00091-a6694736-1d26-5dcb-a02c-c62cd6fa88a1-c000.zstd.parquet",
+      "row_groups": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ]
+    }
+  ],
+  "bytes": 58320748,
+  "sha256": "e13c6783f482d9bbee8c6f1d1f8d96ed85bad851a2273e9ce2c796965b762bed"
+}

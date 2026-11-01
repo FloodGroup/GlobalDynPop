@@ -1,0 +1,14 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/population/ghsl_total_building_volume_2025_R5_C31.tif",
+  "city": "05685_JPN_Takasaki_Maebashi",
+  "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0_R5_C31.zip",
+  "source_window": [
+    1795,
+    5026,
+    834,
+    368
+  ],
+  "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+  "bytes": 445080,
+  "sha256": "8afc791e1acf9b99e791d07767c04d677c9a5da95171f475606480c2553dde64"
+}

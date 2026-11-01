@@ -1,0 +1,47 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/road_and_rail/overture_transport_segments.parquet",
+  "city": "01027_JPN_Kitakyushu",
+  "layer": "segment",
+  "records": 168331,
+  "bounds_wgs84": [
+    130.538245467692,
+    33.645609745690855,
+    131.14750253230798,
+    34.13101379468117
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00121-cccfb596-ef68-5733-a09c-003ac5c18c54-c000.zstd.parquet",
+      "row_groups": [
+        35,
+        58,
+        99,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        114,
+        115,
+        122
+      ]
+    },
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=transportation/type=segment/part-00124-63401875-780b-5d6f-9dee-bb3815b7b73b-c000.zstd.parquet",
+      "row_groups": [
+        4,
+        12,
+        68
+      ]
+    }
+  ],
+  "bytes": 21753421,
+  "sha256": "5dba24c9d89db94d4862bc7e7051d3d4dcd549424b092bf5c5f066e1a4dd2b4c"
+}

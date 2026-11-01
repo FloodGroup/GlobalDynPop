@@ -1,0 +1,14 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/population/ghsl_building_height_2018_R5_C30.tif",
+  "city": "01027_JPN_Kitakyushu",
+  "source": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100_V1_0_R5_C30.zip",
+  "source_window": [
+    6768,
+    8765,
+    960,
+    560
+  ],
+  "operation": "Native pixel-window crop only; original CRS, pixel size, grid alignment and pixel values preserved.",
+  "bytes": 449146,
+  "sha256": "c971fb45b50adc818b20b0f6ed27665acc3d90aec22703ca2d3ee6f8bd72aedc"
+}

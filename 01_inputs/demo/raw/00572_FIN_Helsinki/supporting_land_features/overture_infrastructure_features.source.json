@@ -1,0 +1,43 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/supporting_land_features/overture_infrastructure_features.parquet",
+  "city": "00572_FIN_Helsinki",
+  "layer": "infrastructure",
+  "records": 288978,
+  "bounds_wgs84": [
+    24.42178015834014,
+    60.03764981044589,
+    25.394930808618625,
+    60.42806111981316
+  ],
+  "source_release": "2026-10-21.0",
+  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "sources": [
+    {
+      "path": "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=base/type=infrastructure/part-00014-c66b4c5d-379d-5b64-80a5-f5aaf27d700d-c000.zstd.parquet",
+      "row_groups": [
+        94,
+        117,
+        119,
+        210,
+        216,
+        217,
+        219,
+        220,
+        222,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250
+      ]
+    }
+  ],
+  "bytes": 24271136,
+  "sha256": "7ec1be090ea3710bfc995ec28e3d7d9e392152e209de6d11a7c573200e89f767"
+}
