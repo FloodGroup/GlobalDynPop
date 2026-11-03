@@ -32,9 +32,9 @@ Each country and day type has a matrix of 24 local clock hours and seven locatio
 | C6 | transportation | People in transit |
 | C7 | other | Other places |
 
-$$
+```math
 \sum_{c=1}^{7}s_c(h,t)=1,\qquad 0\leq s_c(h,t)\leq 1.
-$$
+```
 
 The values are fractions, so 0.10 means 10% of the represented population. Summing one column over the 24 hours gives the average hours per person spent in that class during a day. Summing the whole matrix gives 24 hours. A column is not expected to sum to one.
 
@@ -58,10 +58,9 @@ Source-specific crosswalks map the original activity codes to 87 fine activities
 
 An episode contributes only the minutes that overlap each hour. Its contribution is multiplied by the survey weight assigned by the source adapter. The shared routine wraps hours modulo 24 for diaries that extend past midnight. Already tabulated slots can instead enter with their assigned hour and duration. Workday and rest-day records are aggregated separately.
 
-$$
-M(h,a,z)=\sum_e w_e\,\mathrm{overlap\_minutes}(e,h)\,
-\mathbf{1}(a_e=a,\ z_e=z).
-$$
+```math
+M(h,a,z)=\sum_e w_e\,\mathrm{overlap\_minutes}(e,h)\, \mathbf{1}(a_e=a,\ z_e=z).
+```
 
 Here a is the fine activity, z is the location status, and w is the survey weight. The hourly denominator is the total weighted minutes across all activities and statuses in that hour. It is not the number of episodes or trips. Every hour must contain a positive amount of represented time.
 
@@ -69,12 +68,9 @@ Here a is the fine activity, z is the location status, and w is the survey weigh
 
 Let K(h,a,c) denote minutes with a classified location. Let U8 and U7 denote the two unresolved statuses. The inherited reference GF(h,a,c) gives the distribution of locations for an activity at that hour. GF_nonres is obtained by setting C1 to zero and renormalising the remaining six classes; when no non-residential reference mass remains, all of it is assigned to C7.
 
-$$
-\begin{aligned}
-J(h,a,c)&=K(h,a,c)+U_8(h,a)GF(h,a,c)+U_7(h,a)GF_{\mathrm{nonres}}(h,a,c),\\
-L(h,c)&=\frac{\sum_a J(h,a,c)}{\mathrm{total\_weighted\_minutes}(h)}.
-\end{aligned}
-$$
+```math
+\begin{aligned} J(h,a,c)&=K(h,a,c)+U_8(h,a)GF(h,a,c)+U_7(h,a)GF_{\mathrm{nonres}}(h,a,c),\\ L(h,c)&=\frac{\sum_a J(h,a,c)}{\mathrm{total\_weighted\_minutes}(h)}. \end{aligned}
+```
 
 This preserves classified minutes and imputes only the unresolved part. The source routines can also retain the unresolved fractions as diagnostics. These fractions describe how much information was imputed; they are not uncertainty intervals.
 
@@ -88,12 +84,9 @@ Some sources provide activity participation rates without usable location observ
 
 A published group usually covers several fine activities. The code splits its share using the pooled reference minutes GM(h,a) for those activities at the same hour. If their total reference minutes are zero, it assigns equal proportions within the group.
 
-$$
-\begin{aligned}
-S(h,a)&=A(h,g)\frac{GM(h,a)}{\sum_{a'\in g}GM(h,a')},\\
-L(h,c)&=\sum_a S(h,a)GF(h,a,c),\quad\text{followed by row normalisation}.
-\end{aligned}
-$$
+```math
+\begin{aligned} S(h,a)&=A(h,g)\frac{GM(h,a)}{\sum_{a'\in g}GM(h,a')},\\ L(h,c)&=\sum_a S(h,a)GF(h,a,c),\quad\text{followed by row normalisation}. \end{aligned}
+```
 
 The published table therefore supplies activity timing. The split into fine activities and the conversion from activities to locations depend on the inherited reference tables. The seven location shares are derived estimates even when the original activity participation rates were observed directly.
 
@@ -101,10 +94,9 @@ The published table therefore supplies activity timing. The split into fine acti
 
 Where only daily minutes by activity group are available, the code starts from another country’s hourly activity profile. It adjusts that profile to meet the target country’s daily-minute constraints through iterative proportional fitting. The target preparation also handles source-specific group definitions and constraints; the complete 24-hour budget must be feasible.
 
-$$
-\sum_g A(h,g)=1\quad\text{for each }h,\qquad
-60\sum_h A(h,g)=\mathrm{target\_minutes}(g)\quad\text{for each }g.
-$$
+```math
+\sum_g A(h,g)=1\quad\text{for each }h,\qquad 60\sum_h A(h,g)=\mathrm{target\_minutes}(g)\quad\text{for each }g.
+```
 
 Each iteration scales the group columns to their target totals, then normalises the hourly rows. Zero targets remove a group. A positive target with no support in the initial profile, an empty hour, or failure to converge causes an error. The stopping tolerance is a maximum daily-minute error below 10<sup>-7</sup>; it is checked every 10 iterations, with a limit of 12,000 iterations.
 
@@ -120,13 +112,9 @@ Day type is first identified from the source’s diary or table definition. For 
 
 For countries without adopted own day-type curves, the code takes an existing national average-day matrix B and multiplies it by donor ratios for each hour and location class. Donors are assigned by the study’s region table. A donor’s ratio is its day-type share divided by its average-day share; the ratio is set to one when the denominator is at most 10<sup>-6</sup>. Ratios are averaged equally across donors.
 
-$$
-\begin{aligned}
-r_t(h,c)&=\mathrm{mean}_{d\in\mathrm{donors}}
-\mathrm{ratio}\!\left[L_{d,t}(h,c),L_{d,\mathrm{all}}(h,c)\right],\\
-L_{X,t}(h,c)&=\frac{B_X(h,c)r_t(h,c)}{\sum_k B_X(h,k)r_t(h,k)}.
-\end{aligned}
-$$
+```math
+\begin{aligned} r_t(h,c)&=\mathrm{mean}_{d\in\mathrm{donors}} \mathrm{ratio}\!\left[L_{d,t}(h,c),L_{d,\mathrm{all}}(h,c)\right],\\ L_{X,t}(h,c)&=\frac{B_X(h,c)r_t(h,c)}{\sum_k B_X(h,k)r_t(h,k)}. \end{aligned}
+```
 
 | Region | Assigned donors (ISO3) |
 | --- | --- |
@@ -155,12 +143,9 @@ The final upstream workflow replaces the initial USA, Mexico and Brazil time-use
 
 The starting class is the origin of the first trip when supplied, otherwise residential. A person without trips remains at home in this reconstruction. Departure is rounded down to the ten-minute boundary and arrival up. Intervals between departure and arrival are C6. After arrival, the person stays in the destination class until a later trip overwrites that assignment. A trip recorded as arriving before it departs is treated as crossing midnight and truncated at the end of the day.
 
-$$
-\begin{aligned}
-q(c,k)&=\frac{\sum_i w_i\,\mathbf{1}(\mathrm{location}_{i,k}=c)}{\sum_i w_i},\\
-s(c,h)&=\frac{1}{6}\sum_{k\in h}q(c,k).
-\end{aligned}
-$$
+```math
+\begin{aligned} q(c,k)&=\frac{\sum_i w_i\,\mathbf{1}(\mathrm{location}_{i,k}=c)}{\sum_i w_i},\\ s(c,h)&=\frac{1}{6}\sum_{k\in h}q(c,k). \end{aligned}
+```
 
 Purpose and place crosswalks assign trip destinations to the seven classes. Residential visits can be C1 even when the destination is another household’s home. These shares describe presence, including people who did not travel. Counting trips, or using trip expansion weights as the population denominator, would estimate a different quantity.
 
@@ -174,11 +159,9 @@ Purpose and place crosswalks assign trip destinations to the seven classes. Resi
 
 Mexico has no Sunday travel curve in the selected input: Sunday is estimated from its Saturday curve multiplied by the USA Sunday/Saturday ratio. Mexico’s rest day is then the mean of Saturday and estimated Sunday. Brazil’s rest day is its weekday curve multiplied by the Mexico rest-day/weekday ratio; the analogous ratios supply Saturday and Sunday.
 
-$$
-\text{Transferred curve}=\mathrm{row\_normalise}
-\left[\mathrm{base}\times\frac{\mathrm{donor\_numerator}+0.002}
-{\mathrm{donor\_denominator}+0.002}\right].
-$$
+```math
+\text{Transferred curve}=\mathrm{row\_normalise} \left[\mathrm{base}\times\frac{\mathrm{donor\_numerator}+0.002} {\mathrm{donor\_denominator}+0.002}\right].
+```
 
 The additive 0.002 is a study-defined stabiliser specific to this travel-diary transfer. It differs from the threshold-and-neutral-ratio rule in Section 4. Average days use (5 workdays + Saturday + Sunday)/7 for USA and Mexico, and (5 workdays + 2 rest days)/7 for Brazil. This is a representative weekly convention; it does not count public holidays.
 
@@ -196,16 +179,9 @@ The initial curves for USA, Canada, the United Kingdom, Spain, Albania, South Af
 
 At hours 12 and 13, a straight line between the vectors at hours 11 and 14 supplies a reference B. Only a residential share above that line is reduced. The removed share goes to non-residential classes according to their positive shortfalls below the same line. If there is no appreciable shortfall, their existing shares supply the redistribution weights.
 
-$$
-\begin{aligned}
-t&=(h-11)/3,\qquad h\in\{12,13\},\\
-B(h,c)&=(1-t)L(11,c)+tL(14,c),\\
-e&=\max[L(h,\mathrm{C1})-B(h,\mathrm{C1}),0],\\
-d(c)&=\max[B(h,c)-L(h,c),0],\qquad c\ne\mathrm{C1},\\
-L'(h,\mathrm{C1})&=L(h,\mathrm{C1})-e,\\
-L'(h,c)&=L(h,c)+e\frac{d(c)}{\sum_{k\ne\mathrm{C1}}d(k)}.
-\end{aligned}
-$$
+```math
+\begin{aligned} t&=(h-11)/3,\qquad h\in\{12,13\},\\ B(h,c)&=(1-t)L(11,c)+tL(14,c),\\ e&=\max[L(h,\mathrm{C1})-B(h,\mathrm{C1}),0],\\ d(c)&=\max[B(h,c)-L(h,c),0],\qquad c\ne\mathrm{C1},\\ L'(h,\mathrm{C1})&=L(h,\mathrm{C1})-e,\\ L'(h,c)&=L(h,c)+e\frac{d(c)}{\sum_{k\ne\mathrm{C1}}d(k)}. \end{aligned}
+```
 
 The code leaves the hour unchanged when the residential excess is at most 10<sup>-6</sup>. It uses the shortfall weights only when their sum exceeds 10<sup>-9</sup>; otherwise the last equation uses the normalised existing non-residential shares. The fallback assumes some non-residential mass is present.
 
@@ -225,10 +201,9 @@ Many time-use surveys omit younger children, while the population model represen
 
 Population counts for males and females aged 5-9 and 10-14 are divided by total population. The code uses World Bank indicators for adjusted net primary enrolment and net secondary enrolment, with gross enrolment as a fallback. Enrolment percentages are capped at 100% and divided by 100. Each indicator uses its latest non-missing observation in the downloaded source, so the input years may differ [R5].
 
-$$
-E=s_{5\text{--}9}\,p_{\mathrm{primary}}
-+s_{10\text{--}14}\frac{p_{\mathrm{primary}}+p_{\mathrm{secondary}}}{2}.
-$$
+```math
+E=s_{5\text{--}9}\,p_{\mathrm{primary}} +s_{10\text{--}14}\frac{p_{\mathrm{primary}}+p_{\mathrm{secondary}}}{2}.
+```
 
 When age shares are missing, school_floor uses the median record of countries in the assigned region, or the global median if that regional set is empty. A remaining missing enrolment proportion is replaced by its global median. The diagnostic routine in age_coverage.py has its own columnwise filling procedure; school_floor is the routine that modifies the final matrices.
 
@@ -236,14 +211,9 @@ When age shares are missing, school_floor uses the median record of countries in
 
 Let p be the current daily maximum of the workday C3 share. If E exceeds p and p is positive, the gap is distributed over the day in proportion to the existing education curve. The same amount is removed from C1 in each hour, with a lower residential bound of 0.05.
 
-$$
-\begin{aligned}
-p&=\max_h L(h,\mathrm{C3}),\qquad \mathrm{gap}=E-p,\\
-d(h)&=\max\left\{0,\min\left[\mathrm{gap}\frac{L(h,\mathrm{C3})}{p},L(h,\mathrm{C1})-0.05\right]\right\},\\
-L'(h,\mathrm{C3})&=L(h,\mathrm{C3})+d(h),\\
-L'(h,\mathrm{C1})&=L(h,\mathrm{C1})-d(h).
-\end{aligned}
-$$
+```math
+\begin{aligned} p&=\max_h L(h,\mathrm{C3}),\qquad \mathrm{gap}=E-p,\\ d(h)&=\max\left\{0,\min\left[\mathrm{gap}\frac{L(h,\mathrm{C3})}{p},L(h,\mathrm{C1})-0.05\right]\right\},\\ L'(h,\mathrm{C3})&=L(h,\mathrm{C3})+d(h),\\ L'(h,\mathrm{C1})&=L(h,\mathrm{C1})-d(h). \end{aligned}
+```
 
 The other five classes are unchanged. If p is zero, the routine skips the adjustment because there is no education timing profile to scale. If the residential bound is reached, the resulting peak can remain below E. E is thus an adjustment target rather than an unconditional output constraint.
 
@@ -263,14 +233,9 @@ After survey harmonisation and the preceding corrections, the upstream workflow 
 
 The affected classes are C2, C4, C5, C6 and C7. C3 is held fixed. A cyclic shift moves each affected curve later by delta hours; a fractional shift linearly combines the two neighbouring integer shifts. The shifted curve is then multiplied by an afternoon weighting function and rescaled to retain its original daily sum.
 
-$$
-\begin{aligned}
-g(h)&=\exp\!\left\{\beta\sin\!\left[2\pi(h+0.5-12)/24\right]\right\},\\
-L'(h,c)&=L_{\mathrm{shifted}}(h,c)g(h)
-\frac{\mathrm{daily\_sum}(c)}{\sum_j L_{\mathrm{shifted}}(j,c)g(j)},\\
-L'(h,\mathrm{C1})&=1-\sum_{c\in\{\mathrm{C2},\ldots,\mathrm{C7}\}}L'(h,c).
-\end{aligned}
-$$
+```math
+\begin{aligned} g(h)&=\exp\!\left\{\beta\sin\!\left[2\pi(h+0.5-12)/24\right]\right\},\\ L'(h,c)&=L_{\mathrm{shifted}}(h,c)g(h) \frac{\mathrm{daily\_sum}(c)}{\sum_j L_{\mathrm{shifted}}(j,c)g(j)},\\ L'(h,\mathrm{C1})&=1-\sum_{c\in\{\mathrm{C2},\ldots,\mathrm{C7}\}}L'(h,c). \end{aligned}
+```
 
 The operation preserves daily person-hours in each corrected class, and therefore also in the residential complement. A valid matrix still requires a non-negative residential complement; the correction function itself does not clip a negative value.
 
@@ -354,14 +319,9 @@ Values above are rounded for display. The matrices retain the supplied numerical
 
 Stage 3 reads the day-type shares when forming the in-transit population component. Stage 4 uses the hourly shares to combine the resident field N, the five destination fields D<sub>c</sub> and the in-transit field T:
 
-$$
-\begin{aligned}
-P(x,h,t)={}&s_{\mathrm{C1}}(h,t)N(x)\\
-&+\sum_{c\in\{\mathrm{C2},\mathrm{C3},\mathrm{C4},\mathrm{C5},\mathrm{C7}\}}
-s_c(h,t)D_c(x,t)\\
-&+s_{\mathrm{C6}}(h,t)T(x,t).
-\end{aligned}
-$$
+```math
+\begin{aligned} P(x,h,t)={}&s_{\mathrm{C1}}(h,t)N(x)\\ &+\sum_{c\in\{\mathrm{C2},\mathrm{C3},\mathrm{C4},\mathrm{C5},\mathrm{C7}\}} s_c(h,t)D_c(x,t)\\ &+s_{\mathrm{C6}}(h,t)T(x,t). \end{aligned}
+```
 
 Each spatial component is normalised to the same city-domain population total. The hourly shares then preserve that total. C6 supplies temporal presence in transit; road and rail routing supply its spatial distribution. The time-use matrix alone does not determine a route or represent net inflow or evacuation.
 
