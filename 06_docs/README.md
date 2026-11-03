@@ -11,12 +11,12 @@ The [main README](../README.md) introduces the study, its data sources and the f
 | [Stage 3: Allocation of daily activities](methods/stage_3_activity_allocation.md) | Attractiveness, gravity allocation, in-transit assignment and component storage. |
 | [Stage 4: Outputs](methods/stage_4_outputs.md) | Hourly mixtures, functional land use, numerical checks and figures. |
 
-The method guides follow each processing sequence through its numbered programs and calculation functions. The [code index](../02_code/) opens the implementation directories, whose README files provide commands, prerequisites and runtime options. The [time-use derivation](../04_intermediate/demo/stage_2/time_use/time_use.pdf) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
+The method guides follow each processing sequence through its numbered programs and calculation functions. The [code index](../02_code/) opens the implementation directories, whose README files provide commands, prerequisites and runtime options. The [time-use derivation](../04_intermediate/time_use.md) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
 
 ## Figures
 
 - [Study area](figures/study_area.png): the 1,904 study cities, time-use sources, kernel groups and population sizes.
-- [Time-use methods](figures/time_use_supplementary.png): national activity profiles, education-share adjustment and midday correction, also included in the [time-use guide](../04_intermediate/demo/stage_2/time_use/time_use.pdf).
+- [Time-use methods](figures/time_use_supplementary.png): national activity profiles, education-share adjustment and midday correction, also included in the [time-use guide](../04_intermediate/time_use.md).
 
 - [Workflow](figures/workflow.png): study overview. Routing zones are adaptive; 2 km is their starting size.
 - [Population distributions](figures/demo_population_distributions.png): the three example cities at 03:00-04:00, 08:00-09:00 and 13:00-14:00.

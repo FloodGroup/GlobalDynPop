@@ -17,7 +17,7 @@ Storey estimation first uses reported Overture floors. Otherwise it uses availab
 
 Each time-use matrix has 24 rows (local hours) and seven location columns, C1-C7. Each row is normalised to one when read. These are seven location classes, not seven weekdays. Separate matrices represent workdays and rest days. Helsinki uses FIN; Kitakyushu and Takasaki-Maebashi both use JPN. The [time-use figure](../figures/time_use_weights.png) shows the actual normalised matrices used by the model.
 
-The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
+The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/time_use.md) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
 
 ## Numbered programs, function calls and products
 
@@ -36,7 +36,7 @@ The default workflow reads original-source city subsets from `01_inputs/demo/raw
 
 The Stage 2 launcher runs steps 01 through 06 in order and requires each expected output to be newly written. The local-source preparation functions are in [local_raw_preparation.py](../../02_code/stage_2_100m_layers/local_raw_preparation.py). `preparation_metadata/` records source paths and processing statistics. Processing stops on a missing source or a calculation error.
 
-Hourly location shares and calibrated allocation parameters are adopted study products. The example reads these products without repeating survey harmonisation or calibration. The [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) documents the derivation of the 24-by-7 location-share matrices and the Finland and Japan profiles. The supplied OpenStreetMap place counts are supplementary processed data; the three cities have sufficient Overture coverage for the model's automatic source selection to use Overture alone.
+Hourly location shares and calibrated allocation parameters are adopted study products. The example reads these products without repeating survey harmonisation or calibration. The [time-use guide](../../04_intermediate/time_use.md) documents the derivation of the 24-by-7 location-share matrices and the Finland and Japan profiles. The supplied OpenStreetMap place counts are supplementary processed data; the three cities have sufficient Overture coverage for the model's automatic source selection to use Overture alone.
 
 The routing graph contains topology, travel times and sampling locations. Population assignment to the graph occurs in Stage 3. Routing zones start at 2 km and can expand for large domains. Raster conversion uses the GeoTIFF's own bounds, CRS and transform, including clipped edge tiles.
 
@@ -70,7 +70,7 @@ Routing-graph preparation calls graph-building functions in Stage 3's `network.p
 
 Graph preparation calls [network.py](../../02_code/stage_3_activity_allocation/network.py); model-layer export calls [model.py](../../02_code/stage_3_activity_allocation/model.py). These shared calls do not run population assignment during Stage 2.
 
-Section 13 of the [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) illustrates representative national profiles and the education and midday adjustments.
+[Section 13 of the time-use guide](../../04_intermediate/time_use.md#13-time-use-profiles-and-corrections) illustrates representative national profiles and the education and midday adjustments.
 
 ## Parameter values and sources
 
@@ -87,6 +87,6 @@ The [Stage 3 parameter tables](stage_3_activity_allocation.md#parameter-values-a
 
 Li, R., Sun, T., Ghaffarian, S., Tsamados, M. and Ni, G. (2024). GLAMOUR: GLobAl building MOrphology dataset for URban hydroclimate modelling. *Scientific Data*, 11, 618. [doi:10.1038/s41597-024-03446-2](https://doi.org/10.1038/s41597-024-03446-2). The paper converts floor counts to heights for its Baidu reference buildings in China. Here the same relation is inverted to estimate storeys from heights. Applying a uniform storey height globally is a study assumption.
 
-Time-use processing settings and their evidence are documented in Section 11 of the [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf).
+Time-use processing settings and their evidence are documented in [Section 11 of the time-use guide](../../04_intermediate/time_use.md#11-numerical-settings-and-their-provenance).
 
 [Return to project README](../../README.md)

@@ -3,7 +3,7 @@
 Each matrix contains 24 local hours and seven location classes, C1-C7. Supplied
 matrices and their source index are in
 04_intermediate/demo/stage_2/hourly_location_shares/. Their derivation is documented
-in 04_intermediate/demo/stage_2/time_use/time_use.pdf.
+in 04_intermediate/time_use.md.
 """
 from __future__ import annotations
 

@@ -32,7 +32,7 @@ Source manifests and per-file provenance records identify the source files, sele
 
 ## Connection to later stages
 
-Stage 2 reads the raw spatial subsets and derives model layers. It also reads the adopted 24-by-7 hourly location shares and distance-decay settings. These are processed research products: their survey harmonisation and commuting calibration precede the example run. The [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) explains how the shares were constructed.
+Stage 2 reads the raw spatial subsets and derives model layers. It also reads the adopted 24-by-7 hourly location shares and distance-decay settings. These are processed research products: their survey harmonisation and commuting calibration precede the example run. The [time-use guide](../../04_intermediate/time_use.md) explains how the shares were constructed.
 
 ## Processing sequence and implementation
 

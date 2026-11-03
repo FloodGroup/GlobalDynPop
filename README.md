@@ -39,7 +39,7 @@ The research draws on global settlement and population databases, building data 
 | National Household Travel Survey (USA), EOD (Mexico), and São Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; São Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. |
 | Census and mobility-based commuting datasets | National census agencies and mobility-data providers | Source-specific years | Commuting flows and travel-distance information. |
 
-Hourly location shares are derived from survey and diary records and inherited national average-day tables. The [time-use guide](04_intermediate/demo/stage_2/time_use/time_use.pdf) describes their construction and the supplied Finland and Japan profiles.
+Hourly location shares are derived from survey and diary records and inherited national average-day tables. The [time-use guide](04_intermediate/time_use.md) describes their construction and the supplied Finland and Japan profiles.
 
 Building-height information comes from Overture building attributes, OpenBuildingMap height/storey codes and the GHSL building-height raster. Land-use polygons are a separate source from building footprints and POIs.
 
@@ -83,7 +83,7 @@ Figure 3 shows the hourly location shares used for Finland and Japan. Home accou
 
 ![Figure 3. Finland and Japan hourly location shares for workdays and rest days](06_docs/figures/time_use_weights.png)
 
-**Figure 3. Temporal weights applied to the population components.** Columns distinguish workdays and rest days; rows distinguish Finland and Japan. The seven coloured shares represent home, work and commerce, education, services, leisure, transit and other locations, and sum to one at every hour. Helsinki uses the Finland profile; both Japanese cities use the Japan profile. The [time-use guide](04_intermediate/demo/stage_2/time_use/time_use.pdf) documents the survey mapping, donor transfer and corrections used to construct these profiles.
+**Figure 3. Temporal weights applied to the population components.** Columns distinguish workdays and rest days; rows distinguish Finland and Japan. The seven coloured shares represent home, work and commerce, education, services, leisure, transit and other locations, and sum to one at every hour. Helsinki uses the Finland profile; both Japanese cities use the Japan profile. The [time-use guide](04_intermediate/time_use.md) documents the survey mapping, donor transfer and corrections used to construct these profiles.
 
 ### Example population distributions
 

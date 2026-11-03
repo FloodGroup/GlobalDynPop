@@ -10,10 +10,11 @@
 | `distance_decay_kernels/` | Kernels f_c | Per-city JSON: effective kernel form, kappa, beta, offset, radius and routing-zone size |
 | `road_and_rail_graphs/` | Network graph | NPZ: topology, travel times, stations and grid sampling |
 | `hourly_location_shares/` | Shares s_c | CSV: seven location shares per local hour, by country/day type |
-| `time_use/` | Derivation of hourly location shares | [PDF guide](time_use/time_use.pdf): survey processing, donor transfer, corrections, parameter provenance and the supplied country profiles |
 | `allocation_parameters/` | Adopted kernel and attractiveness settings | JSON and parameter guide |
 | `buildings/` supporting layers | Building height and volume | Metres for height; m3 for total/non-residential volumes |
 | `water_coverage_percent/` | Water coverage for functional land use | NPZ key `water`, uint8 percent from 0 to 100 |
+
+The derivation of the hourly location shares is documented in [time_use.md](../../time_use.md).
 
 Activity-specific place layers use keys such as `C2_workday` and `C2_restday`; their source selection and smoothing follow the effective settings for that city/day type. The kernel JSON represents the function used in allocation rather than a saved two-dimensional convolution matrix.
 
