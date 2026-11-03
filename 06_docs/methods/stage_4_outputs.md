@@ -14,8 +14,8 @@ The seven shares sum to one. Each component has the domain population total, so 
 
 | Program | Action and dependencies |
 |---|---|
-| [01_generate_hourly_population.py](../../02_code/stage_4_outputs/01_generate_hourly_population.py) | Read component rasters and `time_use.daytype_shares`; write hourly rasters and the index. |
-| [02_classify_functional_land_use.py](../../02_code/stage_4_outputs/02_classify_functional_land_use.py) | Classify Stage 2 floor area, volume, transport and water; write the 13-class raster and 16-band attributes. |
+| [01_generate_hourly_population.py](../../02_code/stage_4_outputs/01_generate_hourly_population.py) | `render` reads component bands and combines them with `time_use.daytype_shares`; `write_index` records the hourly files. |
+| [02_classify_functional_land_use.py](../../02_code/stage_4_outputs/02_classify_functional_land_use.py) | `load_inputs` reads Stage 2 layers; `layers` applies the functional classification; `write` saves the 13-class raster and 16-band attributes. |
 | [03_verify_inputs.py](../../02_code/stage_4_outputs/03_verify_inputs.py) | Inspect prepared input availability and structure; an auxiliary check. |
 | [04_verify_outputs.py](../../02_code/stage_4_outputs/04_verify_outputs.py) | Inspect numerical output structure, values and totals; an auxiliary check. |
 | [05_compare_results.py](../../02_code/stage_4_outputs/05_compare_results.py) | Compare network arrays, population components or hourly rasters from two supplied result directories. |
@@ -47,10 +47,6 @@ Numerical products are under `05_outputs/demo/`; documentation figures are under
 
 Functional land-use thresholds are study-defined: built floor area 500 m2 or built volume 1,500 m3; corridor floor area below 1,000 m2; road/rail length at least 100 m; water coverage at least 50%. The exact rules and band descriptions are in [02_classify_functional_land_use.py](../../02_code/stage_4_outputs/02_classify_functional_land_use.py), and the parameter values are listed below.
 
-```console
-python 03_run/run_city_demo.py check
-```
-
 The model rerun checks numerical reproduction. External observations are required for observation-based validation.
 
 ## Implementation modules
@@ -61,21 +57,11 @@ The model rerun checks numerical reproduction. External observations are require
 
 [06_visualize_hourly_population.py](../../02_code/stage_4_outputs/06_visualize_hourly_population.py) reads the final single-band GeoTIFFs at 03:00-04:00, 08:00-09:00 and 13:00-14:00 local time. It produces one PNG with A3 landscape proportions: cities in rows, with three workday maps and three rest-day maps per city. Each city has a separate continuous logarithmic colour scale. The lower limit is 3 people per cell. The upper limit is the 99.5th percentile of cells with at least 3 people, pooled across that city's six displayed maps and rounded up to the next 10 people. The palette progresses through pale lavender and purple, with red and orange concentrated at the high end. Values above the upper limit use the upper colour, indicated by the colour-bar extension. The same limits apply to both day types and all three hours within a city. Counts across cities must be read from their respective colour bars. Cells below 3 people are transparent; water coverage of at least 50% is a pale background. Full model domains are shown without additional spatial smoothing.
 
-Stage 4 updates this figure after generating the numerical outputs. To redraw it alone:
+Stage 4 updates this figure after generating the numerical outputs.
 
-```console
-python 02_code/stage_4_outputs/06_visualize_hourly_population.py
-```
+The output is a 360 dpi PNG named `demo_population_distributions.png`. Labels use English and Times New Roman where installed. `population_visualization_metadata.json` records source hashes and the city-specific continuous scale limits.
 
-Use `--stems` to select one to three cities. `--hourly`, `--stage2` and `--out` select alternate input/output trees. The output is a 360 dpi PNG named `demo_population_distributions.png`. Labels use English and Times New Roman where installed. `population_visualization_metadata.json` records source hashes and the city-specific continuous scale limits.
-
-To redraw the time-use figure alone:
-
-```console
-python 02_code/stage_4_outputs/07_visualize_time_use.py
-```
-
-Both plotting programs accept `--out`. The demo runner honours `DYNAMIC_POPULATION_FIGURES` for both figures.
+Figure execution commands and output-directory options are in the [Stage 4 run instructions](../../02_code/stage_4_outputs/README.md#redraw-figures).
 
 ## Parameter values and sources
 

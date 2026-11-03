@@ -2,7 +2,7 @@
 
 ## Processing sequence and calculations
 
-The [demo runner](../../03_run/run_city_demo.py) runs the six numbered programs in table order. Steps 01-05 use the local raw preparation functions. Step 06 derives model-ready place layers and records the effective kernels. The products are consumed by Stage 3; hourly shares also feed Stage 4 directly.
+The six numbered programs execute in the table order below. Steps 01-05 call `local_raw_preparation.run_step`, which dispatches the corresponding grid, settlement, POI, floor-area or transport calculation. Step 06 derives model-ready place layers and records the effective kernels. The products are consumed by Stage 3; hourly shares also feed Stage 4 directly.
 
 1. **Local grid.** Project the urban-centre polygon to a local Lambert azimuthal equal-area CRS. Expand its bounding box by 10 km on every side and snap the bounds to 100 m cells. Store the projection, dimensions, transform and urban-centre geometry.
 2. **Settlement layers.** Resample population and total/non-residential building volumes as extensive counts using source-pixel sub-sampling. Sample height using each raster's own CRS and affine transform. A cropped edge tile must retain its actual transform. Save population in people, volume in cubic metres and height in metres.
@@ -19,24 +19,20 @@ Each time-use matrix has 24 rows (local hours) and seven location columns, C1-C7
 
 The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
 
-## Numbered programs and products
+## Numbered programs, function calls and products
 
 The default workflow reads original-source city subsets from `01_inputs/demo/raw/` and generates the spatial layers in `04_intermediate/demo/stage_2/`.
 
-| Step | Program | Calculation and product |
-|---|---|---|
-| 01 | [01_create_city_grids.py](../../02_code/stage_2_100m_layers/01_create_city_grids.py) | Urban-centre boundaries to local equal-area 100 m grids: `local_grids/` |
-| 02 | [02_prepare_settlement_layers.py](../../02_code/stage_2_100m_layers/02_prepare_settlement_layers.py) | Native GHSL raster crops to resident population, total/non-residential building volume and height |
-| 03 | [03_prepare_destination_counts.py](../../02_code/stage_2_100m_layers/03_prepare_destination_counts.py) | Classify and count raw Overture places: `point_of_interest_counts/overture/` |
-| 04 | [04_prepare_building_floor_area.py](../../02_code/stage_2_100m_layers/04_prepare_building_floor_area.py) | Match Overture footprints with OpenBuildingMap occupancy/height and land-use evidence; estimate storeys and floor area: `buildings/floor_area_by_use/` |
-| 05 | [05_prepare_transport_graphs.py](../../02_code/stage_2_100m_layers/05_prepare_transport_graphs.py) | Raw road/rail/station features to routing graphs; water polygons to cell coverage: `road_and_rail_graphs/`, `water_coverage_percent/` |
-| 06 | [06_save_model_layers.py](../../02_code/stage_2_100m_layers/06_save_model_layers.py) | Smooth the generated place counts and record effective kernel settings: `smoothed_places/`, `distance_decay_kernels/` |
+| Step | Program | Main function calls | Calculation and product |
+|---|---|---|---|
+| 01 | [01_create_city_grids.py](../../02_code/stage_2_100m_layers/01_create_city_grids.py) | `run_step(1)` → `city_table` → `source_preparation.city_record` | Urban-centre boundaries to local equal-area 100 m grids: `local_grids/` |
+| 02 | [02_prepare_settlement_layers.py](../../02_code/stage_2_100m_layers/02_prepare_settlement_layers.py) | `run_step(2)` → `prepare_settlement` → `grid.resample_counts` or height sampling | Native GHSL raster crops to resident population, total/non-residential building volume and height |
+| 03 | [03_prepare_destination_counts.py](../../02_code/stage_2_100m_layers/03_prepare_destination_counts.py) | `run_step(3)` → `places.city_places` → `places.classify` | Classify and count raw Overture places: `point_of_interest_counts/overture/` |
+| 04 | [04_prepare_building_floor_area.py](../../02_code/stage_2_100m_layers/04_prepare_building_floor_area.py) | `run_step(4)` → `floor_area` → `buildings.city_floor_area` | Match Overture footprints with OpenBuildingMap occupancy/height and land-use evidence; estimate storeys and floor area: `buildings/floor_area_by_use/` |
+| 05 | [05_prepare_transport_graphs.py](../../02_code/stage_2_100m_layers/05_prepare_transport_graphs.py) | `run_step(5)` → `transportation.fetch` → `network.build_from_table`; `water_coverage` | Raw road/rail/station features to routing graphs; water polygons to cell coverage: `road_and_rail_graphs/`, `water_coverage_percent/` |
+| 06 | [06_save_model_layers.py](../../02_code/stage_2_100m_layers/06_save_model_layers.py) | `model_layer_exports.save_model_layers` → `model.poi_layer` and Gaussian smoothing | Smooth the generated place counts and record effective kernel settings: `smoothed_places/`, `distance_decay_kernels/` |
 
 [04_prepare_building_floor_area.py](../../02_code/stage_2_100m_layers/04_prepare_building_floor_area.py) is the executable entry point. It reads the raw source files and calls `floor_area`, which uses `buildings.city_floor_area` for the calculations. [buildings.py](../../02_code/stage_2_100m_layers/buildings.py) provides the building-use, storey and floor-area algorithms. Floor area is footprint area multiplied by estimated storeys, aggregated to 100 m cells by use class.
-
-```console
-python 03_run/run_city_demo.py run --stage 2
-```
 
 The Stage 2 launcher runs steps 01 through 06 in order and requires each expected output to be newly written. The local-source preparation functions are in [local_raw_preparation.py](../../02_code/stage_2_100m_layers/local_raw_preparation.py). `preparation_metadata/` records source paths and processing statistics. Processing stops on a missing source or a calculation error.
 
@@ -46,11 +42,7 @@ The routing graph contains topology, travel times and sampling locations. Popula
 
 ## Source preparation and model processing
 
-Stage 2 reads the local source subsets produced or verified in [Stage 1](stage_1_data_inputs.md). It constructs the 100 m grid, resamples settlement data, interprets building evidence, classifies POIs and builds routing graphs. It does not download global tiles or query remote Parquet sources. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) describes extraction from external sources.
-
-```console
-python 02_code/stage_2_100m_layers/04_prepare_building_floor_area.py --help
-```
+Stage 2 reads the local source subsets produced or verified in [Stage 1](stage_1_data_inputs.md). It constructs the 100 m grid, resamples settlement data, interprets building evidence, classifies POIs and builds routing graphs. It does not download global tiles or query remote Parquet sources. The [Stage 1 method](stage_1_data_inputs.md#processing-sequence-and-implementation) describes extraction from external sources.
 
 ## Implementation modules
 

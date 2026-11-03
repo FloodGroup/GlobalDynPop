@@ -2,7 +2,7 @@
 
 ## Processing sequence
 
-The [demo runner](../../03_run/run_city_demo.py) first saves attractiveness, then computes the in-transit layers, and finally computes destination populations and packages the components. Destination allocation and transit both use Stage 2 settings; the hourly mixture is written in Stage 4.
+The numbered programs first save attractiveness, then compute the in-transit layers, and finally calculate destination populations and package the components. Destination allocation and transit both use Stage 2 settings; the hourly mixture is written in Stage 4.
 
 ## Programs and products
 
@@ -10,19 +10,13 @@ This stage reads `04_intermediate/demo/stage_2/` and writes `04_intermediate/dem
 
 | Program | Calls | Saved result |
 |---|---|---|
-| [01_calculate_destination_attractiveness.py](../../02_code/stage_3_activity_allocation/01_calculate_destination_attractiveness.py) | `model.attractor` | `destination_attractiveness/<city>.npz`: A_c for each class/day type |
-| [02_calculate_in_transit_population.py](../../02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py) | `network.zone_od`, `network.assign` | `in_transit_population/<city>.npz`: T for workdays and rest days |
+| [01_calculate_destination_attractiveness.py](../../02_code/stage_3_activity_allocation/01_calculate_destination_attractiveness.py) | `save_destination_attractiveness` → `model.attractor` | `destination_attractiveness/<city>.npz`: A_c for each class/day type |
+| [02_calculate_in_transit_population.py](../../02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py) | `run_city` → `road_graph`, `trip_matrices` → `network.zone_od`, `network.assign` | `in_transit_population/<city>.npz`: T for workdays and rest days |
 | [03_calculate_population_components.py](../../02_code/stage_3_activity_allocation/03_calculate_population_components.py) | `model.components_daytypes`, `gravity.allocate` | `destination_population/<city>.npz`: D_c before raster encoding |
 
 Attractiveness includes the configured exponent and is a dimensionless allocation weight. It need not sum to one after exponentiation. The saved destination populations have full computation precision and include any residents retained at home when no destination is reachable. In-transit layers are normalised to the domain population.
 
 The component writer also packages N, D_c and T into the final per-city GeoTIFFs under `05_outputs/demo/population_components/`. The hourly writer in Stage 4 reads those component files. Array keys use activity codes C2, C3, C4, C5 and C7 plus `_workday` or `_restday`.
-
-```console
-python 03_run/run_city_demo.py run --stage 3
-```
-
-Each program accepts `--help` where run options are available.
 
 ## Destination attractiveness and outdoor locations
 
