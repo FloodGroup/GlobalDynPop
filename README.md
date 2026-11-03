@@ -114,11 +114,7 @@ Parameter values and their evidence are documented in the [Stage 2](06_docs/meth
 
 ## Citation
 
-If you use GlobalDynPop-100m, please cite the code repository and specify the release or commit used:
-
-Long, Z.-Y., Yang, R.-Y. & Duan, H.-F. GlobalDynPop-100m. GitHub https://github.com/FloodGroup/GlobalDynPop (2026).
-
-Associated manuscript: Long, Z.-Y., Yang, R.-Y. & Duan, H.-F. Human mobility reshapes global urban flood risk patterns. Unpublished manuscript.
+Long, Z.-Y., Yang, R.-Y. & Duan, H.-F. Human mobility reshapes global urban flood risk patterns. Unpublished manuscript.
 
 When reusing the data, also cite the relevant original datasets listed under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
 
