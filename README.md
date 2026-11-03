@@ -114,7 +114,7 @@ Parameter values and their evidence are documented in the [Stage 2](06_docs/meth
 
 ## Citation
 
-Zhi-Yong Long, Rui-Yi Yang and Huan-Feng Duan, State Key Laboratory of Climate Resilience for Coastal Cities (SKL-CRCC), The Hong Kong Polytechnic University. *Human mobility reshapes global urban flood risk patterns*.
+Long, Z.-Y., Yang, R.-Y. & Duan, H.-F. Human mobility reshapes global urban flood risk patterns. Unpublished manuscript.
 
 When reusing the data, also cite the relevant original datasets listed under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
 
