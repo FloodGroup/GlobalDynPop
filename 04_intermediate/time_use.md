@@ -16,6 +16,7 @@ The hourly location-share tables are Stage 2 intermediate products. This guide d
 - [10. Files, checks and model use](#10-files-checks-and-model-use)
 - [11. Numerical settings and their provenance](#11-numerical-settings-and-their-provenance)
 - [12. Sources and reproducibility boundaries](#12-sources-and-reproducibility-boundaries)
+  - [Country-specific sources for 22 countries](#121-country-specific-day-type-data-sources)
 - [13. Time-use profiles and corrections](#13-time-use-profiles-and-corrections)
 
 ## 1. What the 24-by-7 matrix represents
@@ -42,7 +43,7 @@ The matrices are national temporal profiles applied to the population of each mo
 
 ### How to read this guide
 
-Sections 2-8 explain the upstream processing rules preserved in the source implementation. Sections 9-10 identify the products supplied for Helsinki, Kitakyushu and Takasaki-Maebashi and explain their use in the model. Section 11 lists numerical settings and their provenance. Section 12 records source material and implementation locations.
+Sections 2-8 explain the upstream processing rules preserved in the source implementation. Sections 9-10 identify the products supplied for Helsinki, Kitakyushu and Takasaki-Maebashi and explain their use in the model. Section 11 lists numerical settings and their provenance. Section 12 lists the country-specific sources for 22 countries, provider references and implementation locations.
 
 The supplied model reads the completed shares. Reconstructing them from survey records also requires the source surveys, classification crosswalks and harmonised reference tables described below. The upstream source records and harmonisation scripts are external.
 
@@ -351,7 +352,40 @@ The seven hourly weights are the products of these procedures; they are not seve
 
 ## 12. Sources and reproducibility boundaries
 
-### 12.1 Data-provider references
+### 12.1 Country-specific day-type data sources
+
+The global model uses country-specific day-type evidence for 22 countries: three travel-diary sources and 19 time-use survey sources. The table lists the sources adopted for these countries, including survey years and the form of evidence used. This group includes surveys with weekday/weekend daily totals whose hourly timing is borrowed from other countries. The Mexico and Brazil travel surveys cover metropolitan areas; Nigeria's survey covers four states. Their profiles are applied at country level in the model.
+
+| Country (ISO3) | Survey and provider | Survey year | Evidence used to derive day-type profiles |
+| --- | --- | --- | --- |
+| Albania (ALB) | [Albania Time Use Survey, INSTAT](https://www.instat.gov.al/en/publications/books/2011/albania-time-use-survey-2010-2011/) | 2010-2011 | Activity/location diaries with weekday and weekend flags; Saturday and Sunday are not distinguished. |
+| Australia (AUS) | [How Australians Use Their Time, Australian Bureau of Statistics](https://www.abs.gov.au/statistics/people/people-and-communities/how-australians-use-their-time/2024) | 2024 | Published weekday/weekend daily activity totals for persons aged 15+, Table 4.1. Hourly timing is borrowed from Canada, Luxembourg and Norway; weekday/weekend donor timing is used where available, otherwise average-day timing. |
+| Belgium (BEL) | [Statbel Time Use Survey](https://statbel.fgov.be/nl/themas/huishoudens/tijdsbudgetonderzoek), with historical [Multinational Time Use Study (MTUS)](https://www.timeuse.org/mtus) diaries | 2013 daily totals; 1966 timing | Weekday, Saturday and Sunday daily totals are fitted to the historical Belgian average-day timing by iterative proportional fitting. The resulting day-type ratios are applied to the adopted Belgian average-day matrix. |
+| Brazil (BRA) | [Pesquisa Origem e Destino, Companhia do Metropolitano de São Paulo](https://www.metro.sp.gov.br/pt_BR/metro/numeros-pesquisa/pesquisa-od/) | 2017 | São Paulo metropolitan household travel diaries reconstruct weekday presence. The rest-day profile is derived using the rest-day/workday ratios from the Mexico EOD reconstruction. |
+| Canada (CAN) | [Time Use Survey: Public Use Microdata File, Statistics Canada](https://www150.statcan.gc.ca/n1/en/catalogue/452500012025001) | 2022 | Public-use activity/location diaries and survey weights; weekday, Saturday and Sunday records support separate workday and rest-day profiles. |
+| China (CHN) | [National Time Use Survey bulletin, National Bureau of Statistics of China](https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1900224.html) | 2018 | Published workday/rest-day activity minutes constrain the inherited urban average-day baseline. Hourly timing is borrowed from Mongolia, the Republic of Korea and Japan. The resulting day-type profiles are model estimates. |
+| Colombia (COL) | [Encuesta Nacional de Uso del Tiempo (ENUT), DANE](https://microdatos.dane.gov.co/index.php/catalog/552) | 2016-2017 | Country-specific weekday/weekend daily activity totals; hourly timing is borrowed from Argentina. |
+| Ghana (GHA) | [Ghana Time Use Survey, Ghana Statistical Service](https://microdata.statsghana.gov.gh/index.php/catalog/53) | 2009 | Activity/location diaries and survey weights; day-of-week codes separate weekdays, Saturday and Sunday. |
+| India (IND) | [Time Use Survey, National Statistical Office](https://www.mospi.gov.in/time-use-survey) | 2019 | Urban activity/location diaries for persons aged 10+. The model treats Sunday as the rest day and includes Saturday in the workday group. |
+| Japan (JPN) | [Survey on Time Use and Leisure Activities, Questionnaire A, Statistics Bureau of Japan](https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html) | 2016 | Published 15-minute activity participation tables for weekdays, Saturday and Sunday; the implementation selects ages 15+. Four slots are averaged per hour and activities are mapped to locations. |
+| Mexico (MEX) | [Encuesta Origen Destino en Hogares (EOD), INEGI](https://www.inegi.org.mx/rnm/index.php/catalog/533) | 2017 | Valley of Mexico metropolitan household travel diaries reconstruct weekday and Saturday presence. Sunday is estimated using the US NHTS Sunday/Saturday ratios; the rest-day profile averages Saturday and the estimated Sunday. |
+| Morocco (MAR) | [Enquête Nationale sur l'Emploi du Temps (ENET), Haut-Commissariat au Plan](https://www.hcp.ma/Enquete-Nationale-sur-l-Emploi-du-Temps-ENET-2012_a2947.html) | 2011-2012 | Country-specific weekday/weekend daily activity totals; hourly timing is borrowed from South Africa and Ghana. |
+| Nigeria (NGA) | [Nigeria Time Use Survey, National Bureau of Statistics](https://microdata.nigerianstat.gov.ng/index.php/catalog/178) | 2024 survey | Activity/location diaries from four surveyed states; day-of-week codes separate weekdays, Saturday and Sunday. These observations are used as the Nigerian country profile. |
+| Pakistan (PAK) | [Time Use Survey, Pakistan Bureau of Statistics](https://www.pbs.gov.pk/sites/default/files/other/tus2007.pdf) | 2007 | Activity/location diaries; Sunday and diary days flagged as holidays enter the rest-day group. Saturday remains in the workday group. |
+| Paraguay (PRY) | [Encuesta del Uso del Tiempo (EUT), INE (formerly DGEEC)](https://anda.ine.gov.py/anda/index.php/catalog/183) | 2016 | Country-specific weekday/weekend daily activity totals; hourly timing is borrowed from Argentina. |
+| Peru (PER) | [Encuesta Nacional de Uso del Tiempo (ENUT), INEI](https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2010/libro.pdf) | 2024 | Microdata-derived 10-minute activity participation tables for the urban population aged 12+; weekday, Saturday and Sunday tables are aggregated to hours and mapped to locations. |
+| Republic of Korea (KOR) | [Time Use Survey, Statistics Korea / KOSIS](https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_2019_070) | 2024 | Published activity timing tables DT_2019_070 and DT_2019_071, selecting the 2024 observations and ages 10+; weekdays, Saturday and Sunday are distinguished. The “2019” in the table identifiers is not the selected survey year. |
+| Russia (RUS) | [Selective Observation of Daily Time Use, Rosstat](https://www.rosstat.gov.ru/free_doc/new_site/population/urov/sut_fond24/index.html); source files obtained through the [Tochno.st survey archive](https://tochno.st/datasets/surveys) | 2024 | Country-specific weekday/weekend daily activity totals; the adopted hourly timing is borrowed from Bulgaria, Romania and Hungary. |
+| South Africa (ZAF) | [Time Use Survey, Statistics South Africa](https://www.statssa.gov.za/publications/Report-02-02-00/Report-02-02-002010.pdf) | 2010 | Activity/location diaries and survey weights; day-of-week codes separate weekdays, Saturday and Sunday. |
+| Spain (ESP) | [Encuesta de Empleo del Tiempo (EET), INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176815&idp=1254735976608&menu=resultados) | 2009-2010 | HETUS-round activity/location diary microdata; day-of-week codes separate weekdays, Saturday and Sunday. |
+| United Kingdom (GBR) | [UK Time Use Survey, Centre for Time Use Research / UK Data Service SN 8128](https://timeuse.org/uk-time-use-survey-2014-2015) | 2014-2015 | Activity/location diaries and survey weights; day-of-week codes separate weekdays, Saturday and Sunday. |
+| United States (USA) | [National Household Travel Survey (NHTS), Federal Highway Administration](https://nhts.ornl.gov/documentation) | 2017 | Household travel diaries for members aged 5+ reconstruct presence on weekdays, Saturday and Sunday. Rest days combine Saturday and Sunday. |
+
+The country list follows the adopted workday/rest-day source index. Activity-to-location mapping, donor transfer, and the lunch, school and timing adjustments described in Sections 2-8 are additional model-processing steps. The provider links identify the surveys; they do not endorse these modelling choices or imply that the resulting location-share matrices are directly observed.
+
+Two other sources appear earlier in the processing chain: the US American Time Use Survey and Mexico's ENUT supply reference information before the final travel-diary replacement. The final US and Mexican country profiles use NHTS and EOD, respectively, as listed above. Finland uses borrowed day-type contrasts and is outside this 22-country group; its profile is described in Section 9.
+
+### 12.2 Data-provider references
 
 **[R1]** Statistics Bureau of Japan. Survey on Time Use and Leisure Activities 2016: survey outline and Questionnaire A. [https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html](https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html)
 
@@ -365,7 +399,7 @@ The seven hourly weights are the products of these procedures; they are not seve
 
 The indicator identifiers in Section 7 specify the full age/enrolment input set. The linked secondary-enrolment page is one entry in that set. Dataset access conditions and survey weights remain those of each provider.
 
-### 12.2 Implementation locations used for this description
+### 12.3 Implementation locations used for this description
 
 | Processing step | Source implementation locator |
 | --- | --- |
@@ -379,7 +413,7 @@ The indicator identifiers in Section 7 specify the full age/enrolment input set.
 
 Locators above are relative to the source package’s 02_code directory and identify the implementation examined for this guide. They identify upstream processing scripts that are not distributed in this repository. The supplied reader is [time_use.py](../02_code/stage_2_100m_layers/time_use.py), function `daytype_shares`.
 
-### 12.3 What can be reproduced from the demonstration
+### 12.4 What can be reproduced from the demonstration
 
 The demonstration can read the supplied matrices and recompute population allocation and hourly grids. Rebuilding the matrices from scratch additionally requires the surveys or published tables, original-to-fine activity and location crosswalks, GF/GM harmonisation tables, inherited national baselines, demographic/enrolment inputs and any calibration observations. Some of those inputs have separate access conditions. A complete survey-to-weight rebuild cannot be inferred from the ten final CSVs.
 

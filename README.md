@@ -39,7 +39,7 @@ The research draws on global settlement and population databases, building data 
 | National Household Travel Survey (USA), EOD (Mexico), and São Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; São Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. |
 | Census and mobility-based commuting datasets | National census agencies and mobility-data providers | Source-specific years | Commuting flows and travel-distance information. |
 
-Hourly location shares are derived from survey and diary records and inherited national average-day tables. The [time-use guide](04_intermediate/time_use.md) describes their construction and the supplied Finland and Japan profiles.
+Hourly location shares are derived from survey and diary records and inherited national average-day tables. The [country source table](04_intermediate/time_use.md#121-country-specific-day-type-data-sources) lists the 22 countries with country-specific day-type evidence, their surveys and reference years. The [time-use guide](04_intermediate/time_use.md) describes profile construction and the supplied Finland and Japan profiles.
 
 Building-height information comes from Overture building attributes, OpenBuildingMap height/storey codes and the GHSL building-height raster. Land-use polygons are a separate source from building footprints and POIs.
 
