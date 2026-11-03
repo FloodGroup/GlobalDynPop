@@ -59,7 +59,7 @@ Source-specific crosswalks map the original activity codes to 87 fine activities
 An episode contributes only the minutes that overlap each hour. Its contribution is multiplied by the survey weight assigned by the source adapter. The shared routine wraps hours modulo 24 for diaries that extend past midnight. Already tabulated slots can instead enter with their assigned hour and duration. Workday and rest-day records are aggregated separately.
 
 $$
-M(h,a,z)=\sum_e w_e\,\operatorname{overlap\_minutes}(e,h)\,
+M(h,a,z)=\sum_e w_e\,\mathrm{overlap\_minutes}(e,h)\,
 \mathbf{1}(a_e=a,\ z_e=z).
 $$
 
@@ -72,7 +72,7 @@ Let K(h,a,c) denote minutes with a classified location. Let U8 and U7 denote the
 $$
 \begin{aligned}
 J(h,a,c)&=K(h,a,c)+U_8(h,a)GF(h,a,c)+U_7(h,a)GF_{\mathrm{nonres}}(h,a,c),\\
-L(h,c)&=\frac{\sum_a J(h,a,c)}{\operatorname{total\_weighted\_minutes}(h)}.
+L(h,c)&=\frac{\sum_a J(h,a,c)}{\mathrm{total\_weighted\_minutes}(h)}.
 \end{aligned}
 $$
 
@@ -103,7 +103,7 @@ Where only daily minutes by activity group are available, the code starts from a
 
 $$
 \sum_g A(h,g)=1\quad\text{for each }h,\qquad
-60\sum_h A(h,g)=\operatorname{target\_minutes}(g)\quad\text{for each }g.
+60\sum_h A(h,g)=\mathrm{target\_minutes}(g)\quad\text{for each }g.
 $$
 
 Each iteration scales the group columns to their target totals, then normalises the hourly rows. Zero targets remove a group. A positive target with no support in the initial profile, an empty hour, or failure to converge causes an error. The stopping tolerance is a maximum daily-minute error below 10<sup>-7</sup>; it is checked every 10 iterations, with a limit of 12,000 iterations.
@@ -122,8 +122,8 @@ For countries without adopted own day-type curves, the code takes an existing na
 
 $$
 \begin{aligned}
-r_t(h,c)&=\operatorname{mean}_{d\in\mathrm{donors}}
-\operatorname{ratio}\!\left[L_{d,t}(h,c),L_{d,\mathrm{all}}(h,c)\right],\\
+r_t(h,c)&=\mathrm{mean}_{d\in\mathrm{donors}}
+\mathrm{ratio}\!\left[L_{d,t}(h,c),L_{d,\mathrm{all}}(h,c)\right],\\
 L_{X,t}(h,c)&=\frac{B_X(h,c)r_t(h,c)}{\sum_k B_X(h,k)r_t(h,k)}.
 \end{aligned}
 $$
@@ -157,7 +157,7 @@ The starting class is the origin of the first trip when supplied, otherwise resi
 
 $$
 \begin{aligned}
-q(c,k)&=\frac{\sum_i w_i\,\mathbf{1}(\operatorname{location}_{i,k}=c)}{\sum_i w_i},\\
+q(c,k)&=\frac{\sum_i w_i\,\mathbf{1}(\mathrm{location}_{i,k}=c)}{\sum_i w_i},\\
 s(c,h)&=\frac{1}{6}\sum_{k\in h}q(c,k).
 \end{aligned}
 $$
@@ -175,7 +175,7 @@ Purpose and place crosswalks assign trip destinations to the seven classes. Resi
 Mexico has no Sunday travel curve in the selected input: Sunday is estimated from its Saturday curve multiplied by the USA Sunday/Saturday ratio. Mexico’s rest day is then the mean of Saturday and estimated Sunday. Brazil’s rest day is its weekday curve multiplied by the Mexico rest-day/weekday ratio; the analogous ratios supply Saturday and Sunday.
 
 $$
-\text{Transferred curve}=\operatorname{row\_normalise}
+\text{Transferred curve}=\mathrm{row\_normalise}
 \left[\mathrm{base}\times\frac{\mathrm{donor\_numerator}+0.002}
 {\mathrm{donor\_denominator}+0.002}\right].
 $$
@@ -267,7 +267,7 @@ $$
 \begin{aligned}
 g(h)&=\exp\!\left\{\beta\sin\!\left[2\pi(h+0.5-12)/24\right]\right\},\\
 L'(h,c)&=L_{\mathrm{shifted}}(h,c)g(h)
-\frac{\operatorname{daily\_sum}(c)}{\sum_j L_{\mathrm{shifted}}(j,c)g(j)},\\
+\frac{\mathrm{daily\_sum}(c)}{\sum_j L_{\mathrm{shifted}}(j,c)g(j)},\\
 L'(h,\mathrm{C1})&=1-\sum_{c\in\{\mathrm{C2},\ldots,\mathrm{C7}\}}L'(h,c).
 \end{aligned}
 $$
