@@ -140,7 +140,7 @@ def main(argv=None):
         colorbar.ax.xaxis.set_minor_locator(NullLocator())
         colorbar.ax.tick_params(labelsize=16,length=2,width=.4,pad=3)
         colorbar.outline.set_linewidth(.4)
-    figure.text(14/WIDTH,1-272/HEIGHT,"Note. City-specific 99.5th-percentile scale limits; cells <3 hidden; pale blue-grey: water (>=50%); no extra smoothing.",
+    figure.text(14/WIDTH,1-272/HEIGHT,"Note: Each city uses a separate logarithmic scale; cells below three people are hidden, and pale blue-grey indicates water.",
                  ha="left",va="top",fontsize=16)
     figure.canvas.draw()
     renderer=figure.canvas.get_renderer()

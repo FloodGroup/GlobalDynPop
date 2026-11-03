@@ -71,7 +71,7 @@ def main(argv=None):
                 'model_row_sum_max_error':float(np.max(np.abs(shares.sum(axis=1)-1)))})
     handles,labels=axs[0,0].get_legend_handles_labels()
     fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.15),ncol=4,frameon=False,fontsize=13)
-    fig.text(.09,.095,'Note. Hourly shares sum to one; both Japanese cities use the same national profile.',
+    fig.text(.09,.095,'Note: The shares sum to one at each hour, and both Japanese cities use the same national profile.',
              ha='left',va='top',fontsize=15)
     out.mkdir(parents=True,exist_ok=True)
     fig.canvas.draw()
