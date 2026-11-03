@@ -34,7 +34,9 @@ def style():
     for filename in ("times.ttf","timesbd.ttf","timesi.ttf","timesbi.ttf"):
         if (folder/filename).exists():fm.fontManager.addfont(str(folder/filename))
     plt.rcParams.update({"font.family":"serif","font.serif":["Times New Roman","Liberation Serif","DejaVu Serif"],
-        "font.size":17,"axes.titlesize":17,"pdf.fonttype":42,"axes.linewidth":.45,"savefig.dpi":360})
+        "font.size":16,"axes.titlesize":17,"text.color":"#20252B","axes.labelcolor":"#20252B",
+        "xtick.color":"#50575E","ytick.color":"#50575E","axes.edgecolor":"#AEB6BF",
+        "pdf.fonttype":42,"axes.linewidth":.6,"savefig.dpi":360})
 
 
 def axes(fig,x,y,width,height):
@@ -45,7 +47,7 @@ def scalebar(ax,extent):
     x0,x1,y0,y1=extent
     length=max(v for v in (.5,1,2,5,10,20) if v*1000 <= (x1-x0)*.24)*1000
     x=x0+.055*(x1-x0);y=y0+.065*(y1-y0)
-    ax.plot([x,x+length],[y,y],color="black",lw=1.1,zorder=4)
+    ax.plot([x,x+length],[y,y],color="#20252B",lw=1.1,zorder=4)
     ax.text(x+length/2,y+.03*(y1-y0),f"{length/1000:g} km",ha="center",va="bottom",fontsize=16,
         bbox=dict(facecolor="white",edgecolor="none",pad=.7,alpha=.85),zorder=5)
 
@@ -69,12 +71,12 @@ def main(argv=None):
     style()
     figure=plt.figure(figsize=(WIDTH*MM,HEIGHT*MM))
     figure.text(14/WIDTH,1-12/HEIGHT,"GlobalDynPop-100m | Hourly population",fontsize=26,weight="bold")
-    figure.text(406/WIDTH,1-12/HEIGHT,"100 m grids | Local time",fontsize=16,ha="right",color="#555555")
+    figure.text(406/WIDTH,1-12/HEIGHT,"100 m grids | Local time",fontsize=16,ha="right",color="#50575E")
     figure.text(14/WIDTH,1-21/HEIGHT,"People per 100 m cell | City-specific logarithmic scales",fontsize=16)
     for day_index,(_,label) in enumerate(DAYTYPES):
         x0=36+day_index*188
         figure.text((x0+91)/WIDTH,1-31/HEIGHT,label,ha="center",fontsize=17,weight="bold")
-        figure.add_artist(plt.Line2D([x0/WIDTH,(x0+184)/WIDTH],[1-34/HEIGHT]*2,transform=figure.transFigure,color="#999999",lw=.5))
+        figure.add_artist(plt.Line2D([x0/WIDTH,(x0+184)/WIDTH],[1-34/HEIGHT]*2,transform=figure.transFigure,color="#AEB6BF",lw=.6))
     cmap=LinearSegmentedColormap.from_list("population_continuous",COLOR_STOPS,N=1024)
     cmap.set_under((1,1,1,0));cmap.set_bad((1,1,1,0))
     metadata={"hours":list(HOURS),"daytypes":[x[0] for x in DAYTYPES],"time_basis":"local time",
@@ -125,7 +127,7 @@ def main(argv=None):
                 ax.imshow(values,extent=extent,cmap=cmap,norm=norm,interpolation="nearest")
                 ax.set_title(f"{hour:02d}:00-{hour+1:02d}:00",pad=4)
                 ax.set_xticks([]);ax.set_yticks([])
-                for spine in ax.spines.values():spine.set_color("#B5B5B5");spine.set_linewidth(.45)
+                for spine in ax.spines.values():spine.set_color("#AEB6BF");spine.set_linewidth(.6)
                 if day_index==0 and column==0:scalebar(ax,extent)
                 metadata["inputs"].append({"file":f"hourly_population/{stem}/{day}/{path.name}","sha256":hashlib.sha256(path.read_bytes()).hexdigest()})
         # One continuous scale per city, shared by its six panels.

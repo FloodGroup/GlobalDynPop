@@ -33,11 +33,14 @@ def main(argv=None):
         font=Path(os.environ.get('WINDIR','C:/Windows'))/'Fonts'/name
         if font.exists():fm.fontManager.addfont(str(font))
     plt.rcParams.update({'font.family':'serif','font.serif':['Times New Roman','Liberation Serif','DejaVu Serif'],
-        'font.size':14,'pdf.fonttype':42,'axes.linewidth':.6,'axes.spines.top':False,'axes.spines.right':False})
-    fig,axs=plt.subplots(2,2,figsize=(11.7,8.3),sharex=True,sharey=True)
-    fig.subplots_adjust(left=.09,right=.97,top=.79,bottom=.30,hspace=.48,wspace=.13)
-    fig.text(.09,.95,'GlobalDynPop-100m',color='#23466E',fontsize=15)
-    fig.text(.09,.90,'Hourly location shares used by the example cities',fontsize=22,weight='bold')
+        'font.size':16,'axes.titlesize':17,'text.color':'#20252B','axes.labelcolor':'#20252B',
+        'xtick.color':'#50575E','ytick.color':'#50575E','axes.edgecolor':'#AEB6BF',
+        'pdf.fonttype':42,'axes.linewidth':.6,'axes.spines.top':False,'axes.spines.right':False})
+    fig,axs=plt.subplots(2,2,figsize=(420/25.4,297/25.4),sharex=True,sharey=True)
+    fig.subplots_adjust(left=.09,right=.97,top=.83,bottom=.29,hspace=.50,wspace=.13)
+    fig.text(14/420,1-12/297,'GlobalDynPop-100m | Hourly location shares',fontsize=26,weight='bold')
+    fig.text(406/420,1-12/297,'National profiles | Local time',fontsize=16,ha='right',color='#50575E')
+    fig.text(14/420,1-21/297,'Population shares by activity | Workdays and rest days',fontsize=16)
     metadata={'source_directory':'04_intermediate/demo/stage_2/hourly_location_shares',
               'time_basis':'local hour','shape':[24,7],'normalisation':'each row divided by its sum, as in the model reader',
               'colors':dict(zip(LABELS,COLORS)),'inputs':[],'output_format':'png','dpi':360}
@@ -61,7 +64,7 @@ def main(argv=None):
             ax.set_xlim(0,24);ax.set_ylim(0,1)
             ax.set_xticks([0,6,12,18,24]);ax.set_yticks([0,.25,.5,.75,1])
             ax.tick_params(length=3,width=.6)
-            ax.set_title(f'{title}\n{label}',fontsize=15,pad=8)
+            ax.set_title(f'{title}\n{label}',fontsize=17,pad=8)
             ax.text(-.09,1.10,chr(97+2*row+col),transform=ax.transAxes,weight='bold',fontsize=17)
             if col==0:ax.set_ylabel('Population share')
             if row==1:ax.set_xlabel('Local hour')
@@ -70,9 +73,9 @@ def main(argv=None):
                 'raw_row_sum_max_error':float(np.max(np.abs(values.sum(axis=1)-1))),
                 'model_row_sum_max_error':float(np.max(np.abs(shares.sum(axis=1)-1)))})
     handles,labels=axs[0,0].get_legend_handles_labels()
-    fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.15),ncol=4,frameon=False,fontsize=13)
-    fig.text(.09,.095,'Note: The shares sum to one at each hour, and both Japanese cities use the same national profile.',
-             ha='left',va='top',fontsize=15)
+    fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.15),ncol=4,frameon=False,fontsize=16)
+    fig.text(14/420,1-272/297,'Note: The shares sum to one at each hour, and both Japanese cities use the same national profile.',
+             ha='left',va='top',fontsize=16)
     out.mkdir(parents=True,exist_ok=True)
     fig.canvas.draw()
     renderer=fig.canvas.get_renderer()
