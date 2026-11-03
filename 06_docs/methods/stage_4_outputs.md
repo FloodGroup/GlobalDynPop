@@ -18,7 +18,7 @@ The seven shares sum to one. Each component has the domain population total, so 
 | [02_classify_functional_land_use.py](../../02_code/stage_4_outputs/02_classify_functional_land_use.py) | Classify Stage 2 floor area, volume, transport and water; write the 13-class raster and 16-band attributes. |
 | [03_verify_inputs.py](../../02_code/stage_4_outputs/03_verify_inputs.py) | Inspect prepared input availability and structure; an auxiliary check. |
 | [04_verify_outputs.py](../../02_code/stage_4_outputs/04_verify_outputs.py) | Inspect numerical output structure, values and totals; an auxiliary check. |
-| [05_compare_results.py](../../02_code/stage_4_outputs/05_compare_results.py) | Compare separately supplied result trees when requested; not a second bundled reference-output folder. |
+| [05_compare_results.py](../../02_code/stage_4_outputs/05_compare_results.py) | Compare network arrays, population components or hourly rasters from two supplied result directories. |
 | [06_visualize_hourly_population.py](../../02_code/stage_4_outputs/06_visualize_hourly_population.py) | Plot selected single-band hourly rasters using the existing city-specific continuous colour scales. |
 | [07_visualize_time_use.py](../../02_code/stage_4_outputs/07_visualize_time_use.py) | Read FIN/JPN hourly shares through the model reader; draw workday/rest-day stacked profiles. |
 
@@ -26,7 +26,7 @@ The [demo runner](../../03_run/run_city_demo.py) runs output programs 01, 02, 06
 
 ## Time-use figure
 
-The four panels show Finland and Japan for workdays and rest days. Each colour is one location class, matching the stacked-share style of the original method report. Steps represent hourly values without temporal interpolation. The figure reads the same normalised CSV data as the model; it does not estimate new weights. The two Japanese cities share a national profile, so their curves are shown once. PNG files are saved with source hashes and normalisation checks.
+The four panels show Finland and Japan for workdays and rest days. Stacked colours show the seven location shares, which sum to one at each hour. Steps represent hourly values without temporal interpolation. The figure reads the same normalised CSV data as the model; it does not estimate new weights. The two Japanese cities share a national profile, so their curves are shown once. PNG files are saved with source hashes and normalisation checks.
 
 ## Saved products
 
@@ -41,7 +41,7 @@ Numerical products are under `05_outputs/demo/`; documentation figures are under
 
 [01_generate_hourly_population.py](../../02_code/stage_4_outputs/01_generate_hourly_population.py) reads the components and Stage 2 hourly location shares, then combines them into population per local hour. [02_classify_functional_land_use.py](../../02_code/stage_4_outputs/02_classify_functional_land_use.py) derives functional land use from Stage 2 floor area, building volume, transport and water coverage. Functional land use is an additional exposure-analysis output, not an input to the population gravity model.
 
-[03_verify_inputs.py](../../02_code/stage_4_outputs/03_verify_inputs.py), [04_verify_outputs.py](../../02_code/stage_4_outputs/04_verify_outputs.py) and [05_compare_results.py](../../02_code/stage_4_outputs/05_compare_results.py) provide integrity and comparison tools. The example checks decoded numerical fingerprints without maintaining a second output tree. This is numerical reproduction; observation-based validation requires the external observations.
+[03_verify_inputs.py](../../02_code/stage_4_outputs/03_verify_inputs.py), [04_verify_outputs.py](../../02_code/stage_4_outputs/04_verify_outputs.py) and [05_compare_results.py](../../02_code/stage_4_outputs/05_compare_results.py) provide integrity and comparison tools. The example checks decoded numerical arrays against stored fingerprints. This is numerical reproduction; observation-based validation requires the external observations.
 
 ## Functional land use
 
@@ -59,7 +59,7 @@ The model rerun checks numerical reproduction. External observations are require
 
 ## Population maps
 
-[06_visualize_hourly_population.py](../../02_code/stage_4_outputs/06_visualize_hourly_population.py) reads the final single-band GeoTIFFs at 03:00-04:00, 08:00-09:00 and 13:00-14:00 local time. It produces one A3 landscape page: cities in rows, with three workday maps and three rest-day maps per city. Each city has a separate continuous logarithmic colour scale. The lower limit is 3 people per cell. The upper limit is the 99.5th percentile of cells with at least 3 people, pooled across that city's six displayed maps and rounded up to the next 10 people. The palette progresses through pale lavender and purple, with red and orange concentrated at the high end. Values above the upper limit use the upper colour, indicated by the colour-bar extension. The same limits apply to both day types and all three hours within a city. Counts across cities must be read from their respective colour bars. Cells below 3 people are transparent; water coverage of at least 50% is a pale background. Full model domains are shown without additional spatial smoothing.
+[06_visualize_hourly_population.py](../../02_code/stage_4_outputs/06_visualize_hourly_population.py) reads the final single-band GeoTIFFs at 03:00-04:00, 08:00-09:00 and 13:00-14:00 local time. It produces one PNG with A3 landscape proportions: cities in rows, with three workday maps and three rest-day maps per city. Each city has a separate continuous logarithmic colour scale. The lower limit is 3 people per cell. The upper limit is the 99.5th percentile of cells with at least 3 people, pooled across that city's six displayed maps and rounded up to the next 10 people. The palette progresses through pale lavender and purple, with red and orange concentrated at the high end. Values above the upper limit use the upper colour, indicated by the colour-bar extension. The same limits apply to both day types and all three hours within a city. Counts across cities must be read from their respective colour bars. Cells below 3 people are transparent; water coverage of at least 50% is a pale background. Full model domains are shown without additional spatial smoothing.
 
 Stage 4 updates this figure after generating the numerical outputs. To redraw it alone:
 

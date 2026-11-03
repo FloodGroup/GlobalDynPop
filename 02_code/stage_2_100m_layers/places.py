@@ -3,8 +3,7 @@
 Overture Maps release 2026-10-21.0, theme `places` (about 70 million points of interest
 from Meta, Microsoft, Foursquare and other sources). The GeoParquet files are spatially
 sorted and every row group carries min/max statistics of the per-feature bbox, so a city
-reads only the row groups that intersect its domain (same row-group-index approach as the
-Dynamic_POP building reader).
+reads only the row groups that intersect its domain.
 
 Places are kept when operating_status is not 'permanently_closed' / 'temporarily_closed'
 and confidence >= MIN_CONFIDENCE, and are assigned to the activity-location classes of the

@@ -1,21 +1,23 @@
-"""People in transit on the road and rail network (component C6, model v2).
+"""People in transit on the road and rail network (component C6).
 
 Trips between zones of the city (adaptive square zones, starting at 2 km, the gravity model of the city with the
 country's kernels, all activity classes weighted by the country's time-use day) are assigned to
 their fastest route on the Overture road and rail network (all-or-nothing assignment):
 
   roads   motorway ... unclassified, fixed class-specific speeds (ROAD_KMH; study-defined settings);
-  rail    standard gauge, metro, light rail, tram, monorail (RAIL_KMH); entered and left at
-          stations (Overture infrastructure: railway / subway stations and halts) within
-          WALK_TO_STATION_M of the zone centre, walking plus a boarding penalty;
+  rail    standard gauge, metro, light rail, tram, monorail (RAIL_KMH); station access
+          links use Overture railway/subway stations and halts within WALK_TO_STATION_M
+          of the zone centre, with walking time and a boarding penalty. Shared road/rail
+          nodes can also permit transfers away from stations;
   access  every zone is joined to the ACCESS_K nearest road nodes (local streets at LOCAL_KMH,
           detour factor DETOUR) and to its stations.
 
 The person-time of every edge (flow x travel time) is placed on the 100 m cells the edge crosses;
 access, egress and travel within a zone are placed on the streets of the zone (all road classes,
-by length; the baseline omits local person-time in zones with no streets). T is scaled to sum to the domain population,
-like the other components. Without a usable network the v1 approximation is returned
-(smoothed mean of the residents and the work destinations).
+by length; local person-time in zones with no streets is omitted). T is scaled to sum to the domain population,
+like the other components. The population model provides a Gaussian fallback when a network layer is unavailable
+(smoothed mean of residents and work destinations); the three-city runner requires
+the network products.
 """
 from __future__ import annotations
 

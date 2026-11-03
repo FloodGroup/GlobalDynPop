@@ -41,7 +41,7 @@ Stage 4 also writes the population and time-use figures to `06_docs/figures/`. S
 
 ## Recorded environment
 
-Requires Python 3.11 or newer. The three-city run was checked on Windows-11-10.0.26200-SP0 with Python 3.12.7. The recorded package versions are numpy 1.26.4, scipy 1.13.1, pyproj 3.7.2, shapely 2.2.0, pandas 2.2.2, matplotlib 3.9.2, numba 0.60.0. This records the environment used; it is not a complete dependency lock. A fresh installation from `environment.yml` and other operating systems have not been verified.
+Requires Python 3.11 or newer. The three-city run was checked on Windows-11-10.0.26200-SP0 with Python 3.12.7. The recorded package versions are numpy 1.26.4, scipy 1.13.1, pyproj 3.7.2, shapely 2.2.0, pandas 2.2.2, matplotlib 3.9.2, numba 0.60.0. These versions describe the recorded full model run; `environment.yml` specifies compatible dependencies without locking every package version. The [automated checks](../.github/workflows/checks.yml) verify the bundled input hashes and decoded output arrays on Ubuntu and Windows with Python 3.11. They do not execute a full model rebuild or test a fresh installation of the complete Conda environment.
 
 ## Other city inputs and result comparison
 

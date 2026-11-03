@@ -4,10 +4,10 @@
 
 N      residents (GHS-POP 2025, 100 m)
 D_c    residents redistributed to the destinations of activity class c (gravity.allocate)
-T      people travelling. Model v2: the person-time of all trips of the day type assigned to the
-       road and rail network (stage_3_activity_allocation/network.py, 02_calculate_in_transit_population.py); v1 (and v2 where no network file
-       exists): the mean of the origin and work-destination distributions, smoothed with a
-       Gaussian of SIGMA_TRAVEL (people in transit are between home and destination)
+T      people travelling, estimated from trip person-time assigned to the road and rail
+       network for each day type (network.py, 02_calculate_in_transit_population.py).
+       The fallback uses the mean of resident and work-destination distributions,
+       smoothed with a Gaussian of SIGMA_TRAVEL.
 s_c    hourly activity-location shares of the country (timeuse), tau = workday / rest day
 
 Every component sums to the domain population, the shares sum to 1 for every hour, so the

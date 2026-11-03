@@ -6,7 +6,7 @@ GlobalDynPop-100m models hourly population distributions at 100 m resolution for
 
 A production-constrained gravity model redistributes residents to activity destinations according to building floor area, point-of-interest density and activity-specific distance-decay kernels. Trips are assigned to the fastest road and rail routes to estimate the spatial distribution of people in transit. Resident, destination and in-transit population components are then combined using hourly activity-location shares. Each city is modelled on a local equal-area grid covering its urban-centre bounding box plus a 10 km margin on every side.
 
-The data package covers all 1,904 cities. **Helsinki, Kitakyushu and Takasaki-Maebashi** are the three worked examples used to demonstrate the processing workflow and its intermediate and final products.
+This repository provides the processing workflow, input subsets, intermediate layers and outputs for three worked examples: Helsinki, Kitakyushu and Takasaki-Maebashi.
 
 ## Study area and data coverage
 
@@ -20,25 +20,26 @@ Figure 1 shows the global distribution of the study cities, coloured by the sour
 
 The research draws on global settlement and population databases, building data and points of interest (POIs), land-use data, transport networks, time-use surveys, travel diaries and commuting statistics. The main sources are summarised below.
 
-| Data source | Provider | Version or reference period | Data content | In this package |
-|---|---|---|---|---|
-| GHSL Urban Centre Database (GHS-UCDB) | European Commission, Joint Research Centre | R2024A; 2025 city attributes | Urban-centre boundaries, city identifiers, resident populations and urban-centre areas. | Public source; three-city subsets included under `01_inputs/demo/` |
-| [GHSL population (GHS-POP)](https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php) | European Commission, Joint Research Centre | R2023A, 2025 epoch | Gridded resident population counts. | Public source; three-city subsets included under `01_inputs/demo/` |
-| [GHSL built volume (GHS-BUILT-V)](https://human-settlement.emergency.copernicus.eu/ghs_buV2023.php) | European Commission, Joint Research Centre | R2023A, 2025 epoch | Gridded total and non-residential building volumes. | Public source; three-city subsets included under `01_inputs/demo/` |
-| [GHSL building height (GHS-BUILT-H)](https://human-settlement.emergency.copernicus.eu/ghs_buH2023.php) | European Commission, Joint Research Centre | R2023A, 2018 epoch | Gridded mean building-height estimates, expressed in metres. | Public source; three-city subsets included under `01_inputs/demo/` |
-| Overture Maps Buildings | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Building footprint polygons, building-use attributes, and available building heights in metres and floor counts. | Public source; three-city subsets included under `01_inputs/demo/` |
-| [OpenBuildingMap](https://doi.org/10.5880/GFZ.LKUT.2025.002) | OpenBuildingMap; GFZ Data Services | 2025 dataset | Building occupancy classifications, height values in metres, and exact or ranged storey counts encoded in the building taxonomy. | Public source; three-city subsets included under `01_inputs/demo/` |
-| Overture Maps POIs (Places) | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | POI locations, business and activity categories, and available operating-status attributes. | Public source; three-city subsets included under `01_inputs/demo/` |
-| OpenStreetMap | OpenStreetMap contributors | Planet snapshot 2026-10-22 | Mapped points of interest and associated activity tags. | Public source; three-city subsets included under `01_inputs/demo/` |
-| Overture Maps Transportation and Infrastructure | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Road and rail segments, stations and other transport-infrastructure features. | Public source; three-city subsets included under `01_inputs/demo/` |
-| Overture Maps Land Use | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Land-use polygon geometries with class and subtype attributes describing mapped land functions. | Public source; three-city subsets included under `01_inputs/demo/` |
-| Overture Maps Water | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Water-body polygon geometries and associated attributes. | Public source; three-city subsets included under `01_inputs/demo/` |
-| China POI dataset (CN_POI) | Commercial dataset using the Amap classification system | 2025 and 2026 editions | POI names, activity categories and coordinates for Chinese cities. | Not included (commercial / restricted) |
-| Amap Web Services | Amap | 2026 collection | POI records and AOI information. | Not included (commercial / restricted) |
-| National time-use surveys | National statistical agencies | Survey-specific years | Activity episodes, location records, survey weights, and published hourly or daily activity tables. | Not included as raw records; adopted aggregates / parameters only where supplied |
-| National Household Travel Survey (USA), EOD (Mexico), and São Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; São Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. | Not included as raw records; adopted aggregates / parameters only where supplied |
-| V11 time-use parameter dataset | Earlier global population-modelling research | V11 | Country-level average-day activity-location profiles. | Not included as raw records; adopted aggregates / parameters only where supplied |
-| Census and mobility-based commuting datasets | National census agencies and mobility-data providers | Source-specific years | Commuting flows and travel-distance information. | Not included as raw records; adopted aggregates / parameters only where supplied |
+| Data source | Provider | Version or reference period | Data content |
+|---|---|---|---|
+| GHSL Urban Centre Database (GHS-UCDB) | European Commission, Joint Research Centre | R2024A; 2025 city attributes | Urban-centre boundaries, city identifiers, resident populations and urban-centre areas. |
+| [GHSL population (GHS-POP)](https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php) | European Commission, Joint Research Centre | R2023A, 2025 epoch | Gridded resident population counts. |
+| [GHSL built volume (GHS-BUILT-V)](https://human-settlement.emergency.copernicus.eu/ghs_buV2023.php) | European Commission, Joint Research Centre | R2023A, 2025 epoch | Gridded total and non-residential building volumes. |
+| [GHSL building height (GHS-BUILT-H)](https://human-settlement.emergency.copernicus.eu/ghs_buH2023.php) | European Commission, Joint Research Centre | R2023A, 2018 epoch | Gridded mean building-height estimates, expressed in metres. |
+| Overture Maps Buildings | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Building footprint polygons, building-use attributes, and available building heights in metres and floor counts. |
+| [OpenBuildingMap](https://doi.org/10.5880/GFZ.LKUT.2025.002) | OpenBuildingMap; GFZ Data Services | 2025 dataset | Building occupancy classifications, height values in metres, and exact or ranged storey counts encoded in the building taxonomy. |
+| Overture Maps POIs (Places) | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | POI locations, business and activity categories, and available operating-status attributes. |
+| OpenStreetMap | OpenStreetMap contributors | Planet snapshot 2026-10-22 | Mapped points of interest and associated activity tags. |
+| Overture Maps Transportation and Infrastructure | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Road and rail segments, stations and other transport-infrastructure features. |
+| Overture Maps Land Use | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Land-use polygon geometries with class and subtype attributes describing mapped land functions. |
+| Overture Maps Water | Overture Maps Foundation and contributing providers | Release 2026-10-21.0 | Water-body polygon geometries and associated attributes. |
+| China POI dataset (CN_POI) | Commercial dataset using the Amap classification system | 2025 and 2026 editions | POI names, activity categories and coordinates for Chinese cities. |
+| Amap Web Services | Amap | 2026 collection | POI records and AOI information. |
+| National time-use surveys | National statistical agencies | Survey-specific years | Activity episodes, location records, survey weights, and published hourly or daily activity tables. |
+| National Household Travel Survey (USA), EOD (Mexico), and São Paulo Origin-Destination Survey (Brazil) | FHWA; INEGI; São Paulo Metro | 2017 | Household travel diaries, trip times, purposes and associated survey information. |
+| Census and mobility-based commuting datasets | National census agencies and mobility-data providers | Source-specific years | Commuting flows and travel-distance information. |
+
+Hourly location shares are derived from survey and diary records and inherited national average-day tables. The [time-use guide](04_intermediate/demo/stage_2/time_use/time_use.pdf) describes their construction and the supplied Finland and Japan profiles.
 
 Building-height information comes from Overture building attributes, OpenBuildingMap height/storey codes and the GHSL building-height raster. Land-use polygons are a separate source from building footprints and POIs.
 
@@ -121,4 +122,4 @@ When reusing the data, also cite the relevant original datasets listed under [Da
 
 ## Licence and data terms
 
-Software in this repository is released under the [GNU General Public License v2.0](LICENSE) (GPL-2.0), matching FloodGroup/LISFLOOD-SWMM-Coupling. Source datasets retain their own terms. See the [source attribution table](06_docs/reproduction/city_demo.md#data-sources-and-attribution) before redistributing data or derived database layers.
+GlobalDynPop-100m software is licensed under the [GNU General Public License v2.0](LICENSE) (GPL-2.0). Source datasets and derived database layers retain their applicable data licences and attribution requirements, documented under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).

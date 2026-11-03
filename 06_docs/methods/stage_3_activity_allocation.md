@@ -107,12 +107,12 @@ Implementation: [network.py](../../02_code/stage_3_activity_allocation/network.p
 | `network.BOARD_MIN` | 5.0 | min | Study-defined |
 | `network.WALK_TO_STATION_M` | 1200.0 | m | Study-defined |
 | `network.SNAP_STATION_M` | 250.0 | m | Study-defined |
-| `network.ACCESS_K` | 6 | count or format identifier | Study-defined |
+| `network.ACCESS_K` | 6 | road-node connections per zone | Study-defined |
 | `network.SAMPLE_M` | 25.0 | m | Study-defined |
 | `network.MAX_TRIP_H` | 3.0 | h | Study-defined |
-| `network.ZONE_MIN_CELLS` | 20 | count or format identifier | Study-defined |
-| `network.ZONE_MAX` | 1000 | count or format identifier | Study-defined |
-| `network.GRAPH_FORMAT` | 1 | count or format identifier | Study-defined |
+| `network.ZONE_MIN_CELLS` | 20 | grid cells per zone side | Study-defined |
+| `network.ZONE_MAX` | 1000 | approximate zone count | Study-defined |
+| `network.GRAPH_FORMAT` | 1 | format identifier | Implementation-defined archive format |
 
 ### Attractiveness settings
 

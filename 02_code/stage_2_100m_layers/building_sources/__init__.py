@@ -1,2 +1,4 @@
-"""Building readers and rules reused from the Dynamic_POP revision (Overture row-group reader, OpenBuildingMap
-mirror reader, OBM occupancy/height parsing, classification rules)."""
+"""Building source readers and classification rules.
+
+Includes Overture row-group access, the OpenBuildingMap mirror reader,
+occupancy and height parsing, and building-use mappings."""

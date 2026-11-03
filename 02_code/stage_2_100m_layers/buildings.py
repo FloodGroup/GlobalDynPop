@@ -2,15 +2,15 @@
 
 For every Overture building (release 2026-10-21.0) in the model domain:
 
-  use (classes C1..C7, in this order of evidence, as in Dynamic_POP stage 1)
+  use (classes C1..C7, in this order of evidence)
     1. OpenBuildingMap occupancy of the OBM building whose internal point lies in the
        footprint (largest one if several), unless UNK or agricultural; mixed classes are
        split by floor area (rules/mixed_use.json);
     2. the building's own Overture class, then subtype (rules/classification_rules.json);
     3. in China, when available, the Amap AOI parcel that contains the internal point
-       (04_intermediate/demo/stage_2/restricted_NOT_PUBLIC/aoi_amap: AOI boundaries from the Amap AOI import step, or in model v2 circular
-       pseudo-parcels from the AOI centre and area met by the reverse geocoding, the China POI prep step
-       aois; overlapping pseudo-parcels: the smallest decides); then the Overture land-use polygon that contains
+       (external AOI boundaries or circular pseudo-parcels derived from the AOI centre
+       and area; the smallest overlapping pseudo-parcel takes precedence);
+       then the Overture land-use polygon that contains
        it (OSM land use; several polygons -> priority C3 > C4 > C5 > C6 > C2 > C1 > C7);
     4. otherwise unknown use: kept as a separate layer (index 7, 'UNK'); the model splits it
        into residential and non-residential floor area with the GHSL non-residential share of
@@ -18,7 +18,7 @@ For every Overture building (release 2026-10-21.0) in the model domain:
   output: fa [9, ny, nx] float32, m2 of gross floor area of C1..C7 (use known), UNK, and IND
   (the part of C2 in industrial buildings: OBM IND*, Overture class factory / industrial /
   manufacture / warehouse or subtype industrial, OSM land use industrial).
-  storeys (Dynamic_POP corrected rule, P0-3)
+  storeys (ordered fallback rules)
     Overture num_floors; else height / 3 m (Overture height, then OBM HHT, then the GHSL
     2018 average net building height of the 100 m cell, each only if >= 2 m); else OBM exact
     storeys H:n; else the city median of the building's class (>= 30 buildings) or of the
@@ -27,9 +27,6 @@ For every Overture building (release 2026-10-21.0) in the model domain:
   cell of the building's internal point; footprints larger than 2,500 m2 are split over the
   cells they cover in proportion to the intersection area.
 
-Differences to Dynamic_POP stage 1 (kept simple to cover 1,904 domains): no 3D-GloBFP height
-matching (the GHSL height of the cell is used instead), land use by the internal point rather
-than the 10 m land-use raster, and only large buildings are split between cells.
 """
 from __future__ import annotations
 

@@ -5,18 +5,16 @@ point in the city's UTM zone, footprint area, occupancy, height code, OBM id).
 
 Matching: an OBM building is assigned to the Overture footprint that contains its internal
 point (point_on_surface); when several OBM buildings fall in one Overture footprint, the
-largest one (then the smaller OBM id) is used. Dynamic_POP's original matching program is
-not part of its code package (P2-3); a local OBM matching check compares this rule with
-the OBM ids stored in the original step-04 buildings of the three sample cities.
+largest one (then the smaller OBM id) is used.
 
-Use (as in the original step 03): an OBM occupancy other than UNK and the agricultural
+Building use: an OBM occupancy other than UNK and the agricultural
 codes AGR* decides the class through classification_rules.json["obm"]; generic MIX and
-MIX1-MIX6 are split by floor area with configuration/mixed_use.json (MIX -> C7; MIX1/4 C1 70 %
+MIX1-MIX6 are split by floor area with rules/mixed_use.json (MIX -> C7; MIX1/4 C1 70 %
 C2 30 %; MIX2/6 C1 30 % C2 70 %; MIX3/5 C2).
 
 Heights (OBM "height" field, GEM building taxonomy v3): H:n storeys above ground (exact),
 HBET:a-b a range of storeys, HHT:x height in metres; basement codes (HBEX, HBAPP, HBBET)
-are not used because the other height sources (Overture, 3D-GloBFP) are above ground.
+are excluded from the above-ground storey estimate.
 """
 from __future__ import annotations
 

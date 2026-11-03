@@ -41,7 +41,7 @@ Helsinki uses the Finland time-use profile with rest-day timing contrasts borrow
 ## Data sources and attribution
 
 
-The source-package versions below identify the inputs used to produce these files. The transformations include city-grid reprojection, aggregation, classification, graph construction and population modelling. The source data licences continue to apply; the software licence does not replace them.
+The table below identifies input dataset versions, providers and data terms. The transformations include city-grid reprojection, aggregation, classification, graph construction and population modelling. The source data licences continue to apply; the software licence does not replace them.
 
 | Data | Provider and version | Attribution and terms | In this package |
 |---|---|---|---|
@@ -55,7 +55,7 @@ The source-package versions below identify the inputs used to produce these file
 | OpenStreetMap POI counts | © OpenStreetMap contributors, planet 2026-10-22 | [Copyright and terms](https://www.openstreetmap.org/copyright), ODbL 1.0 | Public; three-city derived layers included in this package |
 | Hourly activity shares | Study-produced aggregate FIN/JPN tables | Donor assignments and processing methods are retained in `location_share_sources.csv`; Japan: Statistics Bureau, Survey on Time Use and Leisure Activities 2016; Finland: national baseline with the donor ratios described above. Raw survey records are external. | Public aggregate tables included; raw survey microdata not included |
 
-Population layers are model results derived from these inputs. Cite the GlobalDynPop manuscript together with the relevant source datasets when reusing them. No mobile-network observation records or commercial China POI layers are part of this bundle.
+Population layers are model results derived from these inputs. Cite the study listed in the [Citation section](../../README.md#citation) together with the relevant source datasets when reusing them. No mobile-network observation records or commercial China POI layers are part of this bundle.
 
 
 For GHSL, also cite Pesaresi et al. (2024), “Advances on the Global Human Settlement Layer by joint assessment of Earth Observation and population survey data”, International Journal of Digital Earth 17(1), and the product-specific publications linked above.

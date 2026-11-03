@@ -5,9 +5,6 @@ ODbL-1.0) is published as 1,270 zoom-6 quadkey tiles (building.<quadkey>.gpkg.bz
 Source Cooperative (tge-labs/openbuildingmap) mirrors the same tiles as GeoParquet
 (building.<quadkey>.parquet, s3://us-west-2.opendata.source.coop, anonymous access) with a
 per-feature `bbox` struct and spatially coherent row groups of 16,384 buildings.
-a local OBM mirror check shows that the mirror is the GFZ release used by Dynamic_POP
-(Dijon: all 59,713 OBM buildings of the original city clip found, id/occupancy/height/
-quadkey/last_update identical, geometry identical to 1e-8 relative area).
 
 As for Overture (overture_reader.py), a row-group index (file, row group, bbox ranges) is
 built once from the file footers; a city reads only the intersecting row groups and keeps

@@ -1,11 +1,9 @@
 """Local 100 m model grids and mass-conserving resampling.
 
-Every city gets its own Lambert azimuthal equal-area projection centred on the urban
-centre. Within a few hundred kilometres of the centre the projection is equal-area and
-almost isometric (scale error below 0.01 % at 100 km), so a model cell is a true
-100 m x 100 m square on the ground and Euclidean distances on the grid are ground
-distances. (The 1 km grid of the earlier Dynamic_POP chain was built in EPSG:6933, whose
-cells are strongly distorted away from 30 deg latitude; see Dynamic_POP P0-1.)
+Each city uses a Lambert azimuthal equal-area projection centred on its urban
+centre. Model cells are 100 m squares in projected coordinates. The projection
+preserves area; projected Euclidean distances approximate ground distances within
+the local domain.
 
 Resampling of count rasters (people, m3 of building volume) from the GHSL Mollweide grid is
 mass-conserving: every non-zero source pixel is split into s x s sub-pixels that carry

@@ -17,7 +17,7 @@ Storey estimation first uses reported Overture floors. Otherwise it uses availab
 
 Each time-use matrix has 24 rows (local hours) and seven location columns, C1-C7. Each row is normalised to one when read. These are seven location classes, not seven weekdays. Separate matrices represent workdays and rest days. Helsinki uses FIN; Kitakyushu and Takasaki-Maebashi both use JPN. The [time-use figure](../figures/time_use_weights.png) shows the actual normalised matrices used by the model.
 
-The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) documents the processing principles without restoring the fragmented upstream survey scripts.
+The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
 
 ## Numbered programs and products
 
@@ -80,7 +80,7 @@ Routing-graph preparation calls graph-building functions in Stage 3's `network.p
 
 Graph preparation calls [network.py](../../02_code/stage_3_activity_allocation/network.py); model-layer export calls [model.py](../../02_code/stage_3_activity_allocation/model.py). These shared calls do not run population assignment during Stage 2.
 
-Supplementary Fig. 3 is reproduced in Section 13 of the [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf), with representative national profiles and the education and midday adjustments.
+Section 13 of the [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) illustrates representative national profiles and the education and midday adjustments.
 
 ## Parameter values and sources
 

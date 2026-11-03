@@ -15,8 +15,8 @@ The method guides explain processing principles and calculations. The [code inde
 
 ## Figures
 
-- [Study area](figures/study_area.png): Supplementary Fig. 1, showing the full study coverage.
-- [Time-use methods](figures/time_use_supplementary.png): original Supplementary Fig. 3, also included in the [time-use guide](../04_intermediate/demo/stage_2/time_use/time_use.pdf).
+- [Study area](figures/study_area.png): the 1,904 study cities, time-use sources, kernel groups and population sizes.
+- [Time-use methods](figures/time_use_supplementary.png): national activity profiles, education-share adjustment and midday correction, also included in the [time-use guide](../04_intermediate/demo/stage_2/time_use/time_use.pdf).
 
 - [Workflow](figures/workflow.png): study overview. Routing zones are adaptive; 2 km is their starting size.
 - [Population distributions](figures/demo_population_distributions.png): the three example cities at 03:00-04:00, 08:00-09:00 and 13:00-14:00.
@@ -30,4 +30,4 @@ The [three-city guide](reproduction/city_demo.md) covers running, selection evid
 
 ## Citation
 
-See the standalone [Citation section](../README.md#citation) in the main README and the [dataset attribution table](reproduction/city_demo.md#data-sources-and-attribution).
+See the [Citation section](../README.md#citation) in the main README and the [dataset attribution table](reproduction/city_demo.md#data-sources-and-attribution).
