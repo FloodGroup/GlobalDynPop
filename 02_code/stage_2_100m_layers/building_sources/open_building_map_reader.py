@@ -1,24 +1,6 @@
-"""Per-city reads of OpenBuildingMap (OBM) from its GeoParquet mirror on Source Cooperative.
-
-OpenBuildingMap (Oostwegel et al. 2025, GFZ Data Services, doi:10.5880/GFZ.LKUT.2025.002,
-ODbL-1.0) is published as 1,270 zoom-6 quadkey tiles (building.<quadkey>.gpkg.bz2).
-Source Cooperative (tge-labs/openbuildingmap) mirrors the same tiles as GeoParquet
-(building.<quadkey>.parquet, s3://us-west-2.opendata.source.coop, anonymous access) with a
-per-feature `bbox` struct and spatially coherent row groups of 16,384 buildings.
-
-As for Overture (overture_reader.py), a row-group index (file, row group, bbox ranges) is
-built once from the file footers; a city reads only the intersecting row groups and keeps
-the buildings whose bbox intersects the city box. For each building it keeps the OBM id,
-occupancy, height code, source, an internal point (point_on_surface, projected to the
-city's UTM zone) and the footprint area (only used to rank several OBM buildings that fall
-in one Overture footprint).
-"""
-from __future__ import annotations
-
+"""Interpret local OpenBuildingMap occupancy and height evidence for floor area."""
 import time
 from concurrent.futures import ThreadPoolExecutor
-from pathlib import Path
-
 import numpy as np
 import pandas as pd
 import pyarrow as pa
@@ -26,57 +8,9 @@ import pyarrow.compute as pc
 import pyarrow.parquet as pq
 import shapely
 
-from stage_2_100m_layers.building_sources.overture_reader import s3fs
-
-BASE = "us-west-2.opendata.source.coop/tge-labs/openbuildingmap"
-MIRROR = "https://source.coop/tge-labs/openbuildingmap"
-COLUMNS = ["id", "occupancy", "height", "source", "geometry", "bbox"]
-R_EARTH = 6371008.8
-
-
-def build_index(out_path, quadkeys=None, threads: int = 16) -> pd.DataFrame:
-    import pyarrow.fs as pafs
-    s3 = s3fs()
-    info = s3.get_file_info(pafs.FileSelector(BASE, recursive=False))
-    files = sorted(i.path for i in info if i.type == pafs.FileType.File and i.path.endswith(".parquet"))
-    if quadkeys is not None:
-        want = {f"building.{q}.parquet" for q in quadkeys}
-        files = [f for f in files if f.rsplit("/", 1)[-1] in want]
-        missing = want - {f.rsplit("/", 1)[-1] for f in files}
-        if missing:
-            raise FileNotFoundError(f"OBM mirror lacks {sorted(missing)[:5]} ...")
-
-    def one(path):
-        for k in range(5):
-            try:
-                md = pq.ParquetFile(path, filesystem=s3).metadata
-                names = [md.schema.column(i).path for i in range(md.num_columns)]
-                ix = {n: names.index(n) for n in ("bbox.xmin", "bbox.xmax", "bbox.ymin", "bbox.ymax")}
-                rows = []
-                for g in range(md.num_row_groups):
-                    rg = md.row_group(g)
-                    st = {n: rg.column(i).statistics for n, i in ix.items()}
-                    if any(s is None or not s.has_min_max for s in st.values()):
-                        rows.append((path, g, -180.0, 180.0, -90.0, 90.0, rg.num_rows))
-                    else:
-                        rows.append((path, g, st["bbox.xmin"].min, st["bbox.xmax"].max,
-                                     st["bbox.ymin"].min, st["bbox.ymax"].max, rg.num_rows))
-                return rows
-            except Exception:
-                if k == 4:
-                    raise
-                time.sleep(3 * (k + 1))
-
-    recs = []
-    with ThreadPoolExecutor(threads) as ex:
-        for rows in ex.map(one, files):
-            recs.extend(rows)
-    df = pd.DataFrame(recs, columns=["path", "rg", "xmin", "xmax", "ymin", "ymax", "rows"])
-    out_path = Path(out_path)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(out_path)
-    return df
-
+MIRROR="https://source.coop/tge-labs/openbuildingmap"
+COLUMNS=["id","occupancy","height","source","geometry","bbox"]
+R_EARTH=6371008.8
 
 def _spherical_area(g_ll, lat):
     """Footprint area (m2) of lon/lat polygons, local equirectangular approximation."""
@@ -85,16 +19,6 @@ def _spherical_area(g_ll, lat):
 
 
 class Reader:
-    def __init__(self, index_path, threads: int = 8):
-        self.index = pd.read_parquet(index_path)
-        self.s3 = s3fs()
-        self.threads = threads
-
-    def row_groups(self, bbox):
-        w, s, e, n = bbox
-        d = self.index
-        return d[(d.xmin <= e) & (d.xmax >= w) & (d.ymin <= n) & (d.ymax >= s)]
-
     def _read(self, path, rgs, bbox, to_utm):
         w, s, e, n = bbox
         f = None
@@ -102,7 +26,7 @@ class Reader:
         for chunk in np.array_split(np.asarray(rgs), max(1, int(np.ceil(len(rgs) / 32)))):
             for k in range(5):
                 try:
-                    f = f or pq.ParquetFile(path, filesystem=self.s3, pre_buffer=True)
+                    f = f or pq.ParquetFile(path, pre_buffer=True)
                     t = f.read_row_groups([int(x) for x in chunk], columns=COLUMNS)
                     break
                 except Exception:

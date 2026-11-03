@@ -15,7 +15,7 @@ Transport records retain all source subtypes; model preprocessing selects road/r
 
 Vector subsets select complete source features whose original bounding boxes overlap the model-domain bounding box. Geometries are not cut at the boundary. The 12 GHSL rasters are native-grid integer-window crops: CRS, grid alignment and pixel values match the source tiles. The corresponding prepared population arrays are separately resampled onto the local model grids.
 
-The 36 data files are listed in the source manifests. Per-file `.source.json` records identify source Parquet row groups or raster windows. Manifests and metadata retain the provider's source-layer names and URLs, even where the local filename is more descriptive.
+The 36 data files are listed in the source manifests. [Stage 1 preparation](../../../02_code/stage_1_data_inputs/README.md#extract-city-subsets) generates city subsets from external sources; the default example verifies the supplied files. Per-file `.source.json` records identify source Parquet row groups or raster windows. Manifests and metadata retain the provider's source-layer names and URLs, even where the local filename is more descriptive.
 
 ## Coverage limits
 

@@ -24,7 +24,7 @@ All five cases belong to the validation sample. Helsinki's source record has `we
 
 ## Run and numerical checks
 
-Follow the [run guide](../../03_run/README.md) to install the environment and run all four stages or a selected stage. `run_city_demo.py run` verifies the raw subsets, rebuilds the Stage 2 spatial layers, computes Stage 3 allocations, writes Stage 4 outputs and updates the PNG figures. It adopts the supplied time-use shares and allocation settings. Original survey harmonisation and kernel calibration require external source records.
+Follow the [run guide](../../03_run/README.md) to install the environment and run all four stages or a selected stage. `run_city_demo.py run` verifies the supplied raw subsets, rebuilds the Stage 2 spatial layers, computes Stage 3 allocations, writes Stage 4 outputs and updates the PNG figures. The separate [Stage 1 extraction command](../../02_code/stage_1_data_inputs/README.md#extract-city-subsets) regenerates raw subsets when external source access and matching indexes are available. It adopts the supplied time-use shares and allocation settings. Original survey harmonisation and kernel calibration require external source records.
 
 `run_city_demo.py check` checks processed-input file hashes and exact decoded-array fingerprints. Reproduction uses the same intermediate/output directories; running replaces the included results in place. File metadata is excluded from numerical comparisons. Observation-based validation separately requires the external observation records.
 

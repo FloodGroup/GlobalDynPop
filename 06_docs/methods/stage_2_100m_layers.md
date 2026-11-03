@@ -44,13 +44,12 @@ Hourly location shares and calibrated allocation parameters are adopted study pr
 
 The routing graph contains topology, travel times and sampling locations. Population assignment to the graph occurs in Stage 3. Routing zones start at 2 km and can expand for large domains. Raster conversion uses the GeoTIFF's own bounds, CRS and transform, including clipped edge tiles.
 
-## External global sources
+## Source preparation and model processing
 
-The original global-source interfaces remain available through `--global-sources`. They require the global city database, source row-group indexes, source access and any applicable restricted inputs. The bundled city subsets support the local example; they do not replace survey microdata or calibration observations.
+Stage 2 reads the local source subsets produced or verified in [Stage 1](stage_1_data_inputs.md). It constructs the 100 m grid, resamples settlement data, interprets building evidence, classifies POIs and builds routing graphs. It does not download global tiles or query remote Parquet sources. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) describes extraction from external sources.
 
 ```console
 python 02_code/stage_2_100m_layers/04_prepare_building_floor_area.py --help
-python 02_code/stage_2_100m_layers/04_prepare_building_floor_area.py --global-sources --help
 ```
 
 ## Implementation modules
@@ -60,9 +59,8 @@ python 02_code/stage_2_100m_layers/04_prepare_building_floor_area.py --global-so
 | [local_raw_preparation.py](../../02_code/stage_2_100m_layers/local_raw_preparation.py) | Stage 2 steps 01-05, default local-source mode | Read raw city subsets and prepare spatial layers |
 | [cities.py](../../02_code/stage_2_100m_layers/cities.py) | Stage 2 preparation; Stage 3 allocation; Stage 4 outputs | Read city definitions and provide each city's grid |
 | [grid.py](../../02_code/stage_2_100m_layers/grid.py) | [cities.py](../../02_code/stage_2_100m_layers/cities.py) and Stage 2 raster preparation | Grid geometry, projections and resampling |
-| [global_human_settlement_layer.py](../../02_code/stage_2_100m_layers/global_human_settlement_layer.py) | Stage 2 step 02 with `--global-sources` | Download and process global GHSL tiles |
-| [places.py](../../02_code/stage_2_100m_layers/places.py) | Stage 2 step 03 | Classify and aggregate Overture places |
-| [buildings.py](../../02_code/stage_2_100m_layers/buildings.py), `building_sources/` | Stage 2 steps 04-05 | Read building/transport sources and calculate floor area by use |
+| [places.py](../../02_code/stage_2_100m_layers/places.py) | Stage 2 step 03 | Classify and aggregate local Overture POI records |
+| [buildings.py](../../02_code/stage_2_100m_layers/buildings.py), `building_sources/` | Stage 2 steps 04-05 | Interpret local building/transport records and calculate floor area by use |
 | [time_use.py](../../02_code/stage_2_100m_layers/time_use.py) | Stage 3 step 02; Stage 4 step 01 and population-field reading | Read the Stage 2 hourly location shares |
 | [model_layer_exports.py](../../02_code/stage_2_100m_layers/model_layer_exports.py) | Stage 2 step 06 | Save smoothed-place layers and effective kernel settings |
 
@@ -72,8 +70,8 @@ Routing-graph preparation calls graph-building functions in Stage 3's `network.p
 
 | Source module | Role in the default local workflow |
 |---|---|
-| [overture_reader.py](../../02_code/stage_2_100m_layers/building_sources/overture_reader.py) | Geometry and attribute extraction; `LocalOverture` supplies the local city files to the reader. |
-| [open_building_map_reader.py](../../02_code/stage_2_100m_layers/building_sources/open_building_map_reader.py) | Read occupancy and height records; the local adapter supplies the city subset. |
+| [overture_reader.py](../../02_code/stage_2_100m_layers/building_sources/overture_reader.py) | Select model-required fields and filter local source features; `LocalOverture` supplies the city files. |
+| [open_building_map_reader.py](../../02_code/stage_2_100m_layers/building_sources/open_building_map_reader.py) | Interpret occupancy and height records from the local city subset. |
 | [open_building_map.py](../../02_code/stage_2_100m_layers/building_sources/open_building_map.py) | Interpret occupancy and height/storey codes used in floor-area estimation. |
 | [transportation.py](../../02_code/stage_2_100m_layers/building_sources/transportation.py) | Extract transport segments and station evidence for graph construction. |
 | [classification_rules.json](../../02_code/stage_2_100m_layers/building_sources/rules/classification_rules.json), [mixed_use.json](../../02_code/stage_2_100m_layers/building_sources/rules/mixed_use.json) | Building-use mappings and mixed-use shares. |

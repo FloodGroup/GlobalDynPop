@@ -84,36 +84,12 @@ class LocalPlaces:
 
 
 def city_table(folders):
-    rows = []
+    from stage_1_data_inputs.source_preparation import city_record
+    rows=[]
     for folder in folders:
-        source = pyogrio.read_dataframe(folder / 'urban_centres/urban_centre_boundary.gpkg',
-                                       layer=configuration.UCDB_LAYER)
-        if len(source) != 1:
-            raise ValueError(f'{folder.name}: expected one urban-centre feature')
-        row = source.iloc[0]
-        geometry = row.geometry
-        centre = shapely.centroid(geometry)
-        lon, lat = Transformer.from_crs(source.crs, 4326, always_xy=True).transform(centre.x, centre.y)
-        crs = grid.laea_crs(lon, lat)
-        transform = Transformer.from_crs(source.crs, crs, always_xy=True)
-        polygon = shapely.transform(shapely.segmentize(geometry, 200.),
-                                    lambda xy: np.column_stack(transform.transform(xy[:, 0], xy[:, 1])))
-        x0, y0, x1, y1 = polygon.bounds
-        cell = configuration.CELL
-        margin = configuration.BUFFER_M
-        x0 = np.floor((x0 - margin) / cell) * cell
-        y0 = np.floor((y0 - margin) / cell) * cell
-        x1 = np.ceil((x1 + margin) / cell) * cell
-        y1 = np.ceil((y1 + margin) / cell) * cell
-        nx, ny = int(round((x1 - x0) / cell)), int(round((y1 - y0) / cell))
-        rows.append(dict(uc_id=int(row.ID_UC_G0), stem=folder.name,
-                         name=cities.fix_text(row.GC_UCN_MAI_2025),
-                         country=cities.fix_text(row.GC_CNT_UNN_2025), iso3=folder.name.split('_')[1],
-                         pop2025=float(row.GC_POP_TOT_2025), uc_area_km2=float(row.GC_UCA_KM2_2025),
-                         lon0=round(lon, 6), lat0=round(lat, 6), x0=x0, y1=y1, nx=nx, ny=ny,
-                         cell=cell, domain_km2=nx * ny * cell ** 2 / 1e6,
-                         uc_wkt_laea=shapely.to_wkt(polygon, rounding_precision=1)))
-    return pd.DataFrame(rows).sort_values('pop2025', ascending=False).reset_index(drop=True)
+        source=pyogrio.read_dataframe(folder/'urban_centres/urban_centre_boundary.gpkg',layer=configuration.UCDB_LAYER)
+        rows.append(city_record(source,folder.name))
+    return pd.DataFrame(rows).sort_values('pop2025',ascending=False).reset_index(drop=True)
 
 
 def prepare_settlement(folder, row, products, sub):
@@ -168,7 +144,7 @@ def water_coverage(reader, target):
 
 def run_step(step, argv=None):
     parser = argparse.ArgumentParser(description=f'Stage 2 step {step}: prepare the supplied raw city subsets. '
-                                                'Use --global-sources for the external-source interface.')
+                                                'Source extraction is performed in Stage 1.')
     parser.add_argument('--stems', nargs='*')
     parser.add_argument('--stems-file')
     parser.add_argument('--overwrite', action='store_true', help='accepted for compatibility; local subsets are always recomputed')

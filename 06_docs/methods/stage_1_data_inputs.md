@@ -34,4 +34,22 @@ Source manifests and per-file provenance records identify the source files, sele
 
 Stage 2 reads the raw spatial subsets and derives model layers. It also reads the adopted 24-by-7 hourly location shares and distance-decay settings. These are processed research products: their survey harmonisation and commuting calibration precede the example run. The [time-use guide](../../04_intermediate/demo/stage_2/time_use/time_use.pdf) explains how the shares were constructed.
 
-The supplied example begins after spatial extraction. Its Stage 1 executable verifies the raw files; it does not download or extract the source datasets. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) lists the executable, shared modules, calling sequence and verification behaviour. The [raw-data dictionary](../../01_inputs/demo/raw/README.md) lists file contents and source coverage.
+## Programs and stage boundary
+
+[01_prepare_raw_sources.py](../../02_code/stage_1_data_inputs/01_prepare_raw_sources.py) selects urban-centre records by ID and writes the corresponding city source subsets. It reads Overture and OpenBuildingMap row-group indexes (or builds missing indexes from source metadata when requested), selects intersecting source records, and crops the native GHSL tiles. [02_verify_raw_sources.py](../../02_code/stage_1_data_inputs/02_verify_raw_sources.py) checks the resulting files against their manifests.
+
+The extraction extent uses the same local projection, 10 km margin and 100 m bound alignment as the model grid. Defining these bounds does not resample source data: Stage 2 writes the grid descriptor and converts the source records into model quantities. The common domain calculation is `source_preparation.city_record`, shared by source extraction and Stage 2 grid preparation.
+
+Building footprints, OpenBuildingMap buildings and land-use evidence are selected with an additional 0.003-degree reading margin, matching the floor-area reader. This is a study-defined processing margin, not an additional output-domain extension. Other vector sources use the domain bounds. Selecting a record by its bounding box can retain features that lie outside the exact domain polygon; Stage 2 applies the model grid and source-specific filters.
+
+The bundled three-city run uses the supplied subsets and executes verification only. Repeating extraction requires the source files or access to the recorded release and matching indexes. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) documents arguments and index schemas. The [raw-data dictionary](../../01_inputs/demo/raw/README.md) lists the delivered files.
+
+| Setting | Value | Basis |
+|---|---|---|
+| Minimum urban-centre population | 300,000 in 2025 | Study selection threshold. |
+| Domain margin | 10 km per side | Study-defined extent, also used in Stage 2. |
+| Domain-bound alignment | 100 m | Shared model-grid resolution. |
+| Building-source reading margin | 0.003 degrees | Study-defined allowance used by the floor-area reader. |
+| Domain boundary densification | 200 points per side | Study-defined numerical approximation for transforming extraction bounds. |
+
+Urban-centre polygon edges are densified to at most 200 m segments before projection, a study-defined numerical setting shared with grid construction.

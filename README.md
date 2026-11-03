@@ -57,7 +57,7 @@ The paths below describe the three-city execution example.
 
 | Stage | Purpose | Products | Method | Code |
 |---|---|---|---|---|
-| 1. Data inputs | Select source data for the city domains, preserve source attributes and native raster pixels, and verify the supplied subsets. | Original-source subsets and provenance manifests in `01_inputs/demo/raw/`; verification status. | [Method](06_docs/methods/stage_1_data_inputs.md) | [Code](02_code/stage_1_data_inputs/) |
+| 1. Data inputs | Extract city source subsets without classification or resampling, preserve provenance, and verify the files. The bundled example uses the supplied subsets. | Original-source subsets and provenance manifests in `01_inputs/demo/raw/`; verification status. | [Method](06_docs/methods/stage_1_data_inputs.md) | [Code](02_code/stage_1_data_inputs/) |
 | 2. 100 m layers | Build local grids; prepare residents, building floor area, POIs and road/rail graphs. Read the adopted hourly shares and distance-decay settings. | `04_intermediate/demo/stage_2/`: spatial layers, graphs, shares and effective kernels. | [Method](06_docs/methods/stage_2_100m_layers.md) | [Code](02_code/stage_2_100m_layers/) |
 | 3. Allocation of daily activities | Calculate destination attractiveness, allocate residents with the production-constrained gravity model, and assign trip person-time to the network. | `04_intermediate/demo/stage_3/`: attractiveness, destination population and in-transit population. The component writer also packages these as GeoTIFFs. | [Method](06_docs/methods/stage_3_activity_allocation.md) | [Code](02_code/stage_3_activity_allocation/) |
 | 4. Outputs | Combine the population components using hourly location shares; derive functional land use; check and plot the results. | `05_outputs/demo/`: components, 144 single-band hourly population files and functional land use. Figures are in `06_docs/figures/`. | [Method](06_docs/methods/stage_4_outputs.md) | [Code](02_code/stage_4_outputs/) |
@@ -73,7 +73,7 @@ python 03_run/run_city_demo.py check
 python 03_run/run_city_demo.py run
 ```
 
-`check` verifies the supplied processed inputs and decoded output arrays. `run` verifies the raw sources, rebuilds the spatial layers, computes the model and updates the figures. It replaces the bundled products in place and compares the numerical results with the stored fingerprints. Use `run --stage 1`, `2`, `3` or `4` to run a single stage with its prerequisites already present. Observation-based validation requires external records and is separate from numerical reproduction.
+`check` verifies the supplied processed inputs and decoded output arrays. `run` verifies the supplied raw sources in Stage 1, rebuilds the spatial layers in Stage 2, computes the model and updates the figures. Source extraction is available separately through the [Stage 1 preparation program](02_code/stage_1_data_inputs/README.md#extract-city-subsets). It replaces the bundled products in place and compares the numerical results with the stored fingerprints. Use `run --stage 1`, `2`, `3` or `4` to run a single stage with its prerequisites already present. Observation-based validation requires external records and is separate from numerical reproduction.
 
 The [three-city guide](06_docs/reproduction/city_demo.md) records city selection, validation evidence and data attribution. The [run guide](03_run/README.md) covers launchers, path settings and the recorded test environment.
 

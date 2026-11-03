@@ -68,7 +68,7 @@ def main():
     env.update(DYNAMIC_POPULATION_ROOT=str(ROOT),DYNAMIC_POPULATION_STAGE2=str(STAGE2),DYNAMIC_POPULATION_WORK=str(work),DYNAMIC_POPULATION_OUTPUTS=str(outputs),DYNAMIC_POPULATION_NETWORK=str(work/'stage_3/in_transit_population'),DYNAMIC_POPULATION_COMPONENTS=str(outputs/'population_components'))
     common=['--stems',*STEMS,'--overwrite'];params=['--params',str(STAGE2/'allocation_parameters/population_allocation_parameters.json')]
     jobs=[
-        ('stage_1_data_inputs/01_verify_raw_sources.py',[],[]),
+        ('stage_1_data_inputs/02_verify_raw_sources.py',[],[]),
         ('stage_2_100m_layers/01_create_city_grids.py',['--stems',*STEMS],[STAGE2/'local_grids/city_grid_definitions.csv']),
         ('stage_2_100m_layers/02_prepare_settlement_layers.py',['--stems',*STEMS],[STAGE2/folder/f'{s}.npy' for s in STEMS for folder in ['resident_population','buildings/total_building_volume','buildings/non_residential_building_volume','buildings/building_height']]),
         ('stage_2_100m_layers/03_prepare_destination_counts.py',['--stems',*STEMS],[STAGE2/'point_of_interest_counts/overture'/f'{s}.npz' for s in STEMS]),

@@ -5,7 +5,7 @@
     python 03_run/runtime/run_parallel.py --workers 12 --name network -- 02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py   (several processes)
 
 For every city: the road and rail network of the domain (routing graph from the Overture segments and
-stations, stored by 05_prepare_transport_graphs.py; with --online read from the release where missing), the trips
+stations, stored by 05_prepare_transport_graphs.py), the trips
 between zones of the city's gravity
 model (workday and rest day, kernels and time-use of the country) are assigned to the fastest
 routes (stage_3_activity_allocation/network.py), and the person-time is placed on the 100 m cells.
@@ -27,10 +27,8 @@ import pyarrow as pa
 import pyarrow.compute as pc
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from stage_2_100m_layers.building_sources.transportation import fetch
 import stage_1_data_inputs.configuration as configuration
 import stage_3_activity_allocation.network as network  # noqa: E402
-from stage_2_100m_layers.building_sources import overture_reader as O  # noqa: E402
 from stage_2_100m_layers.cities import grid_of, load_cities  # noqa: E402
 from stage_3_activity_allocation.gravity import kernel_values  # noqa: E402
 from stage_3_activity_allocation.model import Params, attractor, iso3_of, load_layers  # noqa: E402
@@ -38,8 +36,6 @@ from stage_2_100m_layers.time_use import daytype_shares  # noqa: E402
 
 OUT = configuration.NETWORK
 GRAPHS = configuration.ROAD_GRAPHS          # road and rail network of every city (input; 05_prepare_transport_graphs.py)
-ONLINE = False                       # --online: read Overture where a city has no stored network
-INDEX = configuration.SOURCE_INDEX / f"overture_rowgroup_index_{O.OVERTURE_RELEASE}.parquet"
 CLASSES = ("C2", "C3", "C4", "C5", "C7")
 PARAMS_FILE = ""          # name of the parameter file (recorded in the stats)
 SHARE_COL = {"C2": 1, "C3": 2, "C4": 3, "C5": 4, "C7": 6}
@@ -86,31 +82,21 @@ def trip_matrices(stem, row, params, grid, N, V, P, kz):
     return out
 
 
-def road_graph(stem, g, reader_factory):
-    """Routing graph of the city: the stored input (GRAPHS/<stem>.npz, 05_prepare_transport_graphs.py) or, with --online,
-    read from Overture (and stored). Returns (graph, seconds reading Overture, seconds building or loading)."""
-    t0 = time.time()
-    gf = GRAPHS / f"{stem}.npz"
-    if gf.exists():
-        return network.load_graph(gf), 0.0, time.time() - t0
-    if not ONLINE:
-        raise RuntimeError(f"no road network file {gf.name} in {GRAPHS} (run 05_prepare_transport_graphs.py, or use --online)")
-    seg, sta = fetch(reader_factory(), g)
-    t_fetch = time.time() - t0
-    if seg is None or seg.num_rows == 0:
-        raise RuntimeError("no Overture segments")
-    G = network.build_from_table(seg, sta, g)
-    del seg, sta
-    network.save_graph(gf, G, {"stem": stem, "overture_release": O.OVERTURE_RELEASE})
-    return network.load_graph(gf), t_fetch, time.time() - t0 - t_fetch
+def road_graph(stem):
+    """Load the routing graph prepared in Stage 2."""
+    t0=time.time()
+    path=GRAPHS/f'{stem}.npz'
+    if not path.is_file():
+        raise FileNotFoundError(f'Missing Stage 2 graph: {path}; run 05_prepare_transport_graphs.py first')
+    return network.load_graph(path),0.0,time.time()-t0
 
 
-def run_city(stem, row, params, reader_factory, log=print):
+def run_city(stem, row, params, log=print):
     t0 = time.time()
     g = grid_of(row)
     N, V, P = load_layers(stem)
     kz = network.zone_size(g)
-    G, t_fetch, t_build = road_graph(stem, g, reader_factory)
+    G, t_fetch, t_build = road_graph(stem)
     od = trip_matrices(stem, row, params, g, N, V, P, kz)
     Nz, cx, cy = od["workday"][0], od["workday"][1], od["workday"][2]
     Ts = [od["workday"][3], od["restday"][3]]
@@ -143,14 +129,12 @@ def main(argv=None):
     ap.add_argument("--order", choices=["small", "large", "file"], default="small")
     ap.add_argument("--out", help="folder of the layers (default 04_intermediate/demo/stage_3/in_transit_population; another one for a reproduction check)")
     ap.add_argument("--graphs", help="folder of the road and rail networks (default: configuration.ROAD_GRAPHS)")
-    ap.add_argument("--online", action="store_true", help="read Overture for cities without a stored network (internet)")
     a = ap.parse_args(argv)
-    global OUT, GRAPHS, ONLINE
+    global OUT, GRAPHS
     if a.out:
         OUT = Path(a.out)
     if a.graphs:
         GRAPHS = Path(a.graphs)
-    ONLINE = bool(a.online)
     from stage_3_activity_allocation.model import params_from
     global PARAMS_FILE
     PARAMS_FILE = Path(a.params).name
@@ -165,12 +149,7 @@ def main(argv=None):
     c = c.assign(cells=c.nx * c.ny)
     if a.order != "file":
         c = c.sort_values("cells", ascending=(a.order == "small"))
-    _reader = []
 
-    def reader_factory():                    # the Overture reader is opened only when a network has to be read
-        if not _reader:
-            _reader.append(O.Reader(INDEX, threads=8))
-        return _reader[0]
     import memory_guard as memory_guard
     import work_queue as work_queue
     OUT.mkdir(parents=True, exist_ok=True)
@@ -184,7 +163,7 @@ def main(argv=None):
         if lock is None:
             continue
         try:
-            st = run_city(stem, r, params, reader_factory, log=lambda m: print(m, flush=True))
+            st = run_city(stem, r, params, log=lambda m: print(m, flush=True))
             print(json.dumps({k: st[k] for k in ("stem", "zones", "nodes", "pieces", "stations_used", "network_share", "rail_share",
                                                  "unreached_trip_share", "fetch_s", "build_s", "total_s")}), flush=True)
         except Exception as e:  # noqa: BLE001

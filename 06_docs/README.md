@@ -11,7 +11,7 @@ The [main README](../README.md) introduces the study, its data sources and the f
 | [Stage 3: Allocation of daily activities](methods/stage_3_activity_allocation.md) | Attractiveness, gravity allocation, in-transit assignment and component storage. |
 | [Stage 4: Outputs](methods/stage_4_outputs.md) | Hourly mixtures, functional land use, numerical checks and figures. |
 
-The method guides explain processing principles and calculations. The [code index](../02_code/README.md) opens the implementation directories; the [Stage 1 code guide](../02_code/stage_1_data_inputs/README.md) documents its verifier and shared modules. The [time-use derivation](../04_intermediate/demo/stage_2/time_use/time_use.pdf) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
+The method guides explain processing principles and calculations. The [code index](../02_code/README.md) opens the implementation directories; the [Stage 1 code guide](../02_code/stage_1_data_inputs/README.md) documents its extraction program, verifier and shared modules. The [time-use derivation](../04_intermediate/demo/stage_2/time_use/time_use.pdf) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
 
 ## Figures
 

@@ -56,7 +56,6 @@ ROAD_GRAPHS = _env("DYNAMIC_POPULATION_ROAD_GRAPHS", INPUTS / "road_and_rail_gra
 TIMEUSE = INPUTS / "time_use"                        # hourly activity-location shares and their sources
 PARAMS = INPUTS / "allocation_parameters"                       # model parameters
 WATER_COVERAGE_PERCENT = INPUTS / "water_coverage_percent"  # uint8 water coverage, 0-100 percent, on each city grid
-SOURCE_INDEX = INPUTS / "source_index"               # row-group indexes of the Overture and OpenBuildingMap releases
 # inputs that may not be published: raw China POI data, Amap exports, time-use package V10
 INPUTS_RESTRICTED = _env("DYNAMIC_POPULATION_INPUTS_RESTRICTED", INPUTS / "restricted_NOT_PUBLIC")
 CN_POI_RAW = _env("DYNAMIC_POPULATION_CN_POI", INPUTS_RESTRICTED / "CN_POI")

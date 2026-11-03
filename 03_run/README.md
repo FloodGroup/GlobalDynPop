@@ -4,7 +4,7 @@ The run folders follow the same four stages as the [scientific programs](../02_c
 
 | Run folder | Executes | Result |
 |---|---|---|
-| `stage_1_data_inputs/` | Verify original-source file integrity | Raw-source check |
+| `stage_1_data_inputs/` | Extract source subsets with `prepare_sources.cmd`, or verify supplied subsets with `01_RUN.cmd` | Raw source files, provenance manifests and integrity check |
 | `stage_2_100m_layers/` | Generate city grids, population/building layers, place counts, floor area and routing graphs from raw city subsets; then save smoothed places and effective kernels | Stage 2 intermediates |
 | `stage_3_activity_allocation/` | Destination attractiveness, network assignment and destination population allocation | Stage 3 intermediates and packaged components |
 | `stage_4_outputs/` | Hourly population, functional land use, population maps and numerical checks | Stage 4 outputs |
@@ -31,7 +31,7 @@ On Windows, use `RUN_ALL_STAGES.cmd` for the full example or `01_RUN.cmd`, `02_R
 
 `stage_2_100m_layers/02_RUN.cmd` executes Stage 2 programs 01 through 06 in order. Step 04 reads the raw building records, calls `buildings.py` to calculate floor area and writes `buildings/floor_area_by_use/`. Every spatial layer is recomputed; existing files do not cause a step to be skipped. Hourly location shares and calibrated parameters are adopted study products.
 
-`stage_2_100m_layers/rebuild_from_sources.cmd` uses the separate `--global-sources` interface, which requires external global datasets and source access. See the [Stage 2 code guide](../02_code/stage_2_100m_layers/README.md). Each stage writes to its designated intermediate/output location.
+`stage_1_data_inputs/prepare_sources.cmd` extracts city subsets from external sources. It accepts the arguments documented in the [Stage 1 code guide](../02_code/stage_1_data_inputs/README.md#extract-city-subsets). After extraction, verify the raw files and run Stage 2 to calculate the model layers. Each stage writes to its designated data directory.
 
 Stage 4 also writes the population and time-use figures to `06_docs/figures/`. Set `DYNAMIC_POPULATION_FIGURES` to choose a different figure directory. See the [Stage 4 method](../06_docs/methods/stage_4_outputs.md) for plotting settings and standalone commands.
 
@@ -53,7 +53,7 @@ The three-city wrapper checks expected stage outputs and checks the results agai
 
 ## Raw-input rebuild and validation
 
-`03_run/stage_2_100m_layers/02_RUN.cmd` rebuilds the local example from its raw spatial subsets. `rebuild_from_sources.cmd` selects the separate external global-source interfaces with `--global-sources`; those require source access and permissions. Survey harmonisation and calibration require their own upstream records. A historical release may no longer be downloadable. Record any changed source version and its numerical consequences. Raw observation files are not supplied. Repeating observation-based validation requires the corresponding observation bundle and schema. The three-city numerical checks do not replace observation-based validation.
+`03_run/stage_2_100m_layers/02_RUN.cmd` rebuilds the local example from its raw spatial subsets. To regenerate the raw subsets first, use the Stage 1 preparation program with the original city database, matching source indexes and GHSL tile cache or download access. Survey harmonisation and calibration require their own upstream records. A historical release may no longer be downloadable. Record any changed source version and its numerical consequences. Raw observation files are not supplied. Repeating observation-based validation requires the corresponding observation bundle and schema. The three-city numerical checks do not replace observation-based validation.
 
 ## Compare results
 
