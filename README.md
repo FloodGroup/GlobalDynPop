@@ -62,7 +62,9 @@ Figure 2 shows the four-stage calculation. Source data are converted to 100 m la
 
 Routing zones start at 2 km and expand for large domains. Survey harmonisation and parameter calibration precede population allocation. The 100 m output grid does not imply that routing or validation is performed at 100 m.
 
-## Run the three-city example
+## Three-city example
+
+### Run the example
 
 ```console
 conda env create -f environment.yml
@@ -75,7 +77,7 @@ python 03_run/run_city_demo.py run
 
 The [three-city guide](06_docs/reproduction/city_demo.md) records city selection, validation evidence and data attribution. The [run guide](03_run/README.md) covers launchers, path settings and the recorded test environment.
 
-## Hourly activity patterns
+### Hourly activity patterns
 
 Figure 3 shows the hourly location shares used for Finland and Japan. Home accounts for most of the population in the early morning, while work, education and other activities gain share during the day. The displayed profiles have higher daytime home shares on rest days than on workdays.
 
@@ -83,7 +85,7 @@ Figure 3 shows the hourly location shares used for Finland and Japan. Home accou
 
 **Figure 3. Temporal weights applied to the population components.** Columns distinguish workdays and rest days; rows distinguish Finland and Japan. The seven coloured shares represent home, work and commerce, education, services, leisure, transit and other locations, and sum to one at every hour. Helsinki uses the Finland profile; both Japanese cities use the Japan profile. The [time-use guide](04_intermediate/demo/stage_2/time_use/time_use.pdf) documents the survey mapping, donor transfer and corrections used to construct these profiles.
 
-## Example population distributions
+### Example population distributions
 
 Figure 4 compares the three cities at 03:00-04:00, 08:00-09:00 and 13:00-14:00. The early-morning maps are dominated by the resident component. Morning and midday maps give greater weight to activity destinations and transit. Workday and rest-day columns show the effect of their respective hourly shares and activity allocations.
 
