@@ -43,7 +43,7 @@ The matrices are national temporal profiles applied to the population of each mo
 
 ### How to read this guide
 
-Sections 2-8 explain the upstream processing rules preserved in the source implementation. Sections 9-10 identify the products supplied for Helsinki, Kitakyushu and Takasaki-Maebashi and explain their use in the model. Section 11 lists numerical settings and their provenance. Section 12 lists the country-specific sources for 22 countries, provider references and implementation locations.
+Sections 2-8 explain the upstream processing rules preserved in the source implementation. Sections 9-10 identify the products supplied for Helsinki, Kitakyushu and Takasaki-Maebashi and explain their use in the model. Section 11 lists numerical settings and their provenance. Section 12 lists the country-specific sources for 22 countries, implementation locations and reproducibility requirements.
 
 The supplied model reads the completed shares. Reconstructing them from survey records also requires the source surveys, classification crosswalks and harmonised reference tables described below. The upstream source records and harmonisation scripts are external.
 
@@ -152,9 +152,19 @@ Purpose and place crosswalks assign trip destinations to the seven classes. Resi
 
 | Selected source | Coverage represented in the implementation |
 | --- | --- |
-| USA: NHTS 2017 [R2] | Persons aged 5+ with a travel day; person weight WTPERFIN. Separate weekday, rest-day, Saturday and Sunday profiles. |
-| Mexico: EOD 2017 [R3] | Valley of Mexico metropolitan survey. Travel records cover ages 6+, but the implemented person denominator includes household members of all ages; children without trip records remain at home. |
-| Brazil: OD 2017 [R4] | São Paulo metropolitan survey; weekday presence reconstructed with person expansion weight FE_PESS. The geographic source is metropolitan, although its curve is used for the country. |
+| USA: NHTS 2017 | Persons aged 5+ with a travel day; person weight WTPERFIN. Separate weekday, rest-day, Saturday and Sunday profiles. |
+| Mexico: EOD 2017 | Valley of Mexico metropolitan survey. Travel records cover ages 6+, but the implemented person denominator includes household members of all ages; children without trip records remain at home. |
+| Brazil: OD 2017 | São Paulo metropolitan survey; weekday presence reconstructed with person expansion weight FE_PESS. The geographic source is metropolitan, although its curve is used for the country. |
+
+**Data sources.**
+
+- Federal Highway Administration. 2017 National Household Travel Survey: data and documentation, including the user guide. [https://nhts.ornl.gov/documentation](https://nhts.ornl.gov/documentation)
+
+- INEGI. Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de México (EOD) 2017. [https://www.inegi.org.mx/rnm/index.php/catalog/533](https://www.inegi.org.mx/rnm/index.php/catalog/533)
+
+- Companhia do Metropolitano de São Paulo. Pesquisa Origem e Destino: final results for the 2017 survey. [https://www.metro.sp.gov.br/pt_BR/metro/numeros-pesquisa/pesquisa-od/](https://www.metro.sp.gov.br/pt_BR/metro/numeros-pesquisa/pesquisa-od/)
+
+Dataset access conditions and survey weights remain those of each provider.
 
 ### 5.2 Fill the missing day types
 
@@ -200,7 +210,7 @@ Many time-use surveys omit younger children, while the population model represen
 
 ### 7.1 Estimate the enrolled share
 
-Population counts for males and females aged 5-9 and 10-14 are divided by total population. The code uses World Bank indicators for adjusted net primary enrolment and net secondary enrolment, with gross enrolment as a fallback. Enrolment percentages are capped at 100% and divided by 100. Each indicator uses its latest non-missing observation in the downloaded source, so the input years may differ [R5].
+Population counts for males and females aged 5-9 and 10-14 are divided by total population. The code uses World Bank indicators for adjusted net primary enrolment and net secondary enrolment, with gross enrolment as a fallback. Enrolment percentages are capped at 100% and divided by 100. Each indicator uses its latest non-missing observation in the downloaded source, so the input years may differ.
 
 ```math
 E=s_{5\text{--}9}\,p_{\mathrm{primary}} +s_{10\text{--}14}\frac{p_{\mathrm{primary}}+p_{\mathrm{secondary}}}{2}.
@@ -225,6 +235,10 @@ Rest day, Saturday and Sunday remain unchanged. When a workday curve is modified
 The age counts and enrolment percentages are external data. Averaging the two enrolment rates for ages 10-14, comparing that estimate with the hourly education peak, reusing the existing timing shape, and retaining at least 5% residential presence are study-defined assumptions. This correction does not create complete activity diaries for children, and C3 may also contain adults attending education places.
 
 **Processing provenance.** age_coverage.py: wb and table; build_daytype_v2.py: school_floor. Indicator codes: SP.POP.TOTL; SP.POP.0509.MA/FE; SP.POP.1014.MA/FE; SE.PRM.TENR with SE.PRM.ENRR fallback; SE.SEC.NENR with SE.SEC.ENRR fallback.
+
+**Data source.** World Bank, World Development Indicators. Population by age and sex, total population, and school enrolment indicators listed in Section 7; enrolment data supplied through UNESCO UIS. [https://data.worldbank.org/indicator/SE.SEC.NENR](https://data.worldbank.org/indicator/SE.SEC.NENR)
+
+The indicator codes above identify the full population and enrolment input set; the linked page describes the net secondary-enrolment indicator.
 
 ## 8. Country-specific timing calibration
 
@@ -272,13 +286,15 @@ The supplied index identifies Finland’s baseline as a V11 national matrix. Its
 
 ### 9.2 Kitakyushu and Takasaki-Maebashi: Japan (JPN)
 
-Both Japanese cities use the same national day-type matrices. The upstream adapter selects the 2016 Survey on Time Use and Leisure Activities, Questionnaire A, both sexes, age group 15+. The official survey covers persons aged 10+; 15+ is the subset selected by the code [R1].
+Both Japanese cities use the same national day-type matrices. The upstream adapter selects the 2016 Survey on Time Use and Leisure Activities, Questionnaire A, both sexes, age group 15+. The official survey covers persons aged 10+; 15+ is the subset selected by the code.
 
 For each published activity category, the adapter averages four 15-minute participation rates within a clock hour, then combines categories into nine groups: sleep, personal care, work, travel, study, household activities, leisure, media and other. These groups are expanded to fine activities with GM and converted to seven location classes with GF, as in Section 3. Thus the day-type activity timing comes from Japanese statistics, while location allocation uses the harmonised reference.
 
 Weekday, Saturday and Sunday tables are processed separately. The initial rest-day activity table averages the normalised Saturday and Sunday profiles; the initial average day uses weights 5:1:1. The lunch adjustment is subsequently applied to each resulting location curve. Finally, the school adjustment changes the workday and rebuilds the average day using the corrected workday and existing rest day.
 
 The source index rounds Japan’s school target to E = 0.081 and the preceding peak to 0.056. The supplied final education peak is 0.08054116923. The displayed index targets are rounded descriptions, not exact calculation inputs. No timing calibration is applied to Japan.
+
+**Data source.** Statistics Bureau of Japan. Survey on Time Use and Leisure Activities 2016: survey outline and Questionnaire A. [https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html](https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html)
 
 ### 9.3 Why the final rest day is a separate product
 
@@ -334,7 +350,7 @@ Each spatial component is normalised to the same city-domain population total. T
 | --- | --- | --- |
 | Time and output classes | 24 local hours; C1-C7; rows sum to one | Study output definition and normalisation constraint. |
 | Activity harmonisation | 87 fine activities; array length 88 with index 0 unused | Inherited study classification and crosswalks; tu_common.py. |
-| Japan temporal aggregation | 2016; selected age 15+; four 15-minute slots per hour | Source-derived tables [R1]; year/age subset selected in src_jpn_stula.py. |
+| Japan temporal aggregation | 2016; selected age 15+; four 15-minute slots per hour | Source-derived tables; [survey reference in Section 9.2](#92-kitakyushu-and-takasaki-maebashi-japan-jpn); year/age subset selected in src_jpn_stula.py. |
 | Separate diary group minimum | 100 diaries by default; adapter override allowed | Study-defined screening rule; build_daytype.py. |
 | Daily-total fit | 12,000 iterations; check every 10; error < 1e-7 minutes | Study-defined numerical controls; tu_common.fit. Structural-zero check uses 1e-8. |
 | Regional day-type ratio | Neutral ratio 1 when average share ≤ 1e-6 | Study-defined stabilisation; make_transfer.py and tu_common.day_ratios. |
@@ -342,7 +358,7 @@ Each spatial component is normalised to the same city-domain population total. T
 | Travel reconstruction | 10-minute intervals; depart down, arrive up | Study-defined discretisation; travel_diary.presence. |
 | Travel-gap ratio stabiliser | Add 0.002 to numerator and denominator | Study-defined; build_daytype_v2.EPS. |
 | Lunch adjustment | Hours 12,13; reference hours 11,14; excess > 1e-6; dips > 1e-9 | Study-defined imputation adjustment; lunch_correction.py. |
-| School target E | Age 5-9 and 10-14 shares × enrolment; formula in Section 7 | Source-derived indicators [R5]; age-band mapping and peak comparison are study-defined. |
+| School target E | Age 5-9 and 10-14 shares × enrolment; formula in Section 7 | Source-derived indicators; [data reference in Section 7.3](#73-source-values-and-study-assumptions); age-band mapping and peak comparison are study-defined. |
 | Residential lower bound | 0.05 during the school adjustment | Study-defined; build_daytype_v2.school_floor. |
 | Weekly aggregation | 5:2 or 5:1:1 where specified | Study weekly convention; source-specific initial averages can differ. |
 | Timing search / acceptance | delta {0,0.25,0.5} h; beta {0,0.1}; gain ≥ 0.25 | Study-defined search and rule. Adopted values are calibrated; Section 8. |
@@ -385,21 +401,7 @@ The country list follows the adopted workday/rest-day source index. Activity-to-
 
 Two other sources appear earlier in the processing chain: the US American Time Use Survey and Mexico's ENUT supply reference information before the final travel-diary replacement. The final US and Mexican country profiles use NHTS and EOD, respectively, as listed above. Finland uses borrowed day-type contrasts and is outside this 22-country group; its profile is described in Section 9.
 
-### 12.2 Data-provider references
-
-**[R1]** Statistics Bureau of Japan. Survey on Time Use and Leisure Activities 2016: survey outline and Questionnaire A. [https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html](https://www.stat.go.jp/english/data/shakai/2016/gaiyo.html)
-
-**[R2]** Federal Highway Administration. 2017 National Household Travel Survey: data and documentation, including the user guide. [https://nhts.ornl.gov/documentation](https://nhts.ornl.gov/documentation)
-
-**[R3]** INEGI. Encuesta Origen Destino en Hogares de la Zona Metropolitana del Valle de México (EOD) 2017. [https://www.inegi.org.mx/rnm/index.php/catalog/533](https://www.inegi.org.mx/rnm/index.php/catalog/533)
-
-**[R4]** Companhia do Metropolitano de São Paulo. Pesquisa Origem e Destino: final results for the 2017 survey. [https://www.metro.sp.gov.br/pt_BR/metro/numeros-pesquisa/pesquisa-od/](https://www.metro.sp.gov.br/pt_BR/metro/numeros-pesquisa/pesquisa-od/)
-
-**[R5]** World Bank, World Development Indicators. Population by age and sex, total population, and school enrolment indicators listed in Section 7; enrolment data supplied through UNESCO UIS. [https://data.worldbank.org/indicator/SE.SEC.NENR](https://data.worldbank.org/indicator/SE.SEC.NENR)
-
-The indicator identifiers in Section 7 specify the full age/enrolment input set. The linked secondary-enrolment page is one entry in that set. Dataset access conditions and survey weights remain those of each provider.
-
-### 12.3 Implementation locations used for this description
+### 12.2 Implementation locations used for this description
 
 | Processing step | Source implementation locator |
 | --- | --- |
@@ -413,7 +415,7 @@ The indicator identifiers in Section 7 specify the full age/enrolment input set.
 
 Locators above are relative to the source package’s 02_code directory and identify the implementation examined for this guide. They identify upstream processing scripts that are not distributed in this repository. The supplied reader is [time_use.py](../02_code/stage_2_100m_layers/time_use.py), function `daytype_shares`.
 
-### 12.4 What can be reproduced from the demonstration
+### 12.3 What can be reproduced from the demonstration
 
 The demonstration can read the supplied matrices and recompute population allocation and hourly grids. Rebuilding the matrices from scratch additionally requires the surveys or published tables, original-to-fine activity and location crosswalks, GF/GM harmonisation tables, inherited national baselines, demographic/enrolment inputs and any calibration observations. Some of those inputs have separate access conditions. A complete survey-to-weight rebuild cannot be inferred from the ten final CSVs.
 
