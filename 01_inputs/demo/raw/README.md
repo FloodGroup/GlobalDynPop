@@ -64,7 +64,7 @@ ESA WorldCover: [2021 v200](https://esa-worldcover.org/en/data-access), CC BY 4.
 
 ## Attribution
 
-GlobalBuildingAtlas: Zhu, Chen, Zhang, Shi and Wang (2025), [original dataset](https://doi.org/10.14459/2025mp1782307), CC BY-NC 4.0; [Source Cooperative Parquet distribution](https://source.coop/tge-labs/globalbuildingatlas-lod1). Retain the attribution and applicable source-polygon database terms; see [data licence](../../../LICENSE_DATA.md).
+GlobalBuildingAtlas: Zhu, Chen, Zhang, Shi and Wang (2025), [original dataset](https://doi.org/10.14459/2025mp1782307), CC BY-NC 4.0; [Source Cooperative Parquet distribution](https://source.coop/tge-labs/globalbuildingatlas-lod1). Retain the attribution and applicable source-polygon database terms; see [data terms](../../../06_docs/methods/data_sources.md#licence-of-the-example-layers-and-outputs).
 
 GHSL: European Commission, Joint Research Centre, CC BY 4.0; [terms and citation requirements](https://human-settlement.emergency.copernicus.eu/GHSLhowToCite.php).
 

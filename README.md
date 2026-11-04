@@ -128,4 +128,4 @@ When reusing the data, also cite the relevant original datasets listed under [Da
 
 ## Licence and data terms
 
-GlobalDynPop software is licensed under the [GNU General Public License v2.0](LICENSE) (GPL-2.0). The GBA-derived example inputs and population products have non-commercial data terms described in [LICENSE_DATA.md](LICENSE_DATA.md). Source datasets and derived database layers retain their applicable data licences and attribution requirements, documented under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
+GlobalDynPop software is licensed under the [GNU General Public License v2.0](LICENSE) (GPL-2.0). The GBA-derived example inputs and population products have non-commercial data terms described in [data terms](06_docs/methods/data_sources.md#licence-of-the-example-layers-and-outputs). Source datasets and derived database layers retain their applicable data licences and attribution requirements, documented under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).

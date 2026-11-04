@@ -18,7 +18,7 @@ Helsinki uses the Finland time-use profile with rest-day timing contrasts borrow
 
 ## Data sources and attribution
 
-GBA-derived inputs and outputs are subject to the non-commercial conditions in [LICENSE_DATA.md](../../LICENSE_DATA.md). See the [source inventory](../methods/data_sources.md) for GlobalBuildingAtlas, WorldCover, JRC, indoor-time and outdoor-microenvironment sources.
+GBA-derived inputs and outputs are subject to the non-commercial conditions in [data terms](../methods/data_sources.md#licence-of-the-example-layers-and-outputs). See the [source inventory](../methods/data_sources.md) for GlobalBuildingAtlas, WorldCover, JRC, indoor-time and outdoor-microenvironment sources.
 
 
 
