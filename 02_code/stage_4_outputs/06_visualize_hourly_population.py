@@ -6,7 +6,6 @@ Absolute population and signed change have separate scales, each shared across c
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 from pathlib import Path
@@ -47,7 +46,7 @@ def scalebar(ax, extent):
             va='bottom', fontsize=9.5, bbox=dict(facecolor='white', edgecolor='none', pad=.7, alpha=.9))
 
 
-def read_city(hourly, stem, metadata):
+def read_city(hourly, stem):
     fields = {}
     reference = None
     for day, hour in INPUTS:
@@ -67,8 +66,6 @@ def read_city(hourly, stem, metadata):
         if not np.isfinite(values).all() or (values < 0).any():
             raise ValueError(f'Invalid population values: {path}')
         fields[day, hour] = values
-        metadata['inputs'].append({'file': f'hourly_population/{stem}/{day}/{path.name}',
-                                   'sha256': hashlib.sha256(path.read_bytes()).hexdigest()})
     return fields, extent
 
 
@@ -109,16 +106,8 @@ def main(argv=None):
     change_cmap = LinearSegmentedColormap.from_list('change', ['#00649C', '#56B4E9', '#FFFFFF', '#F5AD66', '#C54B00'], N=1025)
     change_cmap.set_bad((1, 1, 1, 0))
     change_norm = SymLogNorm(linthresh=2, linscale=1, vmin=-100, vmax=100, base=10)
-    metadata = {'time_basis': 'local hourly intervals; 03:00 denotes 03:00–04:00',
-        'inputs': [], 'contrasts': [{'name': n, 'minuend': list(a), 'subtrahend': list(b)} for n, a, b in CONTRASTS],
-        'population_scale': {'type': 'logarithmic', 'minimum': 3, 'maximum': 200, 'shared_across_cities': True},
-        'change_scale': {'type': 'symmetric logarithmic', 'minimum': -100, 'maximum': 100,
-                         'linear_threshold': 2, 'linear_scale': 1, 'base': 10, 'shared_across_all_contrasts_and_cities': True},
-        'spatial_smoothing': 'none', 'difference_calculation': 'float64 subtraction of original float32 hourly rasters',
-        'dpi': 360, 'layout': {'figure_inches': [11, 7.6], 'font_family': 'DejaVu Sans', 'title_fontsize': 24},
-        'city_statistics': {}}
     for i, stem in enumerate(stems):
-        fields, extent = read_city(hourly, stem, metadata)
+        fields, extent = read_city(hourly, stem)
         city = cities.loc[stem]
         name = 'Takasaki-\nMaebashi' if stem == '05685_JPN_Takasaki_Maebashi' else city['name']
         bottom = .608-i*.222
@@ -151,13 +140,6 @@ def main(argv=None):
                 spine.set_color('#AEB6BF')
             if j == 0:
                 scalebar(ax, extent)
-        metadata['city_statistics'][stem] = {'baseline_total': float(baseline.sum()),
-            'baseline_fraction_over_200': float(np.mean(baseline>200)), 'contrasts': []}
-        for (label, a, b), diff in zip(CONTRASTS, differences):
-            metadata['city_statistics'][stem]['contrasts'].append({'name': label,
-                'minimum': float(diff.min()), 'maximum': float(diff.max()),
-                'net_difference': float(diff.sum()), 'fraction_beyond_colour_limits': float(np.mean(abs(diff)>100)),
-                'half_l1_fraction_of_reference_population': float(abs(diff).sum()/2/fields[b].sum())})
     # Shared scales make the sign and magnitude comparable across every city.
     for position, norm, cmap, ticks, label, extension in [
         ([.15, .108, .155, .013], population_norm, population_cmap, [3, 20, 200], 'Nighttime population', 'max'),
@@ -184,9 +166,6 @@ def main(argv=None):
     pdf_dir.mkdir(parents=True, exist_ok=True)
     fig.savefig(pdf_dir/'demo_population_distributions.pdf', dpi=360)
     plt.close(fig)
-    data_dir = root/'04_intermediate/figure_data' if public else out.parent/'figure_data'
-    data_dir.mkdir(parents=True, exist_ok=True)
-    (data_dir/'population_visualization_metadata.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
     print(json.dumps({'png': str(out/'demo_population_distributions.png'), 'panels': 5*len(stems)}), flush=True)
 
 

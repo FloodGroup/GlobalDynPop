@@ -8,9 +8,7 @@ The study assigns a value to each of its **1,904 urban centres**. A city receive
 
 ![Global distribution of adopted W_indoor values](../06_docs/figures/w_indoor_global.png)
 
-*Figure 1. Adopted W_indoor at the 1,904 urban centres. Each point represents one city; colour indicates the share of the day spent indoors. Point size is constant and does not encode population, sample size or evidence quality. Values assigned from another country are model parameters rather than independent measurements in the recipient city. Coordinates and adopted parameters are provided in `figure_data/w_indoor/city_map_data.csv`. Equal Earth projection.*
-
-The [figure data](figure_data/w_indoor/city_map_data.csv) retain the city identifier, coordinates, adopted value, assignment description, reference source, climate class and gross national income (GNI) per capita used in the parameter table.
+*Figure 1. Adopted W_indoor at the 1,904 urban centres. Each point represents one city; colour indicates the share of the day spent indoors. Point size is constant and does not encode population, sample size or evidence quality. Values assigned from another country are model parameters rather than independent measurements in the recipient city. Equal Earth projection.*
 
 ## 2. From source records to an indoor share
 
@@ -211,11 +209,11 @@ Three alternative parameter tables support sensitivity analysis: an alternative 
 ### Data and figure provenance
 
 - **Adopted source register:** Section 5 provides the survey, publication and dataset references supporting the adopted values; provincial inputs are documented in Section 3.
-- **City values and coordinates:** [city figure data](figure_data/w_indoor/city_map_data.csv), containing the adopted GlobalDynPop parameters and urban-centre locations based on the [Global Human Settlement (GHS) Urban Centre Database R2024A](https://doi.org/10.2905/1A338BE6-7EAF-480C-9664-3A8ADE88CBCD).
+- **City values and coordinates:** the adopted GlobalDynPop parameters and urban-centre locations based on the [Global Human Settlement (GHS) Urban Centre Database R2024A](https://doi.org/10.2905/1A338BE6-7EAF-480C-9664-3A8ADE88CBCD).
 - **Income:** the archived original Atlas-method GNI observations and their years; the [World Bank API query](https://api.worldbank.org/v2/country/all/indicator/NY.GNP.PCAP.CD?format=json&per_page=20000&mrnev=1) identifies the upstream series, while this report's figure uses the archived snapshot.
-- **Climate:** `koppen_geiger_0p00833333.tif` and its original `legend.txt`; Beck et al. (2023), cited above. The bundled [climate display grid](figure_data/w_indoor/climate_display_grid.npz) supports reproducing the figure; use the cited source dataset for native-resolution climate data.
+- **Climate:** `koppen_geiger_0p00833333.tif` and its original `legend.txt`; Beck et al. (2023), cited above. The contextual map uses a resampled display grid; native-resolution climate data are available from the cited source dataset.
 - **Geographic context:** Natural Earth country geometry. Country boundaries are used for the income map and dissolved to land outlines for the other maps. [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/).
 
 The companion [time-use guide](time_use.md) describes the hourly location shares.
 
-All three figures share the same projection, map extent, typography and layout. Continuous quantities use a common blue sequential colour family; climate classes use a colour-blind-aware categorical palette. The 300-dpi PNG figures are in `06_docs/figures/`; PDF exports are in `05_outputs/figure_exports/`. Figure data and source metadata are stored in `04_intermediate/figure_data/w_indoor/`. The [plotting script](../02_code/stage_4_outputs/08_visualize_w_indoor.py) recreates them from the bundled figure data, without changing the model parameters.
+All three figures share the same projection, map extent, typography and layout. Continuous quantities use a common blue sequential colour family; climate classes use a colour-blind-aware categorical palette. The 300-dpi PNG figures are in `06_docs/figures/`; PDF exports are in `05_outputs/figure_exports/`. The global maps are supplied as report illustrations; their auxiliary plotting datasets are not included in this repository.

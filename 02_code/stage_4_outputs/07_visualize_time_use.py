@@ -1,7 +1,6 @@
 """Plot the hourly location shares used by the three example cities."""
 from pathlib import Path
 import argparse
-import hashlib
 import json
 import os
 import sys
@@ -37,10 +36,6 @@ def main(argv=None):
     fig.subplots_adjust(left=.085,right=.98,top=.835,bottom=.225,hspace=.36,wspace=.11)
     fig.text(.025,.99,'Hourly location shares',fontsize=24,weight='bold',va='top')
     fig.text(.025,.934,'Helsinki, Kitakyushu and Takasaki-Maebashi  |  Local time',fontsize=12.5,color='#627581',va='top')
-    metadata={'source_directory':'04_intermediate/demo/stage_2/hourly_location_shares',
-              'time_basis':'local hour','shape':[24,7],'normalisation':'each row divided by its sum, as in the model reader',
-              'colors':dict(zip(LABELS,COLORS)),'inputs':[],'output_format':'png','dpi':360,
-              'layout':{'figure_inches':[11,6.6],'title_fontsize':24,'subtitle_fontsize':12.5,'tick_fontsize':12,'font_family':'DejaVu Sans'}}
     for row,(iso,title) in enumerate([('FIN','Finland'),('JPN','Japan')]):
         for col,(day,label) in enumerate([('workday','Workday'),('restday','Rest day')]):
             base=stage2/'hourly_location_shares'
@@ -64,10 +59,6 @@ def main(argv=None):
             ax.set_title(f'{chr(97+2*row+col)}  {title} · {label}',loc='left',fontsize=13,weight='bold',pad=6)
             if col==0:ax.set_ylabel('Population share')
             if row==1:ax.set_xlabel('Local hour')
-            metadata['inputs'].append({'country':iso,'daytype':day,'file':path.name,
-                'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'source':source,
-                'raw_row_sum_max_error':float(np.max(np.abs(values.sum(axis=1)-1))),
-                'model_row_sum_max_error':float(np.max(np.abs(shares.sum(axis=1)-1)))})
     handles,labels=axs[0,0].get_legend_handles_labels()
     fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.065),ncol=4,frameon=False,fontsize=11.5,
                handlelength=1.2,handletextpad=.45,columnspacing=1.3,labelspacing=.45)
@@ -84,10 +75,6 @@ def main(argv=None):
             raise ValueError("Text outside figure: "+text_item.get_text())
     fig.savefig(out/'time_use_weights.png',dpi=360)
     plt.close(fig)
-    metadata_dir = (args.root/"04_intermediate/figure_data" if out.resolve() == (args.root/"06_docs/figures").resolve()
-                    else out.parent/"figure_data")
-    metadata_dir.mkdir(parents=True,exist_ok=True)
-    (metadata_dir/'time_use_weights_metadata.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
     print(json.dumps({'png':str(out/'time_use_weights.png'),'panels':4,'matrices_checked':4}))
 
 

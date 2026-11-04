@@ -8,4 +8,4 @@ The [Stage 1 dictionary](demo/stage_1/README.md), [Stage 2 dictionary](demo/stag
 
 [Time use: derivation of hourly location shares](time_use.md) documents survey processing, day-type transfer, corrections, parameter sources and the supplied Finland and Japan profiles.
 
-Plotting inputs, source metadata and figure checks are stored in [figure_data/](figure_data/). The documentation images themselves are in `06_docs/figures/`.
+Documentation images are stored in `06_docs/figures/`.

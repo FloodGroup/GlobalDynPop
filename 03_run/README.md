@@ -46,7 +46,6 @@ outputs/population_components/
 outputs/hourly_population/
 outputs/functional_land_use/
 figures/                  PNG figures from this run
-figure_data/              Figure metadata
 figure_exports/           PDF exports
 verification.json         Stage completion and numerical checks
 ```

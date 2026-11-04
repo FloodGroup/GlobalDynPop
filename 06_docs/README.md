@@ -27,7 +27,7 @@ The [indoor-share guide](../04_intermediate/w_indoor.md) documents W_indoor calc
 - [Population changes](figures/demo_population_distributions.png): nighttime reference maps, changes from night to morning/midday, and midday workday-minus-rest-day differences for the three example cities.
 - [Time-use weights](figures/time_use_weights.png): the Finland and Japan workday/rest-day profiles used by the example.
 
-This directory contains PNG images only. Stage 4 regenerates the population and time-use figures. Plotting data and JSON metadata are stored in `04_intermediate/figure_data/`; the metadata record input hashes and plotting settings. PDF exports of the indoor-share, income and climate maps are stored in `05_outputs/figure_exports/`.
+This directory contains PNG images only. Stage 4 regenerates the population and time-use figures. PDF exports of the indoor-share, income and climate maps are stored in `05_outputs/figure_exports/`.
 
 ## Reproduction and sources
 
