@@ -1,0 +1,6 @@
+iso3,daytype,delta_h,beta,fitted_on
+USA,restday,0.5,0.1,restday
+USA,saturday,0.5,0.1,restday
+USA,sunday,0.5,0.1,restday
+KOR,workday,0.5,0.1,workday
+ESP,workday,0.5,0.1,workday

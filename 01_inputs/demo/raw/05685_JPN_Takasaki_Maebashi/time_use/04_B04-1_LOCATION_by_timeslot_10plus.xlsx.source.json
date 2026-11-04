@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/time_use/04_B04-1_LOCATION_by_timeslot_10plus.xlsx",
+  "source": "https://www.stat.go.jp/data/shakai/2016/gaiyou.html",
+  "role": "STULA 2016 official published participation/location tables; no respondent microdata",
+  "operation": "Unmodified provider publication or source download retained from the supplied research archive.",
+  "bytes": 752121,
+  "sha256": "747ab970b280e15c62d01268d1c35e7f009b66f792cbb6b50b0fb33f918d1a1c"
+}

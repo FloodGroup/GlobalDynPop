@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/time_use/world_bank_school_age_enrolment.json",
+  "source": "https://api.worldbank.org/v2/country/FIN/indicator/",
+  "role": "WDI source observations for school-age population and enrolment",
+  "operation": "Select the country records from the archived indicator API responses; preserve original fields and values. Response metadata describe the original full response.",
+  "bytes": 40361,
+  "sha256": "2d391b1cdc0789be97a50a9d3ec44d9632b41248d0d5329b48e088b6cc773616"
+}

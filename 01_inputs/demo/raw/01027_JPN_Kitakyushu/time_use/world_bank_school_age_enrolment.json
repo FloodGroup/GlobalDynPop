@@ -1,0 +1,1682 @@
+{
+  "SE.PRE.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2017",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2016",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2015",
+        "value": 86.695426940918,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.PRM.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 101.125762939453,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 101.098106384277,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 101.774467468262,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 101.801902770996,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 101.936538696289,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 101.828887939453,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.PRM.TENR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2017",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2016",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2015",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2014",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2013",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2012",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.SEC.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 101.537071228027,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 101.38200378418,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 101.744400024414,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 101.34056854248,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 100.660270690918,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 100.482200622559,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.SEC.NENR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2017",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2016",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2015",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2014",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2013",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2012",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0004.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 1917694,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 1961271,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2021923,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2095184,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2170938,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2253450,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2324275,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2377954,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0004.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 2010649,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 2059274,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2125049,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2203263,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2284807,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2374426,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2451241,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2507852,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0509.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 2273036,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 2343680,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2405653,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2462393,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2508269,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2547043,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2577641,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2601405,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0509.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 2391743,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 2471573,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2540621,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2602406,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2652846,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2695687,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2727638,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2750895,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.1014.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 2562101,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 2595625,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2629170,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2659111,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2683048,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2699418,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2709622,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2721439,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.1014.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 2709221,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 2746527,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 2782890,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 2816136,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 2842543,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 2860021,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 2869727,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 2880699,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.TOTL": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2025",
+        "value": 123366734,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2024",
+        "value": 123975371,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2023",
+        "value": 124516650,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2022",
+        "value": 125124989,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2021",
+        "value": 125681593,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2020",
+        "value": 126261000,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2019",
+        "value": 126633000,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "JP",
+          "value": "Japan"
+        },
+        "countryiso3code": "JPN",
+        "date": "2018",
+        "value": 126811000,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  }
+}

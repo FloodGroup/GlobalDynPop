@@ -2,15 +2,15 @@
   "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/buildings/open_building_map_buildings.parquet",
   "city": "01027_JPN_Kitakyushu",
   "layer": "building",
-  "records": 271199,
+  "records": 275411,
   "bounds_wgs84": [
-    130.538245467692,
-    33.645609745690855,
-    131.14750253230798,
-    34.13101379468117
+    130.53524546769202,
+    33.642609745690855,
+    131.15050253230797,
+    34.13401379468117
   ],
   "source_release": "OpenBuildingMap 2025; doi:10.5880/GFZ.LKUT.2025.002; Source Cooperative mirror",
-  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "operation": "Complete source features whose bounding boxes intersect the model domain plus 0.003-degree reading margin required by the building-use matcher; original fields and geometry retained.",
   "sources": [
     {
       "path": "s3://us-west-2.opendata.source.coop/tge-labs/openbuildingmap/building.132113.parquet",
@@ -39,9 +39,11 @@
         484,
         487,
         488
-      ]
+      ],
+      "etag": "\"70d359e5a52d5c952cd3068d0f161e72-71\"",
+      "size": 588076698
     }
   ],
-  "bytes": 27910634,
-  "sha256": "0bc2f5766c0b30cc58d815c322b8cb8fb4e39c720528168eada988b0aec37730"
+  "bytes": 28348517,
+  "sha256": "9481b518b7b2d4499f840ffc89871f5cc00480cbe91e63beacb2a1ca49fe2222"
 }

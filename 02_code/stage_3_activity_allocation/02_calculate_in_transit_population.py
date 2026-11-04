@@ -5,7 +5,7 @@
     python 03_run/runtime/run_parallel.py --workers 12 --name network -- 02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py   (several processes)
 
 For every city: the road and rail network of the domain (routing graph from the Overture segments and
-stations, stored by 05_prepare_transport_graphs.py), the trips
+stations, stored by 04_prepare_transport_graphs.py), the trips
 between zones of the city's gravity
 model (workday and rest day, kernels and time-use of the country) are assigned to the fastest
 routes (stage_3_activity_allocation/network.py), and the person-time is placed on the 100 m cells.
@@ -27,6 +27,7 @@ import pyarrow as pa
 import pyarrow.compute as pc
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "03_run" / "runtime"))
 import stage_1_data_inputs.configuration as configuration
 import stage_3_activity_allocation.network as network  # noqa: E402
 from stage_2_100m_layers.cities import grid_of, load_cities  # noqa: E402
@@ -35,7 +36,7 @@ from stage_3_activity_allocation.model import Params, attractor, iso3_of, load_l
 from stage_2_100m_layers.time_use import daytype_shares  # noqa: E402
 
 OUT = configuration.NETWORK
-GRAPHS = configuration.ROAD_GRAPHS          # road and rail network of every city (input; 05_prepare_transport_graphs.py)
+GRAPHS = configuration.ROAD_GRAPHS          # road and rail network of every city (input; 04_prepare_transport_graphs.py)
 CLASSES = ("C2", "C3", "C4", "C5", "C7")
 PARAMS_FILE = ""          # name of the parameter file (recorded in the stats)
 SHARE_COL = {"C2": 1, "C3": 2, "C4": 3, "C5": 4, "C7": 6}
@@ -87,7 +88,7 @@ def road_graph(stem):
     t0=time.time()
     path=GRAPHS/f'{stem}.npz'
     if not path.is_file():
-        raise FileNotFoundError(f'Missing Stage 2 graph: {path}; run 05_prepare_transport_graphs.py first')
+        raise FileNotFoundError(f'Missing Stage 2 graph: {path}; run 04_prepare_transport_graphs.py first')
     return network.load_graph(path),0.0,time.time()-t0
 
 
@@ -168,10 +169,12 @@ def main(argv=None):
                                                  "unreached_trip_share", "fetch_s", "build_s", "total_s")}), flush=True)
         except Exception as e:  # noqa: BLE001
             print(json.dumps({"stem": stem, "error": f"{type(e).__name__}: {e}", "trace": traceback.format_exc()[-800:]}), flush=True)
+            raise
         finally:
             work_queue.release(lock)
 
 
 if __name__ == "__main__":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "03_run" / "runtime"))
     main()

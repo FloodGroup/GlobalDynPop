@@ -19,7 +19,7 @@ followed by C2_rest, C5_rest, C6_rest and C7_rest, the rest-day allocation of th
 destinations differ on rest days (C1, C3 and C4 are the same on both day types). Every band sums to the domain
 population. The population of hour h of day type tau is the linear combination
 P(h, tau) = sum_c s_c(h, tau) component_c(tau) with the hourly activity-location shares of the country
-(01_generate_hourly_population.py). A JSON file per city records the parameters, the destination layers, the POI weight and the share
+(02_generate_hourly_population.py). A JSON file per city records the parameters, the destination layers, the POI weight and the share
 of residents who found no destination; one record per city goes to 04_intermediate/logs/components/.
 """
 from __future__ import annotations
@@ -36,6 +36,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "03_run" / "runtime"))
 import stage_1_data_inputs.configuration as configuration  # noqa: E402
 from stage_2_100m_layers.cities import grid_of, load_cities  # noqa: E402
 from stage_3_activity_allocation.model import Params, components_daytypes, load_layers, poi_density, poi_weight  # noqa: E402
@@ -134,14 +135,14 @@ def run_city(row: dict, params: Params, out: Path):
     meta = {"stem": stem, "name": row.get("name"), "iso3": row.get("iso3"), "pop_domain": float(N.sum()),
             "poi_per_1000": poi_density(P), "poi_weight": poi_weight(P), "stay_share": comp["_stay_share"],
             "has_floor_area": "FA_C1" in P, "has_total_volume": "_VT" in P,
-            "params": asdict(params.for_country(iso)),          # v2: the parameters of this city (country overrides applied)
+            "params": asdict(params.for_country(iso)),          # the parameters of this city (country overrides applied)
             "params_file": PARAMS_FILE,
             "params_effective": effective_kernels(params, iso),
             "band_sums": {b: float((comp["N"] if b == "C1" else comp[b]).sum()) for b in BANDS},
             "crs_proj4": g.crs.to_proj4(), "x0": g.x0, "y1": g.y1, "nx": g.nx, "ny": g.ny, "cell_m": g.cell}
     write_components(out / f"{stem}.tif", g, comp, {"model": "GlobalDynPop_100m components"}, rest=rest)
     meta["stay_share_restday"] = rest["_stay_share"]
-    meta["transit"] = {"workday": comp.get("_transit", "gauss"), "restday": rest.get("_transit", "gauss")}   # C6 source (v2: network)
+    meta["transit"] = {"workday": comp.get("_transit", "gauss"), "restday": rest.get("_transit", "gauss")}   # C6 source (network or Gaussian fallback)
     a = configuration.POI_CHINA / f"{stem}.npz"
     meta["poi_source_amap"] = a.exists()
     (out / f"{stem}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -152,7 +153,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--stems", nargs="*")
     ap.add_argument("--stems-file")
-    ap.add_argument("--params", help="JSON file or inline JSON with Params fields")
+    ap.add_argument("--params", default=str(configuration.MODEL_PARAMS), help="JSON file or inline JSON with Params fields")
     ap.add_argument("--order", default="small", choices=["small", "large", "list"])
     ap.add_argument("--shard", default="0/1")
     ap.add_argument("--out", default=str(configuration.COMPONENTS))
@@ -164,7 +165,7 @@ def main(argv=None):
                     help="keep looping until every listed city is done, picking up cities as s04 writes their floor area")
     ap.add_argument("--max-cells", type=int, default=None, help="skip cities with more grid cells (memory)")
     ap.add_argument("--allow-gauss-transit", action="store_true",
-                    help="with transit 'network': also run cities without a network layer (v1 approximation for C6)")
+                    help="with transit 'network': also run cities without a network layer (Gaussian approximation for C6)")
     ap.add_argument("--poll-s", type=int, default=120)
     a = ap.parse_args(argv)
     spec = {}
@@ -197,6 +198,7 @@ def main(argv=None):
     import memory_guard as memory_guard
     import work_queue as work_queue
     rows = c.to_dict("records")
+    failures = []
     done_now = set()          # written by this process (with --overwrite the .tif exists before the run)
     while True:
         waiting = 0
@@ -225,6 +227,7 @@ def main(argv=None):
                 rec = {"stem": stem, "pop_domain": m["pop_domain"], "poi_weight": round(m["poi_weight"], 4),
                        "stay_share": round(m["stay_share"], 4), "has_floor_area": m["has_floor_area"], "error": None}
             except Exception as e:  # noqa: BLE001
+                failures.append(stem)
                 rec = {"stem": stem, "error": repr(e), "trace": traceback.format_exc()[-1500:]}
             rec["wall_s"] = round(time.time() - t0, 1)
             work_queue.release(lock)
@@ -236,6 +239,9 @@ def main(argv=None):
             break
         print(json.dumps({"waiting_for_inputs": waiting}), flush=True)
         time.sleep(a.poll_s)
+
+    if failures or waiting:
+        raise RuntimeError(f"Component calculation incomplete: failed={failures}, waiting_for_inputs={waiting}")
 
 
 if __name__ == "__main__":

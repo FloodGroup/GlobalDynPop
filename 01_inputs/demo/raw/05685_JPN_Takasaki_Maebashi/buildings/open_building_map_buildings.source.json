@@ -2,15 +2,15 @@
   "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/buildings/open_building_map_buildings.parquet",
   "city": "05685_JPN_Takasaki_Maebashi",
   "layer": "building",
-  "records": 840706,
+  "records": 852669,
   "bounds_wgs84": [
-    138.71634802832565,
-    36.20205061250441,
-    139.3069885473044,
-    36.52420832459432
+    138.71334802832567,
+    36.19905061250441,
+    139.30998854730439,
+    36.52720832459432
   ],
   "source_release": "OpenBuildingMap 2025; doi:10.5880/GFZ.LKUT.2025.002; Source Cooperative mirror",
-  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "operation": "Complete source features whose bounding boxes intersect the model domain plus 0.003-degree reading margin required by the building-use matcher; original fields and geometry retained.",
   "sources": [
     {
       "path": "s3://us-west-2.opendata.source.coop/tge-labs/openbuildingmap/building.133002.parquet",
@@ -82,9 +82,11 @@
         1627,
         1628,
         1629
-      ]
+      ],
+      "etag": "\"ce10263904626f442bbbf65facbb52ff-251\"",
+      "size": 2101302726
     }
   ],
-  "bytes": 82252902,
-  "sha256": "c7dbf6e8e568831aefb2727a9d22a2911836eaeef5105e68c4ac0d7bfb91f6f1"
+  "bytes": 83434754,
+  "sha256": "70b729c6025e6b9bc236ab73250aa03b9579e683e21e62c88f3c8a1740d89c2a"
 }

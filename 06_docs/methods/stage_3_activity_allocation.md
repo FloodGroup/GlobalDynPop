@@ -2,7 +2,7 @@
 
 ## Processing sequence
 
-The numbered programs first save attractiveness, then compute the in-transit layers, and finally calculate destination populations and package the components. Destination allocation and transit both use Stage 2 settings; the hourly mixture is written in Stage 4.
+The runner reads the completed Stage 2 outputs in the same run directory. The numbered programs first save attractiveness, then compute the in-transit layers, and finally calculate destination populations and package the components. Destination allocation and transit both use Stage 2 settings; the hourly mixture is written in Stage 4.
 
 ## Programs and products
 
@@ -14,17 +14,23 @@ This stage reads `04_intermediate/demo/stage_2/` and writes `04_intermediate/dem
 | [02_calculate_in_transit_population.py](../../02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py) | `run_city` → `road_graph`, `trip_matrices` → `network.zone_od`, `network.assign` | `in_transit_population/<city>.npz`: T for workdays and rest days |
 | [03_calculate_population_components.py](../../02_code/stage_3_activity_allocation/03_calculate_population_components.py) | `model.components_daytypes`, `gravity.allocate` | `destination_population/<city>.npz`: D_c before raster encoding |
 
-Attractiveness includes the configured exponent and is a dimensionless allocation weight. It need not sum to one after exponentiation. The saved destination populations have full computation precision and include any residents retained at home when no destination is reachable. In-transit layers are normalised to the domain population.
+Attractiveness includes the configured exponent and is a dimensionless allocation weight. It need not sum to one after exponentiation. The saved destination populations have full computation precision and include any residents retained at home when no destination is reachable. In-transit layers are normalised to the domain population. Before their contribution to components, they are multiplied by the land fraction and renormalised; the resident C1 field remains the supplied GHS-POP field.
 
 The component writer also packages N, D_c and T into the final per-city GeoTIFFs under `05_outputs/demo/population_components/`. The hourly writer in Stage 4 reads those component files. Array keys use activity codes C2, C3, C4, C5 and C7 plus `_workday` or `_restday`.
 
 ## Destination attractiveness and outdoor locations
 
-For each activity class, the supplied settings mix the normalised floor-area layer with the normalised place-count layer in equal proportions. Place counts are smoothed with a Gaussian standard deviation of 300 m. For C2, industrial floor area receives weight 0.3; unknown-use floor area contributes in proportion to the GHSL non-residential share of building volume. The resulting attractiveness is raised to power 1.1 for C2 and 1.0 for the other classes. Country and day-type overrides in the adopted parameter file apply before allocation.
+The indoor destination layer mixes normalised floor area and smoothed POI counts with equal weights. Industrial capacity has weight 0.3, and unknown-use capacity contributes its estimated non-residential fraction. POIs use 300 m Gaussian smoothing followed by the configured host mask: a cell must contain at least 500 m2 of floor area, 1,500 m3 of building volume, or an original POI. The adopted parameter file uses `poi_mask="host"` for all classes.
 
-With both layers available, the calculation is `A_c = [0.5 F_c/sum(F_c) + 0.5 Pi_c/sum(Pi_c)]^alpha_c`. If a class has no floor area, the available place layer is used alone; if it has no places, floor area is used alone. If both are absent, the implementation falls back to non-residential building volume. Production-constrained gravity allocation then assigns each origin's population across destinations in proportion to `A_c(j) f_c(d_ij)`, normalised over reachable destinations. Origins without a reachable destination retain their population at the origin. C7 uses C5 attractiveness under the supplied settings.
+Each destination layer is multiplied by its land fraction before indoor/outdoor mixing. Let I_c and O_c be the normalised indoor and outdoor pools. The pre-exponent destination field is `A0_c = W_indoor I_c + (1-W_indoor) O_c`. Attractiveness is then `(A0_c / sum(A0_c))^alpha_c`, with alpha=1.1 for work and 1 for the other activities. The gravity model acts on this combined field. Consequently W_indoor is not a guarantee that exactly that fraction of the final allocated population is indoors.
 
-The place classification includes parks, playgrounds, gardens, nature reserves, beaches and plazas in C5. These places can attract population even where floor area is zero. This represents some outdoor leisure through place locations and smoothing. The model does not estimate separate indoor and outdoor shares, distribute visitors over park polygons by usable area, or use opening hours, outdoor capacity or weather. Street movement contributes through the in-transit component; stationary outdoor activity outside mapped places is not independently identified. The functional land-use output is derived after allocation and supplies no additional outdoor-attractiveness layer.
+The outdoor pool uses the land outside GBA building footprints, divided into walkable streets; parks, managed grass, sports grounds and squares; and other open land. Their near-destination weights are 0.5755/0.1140/0.3105 for work and 0.5688/0.1244/0.3068 for services, leisure and other activities, from the adopted HAPEM-MS3 tables. Each group is weighted by available area and a 300 m Gaussian neighbourhood of indoor destinations. Agricultural and protected natural land are excluded from the residual open-space type. Empty groups redistribute their weights among available groups.
+
+Education uses campus grounds, with the adult three-group rule as a fallback. Leisure and other activities allocate half the outdoor pool to parks, sports grounds and squares throughout the domain. Where typed inputs are absent, the core model uses an untyped outdoor fallback; the bundled demo explicitly requires all layers.
+
+W_indoor is read from the 1,904-city table under Stage 2 `time_use/w_indoor/`. Its underlying sources measure daily indoor time; using this as the weight of away-from-home activity destinations is a model approximation. China uses province-level survey values, countries with adopted sources use their own values, and other countries use income/geographic/evidence-based reference matching. See the [assignment rules](../../04_intermediate/demo/stage_2/time_use/w_indoor/README.md).
+
+Country overrides are applied before day-type overrides. Each activity class inherits unspecified global destination fields, including outdoor-pool rules, while applying its country-specific POI and distance-kernel settings.
 
 ## Gravity allocation
 
@@ -51,7 +57,7 @@ Road speeds (km/h): motorway 45, trunk 35, primary 28, secondary 24, tertiary 20
 
 ### Routing behaviour and interpretation
 
-Local person-time can be omitted in zones without streets before the final normalisation. Intrazonal shortcuts can shorten the intended local distance, and shared road/rail connectors can permit transfers away from stations. These behaviours affect the spatial allocation of transit and are not resolved by conserving the final population total. Graph `p_time` values are precomputed, so changing speeds requires rebuilding the graph. The model also has a Gaussian transit fallback when a network is missing; that fallback does not reproduce road/rail assignment. The three-city runner requires the graph and transit products.
+Local person-time can be omitted in zones without streets before the final normalisation. Intrazonal shortcuts can shorten the intended local distance, and shared road/rail connectors can permit transfers away from stations. These behaviours affect the spatial allocation of transit and are not resolved by conserving the final population total. Graph `p_time` values are precomputed, so changing speeds requires rebuilding the graph. The model also has a Gaussian transit fallback when a network is missing; that fallback does not reproduce road/rail assignment. The three-city runner requires the Stage 2 graph and always recalculates transit in program 02 before writing components. It does not use the Gaussian fallback or bundled transit arrays.
 
 Road traffic-count agreement measures spatial association with traffic flows; it does not directly validate the instantaneous number of people present in each 100 m cell.
 
@@ -64,7 +70,7 @@ Road traffic-count agreement measures spatial association with traffic flows; it
 | [network.py](../../02_code/stage_3_activity_allocation/network.py) | Routing graph operations and assignment of trip person-time |
 | [model.py](../../02_code/stage_3_activity_allocation/model.py) | Population model settings, destination layers, allocation and components |
 
-[model.py](../../02_code/stage_3_activity_allocation/model.py) and the stage programs read Stage 2 grids, source layers and hourly shares. Graph-building functions are also called during Stage 2 transport preparation. Execution locks and memory monitoring are imported from `03_run/`.
+[model.py](../../02_code/stage_3_activity_allocation/model.py) and the stage programs read Stage 1 grid definitions and Stage 2 source layers and hourly shares. Graph-building functions are also called during Stage 2 transport preparation. Execution locks and memory monitoring are imported from `03_run/`.
 
 ## Parameter values and sources
 

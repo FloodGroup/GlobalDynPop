@@ -1,6 +1,8 @@
 # Stage 1 method: Data inputs
 
-Stage 1 establishes the source data for each city domain. Spatial subsets retain the information needed to derive resident population, building floor area, POI density and transport networks. Conversion to the common 100 m grid takes place in [Stage 2](stage_2_100m_layers.md).
+Stage 1 defines each city's projection, extent and 100 m grid and establishes its source data. Spatial subsets retain the information needed to derive resident population, building floor area, POI density and transport networks. Conversion to the common 100 m grid takes place in [Stage 2](stage_2_100m_layers.md).
+
+The example includes original building records for GlobalBuildingAtlas and source subsets for GHSL, Overture and OpenBuildingMap. Native WorldCover and JRC GSW windows, together with Overture water/land-use/infrastructure records, provide the inputs for permanent water and typed open space. All three-city spatial source subsets are included; survey harmonisation and parameter calibration remain upstream tasks. See the [source inventory](data_sources.md). The Stage 1 demo run generates the grid table and verifies the original city subsets; raw-source verification is also available as a separate numbered command.
 
 ## Study cities and spatial coverage
 
@@ -12,9 +14,9 @@ Helsinki, Kitakyushu and Takasaki-Maebashi provide the worked processing example
 
 | Source information | Content retained before model processing | Use in Stage 2 |
 |---|---|---|
-| Urban-centre boundaries | Geometry, city identifiers and source attributes | Define the local grid and city domain. |
+| Urban-centre boundaries | Geometry, city identifiers and source attributes | Read the grid and domain already defined in Stage 1. |
 | Resident population | Native GHS-POP pixel counts and georeferencing | Resample population onto the model grid while conserving population. |
-| Buildings and building height | Overture footprints and use/height/floor attributes; OpenBuildingMap occupancy and height/storey codes; GHSL height and total/non-residential volume rasters | Classify building use and estimate floor area from footprint area and storeys. |
+| Buildings and building height | GlobalBuildingAtlas footprints, heights and original attributes; Overture footprints and use/height/floor attributes; OpenBuildingMap occupancy and height/storey codes; GHSL height and total/non-residential volume rasters | Classify building use and estimate floor area from footprint area and storeys. |
 | POIs | Locations, activity categories and source attributes | Classify destinations and calculate POI counts and density. |
 | Land use | Polygon geometries with source class and subtype attributes | Supply building-use evidence where building attributes are insufficient. |
 | Road, rail and infrastructure | Segment geometries, network attributes and infrastructure features | Construct the transport graph and identify stations. |
@@ -28,7 +30,7 @@ Vector subsets retain complete source features whose bounding boxes overlap the 
 
 Raster subsets use integer windows on the native source grids. The source coordinate system, pixel alignment and pixel values are preserved; the cropped file records the affine transform of its own window. Resampling to 100 m is a Stage 2 operation.
 
-Source manifests and per-file provenance records identify the source files, selected Parquet row groups or raster windows, and SHA-256 fingerprints. Comparing a supplied file with its recorded fingerprint establishes file integrity. It does not assess source accuracy, spatial completeness or the quality of the resulting population estimates.
+Per-file provenance records identify the source files, selected Parquet row groups or raster windows, and SHA-256 fingerprints. Comparing a supplied file with its recorded fingerprint establishes file integrity. It does not assess source accuracy, spatial completeness or the quality of the resulting population estimates.
 
 ## Connection to later stages
 
@@ -36,16 +38,18 @@ Stage 2 reads the raw spatial subsets and derives model layers. It also reads th
 
 ## Processing sequence and implementation
 
-The entry point [01_prepare_raw_sources.py](../../02_code/stage_1_data_inputs/01_prepare_raw_sources.py) calls `source_preparation.prepare`. Its processing sequence is:
+The grid entry point [00_create_city_grids.py](../../02_code/stage_1_data_inputs/00_create_city_grids.py) reads either the original GHS-UCDB with selected city IDs or bundled city boundaries. It writes `04_intermediate/demo/stage_1/local_grids/city_grid_definitions.csv`; all subsequent stages read this table through the shared configuration.
+
+The extraction entry point [01_prepare_raw_sources.py](../../02_code/stage_1_data_inputs/01_prepare_raw_sources.py) calls `source_preparation.prepare`. Its processing sequence is:
 
 1. **Select urban centres.** Read the original GHS-UCDB layer, select `ID_UC_G0` records and apply the 2025 population threshold. Resolve city identifiers without changing the source boundary geometries.
-2. **Define the extraction domain.** `source_preparation.city_record` projects the boundary to the local equal-area coordinate system and calculates the buffered, aligned domain. `source_bounds` transforms its densified perimeter to WGS84 for vector selection.
+2. **Define and save the city grid.** `city_definitions.city_record` projects the boundary to the local equal-area coordinate system and calculates the buffered, aligned domain. The grid table is saved before extraction. `source_bounds` transforms its densified perimeter to WGS84 for vector selection.
 3. **Locate source records.** `build_source_index` reads Parquet bounding-box statistics when an index must be generated. Existing indexes identify candidate files and row groups; the exact feature-level bounding-box test follows during extraction.
 4. **Extract vectors.** `extract_vectors` reads candidate row groups and retains whole source records whose bounding boxes intersect the extraction bounds. It preserves all source fields and performs no activity classification or geometric clipping.
 5. **Extract native raster windows.** [ghsl_sources.fetch_tile](../../02_code/stage_1_data_inputs/ghsl_sources.py) locates or downloads source tiles. `crop_raster` transforms the domain bounds into each tile's own CRS and copies an integer window using that tile's actual affine transform.
-6. **Record and verify provenance.** `record_file` stores paths, source selection details and SHA-256 fingerprints in per-file metadata. `prepare` assembles the three manifests. [02_verify_raw_sources.py](../../02_code/stage_1_data_inputs/02_verify_raw_sources.py) checks file existence and fingerprints against these records.
+6. **Record and verify provenance.** `record_file` stores paths, source selection details and SHA-256 fingerprints in per-file metadata. The same per-file records describe the GHSL, Overture, OpenBuildingMap and GlobalBuildingAtlas subsets. [02_verify_raw_sources.py](../../02_code/stage_1_data_inputs/02_verify_raw_sources.py) checks file existence and fingerprints against these records.
 
-The extraction and domain functions above are defined in [source_preparation.py](../../02_code/stage_1_data_inputs/source_preparation.py). [configuration.py](../../02_code/stage_1_data_inputs/configuration.py) supplies shared paths and settings.
+Domain construction is implemented in [city_definitions.py](../../02_code/stage_1_data_inputs/city_definitions.py). The extraction functions are defined in [source_preparation.py](../../02_code/stage_1_data_inputs/source_preparation.py). [configuration.py](../../02_code/stage_1_data_inputs/configuration.py) supplies shared paths and settings.
 
 ## Source-index structure
 
@@ -53,11 +57,11 @@ Each row-group index is a Parquet table with `path`, `rg`, `xmin`, `xmax`, `ymin
 
 ## Stage boundary
 
-The extraction extent uses the same local projection, 10 km margin and 100 m bound alignment as the model grid. Defining these bounds does not resample source data: Stage 2 writes the grid descriptor and converts the source records into model quantities. The common domain calculation is `source_preparation.city_record`, shared by source extraction and Stage 2 grid preparation.
+The extraction extent uses the same local projection, 10 km margin and 100 m bound alignment as the model grid. Defining these bounds does not resample source data: Stage 1 writes the grid descriptor; Stage 2 converts source records into quantities on that grid. The common domain calculation is `city_definitions.city_record`, shared by the grid writer and source extraction.
 
-Building footprints, OpenBuildingMap buildings and land-use evidence are selected with an additional 0.003-degree reading margin, matching the floor-area reader. This is a study-defined processing margin, not an additional output-domain extension. Other vector sources use the domain bounds. Selecting a record by its bounding box can retain features that lie outside the exact domain polygon; Stage 2 applies the model grid and source-specific filters.
+Overture building footprints, OpenBuildingMap buildings and land-use evidence are selected with an additional 0.003-degree reading margin, matching the floor-area reader. This is a study-defined processing margin, not an additional output-domain extension. GBA records use `grid_of(row).lonlat_bounds(0.0)` without an additional feature-selection margin, matching the GBA aggregation calculation. Other vector sources use the domain bounds. Selecting a record by its bounding box can retain features that lie outside the exact domain polygon; Stage 2 applies the model grid and source-specific filters.
 
-The bundled three-city run uses the supplied subsets and executes verification only. Repeating extraction requires the source files or access to the recorded release and matching indexes. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) documents commands, required inputs and runtime options. The [raw-data dictionary](../../01_inputs/demo/raw/README.md) lists the delivered files.
+The bundled Stage 1 run regenerates the grid table from supplied boundary subsets and verifies the raw files. The Stage 1 check command only checks the supplied files. Repeating extraction requires the source files or access to the recorded release and matching indexes. The [Stage 1 code guide](../../02_code/stage_1_data_inputs/README.md) documents commands, required inputs and runtime options. The [raw-data dictionary](../../01_inputs/demo/raw/README.md) lists the delivered files.
 
 | Setting | Value | Basis |
 |---|---|---|

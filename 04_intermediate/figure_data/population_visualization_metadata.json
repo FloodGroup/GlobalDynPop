@@ -1,0 +1,253 @@
+{
+  "time_basis": "local hourly intervals; 03:00 denotes 03:00\u201304:00",
+  "inputs": [
+    {
+      "file": "hourly_population/00572_FIN_Helsinki/workday/00572_FIN_Helsinki_workday_hour_03.tif",
+      "sha256": "178df1569e2f71704143725b15059f732f283c103628487a8e90c83ef79c07fe"
+    },
+    {
+      "file": "hourly_population/00572_FIN_Helsinki/workday/00572_FIN_Helsinki_workday_hour_08.tif",
+      "sha256": "f262d07da05624b418b4385ce46ac272f581e97b06ddf29ce405698d26d00395"
+    },
+    {
+      "file": "hourly_population/00572_FIN_Helsinki/workday/00572_FIN_Helsinki_workday_hour_13.tif",
+      "sha256": "136355a9f50b9083190a9aa3ff67e703c1b2095a433be9d2b080df7fb4fe26c4"
+    },
+    {
+      "file": "hourly_population/00572_FIN_Helsinki/rest_day/00572_FIN_Helsinki_rest_day_hour_03.tif",
+      "sha256": "979b7535b37dd280851196c53855eba35859653fcff551ba3f109fcf044967d0"
+    },
+    {
+      "file": "hourly_population/00572_FIN_Helsinki/rest_day/00572_FIN_Helsinki_rest_day_hour_13.tif",
+      "sha256": "8f977c93559bebc62c91f091185a8c0c79227c9355035b854b37707ef32f2707"
+    },
+    {
+      "file": "hourly_population/01027_JPN_Kitakyushu/workday/01027_JPN_Kitakyushu_workday_hour_03.tif",
+      "sha256": "416de9fbba5ef4296ca0e00fe466b679490593ab804643802610e0fa83ab9822"
+    },
+    {
+      "file": "hourly_population/01027_JPN_Kitakyushu/workday/01027_JPN_Kitakyushu_workday_hour_08.tif",
+      "sha256": "ecd8b416cba9e3fd521dda3bc4c11294e21d1c9c8717cc0a64217c8a33139903"
+    },
+    {
+      "file": "hourly_population/01027_JPN_Kitakyushu/workday/01027_JPN_Kitakyushu_workday_hour_13.tif",
+      "sha256": "380c0f93cb26de1056153158d5eaaead9b30841fb177695f8025e053690a598f"
+    },
+    {
+      "file": "hourly_population/01027_JPN_Kitakyushu/rest_day/01027_JPN_Kitakyushu_rest_day_hour_03.tif",
+      "sha256": "1c5413cb792bfc63ed6b336f71cb670542e6ec2079321ff923c203051c086f77"
+    },
+    {
+      "file": "hourly_population/01027_JPN_Kitakyushu/rest_day/01027_JPN_Kitakyushu_rest_day_hour_13.tif",
+      "sha256": "a252ed5ed2aa5a51896fe3239ce35ec8ea27e2c34bc7e966101d19e2336f78b6"
+    },
+    {
+      "file": "hourly_population/05685_JPN_Takasaki_Maebashi/workday/05685_JPN_Takasaki_Maebashi_workday_hour_03.tif",
+      "sha256": "13285337fa848aeaee3c31408692f417f185e3ed2c5266e7ccc63f82fe2e46a6"
+    },
+    {
+      "file": "hourly_population/05685_JPN_Takasaki_Maebashi/workday/05685_JPN_Takasaki_Maebashi_workday_hour_08.tif",
+      "sha256": "7cd7aa550aa913297bd03066045bed366a2a603dfa7a279367a3e256dfe87cc8"
+    },
+    {
+      "file": "hourly_population/05685_JPN_Takasaki_Maebashi/workday/05685_JPN_Takasaki_Maebashi_workday_hour_13.tif",
+      "sha256": "c2b14ea1490366600c8e2f1d4e62ca0f9d7da4fe0370b4f09026d1436466ad13"
+    },
+    {
+      "file": "hourly_population/05685_JPN_Takasaki_Maebashi/rest_day/05685_JPN_Takasaki_Maebashi_rest_day_hour_03.tif",
+      "sha256": "31cbd2051cfb86a086758d3d2d01f28cdf2c026a0f95a478eab5c30e2a3fb938"
+    },
+    {
+      "file": "hourly_population/05685_JPN_Takasaki_Maebashi/rest_day/05685_JPN_Takasaki_Maebashi_rest_day_hour_13.tif",
+      "sha256": "f6f4b17c11c883ab907f7c8f5ff77cfacf74c3ba6777076f2597a6703e06fec1"
+    }
+  ],
+  "contrasts": [
+    {
+      "name": "Workday morning",
+      "minuend": [
+        "workday",
+        8
+      ],
+      "subtrahend": [
+        "workday",
+        3
+      ]
+    },
+    {
+      "name": "Workday midday",
+      "minuend": [
+        "workday",
+        13
+      ],
+      "subtrahend": [
+        "workday",
+        3
+      ]
+    },
+    {
+      "name": "Rest-day midday",
+      "minuend": [
+        "rest_day",
+        13
+      ],
+      "subtrahend": [
+        "rest_day",
+        3
+      ]
+    },
+    {
+      "name": "Midday day-type difference",
+      "minuend": [
+        "workday",
+        13
+      ],
+      "subtrahend": [
+        "rest_day",
+        13
+      ]
+    }
+  ],
+  "population_scale": {
+    "type": "logarithmic",
+    "minimum": 3,
+    "maximum": 200,
+    "shared_across_cities": true
+  },
+  "change_scale": {
+    "type": "symmetric logarithmic",
+    "minimum": -100,
+    "maximum": 100,
+    "linear_threshold": 2,
+    "linear_scale": 1,
+    "base": 10,
+    "shared_across_all_contrasts_and_cities": true
+  },
+  "spatial_smoothing": "none",
+  "difference_calculation": "float64 subtraction of original float32 hourly rasters",
+  "dpi": 360,
+  "layout": {
+    "figure_inches": [
+      11,
+      7.6
+    ],
+    "font_family": "DejaVu Sans",
+    "title_fontsize": 24
+  },
+  "city_statistics": {
+    "00572_FIN_Helsinki": {
+      "baseline_total": 1285584.7200364487,
+      "baseline_fraction_over_200": 0.00122945181924479,
+      "contrasts": [
+        {
+          "name": "Workday morning",
+          "minimum": -89.02519226074219,
+          "maximum": 330.7240104675293,
+          "net_difference": 1.4957763724960387,
+          "fraction_beyond_colour_limits": 0.000606128344452851,
+          "half_l1_fraction_of_reference_population": 0.15578886575113937
+        },
+        {
+          "name": "Workday midday",
+          "minimum": -121.9578857421875,
+          "maximum": 489.0999870300293,
+          "net_difference": 1.9259719419060275,
+          "fraction_beyond_colour_limits": 0.0016550312951372171,
+          "half_l1_fraction_of_reference_population": 0.21114216987084847
+        },
+        {
+          "name": "Rest-day midday",
+          "minimum": -74.46589660644531,
+          "maximum": 440.8879928588867,
+          "net_difference": 0.1807854202343151,
+          "fraction_beyond_colour_limits": 0.0003482013893665314,
+          "half_l1_fraction_of_reference_population": 0.12399686400348911
+        },
+        {
+          "name": "Midday day-type difference",
+          "minimum": -110.46139526367188,
+          "maximum": 284.1694030761719,
+          "net_difference": 0.1780945152277127,
+          "fraction_beyond_colour_limits": 0.000567439301189903,
+          "half_l1_fraction_of_reference_population": 0.10148200879917035
+        }
+      ]
+    },
+    "01027_JPN_Kitakyushu": {
+      "baseline_total": 1795040.940993519,
+      "baseline_fraction_over_200": 1.3229438145761949e-05,
+      "contrasts": [
+        {
+          "name": "Workday morning",
+          "minimum": -97.46044921875,
+          "maximum": 1146.8811798095703,
+          "net_difference": 1.346865438754321,
+          "fraction_beyond_colour_limits": 0.0017529005543134584,
+          "half_l1_fraction_of_reference_population": 0.21108735486260835
+        },
+        {
+          "name": "Workday midday",
+          "minimum": -123.14775085449219,
+          "maximum": 1864.8917999267578,
+          "net_difference": -1.6886325069863233,
+          "fraction_beyond_colour_limits": 0.0032279829075659155,
+          "half_l1_fraction_of_reference_population": 0.24380709872833867
+        },
+        {
+          "name": "Rest-day midday",
+          "minimum": -73.90753173828125,
+          "maximum": 624.5842437744141,
+          "net_difference": 0.9187682504889381,
+          "fraction_beyond_colour_limits": 0.0009889005013957058,
+          "half_l1_fraction_of_reference_population": 0.14117944586112963
+        },
+        {
+          "name": "Midday day-type difference",
+          "minimum": -165.375732421875,
+          "maximum": 1319.8499145507812,
+          "net_difference": -2.29219268662564,
+          "fraction_beyond_colour_limits": 0.0013923983648414452,
+          "half_l1_fraction_of_reference_population": 0.12533168897431532
+        }
+      ]
+    },
+    "05685_JPN_Takasaki_Maebashi": {
+      "baseline_total": 1358741.628655057,
+      "baseline_fraction_over_200": 0.0,
+      "contrasts": [
+        {
+          "name": "Workday morning",
+          "minimum": -32.482757568359375,
+          "maximum": 220.85391426086426,
+          "net_difference": 1.0513177757657104,
+          "fraction_beyond_colour_limits": 0.00028064155718998375,
+          "half_l1_fraction_of_reference_population": 0.15813090694648058
+        },
+        {
+          "name": "Workday midday",
+          "minimum": -34.95862579345703,
+          "maximum": 383.17109870910645,
+          "net_difference": -0.3050311762581259,
+          "fraction_beyond_colour_limits": 0.0005559879906594017,
+          "half_l1_fraction_of_reference_population": 0.16294290280593177
+        },
+        {
+          "name": "Rest-day midday",
+          "minimum": -24.138938903808594,
+          "maximum": 509.58152770996094,
+          "net_difference": 1.317298960959306,
+          "fraction_beyond_colour_limits": 0.00018003420649923484,
+          "half_l1_fraction_of_reference_population": 0.10293440596461986
+        },
+        {
+          "name": "Midday day-type difference",
+          "minimum": -135.27438354492188,
+          "maximum": 189.72335815429688,
+          "net_difference": -1.3501269278640393,
+          "fraction_beyond_colour_limits": 9.001710324961742e-05,
+          "half_l1_fraction_of_reference_population": 0.08205863165449118
+        }
+      ]
+    }
+  }
+}

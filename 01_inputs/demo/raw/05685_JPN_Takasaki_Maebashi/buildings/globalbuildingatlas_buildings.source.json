@@ -1,0 +1,566 @@
+{
+  "dataset": "GlobalBuildingAtlas LoD1, Source Cooperative Parquet conversion",
+  "dataset_doi": "10.14459/2025mp1782307",
+  "source_url": "https://source.coop/tge-labs/globalbuildingatlas-lod1",
+  "retrieved_utc": "2026-11-04T08:11:06.998990+00:00",
+  "stem": "05685_JPN_Takasaki_Maebashi",
+  "selection": "Complete source records whose bounding boxes intersect the model domain WGS84 bounding box; no clipping, deduplication, height imputation or reprojection.",
+  "bounds_wgs84": [
+    138.71634802832565,
+    36.20205061250441,
+    139.3069885473044,
+    36.52420832459432
+  ],
+  "grid": {
+    "lon0": 139.041256,
+    "lat0": 36.361998,
+    "x0": -29100.0,
+    "y1": 18000.0,
+    "nx": 529,
+    "ny": 357,
+    "cell": 100.0
+  },
+  "columns": [
+    "source",
+    "id",
+    "height",
+    "var",
+    "region",
+    "bbox",
+    "geometry"
+  ],
+  "rows": 841012,
+  "size_bytes": 97034301,
+  "sha256": "af3952008934182da9e2c6e9b52b6dc34df6e6401fa41a4617fe9b618107a456",
+  "provider_attribute_roundtrip_equal": true,
+  "row_groups": [
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 968,
+      "rows_read": 16384,
+      "rows_retained": 8562,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1345355
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 969,
+      "rows_read": 16384,
+      "rows_retained": 1786,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1348610
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 975,
+      "rows_read": 16384,
+      "rows_retained": 8205,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1331039
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 976,
+      "rows_read": 16384,
+      "rows_retained": 404,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1392574
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1122,
+      "rows_read": 16384,
+      "rows_retained": 1076,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1393364
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1123,
+      "rows_read": 16384,
+      "rows_retained": 15534,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1435217
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1124,
+      "rows_read": 16384,
+      "rows_retained": 8897,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1491265
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1143,
+      "rows_read": 16384,
+      "rows_retained": 1818,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1376316
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1144,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1428075
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1145,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1332332
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1146,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1407071
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1147,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1311314
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1148,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1307980
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1149,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1406697
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1150,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1314995
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1151,
+      "rows_read": 16384,
+      "rows_retained": 9013,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1448040
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1152,
+      "rows_read": 16384,
+      "rows_retained": 890,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1306275
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1153,
+      "rows_read": 16384,
+      "rows_retained": 10168,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1391050
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1154,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1344974
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1155,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1325417
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1156,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1301611
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1157,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1298668
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1158,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1411925
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1159,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1365080
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1160,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1301730
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1161,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1412688
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1162,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1312358
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1163,
+      "rows_read": 16384,
+      "rows_retained": 15766,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1304997
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1164,
+      "rows_read": 16384,
+      "rows_retained": 5489,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1314753
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1170,
+      "rows_read": 16384,
+      "rows_retained": 7080,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1326112
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1171,
+      "rows_read": 16384,
+      "rows_retained": 11900,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1446607
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1176,
+      "rows_read": 16384,
+      "rows_retained": 5640,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1334510
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1177,
+      "rows_read": 16384,
+      "rows_retained": 15822,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1425729
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1178,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1323371
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1179,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1296909
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1180,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1407011
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1181,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1417085
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1182,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1410861
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1183,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1363575
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1184,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1371726
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1185,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1434162
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1186,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1307834
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1187,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1307491
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1188,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1356803
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1189,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1431183
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1190,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1440486
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1191,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1310322
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1192,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1409243
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1193,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1337659
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1194,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1345620
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1195,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1424129
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1196,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1429639
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1197,
+      "rows_read": 16384,
+      "rows_retained": 16028,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1336167
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1198,
+      "rows_read": 16384,
+      "rows_retained": 6253,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1365938
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1199,
+      "rows_read": 16384,
+      "rows_retained": 15229,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1346818
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1200,
+      "rows_read": 16384,
+      "rows_retained": 634,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1394993
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1201,
+      "rows_read": 16384,
+      "rows_retained": 8911,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1346920
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1202,
+      "rows_read": 16384,
+      "rows_retained": 6757,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1442290
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1256,
+      "rows_read": 16384,
+      "rows_retained": 472,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1398833
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1257,
+      "rows_read": 16384,
+      "rows_retained": 10604,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1311500
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1258,
+      "rows_read": 16384,
+      "rows_retained": 9951,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1389782
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1259,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1397638
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1260,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1282429
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1261,
+      "rows_read": 16384,
+      "rows_retained": 16384,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1297706
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1262,
+      "rows_read": 16384,
+      "rows_retained": 6372,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1315153
+    },
+    {
+      "file": "tge-labs/globalbuildingatlas-lod1/e135_n40_e140_n35.parquet",
+      "row_group": 1263,
+      "rows_read": 16384,
+      "rows_retained": 9159,
+      "etag": "\"550546c58a69774557b18e47af125117-215\"",
+      "transferred_bytes": 1428893
+    }
+  ]
+}

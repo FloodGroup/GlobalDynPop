@@ -1,60 +1,70 @@
-# Running the model
+# Running the three-city example
 
-The run folders follow the same four stages as the [scientific programs](../02_code/README.md).
-
-| Run folder | Executes | Result |
-|---|---|---|
-| `stage_1_data_inputs/` | Extract source subsets with `prepare_sources.cmd`, or verify supplied subsets with `01_RUN.cmd` | Raw source files, provenance manifests and integrity check |
-| `stage_2_100m_layers/` | Generate city grids, population/building layers, place counts, floor area and routing graphs from raw city subsets; then save smoothed places and effective kernels | Stage 2 intermediates |
-| `stage_3_activity_allocation/` | Destination attractiveness, network assignment and destination population allocation | Stage 3 intermediates and packaged components |
-| `stage_4_outputs/` | Hourly population, functional land use, population maps and numerical checks | Stage 4 outputs |
-
-Run all four stages:
+The four stages rebuild the example from local raw spatial inputs. Run from the repository root:
 
 ```console
+conda env create -f environment.yml
+conda activate dynamic-population
 python 03_run/run_city_demo.py run
-```
-
-Run one stage, for example Stage 3:
-
-```console
-python 03_run/run_city_demo.py run --stage 3
-```
-
-Check the supplied processed layers and outputs:
-
-```console
 python 03_run/run_city_demo.py check
 ```
 
-On Windows, use `RUN_ALL_STAGES.cmd` for the full example or `01_RUN.cmd`, `02_RUN.cmd`, `03_RUN.cmd` or `04_RUN.cmd` inside the corresponding stage folder. `environment.cmd` contains common environment settings. `runtime/` holds the shared worker launcher, task locks and memory monitoring; these support execution across stages.
+`run` executes all four stages, including transport-graph construction and road/rail population assignment. Every run recalculates the selected stages. `check` verifies results already generated in that run directory; it does not substitute bundled components or create missing results.
 
-`stage_2_100m_layers/02_RUN.cmd` executes Stage 2 programs 01 through 06 in order. Step 04 reads the raw building records, calls `buildings.py` to calculate floor area and writes `buildings/floor_area_by_use/`. Every spatial layer is recomputed; existing files do not cause a step to be skipped. Hourly location shares and calibrated parameters are adopted study products.
+## Stage execution
 
-`stage_1_data_inputs/prepare_sources.cmd` extracts city subsets from external sources. It accepts the arguments documented in the [Stage 1 code guide](../02_code/stage_1_data_inputs/README.md#extract-city-subsets). After extraction, verify the raw files and run Stage 2 to calculate the model layers. Each stage writes to its designated data directory.
+The following commands execute the same calculations as a continuous run. Use the same `--out` directory for every command:
 
-Stage 4 also writes the population and time-use figures to `06_docs/figures/`. Set `DYNAMIC_POPULATION_FIGURES` to choose a different figure directory. See the [Stage 4 method](../06_docs/methods/stage_4_outputs.md) for plotting settings and standalone commands.
+```console
+python 03_run/run_city_demo.py run --stage 1
+python 03_run/run_city_demo.py run --stage 2
+python 03_run/run_city_demo.py run --stage 3
+python 03_run/run_city_demo.py run --stage 4
+python 03_run/run_city_demo.py check
+```
 
-## Run configuration and numerical checks
+| Stage | Execution order | Prerequisites |
+|---|---|---|
+| 1 | Verify raw subsets, then create city grid definitions | Bundled original spatial subsets |
+| 2 | Programs 01–11: settlement, POIs, classified buildings, graph, water, recreation, land use, optional China AOIs, GBA, capacity/open-space fusion, model-layer export | Successful Stage 1 in the same run directory |
+| 3 | 01 destination attractiveness → 02 road/rail transit assignment → 03 destination populations and components | Successful Stage 2 in the same run directory |
+| 4 | 01 input checks → 02 hourly grids → 03 functional land use → numerical/output checks → 06–07 population and time-use figures | Successful Stages 2 and 3 in the same run directory |
 
-`demo_configuration/` stores the three city stems, the file manifest used for input integrity, and the decoded-array fingerprints used for numerical reproduction. The runner reads these files directly. The [example guide](../06_docs/reproduction/city_demo.md) documents city selection and dataset attribution.
+Stage 2 program 08 applies only to Chinese cities with authorised AOI inputs; it is inapplicable to the three supplied Finnish and Japanese examples. Hourly shares, calibrated allocation settings, indoor shares and outdoor-microenvironment weights are adopted non-spatial model inputs. Survey harmonisation and calibration from individual records are outside this spatial reproduction workflow.
 
-## Recorded environment
+A missing prerequisite or calculation failure stops execution with a nonzero exit code. Rerunning an earlier stage invalidates completion of subsequent stages; run them again to propagate the new inputs. Existing outputs are overwritten by the calculations, not treated as completed work.
 
-Requires Python 3.11 or newer. The three-city run was checked on Windows-11-10.0.26200-SP0 with Python 3.12.7. The recorded package versions are numpy 1.26.4, scipy 1.13.1, pyproj 3.7.2, shapely 2.2.0, pandas 2.2.2, matplotlib 3.9.2, numba 0.60.0. These versions describe the recorded full model run; `environment.yml` specifies compatible dependencies without locking every package version. The [automated checks](../.github/workflows/checks.yml) verify the bundled input hashes and decoded output arrays on Ubuntu and Windows with Python 3.11. They do not execute a full model rebuild or test a fresh installation of the complete Conda environment.
+## Outputs and independent runs
 
-## Other city inputs and result comparison
+The default run directory is `04_intermediate/demo/reproduction/`:
 
+```text
+stage_1/local_grids/       Regenerated city grid table
+stage_2/                  Reconstructed spatial layers and adopted parameters
+stage_3/                  Attractiveness, destination populations and newly assigned transit
+outputs/population_components/
+outputs/hourly_population/
+outputs/functional_land_use/
+figures/                  PNG figures from this run
+figure_data/              Figure metadata
+figure_exports/           PDF exports
+verification.json         Stage completion and numerical checks
+```
 
+Use `--out PATH` for a separate run and `--stems CITY_ID ...` for selected example cities. Windows stage launchers forward these options. The runner sets all stage paths consistently; standalone numbered programs use the paths in `configuration.py` and accept the documented environment overrides.
 
-For the bundled three cities, follow the [example guide](../06_docs/reproduction/city_demo.md). For other cities, supply the complete, licensed input tree separately and set DYNAMIC_POPULATION_STAGE2 to its root. The model entry points are 02_calculate_in_transit_population.py (network), 03_calculate_population_components.py (components), 01_generate_hourly_population.py (24-hour grids) and 02_classify_functional_land_use.py (land use). They are in the stage folders under 02_code. Consult each script's --help. Ensure DYNAMIC_POPULATION_ROOT points to the repository root, DYNAMIC_POPULATION_WORK and DYNAMIC_POPULATION_OUTPUTS are writable, and DYNAMIC_POPULATION_NETWORK contains the intended network version. Select the cities to process with explicit stems.
+## Source reconstruction and reference comparison
 
-The three-city wrapper checks expected stage outputs and checks the results against stored numerical fingerprints. For other inputs, inspect each output and log: some underlying scripts print per-city errors while exiting zero.
+`python 03_run/run_raw_reconstruction.py --out PATH` invokes the same Stage 1 and Stage 2 implementation. It also writes `spatial_reference_comparison.json`, comparing rebuilt arrays with the bundled reference layers. `--compare-only` compares an existing reconstruction, and `--require-exact` exits unsuccessfully if a reference array differs. References are comparison targets, never substitutes for computed spatial layers or population components.
 
-## Raw-input rebuild and validation
+Program 05 in Stage 4 compares separate computed output trees, including each individual hourly raster. For two independent runs `run_a` and `run_b`:
 
-`03_run/stage_2_100m_layers/02_RUN.cmd` rebuilds the local example from its raw spatial subsets. To regenerate the raw subsets first, use the Stage 1 preparation program with the original city database, matching source indexes and GHSL tile cache or download access. Survey harmonisation and calibration require their own upstream records. A historical release may no longer be downloadable. Record any changed source version and its numerical consequences. Raw observation files are not supplied. Repeating observation-based validation requires the corresponding observation bundle and schema. The three-city numerical checks do not replace observation-based validation.
+```console
+python 02_code/stage_4_outputs/05_compare_results.py --a run_a/outputs/population_components --b run_b/outputs/population_components --net-a run_a/stage_3/in_transit_population --net-b run_b/stage_3/in_transit_population --hourly-a run_a/outputs/hourly_population --hourly-b run_b/outputs/hourly_population --stems 00572_FIN_Helsinki 01027_JPN_Kitakyushu 05685_JPN_Takasaki_Maebashi --tol 0
+```
 
-## Compare results
+This requires exact equality of decoded values; a positive `--tol` allows a relative tolerance. Program 08 redraws the independent global indoor-share, income and climate maps from archived figure data; it is not part of the three-city population calculation.
 
-`python 02_code/stage_4_outputs/05_compare_results.py --net-a REF --net-b RUN --stems CITY` compares network arrays. The same checker supports --a/--b for components and --hourly-a/--hourly-b for hourly grids. It rejects missing inputs, empty comparisons, incompatible arrays, non-finite values and mismatched raster grids. Raster comparisons require rasterio. Numerical tolerance is relative to the largest reference-cell magnitude; inspect absolute differences as well.
+## Numerical checks
+
+Checks include raw-file hashes, required arrays, finite/non-negative values, grid dimensions, indoor/outdoor fractions, normalised hourly shares, conservation of each destination/transit/component population, and all 144 hourly rasters for the three cities. Hourly values must agree with the mixture calculated from the same run's components within 0.005 people per cell, allowing for raster compression. Land-use rasters must use the same grid and valid classes. Numerical consistency does not replace validation against external observations.

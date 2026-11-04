@@ -4,7 +4,7 @@
     python 03_run/runtime/run_parallel.py [--workers 12] [--large 3] --name network [--then=<arguments>]
                                            -- 02_code/stage_3_activity_allocation/02_calculate_in_transit_population.py [arguments of the step]
 
-The step (05_prepare_transport_graphs.py, 02_calculate_in_transit_population.py, 03_calculate_population_components.py or 01_generate_hourly_population.py) is started --workers times with the same
+The step (04_prepare_transport_graphs.py, 02_calculate_in_transit_population.py, 03_calculate_population_components.py or 02_generate_hourly_population.py) is started --workers times with the same
 arguments; --large of the processes take the cities from the largest down (--order large), the others from the
 smallest up, so that few large cities run at the same time. The processes run at below-normal priority (the
 computer stays usable) and each writes 04_intermediate/logs/<name>/worker_<k>.log; every minute the number of
@@ -35,15 +35,15 @@ import stage_1_data_inputs.configuration as configuration
 import work_queue as work_queue  # noqa: E402
 
 OUTPUTS = {  # step -> (folder of the outputs, pattern of one finished city)
-    "05_prepare_transport_graphs.py": (lambda a: Path(a.get("--out") or configuration.ROAD_GRAPHS), "*.npz"),
+    "04_prepare_transport_graphs.py": (lambda a: Path(a.get("--out") or configuration.ROAD_GRAPHS), "*.npz"),
     "02_calculate_in_transit_population.py": (lambda a: Path(a.get("--out") or configuration.NETWORK), "*.npz"),
     "03_calculate_population_components.py": (lambda a: Path(a.get("--out") or configuration.COMPONENTS), "*.tif"),
-    "01_generate_hourly_population.py": (lambda a: Path(a.get("--out") or configuration.HOURLY), "*/rest_day/*_rest_day_hour_23.tif"),
-    "02_classify_functional_land_use.py": (lambda a: Path(a.get("--out") or configuration.OUTPUTS / "functional_land_use"), "*/*_functional_land_use_attributes.tif"),
+    "02_generate_hourly_population.py": (lambda a: Path(a.get("--out") or configuration.HOURLY), "*/rest_day/*_rest_day_hour_23.tif"),
+    "03_classify_functional_land_use.py": (lambda a: Path(a.get("--out") or configuration.OUTPUTS / "functional_land_use"), "*/*_functional_land_use_attributes.tif"),
 }
 
 
-CHECK = {"02_calculate_in_transit_population.py": "network", "03_calculate_population_components.py": "components", "01_generate_hourly_population.py": "hourly"}
+CHECK = {"02_calculate_in_transit_population.py": "network", "03_calculate_population_components.py": "components", "02_generate_hourly_population.py": "hourly"}
 
 
 def free_gb():

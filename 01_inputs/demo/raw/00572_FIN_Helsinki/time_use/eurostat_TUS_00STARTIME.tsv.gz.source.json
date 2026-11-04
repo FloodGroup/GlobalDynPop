@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/time_use/eurostat_TUS_00STARTIME.tsv.gz",
+  "source": "https://ec.europa.eu/eurostat/databrowser/view/tus_00startime/default/table",
+  "role": "HETUS published activity-by-time table; includes Finland 2010",
+  "operation": "Unmodified provider publication or source download retained from the supplied research archive.",
+  "bytes": 482397,
+  "sha256": "32fe60f80dd63890ff68098312c640a480fc0eb2cc0f2fbf615f400737af4b89"
+}

@@ -13,8 +13,8 @@ import matplotlib.font_manager as fm
 import numpy as np
 import pandas as pd
 
-LABELS=['C1 Home','C2 Work and commerce','C3 Education','C4 Services',
-        'C5 Leisure','C6 In transit','C7 Other']
+LABELS=['Home (C1)','Work and commerce (C2)','Education (C3)','Services (C4)',
+        'Leisure (C5)','In transit (C6)','Other (C7)']
 COLORS=['#D9D9D9','#2878D0','#21A899','#7651C8','#EC6544','#E6AC16','#CC79A7']
 
 
@@ -29,22 +29,19 @@ def main(argv=None):
     sys.path.insert(0,str(args.root/'02_code'))
     from stage_2_100m_layers.time_use import daytype_shares, CLASS_COLS
 
-    for name in ('times.ttf','timesbd.ttf','timesi.ttf','timesbi.ttf'):
-        font=Path(os.environ.get('WINDIR','C:/Windows'))/'Fonts'/name
-        if font.exists():fm.fontManager.addfont(str(font))
-    plt.rcParams.update({'font.family':'serif','font.serif':['Times New Roman','Liberation Serif','DejaVu Serif'],
-        'font.size':16,'axes.titlesize':17,'text.color':'#20252B','axes.labelcolor':'#20252B',
-        'xtick.color':'#50575E','ytick.color':'#50575E','axes.edgecolor':'#AEB6BF',
+    plt.rcParams.update({'font.family':'DejaVu Sans',
+        'font.size':12,'axes.titlesize':13,'text.color':'#203744','axes.labelcolor':'#334956',
+        'xtick.color':'#627581','ytick.color':'#627581','axes.edgecolor':'#CBD5DB',
         'pdf.fonttype':42,'axes.linewidth':.6,'axes.spines.top':False,'axes.spines.right':False})
-    fig,axs=plt.subplots(2,2,figsize=(420/25.4,297/25.4),sharex=True,sharey=True)
-    fig.subplots_adjust(left=.09,right=.97,top=.83,bottom=.29,hspace=.50,wspace=.13)
-    fig.text(14/420,1-12/297,'GlobalDynPop-100m | Hourly location shares',fontsize=26,weight='bold')
-    fig.text(406/420,1-12/297,'National profiles | Local time',fontsize=16,ha='right',color='#50575E')
-    fig.text(14/420,1-21/297,'Population shares by activity | Workdays and rest days',fontsize=16)
+    fig,axs=plt.subplots(2,2,figsize=(11,6.6),sharex=True,sharey=True,facecolor='white')
+    fig.subplots_adjust(left=.085,right=.98,top=.835,bottom=.225,hspace=.36,wspace=.11)
+    fig.text(.025,.99,'Hourly location shares',fontsize=24,weight='bold',va='top')
+    fig.text(.025,.934,'Helsinki, Kitakyushu and Takasaki-Maebashi  |  Local time',fontsize=12.5,color='#627581',va='top')
     metadata={'source_directory':'04_intermediate/demo/stage_2/hourly_location_shares',
               'time_basis':'local hour','shape':[24,7],'normalisation':'each row divided by its sum, as in the model reader',
-              'colors':dict(zip(LABELS,COLORS)),'inputs':[],'output_format':'png','dpi':360}
-    for row,(iso,title) in enumerate([('FIN','Finland | Helsinki'),('JPN','Japan | Kitakyushu and Takasaki-Maebashi')]):
+              'colors':dict(zip(LABELS,COLORS)),'inputs':[],'output_format':'png','dpi':360,
+              'layout':{'figure_inches':[11,6.6],'title_fontsize':24,'subtitle_fontsize':12.5,'tick_fontsize':12,'font_family':'DejaVu Sans'}}
+    for row,(iso,title) in enumerate([('FIN','Finland'),('JPN','Japan')]):
         for col,(day,label) in enumerate([('workday','Workday'),('restday','Rest day')]):
             base=stage2/'hourly_location_shares'
             shares,source=daytype_shares(iso,day,base=base)
@@ -64,8 +61,7 @@ def main(argv=None):
             ax.set_xlim(0,24);ax.set_ylim(0,1)
             ax.set_xticks([0,6,12,18,24]);ax.set_yticks([0,.25,.5,.75,1])
             ax.tick_params(length=3,width=.6)
-            ax.set_title(f'{title}\n{label}',fontsize=17,pad=8)
-            ax.text(-.09,1.10,chr(97+2*row+col),transform=ax.transAxes,weight='bold',fontsize=17)
+            ax.set_title(f'{chr(97+2*row+col)}  {title} · {label}',loc='left',fontsize=13,weight='bold',pad=6)
             if col==0:ax.set_ylabel('Population share')
             if row==1:ax.set_xlabel('Local hour')
             metadata['inputs'].append({'country':iso,'daytype':day,'file':path.name,
@@ -73,9 +69,10 @@ def main(argv=None):
                 'raw_row_sum_max_error':float(np.max(np.abs(values.sum(axis=1)-1))),
                 'model_row_sum_max_error':float(np.max(np.abs(shares.sum(axis=1)-1)))})
     handles,labels=axs[0,0].get_legend_handles_labels()
-    fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.15),ncol=4,frameon=False,fontsize=16)
-    fig.text(14/420,1-272/297,'Note: The shares sum to one at each hour, and both Japanese cities use the same national profile.',
-             ha='left',va='top',fontsize=16)
+    fig.legend(handles,labels,loc='lower center',bbox_to_anchor=(.53,.065),ncol=4,frameon=False,fontsize=11.5,
+               handlelength=1.2,handletextpad=.45,columnspacing=1.3,labelspacing=.45)
+    fig.text(.025,.012,'Shares sum to one at each hour; both Japanese cities use the same national profile.',
+             ha='left',va='bottom',fontsize=9.5,color='#627581')
     out.mkdir(parents=True,exist_ok=True)
     fig.canvas.draw()
     renderer=fig.canvas.get_renderer()
@@ -87,7 +84,10 @@ def main(argv=None):
             raise ValueError("Text outside figure: "+text_item.get_text())
     fig.savefig(out/'time_use_weights.png',dpi=360)
     plt.close(fig)
-    (out/'time_use_weights_metadata.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
+    metadata_dir = (args.root/"04_intermediate/figure_data" if out.resolve() == (args.root/"06_docs/figures").resolve()
+                    else out.parent/"figure_data")
+    metadata_dir.mkdir(parents=True,exist_ok=True)
+    (metadata_dir/'time_use_weights_metadata.json').write_text(json.dumps(metadata,indent=2),encoding='utf-8')
     print(json.dumps({'png':str(out/'time_use_weights.png'),'panels':4,'matrices_checked':4}))
 
 

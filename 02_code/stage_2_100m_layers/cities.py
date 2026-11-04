@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 import shapely
 import stage_1_data_inputs.configuration as configuration
-from stage_1_data_inputs.source_preparation import fix_text
 from stage_2_100m_layers.grid import Grid
 
 def grid_of(row) -> Grid:

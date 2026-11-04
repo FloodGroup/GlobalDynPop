@@ -21,18 +21,18 @@ CLASSES = ["C1", "C2", "C3", "C4", "C5", "C6", "C7"]
 
 
 @lru_cache(maxsize=1)
-def _v11_index(root: str):
-    """Read the V11 master index. Override relative path with DYNAMIC_POPULATION_V11_INDEX_REL
-    (default results/model_read_index.csv under DYNAMIC_POPULATION_V11_ROOT / TIMEUSE/V11)."""
-    rel = os.environ.get("DYNAMIC_POPULATION_V11_INDEX_REL", "results/model_read_index.csv")
+def _national_index(root: str):
+    """Read the national average-day index. Override relative path with DYNAMIC_POPULATION_NATIONAL_INDEX_REL
+    (default results/model_read_index.csv under TIMEUSE/national_average)."""
+    rel = os.environ.get("DYNAMIC_POPULATION_NATIONAL_INDEX_REL", "results/model_read_index.csv")
     ix = pd.read_csv(Path(root).joinpath(*Path(rel).parts), encoding="utf-8-sig")
     return ix
 
 
-def v11_national(iso3: str, root: Path | None = None) -> np.ndarray:
-    """(24, 7) shares for the most common V11 matrix of the country."""
-    root = Path(root or configuration.TIMEUSE / "V11")
-    ix = _v11_index(str(root))
+def national_average_shares(iso3: str, root: Path | None = None) -> np.ndarray:
+    """(24, 7) shares for the most common national matrix of the country."""
+    root = Path(root or configuration.TIMEUSE / "national_average")
+    ix = _national_index(str(root))
     sub = ix[ix.iso3 == iso3]
     if not len(sub):
         raise KeyError(iso3)
@@ -67,7 +67,7 @@ def daytype_shares(iso3: str, daytype: str = "workday", base: Path | None = None
 
     Accepted day types are workday, restday, saturday, sunday and alldays. Read
     the source index first, then try the conventional CSV filename. The final
-    fallback requires an external V11 national-matrix package.
+    fallback requires an external National-matrix package.
     base overrides DAYTYPE_DIR, the folder containing the share CSVs.
     """
     base = Path(base) if base else DAYTYPE_DIR
@@ -81,4 +81,4 @@ def daytype_shares(iso3: str, daytype: str = "workday", base: Path | None = None
     f = base / f"{iso3}_{dict(alldays='all_days', restday='rest_day').get(daytype, daytype)}_location_shares.csv"
     if f.exists():
         return _read_matrix(f), {"file": f.name, "method": "own"}
-    return v11_national(iso3), {"file": "V11", "method": "average day (no day-type curve)"}
+    return national_average_shares(iso3), {"file": "national_average", "method": "average day (no day-type curve)"}

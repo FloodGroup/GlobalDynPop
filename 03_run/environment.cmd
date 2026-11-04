@@ -16,3 +16,5 @@ rem   set DYNAMIC_POPULATION_MIN_FREE_GB=10
 rem Optional: folders elsewhere (default: the folders of this package)
 rem   set DYNAMIC_POPULATION_RESTRICTED=PATH_TO_AUTHORISED_OBSERVATIONS         restricted mobile-network data (set DYNAMIC_POPULATION_RESTRICTED to your authorised folder)
 rem   set DYNAMIC_POPULATION_INPUTS_RESTRICTED=PATH_TO_AUTHORISED_INPUTS   raw China POI data and Amap exports (04_intermediate\demo\stage_2\restricted_NOT_PUBLIC)
+
+rem   set DYNAMIC_POPULATION_STAGE1=PATH_TO_GRID_STAGE   city grid definitions (local_grids/city_grid_definitions.csv)

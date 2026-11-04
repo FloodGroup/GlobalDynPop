@@ -1,0 +1,606 @@
+iso3,daytype,file,method,donors,region
+AFG,alldays,AFG_alldays.csv,National average day; workday with school children,,south_asia
+AFG,restday,AFG_restday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+AFG,saturday,AFG_saturday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+AFG,sunday,AFG_sunday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+AFG,workday,AFG_workday.csv,National matrix x donor day-type ratios; + school children E=0.237 (C3 peak 0.079 -> 0.237),IND+PAK,south_asia
+AGO,alldays,AGO_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+AGO,restday,AGO_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+AGO,saturday,AGO_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+AGO,sunday,AGO_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+AGO,workday,AGO_workday.csv,National matrix x donor day-type ratios; + school children E=0.216 (C3 peak 0.083 -> 0.216),GHA+NGA+ZAF,sub_saharan_africa
+ALB,alldays,ALB_alldays.csv,own survey (build_daytype.py),,eastern_europe_central_asia
+ALB,restday,ALB_restday.csv,own survey (build_daytype.py),,eastern_europe_central_asia
+ALB,workday,ALB_workday.csv,own survey (build_daytype.py),,eastern_europe_central_asia
+ARE,alldays,ARE_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+ARE,restday,ARE_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+ARE,workday,ARE_workday.csv,National matrix x donor day-type ratios; + school children E=0.104 (C3 peak 0.094 -> 0.104),MAR,middle_east_north_africa
+ARG,alldays,ARG_alldays.csv,National average day; workday with school children,,latin_america
+ARG,restday,ARG_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+ARG,workday,ARG_workday.csv,National matrix x donor day-type ratios; + school children E=0.151 (C3 peak 0.064 -> 0.151),MEX+COL+PER+PRY,latin_america
+ARM,alldays,ARM_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+ARM,restday,ARM_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+ARM,workday,ARM_workday.csv,National matrix x donor day-type ratios; + school children E=0.119 (C3 peak 0.045 -> 0.119),RUS+ALB,eastern_europe_central_asia
+AUS,alldays,AUS_alldays.csv,own survey (build_daytype.py); workday with school children,,oceania
+AUS,restday,AUS_restday.csv,own survey (build_daytype.py),,oceania
+AUS,workday,AUS_workday.csv,own survey (build_daytype.py); + school children E=0.114 (C3 peak 0.058 -> 0.114),,oceania
+AUT,alldays,AUT_alldays.csv,National average day,,western_europe
+AUT,restday,AUT_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+AUT,saturday,AUT_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+AUT,sunday,AUT_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+AUT,workday,AUT_workday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+AZE,alldays,AZE_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+AZE,restday,AZE_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+AZE,workday,AZE_workday.csv,National matrix x donor day-type ratios; + school children E=0.139 (C3 peak 0.020 -> 0.139),RUS+ALB,eastern_europe_central_asia
+BDI,alldays,BDI_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+BDI,restday,BDI_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BDI,saturday,BDI_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BDI,sunday,BDI_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BDI,workday,BDI_workday.csv,National matrix x donor day-type ratios; + school children E=0.221 (C3 peak 0.061 -> 0.221),GHA+NGA+ZAF,sub_saharan_africa
+BEL,alldays,BEL_alldays.csv,own survey (build_daytype.py); workday with school children,,western_europe
+BEL,restday,BEL_restday.csv,own survey (build_daytype.py),,western_europe
+BEL,saturday,BEL_saturday.csv,own survey (build_daytype.py),,western_europe
+BEL,sunday,BEL_sunday.csv,own survey (build_daytype.py),,western_europe
+BEL,workday,BEL_workday.csv,own survey (build_daytype.py); + school children E=0.108 (C3 peak 0.074 -> 0.108),,western_europe
+BEN,alldays,BEN_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+BEN,restday,BEN_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BEN,saturday,BEN_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BEN,sunday,BEN_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BEN,workday,BEN_workday.csv,National matrix x donor day-type ratios; + school children E=0.224 (C3 peak 0.076 -> 0.224),GHA+NGA+ZAF,sub_saharan_africa
+BFA,alldays,BFA_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+BFA,restday,BFA_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BFA,saturday,BFA_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BFA,sunday,BFA_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+BFA,workday,BFA_workday.csv,National matrix x donor day-type ratios; + school children E=0.183 (C3 peak 0.061 -> 0.183),GHA+NGA+ZAF,sub_saharan_africa
+BGD,alldays,BGD_alldays.csv,National average day; workday with school children,,south_asia
+BGD,restday,BGD_restday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+BGD,saturday,BGD_saturday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+BGD,sunday,BGD_sunday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+BGD,workday,BGD_workday.csv,National matrix x donor day-type ratios; + school children E=0.165 (C3 peak 0.103 -> 0.165),IND+PAK,south_asia
+BGR,alldays,BGR_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+BGR,restday,BGR_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+BGR,workday,BGR_workday.csv,National matrix x donor day-type ratios; + school children E=0.087 (C3 peak 0.062 -> 0.087),RUS+ALB,eastern_europe_central_asia
+BHR,alldays,BHR_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+BHR,restday,BHR_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+BHR,workday,BHR_workday.csv,National matrix x donor day-type ratios; + school children E=0.120 (C3 peak 0.078 -> 0.120),MAR,middle_east_north_africa
+BLR,alldays,BLR_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+BLR,restday,BLR_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+BLR,workday,BLR_workday.csv,National matrix x donor day-type ratios; + school children E=0.114 (C3 peak 0.079 -> 0.114),RUS+ALB,eastern_europe_central_asia
+BOL,alldays,BOL_alldays.csv,National average day; workday with school children,,latin_america
+BOL,restday,BOL_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+BOL,workday,BOL_workday.csv,National matrix x donor day-type ratios; + school children E=0.173 (C3 peak 0.091 -> 0.173),MEX+COL+PER+PRY,latin_america
+BRA,alldays,BRA_alldays.csv,"Pesquisa OD 2017 RMSP travel diaries (Metro SP), all residents: (5 weekday + 2 rest day) / 7",MEX (day-type ratios),latin_america
+BRA,restday,BRA_restday.csv,"Pesquisa OD 2017 RMSP travel diaries (Metro SP), all residents: weekday x EOD 2017 rest-day / weekday ratios",MEX (day-type ratios),latin_america
+BRA,workday,BRA_workday.csv,"Pesquisa OD 2017 RMSP travel diaries (Metro SP), all residents: weekday",,latin_america
+CAF,alldays,CAF_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+CAF,restday,CAF_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CAF,saturday,CAF_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CAF,sunday,CAF_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CAF,workday,CAF_workday.csv,National matrix x donor day-type ratios; + school children E=0.224 (C3 peak 0.061 -> 0.224),GHA+NGA+ZAF,sub_saharan_africa
+CAN,alldays,CAN_alldays.csv,own survey (build_daytype.py); workday with school children,,north_america
+CAN,restday,CAN_restday.csv,own survey (build_daytype.py),,north_america
+CAN,saturday,CAN_saturday.csv,own survey (build_daytype.py),,north_america
+CAN,sunday,CAN_sunday.csv,own survey (build_daytype.py),,north_america
+CAN,workday,CAN_workday.csv,own survey (build_daytype.py); + school children E=0.103 (C3 peak 0.049 -> 0.103),,north_america
+CHE,alldays,CHE_alldays.csv,National average day; workday with school children,,western_europe
+CHE,restday,CHE_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+CHE,saturday,CHE_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+CHE,sunday,CHE_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+CHE,workday,CHE_workday.csv,National matrix x donor day-type ratios; + school children E=0.097 (C3 peak 0.091 -> 0.097),GBR+ESP+BEL,western_europe
+CHL,alldays,CHL_alldays.csv,National average day; workday with school children,,latin_america
+CHL,restday,CHL_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+CHL,workday,CHL_workday.csv,National matrix x donor day-type ratios; + school children E=0.112 (C3 peak 0.063 -> 0.112),MEX+COL+PER+PRY,latin_america
+CHN,alldays,CHN_alldays.csv,own survey (build_daytype.py); workday with school children,,east_asia
+CHN,restday,CHN_restday.csv,own survey (build_daytype.py),,east_asia
+CHN,workday,CHN_workday.csv,own survey (build_daytype.py); + school children E=0.114 (C3 peak 0.047 -> 0.114),,east_asia
+CIV,alldays,CIV_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+CIV,restday,CIV_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CIV,saturday,CIV_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CIV,sunday,CIV_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CIV,workday,CIV_workday.csv,National matrix x donor day-type ratios; + school children E=0.212 (C3 peak 0.083 -> 0.212),GHA+NGA+ZAF,sub_saharan_africa
+CMR,alldays,CMR_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+CMR,restday,CMR_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CMR,saturday,CMR_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CMR,sunday,CMR_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+CMR,workday,CMR_workday.csv,National matrix x donor day-type ratios; + school children E=0.214 (C3 peak 0.076 -> 0.214),GHA+NGA+ZAF,sub_saharan_africa
+COD,alldays,COD_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+COD,restday,COD_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COD,saturday,COD_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COD,sunday,COD_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COD,workday,COD_workday.csv,National matrix x donor day-type ratios; + school children E=0.251 (C3 peak 0.067 -> 0.251),GHA+NGA+ZAF,sub_saharan_africa
+COG,alldays,COG_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+COG,restday,COG_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COG,saturday,COG_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COG,sunday,COG_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+COG,workday,COG_workday.csv,National matrix x donor day-type ratios; + school children E=0.226 (C3 peak 0.076 -> 0.226),GHA+NGA+ZAF,sub_saharan_africa
+COL,alldays,COL_alldays.csv,own survey (build_daytype.py); workday with school children,,latin_america
+COL,restday,COL_restday.csv,own survey (build_daytype.py),,latin_america
+COL,workday,COL_workday.csv,own survey (build_daytype.py); + school children E=0.124 (C3 peak 0.088 -> 0.124),,latin_america
+CRI,alldays,CRI_alldays.csv,National average day; workday with school children,,latin_america
+CRI,restday,CRI_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+CRI,workday,CRI_workday.csv,National matrix x donor day-type ratios; + school children E=0.124 (C3 peak 0.062 -> 0.124),MEX+COL+PER+PRY,latin_america
+CUB,alldays,CUB_alldays.csv,National average day; workday with school children,,latin_america
+CUB,restday,CUB_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+CUB,workday,CUB_workday.csv,National matrix x donor day-type ratios; + school children E=0.101 (C3 peak 0.064 -> 0.101),MEX+COL+PER+PRY,latin_america
+CZE,alldays,CZE_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+CZE,restday,CZE_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+CZE,workday,CZE_workday.csv,National matrix x donor day-type ratios; + school children E=0.094 (C3 peak 0.012 -> 0.094),RUS+ALB,eastern_europe_central_asia
+DEU,alldays,DEU_alldays.csv,National average day,,western_europe
+DEU,restday,DEU_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DEU,saturday,DEU_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DEU,sunday,DEU_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DEU,workday,DEU_workday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DJI,alldays,DJI_alldays.csv,mean of donor average days; workday with school children,GHA+NGA+ZAF,sub_saharan_africa
+DJI,restday,DJI_restday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+DJI,saturday,DJI_saturday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+DJI,sunday,DJI_sunday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+DJI,workday,DJI_workday.csv,donor average day x donor day-type ratios; + school children E=0.114 (C3 peak 0.106 -> 0.114),GHA+NGA+ZAF,sub_saharan_africa
+DNK,alldays,DNK_alldays.csv,National average day; workday with school children,,western_europe
+DNK,restday,DNK_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DNK,saturday,DNK_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DNK,sunday,DNK_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+DNK,workday,DNK_workday.csv,National matrix x donor day-type ratios; + school children E=0.102 (C3 peak 0.096 -> 0.102),GBR+ESP+BEL,western_europe
+DOM,alldays,DOM_alldays.csv,National average day; workday with school children,,latin_america
+DOM,restday,DOM_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+DOM,workday,DOM_workday.csv,National matrix x donor day-type ratios; + school children E=0.156 (C3 peak 0.060 -> 0.156),MEX+COL+PER+PRY,latin_america
+DZA,alldays,DZA_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+DZA,restday,DZA_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+DZA,workday,DZA_workday.csv,National matrix x donor day-type ratios; + school children E=0.204 (C3 peak 0.166 -> 0.204),MAR,middle_east_north_africa
+ECU,alldays,ECU_alldays.csv,National average day; workday with school children,,latin_america
+ECU,restday,ECU_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+ECU,workday,ECU_workday.csv,National matrix x donor day-type ratios; + school children E=0.156 (C3 peak 0.105 -> 0.156),MEX+COL+PER+PRY,latin_america
+EGY,alldays,EGY_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+EGY,restday,EGY_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+EGY,workday,EGY_workday.csv,National matrix x donor day-type ratios; + school children E=0.204 (C3 peak 0.076 -> 0.204),MAR,middle_east_north_africa
+ERI,alldays,ERI_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+ERI,restday,ERI_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ERI,saturday,ERI_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ERI,sunday,ERI_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ERI,workday,ERI_workday.csv,National matrix x donor day-type ratios; + school children E=0.120 (C3 peak 0.061 -> 0.120),GHA+NGA+ZAF,sub_saharan_africa
+ESP,alldays,ESP_alldays.csv,own survey (build_daytype.py) + timing correction (calibrate/timing_calibration.py),,western_europe
+ESP,restday,ESP_restday.csv,own survey (build_daytype.py),,western_europe
+ESP,saturday,ESP_saturday.csv,own survey (build_daytype.py),,western_europe
+ESP,sunday,ESP_sunday.csv,own survey (build_daytype.py),,western_europe
+ESP,workday,ESP_workday.csv,own survey (build_daytype.py) + timing correction (calibrate/timing_calibration.py),,western_europe
+EST,alldays,EST_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+EST,restday,EST_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+EST,workday,EST_workday.csv,National matrix x donor day-type ratios; + school children E=0.103 (C3 peak 0.102 -> 0.103),RUS+ALB,eastern_europe_central_asia
+ETH,alldays,ETH_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+ETH,restday,ETH_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ETH,saturday,ETH_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ETH,sunday,ETH_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ETH,workday,ETH_workday.csv,National matrix x donor day-type ratios; + school children E=0.176 (C3 peak 0.067 -> 0.176),GHA+NGA+ZAF,sub_saharan_africa
+FIN,alldays,FIN_alldays.csv,National average day; workday with school children,,western_europe
+FIN,restday,FIN_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,saturday,FIN_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,sunday,FIN_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FIN,workday,FIN_workday.csv,National matrix x donor day-type ratios; + school children E=0.100 (C3 peak 0.083 -> 0.100),GBR+ESP+BEL,western_europe
+FRA,alldays,FRA_alldays.csv,National average day; workday with school children,,western_europe
+FRA,restday,FRA_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FRA,saturday,FRA_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FRA,sunday,FRA_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+FRA,workday,FRA_workday.csv,National matrix x donor day-type ratios; + school children E=0.110 (C3 peak 0.086 -> 0.110),GBR+ESP+BEL,western_europe
+GAB,alldays,GAB_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+GAB,restday,GAB_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GAB,saturday,GAB_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GAB,sunday,GAB_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GAB,workday,GAB_workday.csv,National matrix x donor day-type ratios; + school children E=0.217 (C3 peak 0.163 -> 0.217),GHA+NGA+ZAF,sub_saharan_africa
+GBR,alldays,GBR_alldays.csv,own survey (build_daytype.py); workday with school children,,western_europe
+GBR,restday,GBR_restday.csv,own survey (build_daytype.py),,western_europe
+GBR,saturday,GBR_saturday.csv,own survey (build_daytype.py),,western_europe
+GBR,sunday,GBR_sunday.csv,own survey (build_daytype.py),,western_europe
+GBR,workday,GBR_workday.csv,own survey (build_daytype.py); + school children E=0.118 (C3 peak 0.095 -> 0.118),,western_europe
+GEO,alldays,GEO_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+GEO,restday,GEO_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+GEO,workday,GEO_workday.csv,National matrix x donor day-type ratios; + school children E=0.143 (C3 peak 0.039 -> 0.143),RUS+ALB,eastern_europe_central_asia
+GHA,alldays,GHA_alldays.csv,own survey (build_daytype.py); workday with school children,,sub_saharan_africa
+GHA,restday,GHA_restday.csv,own survey (build_daytype.py),,sub_saharan_africa
+GHA,saturday,GHA_saturday.csv,own survey (build_daytype.py),,sub_saharan_africa
+GHA,sunday,GHA_sunday.csv,own survey (build_daytype.py),,sub_saharan_africa
+GHA,workday,GHA_workday.csv,own survey (build_daytype.py); + school children E=0.185 (C3 peak 0.089 -> 0.185),,sub_saharan_africa
+GIN,alldays,GIN_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+GIN,restday,GIN_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GIN,saturday,GIN_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GIN,sunday,GIN_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GIN,workday,GIN_workday.csv,National matrix x donor day-type ratios; + school children E=0.173 (C3 peak 0.076 -> 0.173),GHA+NGA+ZAF,sub_saharan_africa
+GMB,alldays,GMB_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+GMB,restday,GMB_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GMB,saturday,GMB_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GMB,sunday,GMB_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GMB,workday,GMB_workday.csv,National matrix x donor day-type ratios; + school children E=0.223 (C3 peak 0.068 -> 0.223),GHA+NGA+ZAF,sub_saharan_africa
+GNB,alldays,GNB_alldays.csv,mean of donor average days; workday with school children,GHA+NGA+ZAF,sub_saharan_africa
+GNB,restday,GNB_restday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNB,saturday,GNB_saturday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNB,sunday,GNB_sunday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNB,workday,GNB_workday.csv,donor average day x donor day-type ratios; + school children E=0.228 (C3 peak 0.106 -> 0.228),GHA+NGA+ZAF,sub_saharan_africa
+GNQ,alldays,GNQ_alldays.csv,National average day,,sub_saharan_africa
+GNQ,restday,GNQ_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNQ,saturday,GNQ_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNQ,sunday,GNQ_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GNQ,workday,GNQ_workday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+GRC,alldays,GRC_alldays.csv,National average day; workday with school children,,western_europe
+GRC,restday,GRC_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+GRC,saturday,GRC_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+GRC,sunday,GRC_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+GRC,workday,GRC_workday.csv,National matrix x donor day-type ratios; + school children E=0.089 (C3 peak 0.080 -> 0.089),GBR+ESP+BEL,western_europe
+GTM,alldays,GTM_alldays.csv,National average day; workday with school children,,latin_america
+GTM,restday,GTM_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+GTM,workday,GTM_workday.csv,National matrix x donor day-type ratios; + school children E=0.164 (C3 peak 0.098 -> 0.164),MEX+COL+PER+PRY,latin_america
+HND,alldays,HND_alldays.csv,National average day; workday with school children,,latin_america
+HND,restday,HND_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+HND,workday,HND_workday.csv,National matrix x donor day-type ratios; + school children E=0.142 (C3 peak 0.093 -> 0.142),MEX+COL+PER+PRY,latin_america
+HRV,alldays,HRV_alldays.csv,National average day,,eastern_europe_central_asia
+HRV,restday,HRV_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+HRV,workday,HRV_workday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+HTI,alldays,HTI_alldays.csv,National average day; workday with school children,,latin_america
+HTI,restday,HTI_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+HTI,workday,HTI_workday.csv,National matrix x donor day-type ratios; + school children E=0.188 (C3 peak 0.101 -> 0.188),MEX+COL+PER+PRY,latin_america
+HUN,alldays,HUN_alldays.csv,National average day,,eastern_europe_central_asia
+HUN,restday,HUN_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+HUN,workday,HUN_workday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+IDN,alldays,IDN_alldays.csv,National average day; workday with school children,,southeast_asia
+IDN,restday,IDN_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+IDN,workday,IDN_workday.csv,National matrix x donor day-type ratios; + school children E=0.149 (C3 peak 0.066 -> 0.149),CHN+IND,southeast_asia
+IND,alldays,IND_alldays.csv,own survey (build_daytype.py); workday with school children,,south_asia
+IND,restday,IND_restday.csv,own survey (build_daytype.py),,south_asia
+IND,saturday,IND_saturday.csv,own survey (build_daytype.py),,south_asia
+IND,sunday,IND_sunday.csv,own survey (build_daytype.py),,south_asia
+IND,workday,IND_workday.csv,own survey (build_daytype.py); + school children E=0.146 (C3 peak 0.139 -> 0.146),,south_asia
+IRL,alldays,IRL_alldays.csv,National average day; workday with school children,,western_europe
+IRL,restday,IRL_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+IRL,saturday,IRL_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+IRL,sunday,IRL_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+IRL,workday,IRL_workday.csv,National matrix x donor day-type ratios; + school children E=0.127 (C3 peak 0.094 -> 0.127),GBR+ESP+BEL,western_europe
+IRN,alldays,IRN_alldays.csv,National average day,,middle_east_north_africa
+IRN,restday,IRN_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+IRN,workday,IRN_workday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+IRQ,alldays,IRQ_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+IRQ,restday,IRQ_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+IRQ,workday,IRQ_workday.csv,National matrix x donor day-type ratios; + school children E=0.220 (C3 peak 0.020 -> 0.220),MAR,middle_east_north_africa
+ISR,alldays,ISR_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+ISR,restday,ISR_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+ISR,workday,ISR_workday.csv,National matrix x donor day-type ratios; + school children E=0.176 (C3 peak 0.116 -> 0.176),MAR,middle_east_north_africa
+ITA,alldays,ITA_alldays.csv,National average day,,western_europe
+ITA,restday,ITA_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+ITA,saturday,ITA_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+ITA,sunday,ITA_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+ITA,workday,ITA_workday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+JAM,alldays,JAM_alldays.csv,National average day; workday with school children,,latin_america
+JAM,restday,JAM_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+JAM,workday,JAM_workday.csv,National matrix x donor day-type ratios; + school children E=0.100 (C3 peak 0.058 -> 0.100),MEX+COL+PER+PRY,latin_america
+JOR,alldays,JOR_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+JOR,restday,JOR_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+JOR,workday,JOR_workday.csv,National matrix x donor day-type ratios; + school children E=0.155 (C3 peak 0.019 -> 0.155),MAR,middle_east_north_africa
+JPN,alldays,JPN_alldays.csv,own survey (build_daytype.py); workday with school children,,east_asia
+JPN,restday,JPN_restday.csv,own survey (build_daytype.py),,east_asia
+JPN,saturday,JPN_saturday.csv,own survey (build_daytype.py),,east_asia
+JPN,sunday,JPN_sunday.csv,own survey (build_daytype.py),,east_asia
+JPN,workday,JPN_workday.csv,own survey (build_daytype.py); + school children E=0.081 (C3 peak 0.056 -> 0.081),,east_asia
+KAZ,alldays,KAZ_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+KAZ,restday,KAZ_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+KAZ,workday,KAZ_workday.csv,National matrix x donor day-type ratios; + school children E=0.190 (C3 peak 0.019 -> 0.190),RUS+ALB,eastern_europe_central_asia
+KEN,alldays,KEN_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+KEN,restday,KEN_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+KEN,saturday,KEN_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+KEN,sunday,KEN_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+KEN,workday,KEN_workday.csv,National matrix x donor day-type ratios; + school children E=0.195 (C3 peak 0.093 -> 0.195),GHA+NGA+ZAF,sub_saharan_africa
+KGZ,alldays,KGZ_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+KGZ,restday,KGZ_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+KGZ,workday,KGZ_workday.csv,National matrix x donor day-type ratios; + school children E=0.206 (C3 peak 0.107 -> 0.206),RUS+ALB,eastern_europe_central_asia
+KHM,alldays,KHM_alldays.csv,National average day; workday with school children,,southeast_asia
+KHM,restday,KHM_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+KHM,workday,KHM_workday.csv,National matrix x donor day-type ratios; + school children E=0.162 (C3 peak 0.022 -> 0.162),CHN+IND,southeast_asia
+KOR,alldays,KOR_alldays.csv,own survey (build_daytype.py) + timing correction (calibrate/timing_calibration.py),,east_asia
+KOR,restday,KOR_restday.csv,own survey (build_daytype.py),,east_asia
+KOR,saturday,KOR_saturday.csv,own survey (build_daytype.py),,east_asia
+KOR,sunday,KOR_sunday.csv,own survey (build_daytype.py),,east_asia
+KOR,workday,KOR_workday.csv,own survey (build_daytype.py) + timing correction (calibrate/timing_calibration.py),,east_asia
+KWT,alldays,KWT_alldays.csv,National average day,,middle_east_north_africa
+KWT,restday,KWT_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+KWT,workday,KWT_workday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+LBN,alldays,LBN_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+LBN,restday,LBN_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+LBN,workday,LBN_workday.csv,National matrix x donor day-type ratios; + school children E=0.137 (C3 peak 0.087 -> 0.137),MAR,middle_east_north_africa
+LBR,alldays,LBR_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+LBR,restday,LBR_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+LBR,saturday,LBR_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+LBR,sunday,LBR_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+LBR,workday,LBR_workday.csv,National matrix x donor day-type ratios; + school children E=0.095 (C3 peak 0.054 -> 0.095),GHA+NGA+ZAF,sub_saharan_africa
+LBY,alldays,LBY_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+LBY,restday,LBY_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+LBY,workday,LBY_workday.csv,National matrix x donor day-type ratios; + school children E=0.170 (C3 peak 0.166 -> 0.170),MAR,middle_east_north_africa
+LKA,alldays,LKA_alldays.csv,National average day,,south_asia
+LKA,restday,LKA_restday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+LKA,saturday,LKA_saturday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+LKA,sunday,LKA_sunday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+LKA,workday,LKA_workday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+LTU,alldays,LTU_alldays.csv,National average day,,eastern_europe_central_asia
+LTU,restday,LTU_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+LTU,workday,LTU_workday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+LVA,alldays,LVA_alldays.csv,mean of donor average days; workday with school children,RUS+ALB,eastern_europe_central_asia
+LVA,restday,LVA_restday.csv,donor average day x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+LVA,workday,LVA_workday.csv,donor average day x donor day-type ratios; + school children E=0.106 (C3 peak 0.101 -> 0.106),RUS+ALB,eastern_europe_central_asia
+MAR,alldays,MAR_alldays.csv,own survey (build_daytype.py); workday with school children,,middle_east_north_africa
+MAR,restday,MAR_restday.csv,own survey (build_daytype.py),,middle_east_north_africa
+MAR,workday,MAR_workday.csv,own survey (build_daytype.py); + school children E=0.155 (C3 peak 0.057 -> 0.155),,middle_east_north_africa
+MDA,alldays,MDA_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+MDA,restday,MDA_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+MDA,workday,MDA_workday.csv,National matrix x donor day-type ratios; + school children E=0.123 (C3 peak 0.019 -> 0.123),RUS+ALB,eastern_europe_central_asia
+MDG,alldays,MDG_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MDG,restday,MDG_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MDG,saturday,MDG_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MDG,sunday,MDG_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MDG,workday,MDG_workday.csv,National matrix x donor day-type ratios; + school children E=0.199 (C3 peak 0.059 -> 0.199),GHA+NGA+ZAF,sub_saharan_africa
+MEX,alldays,MEX_alldays.csv,"EOD 2017 ZMVM travel diaries (INEGI), all household members: (5 weekday + Saturday + Sunday) / 7",USA (Sunday ratio),latin_america
+MEX,restday,MEX_restday.csv,"EOD 2017 ZMVM travel diaries (INEGI), all household members: mean of Saturday and Sunday",USA (Sunday ratio),latin_america
+MEX,workday,MEX_workday.csv,"EOD 2017 ZMVM travel diaries (INEGI), all household members: weekday",,latin_america
+MKD,alldays,MKD_alldays.csv,National average day,,eastern_europe_central_asia
+MKD,restday,MKD_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+MKD,workday,MKD_workday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+MLI,alldays,MLI_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MLI,restday,MLI_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MLI,saturday,MLI_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MLI,sunday,MLI_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MLI,workday,MLI_workday.csv,National matrix x donor day-type ratios; + school children E=0.149 (C3 peak 0.061 -> 0.149),GHA+NGA+ZAF,sub_saharan_africa
+MLT,alldays,MLT_alldays.csv,National average day,,western_europe
+MLT,restday,MLT_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+MLT,saturday,MLT_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+MLT,sunday,MLT_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+MLT,workday,MLT_workday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+MMR,alldays,MMR_alldays.csv,National average day; workday with school children,,southeast_asia
+MMR,restday,MMR_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+MMR,workday,MMR_workday.csv,National matrix x donor day-type ratios; + school children E=0.145 (C3 peak 0.072 -> 0.145),CHN+IND,southeast_asia
+MNG,alldays,MNG_alldays.csv,National average day; workday with school children,,east_asia
+MNG,restday,MNG_restday.csv,National matrix x donor day-type ratios,JPN+KOR+CHN,east_asia
+MNG,workday,MNG_workday.csv,National matrix x donor day-type ratios; + school children E=0.218 (C3 peak 0.044 -> 0.218),JPN+KOR+CHN,east_asia
+MOZ,alldays,MOZ_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MOZ,restday,MOZ_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MOZ,saturday,MOZ_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MOZ,sunday,MOZ_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MOZ,workday,MOZ_workday.csv,National matrix x donor day-type ratios; + school children E=0.211 (C3 peak 0.061 -> 0.211),GHA+NGA+ZAF,sub_saharan_africa
+MRT,alldays,MRT_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MRT,restday,MRT_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MRT,saturday,MRT_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MRT,sunday,MRT_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MRT,workday,MRT_workday.csv,National matrix x donor day-type ratios; + school children E=0.184 (C3 peak 0.082 -> 0.184),GHA+NGA+ZAF,sub_saharan_africa
+MUS,alldays,MUS_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MUS,restday,MUS_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MUS,saturday,MUS_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MUS,sunday,MUS_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MUS,workday,MUS_workday.csv,National matrix x donor day-type ratios; + school children E=0.091 (C3 peak 0.067 -> 0.091),GHA+NGA+ZAF,sub_saharan_africa
+MWI,alldays,MWI_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+MWI,restday,MWI_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MWI,saturday,MWI_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MWI,sunday,MWI_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+MWI,workday,MWI_workday.csv,National matrix x donor day-type ratios; + school children E=0.216 (C3 peak 0.071 -> 0.216),GHA+NGA+ZAF,sub_saharan_africa
+MYS,alldays,MYS_alldays.csv,National average day; workday with school children,,southeast_asia
+MYS,restday,MYS_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+MYS,workday,MYS_workday.csv,National matrix x donor day-type ratios; + school children E=0.140 (C3 peak 0.021 -> 0.140),CHN+IND,southeast_asia
+NAM,alldays,NAM_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+NAM,restday,NAM_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NAM,saturday,NAM_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NAM,sunday,NAM_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NAM,workday,NAM_workday.csv,National matrix x donor day-type ratios; + school children E=0.224 (C3 peak 0.159 -> 0.224),GHA+NGA+ZAF,sub_saharan_africa
+NER,alldays,NER_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+NER,restday,NER_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NER,saturday,NER_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NER,sunday,NER_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+NER,workday,NER_workday.csv,National matrix x donor day-type ratios; + school children E=0.159 (C3 peak 0.057 -> 0.159),GHA+NGA+ZAF,sub_saharan_africa
+NGA,alldays,NGA_alldays.csv,own survey (build_daytype.py); workday with school children,,sub_saharan_africa
+NGA,restday,NGA_restday.csv,own survey (build_daytype.py),,sub_saharan_africa
+NGA,saturday,NGA_saturday.csv,own survey (build_daytype.py),,sub_saharan_africa
+NGA,sunday,NGA_sunday.csv,own survey (build_daytype.py),,sub_saharan_africa
+NGA,workday,NGA_workday.csv,own survey (build_daytype.py); + school children E=0.207 (C3 peak 0.057 -> 0.207),,sub_saharan_africa
+NIC,alldays,NIC_alldays.csv,National average day; workday with school children,,latin_america
+NIC,restday,NIC_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+NIC,workday,NIC_workday.csv,National matrix x donor day-type ratios; + school children E=0.176 (C3 peak 0.093 -> 0.176),MEX+COL+PER+PRY,latin_america
+NLD,alldays,NLD_alldays.csv,National average day; workday with school children,,western_europe
+NLD,restday,NLD_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NLD,saturday,NLD_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NLD,sunday,NLD_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NLD,workday,NLD_workday.csv,National matrix x donor day-type ratios; + school children E=0.098 (C3 peak 0.095 -> 0.098),GBR+ESP+BEL,western_europe
+NOR,alldays,NOR_alldays.csv,National average day; workday with school children,,western_europe
+NOR,restday,NOR_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NOR,saturday,NOR_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NOR,sunday,NOR_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+NOR,workday,NOR_workday.csv,National matrix x donor day-type ratios; + school children E=0.109 (C3 peak 0.108 -> 0.109),GBR+ESP+BEL,western_europe
+NPL,alldays,NPL_alldays.csv,National average day; workday with school children,,south_asia
+NPL,restday,NPL_restday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+NPL,saturday,NPL_saturday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+NPL,sunday,NPL_sunday.csv,National matrix x donor day-type ratios,IND+PAK,south_asia
+NPL,workday,NPL_workday.csv,National matrix x donor day-type ratios; + school children E=0.165 (C3 peak 0.118 -> 0.165),IND+PAK,south_asia
+NZL,alldays,NZL_alldays.csv,National average day; workday with school children,,oceania
+NZL,restday,NZL_restday.csv,National matrix x donor day-type ratios,AUS,oceania
+NZL,workday,NZL_workday.csv,National matrix x donor day-type ratios; + school children E=0.120 (C3 peak 0.046 -> 0.120),AUS,oceania
+OMN,alldays,OMN_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+OMN,restday,OMN_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+OMN,workday,OMN_workday.csv,National matrix x donor day-type ratios; + school children E=0.157 (C3 peak 0.078 -> 0.157),MAR,middle_east_north_africa
+PAK,alldays,PAK_alldays.csv,own survey (build_daytype.py); workday with school children,,south_asia
+PAK,restday,PAK_restday.csv,own survey (build_daytype.py),,south_asia
+PAK,saturday,PAK_saturday.csv,own survey (build_daytype.py),,south_asia
+PAK,sunday,PAK_sunday.csv,own survey (build_daytype.py),,south_asia
+PAK,workday,PAK_workday.csv,own survey (build_daytype.py); + school children E=0.143 (C3 peak 0.074 -> 0.143),,south_asia
+PAN,alldays,PAN_alldays.csv,National average day; workday with school children,,latin_america
+PAN,restday,PAN_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+PAN,workday,PAN_workday.csv,National matrix x donor day-type ratios; + school children E=0.136 (C3 peak 0.063 -> 0.136),MEX+COL+PER+PRY,latin_america
+PER,alldays,PER_alldays.csv,own survey (build_daytype.py); workday with school children,,latin_america
+PER,restday,PER_restday.csv,own survey (build_daytype.py),,latin_america
+PER,saturday,PER_saturday.csv,own survey (build_daytype.py),,latin_america
+PER,sunday,PER_sunday.csv,own survey (build_daytype.py),,latin_america
+PER,workday,PER_workday.csv,own survey (build_daytype.py); + school children E=0.153 (C3 peak 0.114 -> 0.153),,latin_america
+PHL,alldays,PHL_alldays.csv,National average day; workday with school children,,southeast_asia
+PHL,restday,PHL_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+PHL,workday,PHL_workday.csv,National matrix x donor day-type ratios; + school children E=0.170 (C3 peak 0.067 -> 0.170),CHN+IND,southeast_asia
+PNG,alldays,PNG_alldays.csv,mean of donor average days; workday with school children,AUS,oceania
+PNG,restday,PNG_restday.csv,donor average day x donor day-type ratios,AUS,oceania
+PNG,workday,PNG_workday.csv,donor average day x donor day-type ratios; + school children E=0.141 (C3 peak 0.058 -> 0.141),AUS,oceania
+POL,alldays,POL_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+POL,restday,POL_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+POL,workday,POL_workday.csv,National matrix x donor day-type ratios; + school children E=0.099 (C3 peak 0.096 -> 0.099),RUS+ALB,eastern_europe_central_asia
+PRI,alldays,PRI_alldays.csv,National average day,,north_america
+PRI,restday,PRI_restday.csv,National matrix x donor day-type ratios,USA+CAN,north_america
+PRI,saturday,PRI_saturday.csv,National matrix x donor day-type ratios,USA+CAN,north_america
+PRI,sunday,PRI_sunday.csv,National matrix x donor day-type ratios,USA+CAN,north_america
+PRI,workday,PRI_workday.csv,National matrix x donor day-type ratios,USA+CAN,north_america
+PRK,alldays,PRK_alldays.csv,National average day; workday with school children,,east_asia
+PRK,restday,PRK_restday.csv,National matrix x donor day-type ratios,JPN+KOR+CHN,east_asia
+PRK,workday,PRK_workday.csv,National matrix x donor day-type ratios; + school children E=0.112 (C3 peak 0.077 -> 0.112),JPN+KOR+CHN,east_asia
+PRT,alldays,PRT_alldays.csv,National average day,,western_europe
+PRT,restday,PRT_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+PRT,saturday,PRT_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+PRT,sunday,PRT_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+PRT,workday,PRT_workday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+PRY,alldays,PRY_alldays.csv,own survey (build_daytype.py); workday with school children,,latin_america
+PRY,restday,PRY_restday.csv,own survey (build_daytype.py),,latin_america
+PRY,workday,PRY_workday.csv,own survey (build_daytype.py); + school children E=0.155 (C3 peak 0.064 -> 0.155),,latin_america
+PSE,alldays,PSE_alldays.csv,mean of donor average days; workday with school children,MAR,middle_east_north_africa
+PSE,restday,PSE_restday.csv,donor average day x donor day-type ratios,MAR,middle_east_north_africa
+PSE,workday,PSE_workday.csv,donor average day x donor day-type ratios; + school children E=0.235 (C3 peak 0.057 -> 0.235),MAR,middle_east_north_africa
+QAT,alldays,QAT_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+QAT,restday,QAT_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+QAT,workday,QAT_workday.csv,National matrix x donor day-type ratios; + school children E=0.097 (C3 peak 0.091 -> 0.097),MAR,middle_east_north_africa
+ROU,alldays,ROU_alldays.csv,National average day,,eastern_europe_central_asia
+ROU,restday,ROU_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+ROU,workday,ROU_workday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+RUS,alldays,RUS_alldays.csv,own survey (build_daytype.py); workday with school children,,eastern_europe_central_asia
+RUS,restday,RUS_restday.csv,own survey (build_daytype.py),,eastern_europe_central_asia
+RUS,workday,RUS_workday.csv,own survey (build_daytype.py); + school children E=0.119 (C3 peak 0.083 -> 0.119),,eastern_europe_central_asia
+RWA,alldays,RWA_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+RWA,restday,RWA_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+RWA,saturday,RWA_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+RWA,sunday,RWA_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+RWA,workday,RWA_workday.csv,National matrix x donor day-type ratios; + school children E=0.194 (C3 peak 0.071 -> 0.194),GHA+NGA+ZAF,sub_saharan_africa
+SAU,alldays,SAU_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+SAU,restday,SAU_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+SAU,workday,SAU_workday.csv,National matrix x donor day-type ratios; + school children E=0.151 (C3 peak 0.116 -> 0.151),MAR,middle_east_north_africa
+SDN,alldays,SDN_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+SDN,restday,SDN_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SDN,saturday,SDN_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SDN,sunday,SDN_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SDN,workday,SDN_workday.csv,National matrix x donor day-type ratios; + school children E=0.145 (C3 peak 0.070 -> 0.145),GHA+NGA+ZAF,sub_saharan_africa
+SEN,alldays,SEN_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+SEN,restday,SEN_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SEN,saturday,SEN_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SEN,sunday,SEN_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SEN,workday,SEN_workday.csv,National matrix x donor day-type ratios; + school children E=0.163 (C3 peak 0.075 -> 0.163),GHA+NGA+ZAF,sub_saharan_africa
+SGP,alldays,SGP_alldays.csv,National average day,,southeast_asia
+SGP,restday,SGP_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+SGP,workday,SGP_workday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+SLE,alldays,SLE_alldays.csv,mean of donor average days; workday with school children,GHA+NGA+ZAF,sub_saharan_africa
+SLE,restday,SLE_restday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SLE,saturday,SLE_saturday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SLE,sunday,SLE_sunday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SLE,workday,SLE_workday.csv,donor average day x donor day-type ratios; + school children E=0.206 (C3 peak 0.106 -> 0.206),GHA+NGA+ZAF,sub_saharan_africa
+SLV,alldays,SLV_alldays.csv,National average day; workday with school children,,latin_america
+SLV,restday,SLV_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+SLV,workday,SLV_workday.csv,National matrix x donor day-type ratios; + school children E=0.128 (C3 peak 0.097 -> 0.128),MEX+COL+PER+PRY,latin_america
+SOM,alldays,SOM_alldays.csv,National average day,,sub_saharan_africa
+SOM,restday,SOM_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SOM,saturday,SOM_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SOM,sunday,SOM_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SOM,workday,SOM_workday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SRB,alldays,SRB_alldays.csv,mean of donor average days,RUS+ALB,eastern_europe_central_asia
+SRB,restday,SRB_restday.csv,donor average day x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+SRB,workday,SRB_workday.csv,donor average day x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+SSD,alldays,SSD_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+SSD,restday,SSD_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SSD,saturday,SSD_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SSD,sunday,SSD_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+SSD,workday,SSD_workday.csv,National matrix x donor day-type ratios; + school children E=0.068 (C3 peak 0.061 -> 0.068),GHA+NGA+ZAF,sub_saharan_africa
+SVK,alldays,SVK_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+SVK,restday,SVK_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+SVK,workday,SVK_workday.csv,National matrix x donor day-type ratios; + school children E=0.090 (C3 peak 0.085 -> 0.090),RUS+ALB,eastern_europe_central_asia
+SWE,alldays,SWE_alldays.csv,National average day; workday with school children,,western_europe
+SWE,restday,SWE_restday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+SWE,saturday,SWE_saturday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+SWE,sunday,SWE_sunday.csv,National matrix x donor day-type ratios,GBR+ESP+BEL,western_europe
+SWE,workday,SWE_workday.csv,National matrix x donor day-type ratios; + school children E=0.116 (C3 peak 0.096 -> 0.116),GBR+ESP+BEL,western_europe
+SYR,alldays,SYR_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+SYR,restday,SYR_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+SYR,workday,SYR_workday.csv,National matrix x donor day-type ratios; + school children E=0.119 (C3 peak 0.059 -> 0.119),MAR,middle_east_north_africa
+TCD,alldays,TCD_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+TCD,restday,TCD_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TCD,saturday,TCD_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TCD,sunday,TCD_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TCD,workday,TCD_workday.csv,National matrix x donor day-type ratios; + school children E=0.169 (C3 peak 0.061 -> 0.169),GHA+NGA+ZAF,sub_saharan_africa
+TGO,alldays,TGO_alldays.csv,mean of donor average days; workday with school children,GHA+NGA+ZAF,sub_saharan_africa
+TGO,restday,TGO_restday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TGO,saturday,TGO_saturday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TGO,sunday,TGO_sunday.csv,donor average day x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TGO,workday,TGO_workday.csv,donor average day x donor day-type ratios; + school children E=0.217 (C3 peak 0.106 -> 0.217),GHA+NGA+ZAF,sub_saharan_africa
+THA,alldays,THA_alldays.csv,National average day,,southeast_asia
+THA,restday,THA_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+THA,workday,THA_workday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+TJK,alldays,TJK_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+TJK,restday,TJK_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+TJK,workday,TJK_workday.csv,National matrix x donor day-type ratios; + school children E=0.227 (C3 peak 0.141 -> 0.227),RUS+ALB,eastern_europe_central_asia
+TKM,alldays,TKM_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+TKM,restday,TKM_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+TKM,workday,TKM_workday.csv,National matrix x donor day-type ratios; + school children E=0.200 (C3 peak 0.020 -> 0.200),RUS+ALB,eastern_europe_central_asia
+TLS,alldays,TLS_alldays.csv,National average day; workday with school children,,southeast_asia
+TLS,restday,TLS_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+TLS,workday,TLS_workday.csv,National matrix x donor day-type ratios; + school children E=0.198 (C3 peak 0.106 -> 0.198),CHN+IND,southeast_asia
+TTO,alldays,TTO_alldays.csv,mean of donor average days; workday with school children,MEX+COL+PER+PRY,latin_america
+TTO,restday,TTO_restday.csv,donor average day x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+TTO,workday,TTO_workday.csv,donor average day x donor day-type ratios; + school children E=0.119 (C3 peak 0.084 -> 0.119),MEX+COL+PER+PRY,latin_america
+TUN,alldays,TUN_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+TUN,restday,TUN_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+TUN,workday,TUN_workday.csv,National matrix x donor day-type ratios; + school children E=0.158 (C3 peak 0.129 -> 0.158),MAR,middle_east_north_africa
+TUR,alldays,TUR_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+TUR,restday,TUR_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+TUR,workday,TUR_workday.csv,National matrix x donor day-type ratios; + school children E=0.139 (C3 peak 0.078 -> 0.139),MAR,middle_east_north_africa
+TWN,alldays,TWN_alldays.csv,National average day; workday with school children,,east_asia
+TWN,restday,TWN_restday.csv,National matrix x donor day-type ratios,JPN+KOR+CHN,east_asia
+TWN,workday,TWN_workday.csv,National matrix x donor day-type ratios; + school children E=0.117 (C3 peak 0.104 -> 0.117),JPN+KOR+CHN,east_asia
+TZA,alldays,TZA_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+TZA,restday,TZA_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TZA,saturday,TZA_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TZA,sunday,TZA_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+TZA,workday,TZA_workday.csv,National matrix x donor day-type ratios; + school children E=0.184 (C3 peak 0.055 -> 0.184),GHA+NGA+ZAF,sub_saharan_africa
+UGA,alldays,UGA_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+UGA,restday,UGA_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+UGA,saturday,UGA_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+UGA,sunday,UGA_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+UGA,workday,UGA_workday.csv,National matrix x donor day-type ratios; + school children E=0.250 (C3 peak 0.055 -> 0.250),GHA+NGA+ZAF,sub_saharan_africa
+UKR,alldays,UKR_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+UKR,restday,UKR_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+UKR,workday,UKR_workday.csv,National matrix x donor day-type ratios; + school children E=0.093 (C3 peak 0.021 -> 0.093),RUS+ALB,eastern_europe_central_asia
+URY,alldays,URY_alldays.csv,National average day; workday with school children,,latin_america
+URY,restday,URY_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+URY,workday,URY_workday.csv,National matrix x donor day-type ratios; + school children E=0.125 (C3 peak 0.063 -> 0.125),MEX+COL+PER+PRY,latin_america
+USA,alldays,USA_alldays.csv,"NHTS 2017 travel diaries (FHWA), household members 5+: (5 weekday + Saturday + Sunday) / 7 + timing correction (calibrate/timing_calibration.py)",,north_america
+USA,restday,USA_restday.csv,"NHTS 2017 travel diaries (FHWA), household members 5+: restday + timing correction (calibrate/timing_calibration.py)",,north_america
+USA,saturday,USA_saturday.csv,"NHTS 2017 travel diaries (FHWA), household members 5+: saturday + timing correction (calibrate/timing_calibration.py)",,north_america
+USA,sunday,USA_sunday.csv,"NHTS 2017 travel diaries (FHWA), household members 5+: sunday + timing correction (calibrate/timing_calibration.py)",,north_america
+USA,workday,USA_workday.csv,"NHTS 2017 travel diaries (FHWA), household members 5+: workday",,north_america
+UZB,alldays,UZB_alldays.csv,National average day; workday with school children,,eastern_europe_central_asia
+UZB,restday,UZB_restday.csv,National matrix x donor day-type ratios,RUS+ALB,eastern_europe_central_asia
+UZB,workday,UZB_workday.csv,National matrix x donor day-type ratios; + school children E=0.182 (C3 peak 0.089 -> 0.182),RUS+ALB,eastern_europe_central_asia
+VEN,alldays,VEN_alldays.csv,National average day; workday with school children,,latin_america
+VEN,restday,VEN_restday.csv,National matrix x donor day-type ratios,MEX+COL+PER+PRY,latin_america
+VEN,workday,VEN_workday.csv,National matrix x donor day-type ratios; + school children E=0.150 (C3 peak 0.130 -> 0.150),MEX+COL+PER+PRY,latin_america
+VNM,alldays,VNM_alldays.csv,National average day; workday with school children,,southeast_asia
+VNM,restday,VNM_restday.csv,National matrix x donor day-type ratios,CHN+IND,southeast_asia
+VNM,workday,VNM_workday.csv,National matrix x donor day-type ratios; + school children E=0.158 (C3 peak 0.061 -> 0.158),CHN+IND,southeast_asia
+YEM,alldays,YEM_alldays.csv,National average day; workday with school children,,middle_east_north_africa
+YEM,restday,YEM_restday.csv,National matrix x donor day-type ratios,MAR,middle_east_north_africa
+YEM,workday,YEM_workday.csv,National matrix x donor day-type ratios; + school children E=0.192 (C3 peak 0.059 -> 0.192),MAR,middle_east_north_africa
+ZAF,alldays,ZAF_alldays.csv,own survey (build_daytype.py),,sub_saharan_africa
+ZAF,restday,ZAF_restday.csv,own survey (build_daytype.py),,sub_saharan_africa
+ZAF,saturday,ZAF_saturday.csv,own survey (build_daytype.py),,sub_saharan_africa
+ZAF,sunday,ZAF_sunday.csv,own survey (build_daytype.py),,sub_saharan_africa
+ZAF,workday,ZAF_workday.csv,own survey (build_daytype.py),,sub_saharan_africa
+ZMB,alldays,ZMB_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+ZMB,restday,ZMB_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZMB,saturday,ZMB_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZMB,sunday,ZMB_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZMB,workday,ZMB_workday.csv,National matrix x donor day-type ratios; + school children E=0.204 (C3 peak 0.063 -> 0.204),GHA+NGA+ZAF,sub_saharan_africa
+ZWE,alldays,ZWE_alldays.csv,National average day; workday with school children,,sub_saharan_africa
+ZWE,restday,ZWE_restday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZWE,saturday,ZWE_saturday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZWE,sunday,ZWE_sunday.csv,National matrix x donor day-type ratios,GHA+NGA+ZAF,sub_saharan_africa
+ZWE,workday,ZWE_workday.csv,National matrix x donor day-type ratios; + school children E=0.219 (C3 peak 0.070 -> 0.219),GHA+NGA+ZAF,sub_saharan_africa
+MEX,saturday,MEX_saturday.csv,"EOD 2017 ZMVM travel diaries (INEGI), all household members: Saturday",,latin_america
+MEX,sunday,MEX_sunday.csv,"EOD 2017 ZMVM travel diaries (INEGI), all household members: Saturday x NHTS 2017 Sunday / Saturday ratios",USA (Sunday ratio),latin_america
+BRA,saturday,BRA_saturday.csv,"Pesquisa OD 2017 RMSP travel diaries (Metro SP), all residents: weekday x EOD 2017 Saturday / weekday ratios",MEX (day-type ratios),latin_america
+BRA,sunday,BRA_sunday.csv,"Pesquisa OD 2017 RMSP travel diaries (Metro SP), all residents: weekday x EOD 2017 Sunday / weekday ratios",MEX (day-type ratios),latin_america

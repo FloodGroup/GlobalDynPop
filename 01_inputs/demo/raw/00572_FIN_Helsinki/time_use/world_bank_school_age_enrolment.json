@@ -1,0 +1,1682 @@
+{
+  "SE.PRE.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 88.3590774536133,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 87.2906112670898,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 85.2500076293945,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2017",
+        "value": 83.5817413330078,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2016",
+        "value": 83.4306869506836,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRE.ENRR",
+          "value": "School enrollment, preprimary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2015",
+        "value": 79.6362075805664,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.PRM.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 98.865608215332,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 99.1151733398438,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 98.6190185546875,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 99.353630065918,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 99.8175811767578,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 99.5557479858398,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.ENRR",
+          "value": "School enrollment, primary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 99.7032012939453,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.PRM.TENR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2017",
+        "value": 98.6897,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2016",
+        "value": 99.12044,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2015",
+        "value": 99.20198,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2014",
+        "value": 99.43563,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2013",
+        "value": 99.11242,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.PRM.TENR",
+          "value": "Adjusted net enrollment rate, primary (% of primary school age children)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2012",
+        "value": 99.10306,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.SEC.ENRR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 142.395156860352,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 142.861724853516,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 144.852462768555,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 143.361343383789,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 143.122909545898,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 144.613204956055,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.ENRR",
+          "value": "School enrollment, secondary (% gross)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 153.651428222656,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SE.SEC.NENR": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2017",
+        "value": 96.1047,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2016",
+        "value": 95.93474,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2015",
+        "value": 95.26385,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2014",
+        "value": 94.61306,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2013",
+        "value": 94.476,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SE.SEC.NENR",
+          "value": "School enrollment, secondary (% net)"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2012",
+        "value": 92.86466,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0004.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 113913,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 114443,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 115253,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 117428,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 119836,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 122912,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 127833,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.FE",
+          "value": "Population ages 00-04, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 133337,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0004.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 119683,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 119863,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 120652,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 123000,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 125306,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 128546,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 133968,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0004.MA",
+          "value": "Population ages 00-04, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 139754,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0509.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 127895,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 132522,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 137376,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 141722,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 145414,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 148324,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 150317,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.FE",
+          "value": "Population ages 05-09, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 151360,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.0509.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 133857,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 138729,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 143728,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 148166,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 152136,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 155293,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 157326,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.0509.MA",
+          "value": "Population ages 05-09, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 158168,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.1014.FE": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 153287,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 154818,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 154986,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 154225,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 153269,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 152000,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 150229,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.FE",
+          "value": "Population ages 10-14, female"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 148480,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.1014.MA": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2120,
+      "sourceid": "16",
+      "lastupdated": "2026-07-01"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 160505,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 161997,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 161963,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 161151,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 160367,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 158870,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 156942,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.1014.MA",
+          "value": "Population ages 10-14, male"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 155200,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  },
+  "SP.POP.TOTL": {
+    "source_response_metadata": {
+      "page": 1,
+      "pages": 1,
+      "per_page": 20000,
+      "total": 2128,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    "records": [
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2025",
+        "value": 5646436,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2024",
+        "value": 5619911,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2023",
+        "value": 5583911,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2022",
+        "value": 5556106,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2021",
+        "value": 5541017,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2020",
+        "value": 5529543,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2019",
+        "value": 5521606,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "SP.POP.TOTL",
+          "value": "Population, total"
+        },
+        "country": {
+          "id": "FI",
+          "value": "Finland"
+        },
+        "countryiso3code": "FIN",
+        "date": "2018",
+        "value": 5515525,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  }
+}

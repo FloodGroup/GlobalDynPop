@@ -28,9 +28,15 @@ def save_model_layers(stems=None):
                 if not isinstance(spec, dict):
                     raise ValueError('Place export requires the configured dictionary attractors')
                 places = model.poi_layer(spec.get('poi_source', 'overture'), ac, P, V, shop_w=spec.get('shop_w'))
+                raw_places = places.copy()
                 sigma = float(spec.get('poi_sigma_m', 0))
                 if sigma > 0 and places.sum() > 0:
                     places = gaussian_filter(places, sigma / 100.0, mode='constant')
+                if spec.get('poi_mask') and '_B' in P:
+                    mask = np.maximum(P['_B'], (raw_places > 0).astype(float))
+                    if spec['poi_mask'] == 'host_outdoor' and '_Q' in P:
+                        mask = np.maximum(mask, (P['_Q'] > 0).astype(float))
+                    places = places * mask
                 layers[c + '_' + dt] = places
                 kernels[dt][c] = {'kind': q.k(c), 'kappa_m': float(q.d0[c]), 'beta': float(q.beta.get(c, 1.0)), 'distance_offset_m': 250.0, 'radius_m': min(q.radius_factor * q.d0[c], q.max_radius_m) if q.k(c) == 'pow' else q.radius_factor * q.d0[c]}
         folder = configuration.INPUTS / 'smoothed_places'

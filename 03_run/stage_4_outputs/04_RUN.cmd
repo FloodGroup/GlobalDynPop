@@ -1,5 +1,4 @@
 @echo off
 call "%~dp0..\environment.cmd"
-cd /d "%DYNAMIC_POPULATION_ROOT%"
-"%DYNAMIC_POPULATION_PYTHON%" 03_run\run_city_demo.py run --stage 4 %*
+"%DYNAMIC_POPULATION_PYTHON%" "%~dp0..\run_city_demo.py" run --stage 4 %*
 exit /b %errorlevel%

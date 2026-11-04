@@ -1,0 +1,1905 @@
+﻿stem,iso3,w_indoor,assignment,reference,source_id,koppen,gni_usd
+10933_CHN_Guangzhou,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+05472_IDN_Jakarta,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+06090_BGD_Dhaka,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+05929_JPN_Tokyo,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+07963_IND_New_Delhi,IND,0.8343,own country,IND,S28b,BSh,2760.0
+11345_CHN_Shanghai,CHN,0.8778,province,CHN (上海),Duan2015_province,Cfa,14230.0
+02323_PHL_Manila,PHL,0.84,own country,PHL,S23,Am,4850.0
+04605_EGY_Cairo,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+11352_IND_Kolkata,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00348_KOR_Seoul,KOR,0.9,own country,KOR,SUP_KIM2019,Dwa,37880.0
+02457_PAK_Karachi,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+07599_IND_Mumbai,IND,0.8343,own country,IND,S28b,Am,2760.0
+07277_BRA_Sao_Paulo,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+02315_THA_Bangkok,THA,0.8125,matched (climate sub-class),LKA,S44,Aw,7690.0
+08745_CHN_Beijing,CHN,0.8472,province,CHN (北京),Duan2015_province,BSk,14230.0
+05402_MEX_Mexico_City,MEX,0.85,own country,MEX,S25,Cwb,13730.0
+09558_IND_Bengaluru,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05239_VNM_Ho_Chi_Minh_City,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+02576_RUS_Moscow,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+07794_PAK_Lahore,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+02637_TUR_Istanbul,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+08099_USA_New_York_City,USA,0.869,own country,USA,S01,Cfa,88810.0
+04443_ARG_Buenos_Aires,ARG,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cfa,14650.0
+02007_USA_Los_Angeles,USA,0.869,own country,USA,S01,BSh,88810.0
+01876_COD_Kinshasa,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+01289_NGA_Lagos,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+04399_JPN_Osaka,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+01082_AGO_Luanda,AGO,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,2860.0
+11199_CHN_Suzhou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+10300_IND_Chennai,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02171_PER_Lima,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWh,8430.0
+11407_CHN_Shantou,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+03881_COL_Bogota,COL,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,7900.0
+05816_GBR_London,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+07799_BRA_Rio_de_Janeiro,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+10576_IND_Hajipur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01142_TWN_Taipei,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Cfa,14230.0
+09524_IND_Hyderabad,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05174_IRN_Tehran,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+02878_FRA_Paris,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+03570_TZA_Dar_es_Salaam,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+05748_IDN_Bandung,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+03512_ZAF_Johannesburg,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+08557_CHN_Chongqing,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cfa,14230.0
+01648_MYS_Kuala_Lumpur,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+10131_CHN_Wuhan,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+10887_CHN_Nanjing,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+03026_SAU_Riyadh,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+06143_IND_Ahmedabad,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05213_JPN_Nagoya,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+09230_IND_Kozhikode,IND,0.8343,own country,IND,S28b,Am,2760.0
+09127_CHN_Tianjin,CHN,0.8361,province,CHN (天津),Duan2015_province,BSk,14230.0
+05862_ETH_Addis_Ababa,ETH,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,1110.0
+04155_SDN_Khartoum,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+06913_IND_Surat,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00291_EGY_Alexandria,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+03307_IRQ_Baghdad,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+07459_IDN_Surabaya,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+08258_IND_Pune,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01717_KEN_Nairobi,KEN,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,2200.0
+02334_CHL_Santiago,CHL,0.8472,matched (climate sub-class),CHN (北京),SUP_CEFH_CHN_PROV2014_北京,BSk,16960.0
+02996_CIV_Abidjan,CIV,0.8343,matched (climate major class),IND,S28b,Am,2780.0
+00992_JOR_Amman,JOR,0.85,own country,JOR,S24,BSk,5260.0
+11311_CHN_Hangzhou,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+07222_EGY_Luxor,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+04865_AFG_Kabul,AFG,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dsa,390.0
+05029_MMR_Yangon,MMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1320.0
+09779_CHN_Shenyang,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+03175_GHA_Accra,GHA,0.8343,matched (climate sub-class),IND,S28b,Aw,2630.0
+07092_NGA_Onitsha,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+07168_USA_Miami,USA,0.869,own country,USA,S01,Af,88810.0
+03338_ESP_Madrid,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSk,37120.0
+07428_PAK_Faisalabad,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+10629_CHN_Hefei,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+06378_CHN_Chengdu,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+02869_CAN_Toronto,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+02276_CMR_Yaounde,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+06897_IRN_Mashhad,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+07532_USA_Chicago,USA,0.869,own country,USA,S01,Dfa,88810.0
+08006_CHN_Xi_an,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,BSk,14230.0
+09346_IND_Lucknow,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01711_UGA_Kampala,UGA,0.84,matched (climate sub-class),PHL,S23,Af,1120.0
+07439_BGD_Chattogram,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+09277_CHN_Zhengzhou,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+00178_SGP_Singapore,SGP,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,81760.0
+08125_NGA_Kano,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+09386_IND_Kochi,IND,0.8343,own country,IND,S28b,Am,2760.0
+01999_VNM_Hanoi,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Cwa,4970.0
+01284_GHA_Kumasi,GHA,0.8343,matched (climate sub-class),IND,S28b,Aw,2630.0
+06766_PAK_Islamabad,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+00586_RUS_Saint_Petersburg,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+01112_SAU_Jeddah,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+11185_CHN_Hong_Kong,CHN,0.883,Hong Kong survey,HKG,R8_HKG_1998_direc,Cwa,14230.0
+02967_SOM_Mogadishu,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+00632_LKA_Colombo_Sri_Jayawardenepura_Kotte,LKA,0.8125,own country,LKA,S44,Af,4670.0
+01461_USA_San_Francisco,USA,0.869,own country,USA,S01,Csb,88810.0
+01667_DOM_Santo_Domingo,DOM,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10620.0
+09445_CHN_Harbin,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+02102_MAR_Casablanca,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+01007_ARE_Dubai,ARE,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,51550.0
+00832_CMR_Douala,CMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1860.0
+09244_IND_Kanpur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07676_BRA_Belo_Horizonte,BRA,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,10550.0
+02324_AUS_Sydney,AUS,0.8333,own country,AUS,S22,Cfa,64120.0
+01646_IDN_Medan,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+00431_ZAF_Cape_Town,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Csb,6270.0
+08326_CHN_Taiyuan,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+06167_USA_Houston,USA,0.869,own country,USA,S01,Cfa,88810.0
+01985_MDG_Antananarivo,MDG,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,560.0
+07687_IND_Jaipur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+03105_MEX_Guadalajara,MEX,0.85,own country,MEX,S25,Cwa,13730.0
+02880_NGA_Ibadan,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+06131_MEX_Monterrey,MEX,0.85,own country,MEX,S25,BSh,13730.0
+01747_AUS_Melbourne,AUS,0.8333,own country,AUS,S22,Cfb,64120.0
+02659_CHN_Urumqi,CHN,0.7951,province,CHN (新疆),Duan2015_province,BSk,14230.0
+00039_SEN_Dakar,SEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1780.0
+00391_MLI_Bamako,MLI,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1120.0
+05071_ESP_Barcelona,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+02907_UZB_Tashkent,UZB,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,3670.0
+01822_NPL_Kathmandu,NPL,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1570.0
+08388_BRA_Recife,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+11630_CHN_Wenzhou,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+09603_CHN_Jinan,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+10008_IND_Varanasi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01619_SYR_Damascus,SYR,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,720.0
+03993_YEM_Sana_a,YEM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,740.0
+00475_KWT_Kuwait_City,KWT,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,41110.0
+04921_TUR_Ankara,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+06000_BGD_Savar,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+09843_CHN_Nanning,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+10449_CHN_Qingdao,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+01517_ZMB_Lusaka,ZMB,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1200.0
+10831_CHN_Nanchang,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+01487_BFA_Ouagadougou,BFA,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,980.0
+10113_CHN_Dalian,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+08565_IND_Indore,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04952_COD_Kasai_Oriental,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+07131_NGA_Owerri,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+04992_IRN_Karaj,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+05483_DEU_Berlin,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+00299_MOZ_Maputo,MOZ,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,570.0
+09637_CHN_Changchun,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+04277_PAK_Peshawar,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+07910_USA_Washington,USA,0.869,own country,USA,S01,Cfa,88810.0
+09464_IND_Kollam,IND,0.8343,own country,IND,S28b,Am,2760.0
+10586_IND_Patna,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09410_IND_Nagpur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11623_CHN_Quanzhou,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+08154_BRA_Fortaleza,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+03397_DZA_Algiers,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+08238_BRA_Salvador,BRA,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10550.0
+06785_IDN_Semarang,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+04787_ZAF_Durban,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cfa,6270.0
+03920_KOR_Busan,KOR,0.9,own country,KOR,SUP_KIM2019,Cwa,37880.0
+00792_ECU_Guayaquil,ECU,0.8125,matched (climate sub-class),LKA,S44,Aw,6890.0
+10229_CHN_Changsha,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+03700_CAN_Montreal,CAN,0.889,own country,CAN,S04,Dfa,56420.0
+08013_CHN_Kunming,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwb,14230.0
+02676_COL_Medellin,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+07739_IND_Kalyan_Dombivli,IND,0.8343,own country,IND,S28b,Am,2760.0
+05065_PHL_Cebu_City,PHL,0.84,own country,PHL,S23,Af,4850.0
+00427_COG_Brazzaville,COG,0.8343,matched (climate sub-class),IND,S28b,Aw,2280.0
+09612_IND_Thiruvananthapuram,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00854_GRC_Athens,GRC,0.863,own country,GRC,SUP_EXP_GRC,Csa,25360.0
+01498_ITA_Milan,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Cfa,42080.0
+07738_PAK_Gujranwala,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+08789_CHN_Shijiazhuang,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+01799_SYR_Aleppo,SYR,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,720.0
+00673_GIN_Coyah,GIN,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1730.0
+06912_PAK_Multan,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+05678_PAK_Hyderabad,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+11563_CHN_Ningbo,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+05985_IDN_Tasikmalaya,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+06321_COD_Lubumbashi,COD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,720.0
+02089_GTM_Guatemala_City,GTM,0.8125,matched (climate sub-class),LKA,S44,Aw,6360.0
+11080_IND_Asansol,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04490_ITA_Naples,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+11621_CHN_Fuzhou,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+03739_PRK_P_yongyang,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+10306_IND_Maharajganj,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08660_IND_Agra,IND,0.8343,own country,IND,S28b,BSh,2760.0
+01399_TUN_Tunis,TUN,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4300.0
+11113_CHN_Changzhou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+05971_BRA_Porto_Alegre,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+09019_CHN_Guiyang,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cwa,14230.0
+09298_IND_Ponnani,IND,0.8343,own country,IND,S28b,Am,2760.0
+06845_IDN_Yogyakarta,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+00693_DEU_Essen,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+01158_COL_Cali,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+04356_CHN_Lanzhou,CHN,0.7604,province,CHN (甘肃),Duan2015_province,BSk,14230.0
+03837_VEN_Caracas,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+09229_CHN_Tangshan,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+01588_BEN_Cotonou,BEN,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1600.0
+03576_SAU_Dammam,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+00457_ISR_Tel_Aviv,ISR,0.9168,own country,ISR,SUP_MTUS_IL1991,Csa,56180.0
+07209_NGA_Port_Harcourt,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+03888_GBR_Birmingham,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+04699_USA_Phoenix,USA,0.869,own country,USA,S01,BWh,88810.0
+11225_CHN_Nantong,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+02544_ECU_Quito,ECU,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,6890.0
+08886_IND_Bhopal,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06397_USA_Dallas,USA,0.869,own country,USA,S01,Cfa,88810.0
+02125_UKR_Kyiv,UKR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,5510.0
+03340_GBR_Manchester,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+06350_BRA_Curitiba,BRA,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,10550.0
+00820_TGO_Lome,TGO,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1350.0
+03938_ITA_Rome,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+11636_CHN_Putian,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+01094_TUR_Izmir,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+04945_BRA_Goiania,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+11302_IND_Tamluk,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05932_USA_Denver,USA,0.869,own country,USA,S01,Dfa,88810.0
+01741_KHM_Phnom_Penh,KHM,0.8343,matched (climate sub-class),IND,S28b,Aw,2750.0
+07151_IND_Chandigarh,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04625_USA_Las_Vegas,USA,0.869,own country,USA,S01,BWh,88810.0
+01377_BRA_Manaus,BRA,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10550.0
+03130_TUR_Bursa,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+09510_IND_Coimbatore,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09714_IND_Prayagraj,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06229_IND_Ludhiana,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00906_TWN_Taichung,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Cwa,14230.0
+02847_KAZ_Almaty,KAZ,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,13740.0
+02920_KOR_Daegu,KOR,0.9,own country,KOR,SUP_KIM2019,Cwa,37880.0
+01919_TWN_Kaohsiung,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Aw,14230.0
+08029_USA_Philadelphia,USA,0.869,own country,USA,S01,Cfa,88810.0
+00363_CRI_San_Jose,CRI,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,17930.0
+07021_IND_Vadodara,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11079_CHN_Zhuhai_Macau,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+08035_IDN_Makassar,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+00907_JPN_Fukuoka,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+04968_IDN_Palembang,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+00358_CAN_Vancouver,CAN,0.889,own country,CAN,S04,Cfb,56420.0
+04593_BRA_Belem,BRA,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10550.0
+09880_IND_Madurai,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00244_NLD_Rotterdam_The_Hague,NLD,0.872,own country,NLD,R8_NLD_2019_place,Cfb,68530.0
+08305_IND_Meerut,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03968_COL_Barranquilla,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+00047_SLE_Freetown,SLE,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,830.0
+01268_VEN_Maracaibo,VEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,3860.0
+10927_CHN_Wuhu,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+05201_IRQ_Basra,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+09107_CHN_Handan,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+05098_USA_Seattle,USA,0.869,own country,USA,S01,Csb,88810.0
+02747_MAR_Rabat,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+00724_BLR_Minsk,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+10998_IND_Dhanbad,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01419_ZWE_Harare,ZWE,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2660.0
+00212_BOL_La_Paz,BOL,0.901,matched (latitude),PER,SUP_MTUS_PE1966,ET,4420.0
+01081_AUT_Vienna,AUT,0.887,own country,AUT,R8_AUT_2019_place,Cfb,60360.0
+00050_LBR_Monrovia,LBR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,830.0
+05847_CHN_Hohhot,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+01375_BOL_Santa_Cruz_de_la_Sierra,BOL,0.8125,matched (climate sub-class),LKA,S44,Aw,4420.0
+11032_IND_Jamshedpur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07783_IDN_Denpasar,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+03712_POL_Warsaw,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+00153_QAT_Doha,QAT,0.8333,matched (climate sub-class),AUS,S22,BWh,74330.0
+02471_USA_San_Diego,USA,0.869,own country,USA,S01,BSh,88810.0
+00231_PRT_Lisbon,PRT,0.863,matched (climate sub-class),GRC,SUP_EXP_GRC,Csa,29930.0
+02221_AZE_Baku,AZE,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,7360.0
+02359_ROU_Bucharest,ROU,0.892,matched (climate major class),HUN,SUP_MTUS_HU2009,Dfa,20190.0
+08012_IND_Nashik,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05853_MEX_Puebla,MEX,0.85,own country,MEX,S25,Cwb,13730.0
+06663_BGD_Brahmanbaria,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+07516_NGA_Kaduna,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+00351_JPN_Sapporo,JPN,0.8589,own country,JPN,S21,Dfa,38340.0
+07784_USA_Detroit,USA,0.869,own country,USA,S01,Dfa,88810.0
+04655_CHN_Yinchuan,CHN,0.866,province,CHN (宁夏),Duan2015_province,BWk,14230.0
+05935_NGA_Benin_City,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+00424_TCD_N_Djamena,TCD,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,970.0
+04538_IRN_Ahwaz,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+07468_IDN_Malang,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+04305_EGY_Banha,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+01531_SAU_Mecca,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+07054_COD_Beni,COD,0.84,matched (climate sub-class),PHL,S23,Af,720.0
+10766_IND_Bibhutpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02597_MMR_Mandalay,MMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1320.0
+04941_USA_Portland,USA,0.869,own country,USA,S01,Csb,88810.0
+07078_BRA_Campinas,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+07829_PAK_Sialkot,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+05249_DEU_Munich,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+03943_ZAF_Pretoria,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwa,6270.0
+09429_CHN_Xuchang,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+10832_IND_Ranchi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05720_IRN_Isfahan,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWk,4650.0
+05855_BRA_Brasilia,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+00964_HUN_Budapest,HUN,0.892,own country,HUN,SUP_MTUS_HU2009,Dfa,23850.0
+09191_CHN_Anyang,CHN,0.7812,province,CHN (河南),Duan2015_province,Dwa,14230.0
+07890_BRA_Niteroi,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+04184_DEU_Hamburg,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+01269_HTI_Port_au_Prince,HTI,0.8343,matched (climate sub-class),IND,S28b,Aw,2010.0
+04736_USA_Mesa,USA,0.869,own country,USA,S01,BWh,88810.0
+10715_CHN_Huaiyin_District,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+05167_EGY_El_Mansura,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02979_MYS_Johor_Bahru,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+04092_USA_Sacramento,USA,0.869,own country,USA,S01,Csa,88810.0
+08626_IND_Aligarh,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06173_TUR_Gaziantep,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+09801_CHN_Zibo,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+01530_IRQ_Mosul,IRQ,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5690.0
+11593_CHN_Xiamen_City,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+08255_USA_Boston,USA,0.869,own country,USA,S01,Dfa,88810.0
+01365_HND_Tegucigalpa,HND,0.8343,matched (climate sub-class),IND,S28b,Aw,3270.0
+04768_VNM_Can_Tho,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+05872_PHL_Davao_City,PHL,0.84,own country,PHL,S23,Af,4850.0
+05236_CHN_Baotou,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+09352_IND_Thrissur,IND,0.8343,own country,IND,S28b,Am,2760.0
+10796_IND_Visakhapatnam,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06181_IDN_Cirebon,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+00337_MNG_Ulaanbaatar,MNG,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,6210.0
+00367_CUB_Havana,CUB,0.8125,matched (climate sub-class),LKA,S44,Aw,9010.0
+00222_MRT_Nouakchott,MRT,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,2210.0
+01147_NZL_Auckland,NZL,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,46630.0
+00597_RWA_Kigali,RWA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1150.0
+09466_IND_Jabalpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02902_KEN_Mombasa,KEN,0.8343,matched (climate sub-class),IND,S28b,Aw,2200.0
+06009_NGA_Warri,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+00916_SLV_San_Salvador,SLV,0.8125,matched (climate sub-class),LKA,S44,Aw,5410.0
+00658_PAN_Panama_City,PAN,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,19140.0
+08860_IND_Bareilly,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07961_NGA_Uyo,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+09025_CHN_Luoyang,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+03109_VEN_Valencia,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+00548_NER_Niamey,NER,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,750.0
+05243_MEX_Toluca,MEX,0.85,own country,MEX,S25,Cwb,13730.0
+05951_USA_Austin,USA,0.869,own country,USA,S01,Cfa,88810.0
+09495_CHN_Yichang,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cwa,14230.0
+07440_CHN_Datong,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+11184_IND_Dhulian,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00749_SAU_Medina,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+10444_IND_Marhaura,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10199_CHN_Linyi,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+03823_IND_Rajkot,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07563_IND_Vasai_Virar,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01693_SWE_Stockholm,SWE,0.839,own country,SWE,R8_SWE_2000_place,Dfb,63010.0
+08672_IND_Chhatrapati_Sambhajinagar,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05315_IND_Jodhpur,IND,0.8343,own country,IND,S28b,BWh,2760.0
+04416_COD_Kananga,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+00458_LBN_Beirut,LBN,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,3560.0
+00507_MEX_Tijuana,MEX,0.85,own country,MEX,S25,BSh,13730.0
+11537_CHN_Zhangzhou,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+08806_IND_Gwalior,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10074_IND_Raipur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01262_CAN_Calgary,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+02448_IRQ_Erbil,IRQ,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5690.0
+05794_USA_San_Antonio,USA,0.869,own country,USA,S01,Cfa,88810.0
+02005_PHL_Angeles,PHL,0.84,own country,PHL,S23,Am,4850.0
+06297_BGD_Kishoreganj,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+02241_KOR_Daejeon,KOR,0.9,own country,KOR,SUP_KIM2019,Dwa,37880.0
+01900_SOM_Hargeisa,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+06958_IDN_Surakarta,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+09881_CHN_Anshan,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+00761_AFG_Herat,AFG,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,390.0
+09968_IND_Gorakhpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06485_IDN_Tegal,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+11003_CHN_Ganzhou,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+09921_CHN_Jilin_City,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+05830_IDN_Tarogong,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+07543_NGA_Aba,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+01236_TJK_Dushanbe,TJK,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,2080.0
+01290_BEL_Brussels,BEL,0.853,own country,BEL,R8_BEL_1998_place,Cfb,59500.0
+02335_ARG_Cordoba,ARG,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cwa,14650.0
+03809_ZAF_Soshanguve,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,BSh,6270.0
+11489_CHN_Cixi,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+10512_IND_Mehsi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08666_IND_Moradabad,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00362_NIC_Managua,NIC,0.8343,matched (climate sub-class),IND,S28b,Aw,2850.0
+04407_MAR_Fez,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+09996_IND_Durg,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09251_CHN_Binhai_New_Area,CHN,0.8361,province,CHN (天津),Duan2015_province,Dwa,14230.0
+02667_KOR_Gwangju,KOR,0.9,own country,KOR,SUP_KIM2019,Cfa,37880.0
+00764_KGZ_Bishkek,KGZ,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dsa,2800.0
+03780_CHN_Xining,CHN,0.8542,province,CHN (青海),Duan2015_province,BSk,14230.0
+04694_IDN_Batam_City,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+04522_ESP_Valencia,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSh,37120.0
+00295_BDI_Bujumbura,BDI,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,240.0
+11665_CHN_Taizhou,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+04478_MEX_Leon,MEX,0.85,own country,MEX,S25,BSh,13730.0
+09978_IND_Tiruchirappalli,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11500_IND_Guwahati,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10695_CHN_Xiuying_District,CHN,0.8333,nearest province,CHN (广东),Duan2015_province,Am,14230.0
+04529_TUR_Antalya,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+04773_MEX_Torreon,MEX,0.85,own country,MEX,S25,BWh,13730.0
+04034_IRQ_Al_Najaf,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+00152_BHR_Manama,BHR,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,28790.0
+04183_NGA_Ilorin,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+02734_AUS_Brisbane,AUS,0.8333,own country,AUS,S22,Cfa,64120.0
+00666_BOL_Cochabamba,BOL,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,4420.0
+00498_AUS_Perth,AUS,0.8333,own country,AUS,S22,Csa,64120.0
+07358_RUS_Novosibirsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+01991_IND_Srinagar,IND,0.8343,own country,IND,S28b,Cfa,2760.0
+01301_AGO_Lubango,AGO,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,2860.0
+09860_IND_Gyanpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07471_NGA_Abuja,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+01432_IRN_Tabriz,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+09939_CHN_Liuzhou,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+00040_GMB_Serrekunda,GMB,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,930.0
+10143_CHN_Xuzhou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cwa,14230.0
+04316_IND_Amritsar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00511_HND_San_Pedro_Sula,HND,0.8343,matched (climate sub-class),IND,S28b,Aw,3270.0
+03886_MAR_Tangier,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+09800_IND_Salem,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09390_IND_Mysuru,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00395_BFA_Bobo_Dioulasso,BFA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,980.0
+09431_CHN_Kaifeng,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+05918_EGY_Al_Zaqaziq,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+08564_NGA_Maiduguri,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+08100_BRA_Vitoria,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+05314_PAK_Mardan,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+04118_YEM_Ta_izz,YEM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,740.0
+03811_UKR_Kharkiv,UKR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,5510.0
+07426_NGA_Aboh,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+06635_IDN_Pekalongan,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+06515_IDN_Purwokerto,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07365_BRA_Sao_Luis,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+00582_CAF_Bangui,CAF,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,560.0
+05500_JPN_Sendai,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+00945_DZA_Oran,DZA,0.8755,matched (climate major class),ZAF,SUP_ZAF2010,BSh,5850.0
+00698_DNK_Copenhagen,DNK,0.872,matched (climate sub-class),NLD,R8_NLD_2019_place,Cfb,77190.0
+05181_IDN_Bandar_Lampung,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+01063_GHA_Takoradi,GHA,0.8343,matched (climate sub-class),IND,S28b,Aw,2630.0
+07991_IND_Saharanpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00258_LBY_Tripoli,LBY,0.8755,matched (climate major class),ZAF,SUP_ZAF2010,BSh,7250.0
+00070_ITA_Turin,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Cfa,42080.0
+02264_GBR_Liverpool,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+10224_IND_Vijayawada,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02306_KAZ_Shymkent,KAZ,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dsa,13740.0
+02839_IRQ_Kirkuk,IRQ,0.85,matched (climate major class),JOR,S24,BSh,5690.0
+07243_USA_Orlando,USA,0.869,own country,USA,S01,Cfa,88810.0
+03586_IDN_Pekanbaru,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07958_IDN_Samarinda,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+01590_NLD_Amsterdam,NLD,0.872,own country,NLD,R8_NLD_2019_place,Cfb,68530.0
+00564_AGO_Cabinda,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+08234_IND_Kota,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00804_URY_Montevideo,URY,0.9139,matched (climate sub-class),HRV,H_HRV,Cfa,24020.0
+07181_USA_Minneapolis_Saint_Paul,USA,0.869,own country,USA,S01,Dfa,88810.0
+05157_MEX_Ciudad_Juarez,MEX,0.85,own country,MEX,S25,BWh,13730.0
+10941_CHN_Yancheng,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+03096_IDN_Padang,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+01027_JPN_Kitakyushu,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+07178_BGD_Sylhet,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+00560_CZE_Prague,CZE,0.8668,own country,CZE,SUP_EXP_CZE,Cfb,32960.0
+00573_SRB_Belgrade,SRB,0.926,own country,SRB,R8_SRB_2019_place,Cfa,13480.0
+11379_CHN_Jinhua,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+03978_FRA_Lyon,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfa,48630.0
+10816_IND_Begusarai,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08120_IND_Dehradun,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04644_RUS_Nizhny_Novgorod,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+03547_ARG_Rosario,ARG,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cfa,14650.0
+08945_CHN_Honghuagang,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cfa,14230.0
+09571_CHN_Luohe,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+05294_VNM_Da_Nang,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Am,4970.0
+10403_CHN_Tianjia_an,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+00217_PRY_Asuncion,PRY,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,6750.0
+11122_IND_Bhubaneshwar,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05657_IND_Jalandhar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+01763_SEN_Touba,SEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1780.0
+04822_TUR_Sincan,TUR,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,16300.0
+03371_IND_Jammu,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09620_IND_Tiruppur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+01186_DEU_Cologne,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+01853_MAR_Marrakesh,MAR,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,4360.0
+06776_EGY_Asyut,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02921_JPN_Hiroshima,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+01564_CAN_Edmonton,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+00876_IRQ_Duhok,IRQ,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5690.0
+11653_CHN_Yueqing,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+08363_BRA_Natal,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+09029_CHN_Shiyan,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cwa,14230.0
+07425_BRA_Santos,BRA,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10550.0
+01634_KAZ_Astana,KAZ,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,13740.0
+07085_PAK_Sargodha,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+07959_USA_Baltimore,USA,0.869,own country,USA,S01,Cfa,88810.0
+05901_RUS_Kazan,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+00394_IRL_Dublin,IRL,0.872,matched (climate sub-class),NLD,R8_NLD_2019_place,Cfb,87360.0
+08403_BRA_Joao_Pessoa,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+07943_CHN_Shunqing,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+08954_IND_Solapur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05377_USA_Salt_Lake_City,USA,0.869,own country,USA,S01,BSk,88810.0
+07093_EGY_Suhaj,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+04230_EGY_El_Mahalla_El_Kubra,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+07057_RUS_Yekaterinburg,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+11195_CHN_Zhangjiagang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+09329_CHN_Dengzhou,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+08584_CHN_Linfen,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+07716_NGA_Enugu,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+11155_CHN_Tuen_Mun,CHN,0.883,Hong Kong survey,HKG,R8_HKG_1998_direc,Cwa,14230.0
+05906_BGD_Khulna,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+01121_TKM_Ashgabat,TKM,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,6340.0
+03468_IRQ_Karbala,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+03562_COD_Tshikapa,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+11280_IND_Berhampore,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10915_CHN_Ma_anshan,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+00109_BGR_Sofia,BGR,0.8637,own country,BGR,SUP_MTUS_BG2001,Cfa,17780.0
+04512_JPN_Naha,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+00214_ARG_Mendoza,ARG,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,14650.0
+11173_CHN_Huizhou,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+00456_PSE_Gaza,PSE,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,3250.0
+01058_PRT_Porto,PRT,0.863,matched (climate major class),GRC,SUP_EXP_GRC,Csb,29930.0
+10290_IND_Puducherry,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01521_PSE_Ramallah,PSE,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,3250.0
+04332_GBR_Leeds,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+03509_AGO_Malanje,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+08353_BRA_Maceio,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+10663_CHN_Yichun,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+02047_SDN_Nyala,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+06474_NGA_Okene,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+09981_CHN_Tengzhou,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+03860_IRQ_Al_Hillah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+03306_MOZ_Nampula,MOZ,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,570.0
+04987_RUS_Rostov_on_Don,RUS,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,15960.0
+00312_ARM_Yerevan,ARM,0.855,own country,ARM,SUP_ARM_GTUS2022,BSk,9020.0
+03673_TZA_Zanzibar_City,TZA,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1270.0
+10099_CHN_Fuyang,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cwa,14230.0
+02289_ISR_Jerusalem,ISR,0.9168,own country,ISR,SUP_MTUS_IL1991,Csa,56180.0
+00461_MWI_Lilongwe,MWI,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,600.0
+06525_IRN_Sarvestan,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSh,4650.0
+05077_TUR_Konya,TUR,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,16300.0
+01744_TWN_Tainan,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Aw,14230.0
+07867_IDN_Mataram,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+10323_CHN_Zhuzhou,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+05215_MEX_San_Luis_Potosi,MEX,0.85,own country,MEX,S25,BSh,13730.0
+03440_PER_Arequipa,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWk,8430.0
+09676_IND_Colachel,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00572_FIN_Helsinki,FIN,0.8687,own country,FIN,SUP_EXP_FIN,Dfb,55250.0
+00714_ALB_Tirana,ALB,0.925,own country,ALB,SUP_ALB_TUS2010,Csa,12060.0
+00683_GBR_Glasgow,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+10704_IND_Darbhanga,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01156_PER_Trujillo,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWh,8430.0
+00467_GEO_Tbilisi,GEO,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,8990.0
+02311_NPL_Biratnagar,NPL,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1570.0
+01476_ARG_San_Miguel_de_Tucuman,ARG,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,14650.0
+10543_CHN_Haizhou_District,CHN,0.875,province,CHN (江苏),Duan2015_province,Cwa,14230.0
+07652_BRA_Teresina,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+05119_BGD_Shahajadpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+02573_UKR_Odesa,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+02053_TZA_Mwanza,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+00645_PHL_Dagupan_Lingayen,PHL,0.84,own country,PHL,S23,Am,4850.0
+05392_PAK_Mingora,PAK,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,1500.0
+00611_IRQ_Zakho,IRQ,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5690.0
+10642_IND_Gaya,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01127_PAK_Quetta,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+06540_IRN_Kharameh,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSh,4650.0
+08934_IND_Mangaluru,IND,0.8343,own country,IND,S28b,Am,2760.0
+08263_NGA_Jos,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+10023_CHN_Guilin,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+10073_CHN_Weifang,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+00345_SGP_Sembawang,SGP,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,81760.0
+11279_CHN_Quzhou,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+05125_JPN_Nara,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+10457_CHN_Suqian,CHN,0.875,province,CHN (江苏),Duan2015_province,Cwa,14230.0
+10237_CHN_Suzhou,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cwa,14230.0
+05530_NGA_Sokoto,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+05525_PHL_Cagayan_de_Oro,PHL,0.84,own country,PHL,S23,Af,4850.0
+08866_IND_Dharwad,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04509_IDN_Jambi,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+06904_USA_Saint_Petersburg,USA,0.869,own country,USA,S01,Cfa,88810.0
+06418_RUS_Samara,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+09472_IND_Kottayam,IND,0.8343,own country,IND,S28b,Am,2760.0
+03191_EGY_Tanta,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+00873_MWI_Blantyre,MWI,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,600.0
+09845_CHN_Yingkou,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+09455_CHN_Xiangyang,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+01029_AUS_Adelaide,AUS,0.8333,own country,AUS,S22,Csb,64120.0
+11374_IND_Krishnanagar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09633_CHN_Yingkou,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+05409_COD_Kisangani,COD,0.84,matched (climate sub-class),PHL,S23,Af,720.0
+04199_UZB_Namangan,UZB,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,3670.0
+10937_CHN_Huadu,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+00810_MAR_Agadir,MAR,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,4360.0
+03275_COL_Cartagena,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+07790_IDN_Banjarmasin,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+08629_CHN_Liupanshui,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cwb,14230.0
+03874_VNM_Hai_Phong,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Cwa,4970.0
+00826_DEU_Dusseldorf,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+08313_BRA_Aracaju,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+08981_CHN_Jincheng,CHN,0.8264,province,CHN (山西),Duan2015_province,Dwa,14230.0
+00414_GAB_Libreville,GAB,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,8090.0
+10580_IND_Sitamarhi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07701_NGA_Umuahia,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03400_DEU_Frankfurt,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+02211_SYR_Homs,SYR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,720.0
+04182_FRA_Marseille,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Csa,48630.0
+02618_BRA_Campo_Grande,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+04022_DEU_Stuttgart,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+09685_CHN_Zhumadian,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+05097_MEX_Queretaro,MEX,0.85,own country,MEX,S25,BSh,13730.0
+03449_FRA_Lille,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+08427_CHN_Qiqihar,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+04701_COL_Bucaramanga,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+05559_TUR_Kayseri,TUR,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,16300.0
+02454_UZB_Samarqand,UZB,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,3670.0
+03806_AGO_Luena,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+10481_CHN_Lu_an,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+00828_NOR_Oslo,NOR,0.8743,own country,NOR,H_NOR,Dfb,97310.0
+03831_KOR_Ulsan,KOR,0.9,own country,KOR,SUP_KIM2019,Cfa,37880.0
+11507_CHN_Chenghai,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+10127_CHN_Huaibei,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cwa,14230.0
+07529_BGD_Kutubdia,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+04424_IRQ_Ad_Diwaniyah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+08853_CHN_Baoding,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+10489_CHN_Leiyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+04542_IND_Bikaner,IND,0.8343,own country,IND,S28b,BWh,2760.0
+11019_CHN_Fuzhou,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+03613_AGO_Cuito,AGO,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,2860.0
+03008_POL_Katowice,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+04212_MEX_Aguascalientes,MEX,0.85,own country,MEX,S25,BSh,13730.0
+07735_USA_Columbus,USA,0.869,own country,USA,S01,Dfa,88810.0
+06990_EGY_Port_Said,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+03909_AFG_Kandahar,AFG,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,390.0
+06921_COD_Kalemie,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+06937_RUS_Ufa,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+09658_IND_Faizabad,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09405_CHN_Puyang,CHN,0.7812,province,CHN (河南),Duan2015_province,Dwa,14230.0
+02787_CHN_Korla,CHN,0.7951,province,CHN (新疆),Duan2015_province,BWk,14230.0
+09241_CHN_Xinxiang,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+03905_IRQ_Sulaymaniyah,IRQ,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5690.0
+07336_RUS_Omsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+05376_MEX_Cuernavaca,MEX,0.85,own country,MEX,S25,Aw,13730.0
+03387_VEN_Maracay,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+10970_IND_Bokaro,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04382_RUS_Voronezh,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+02191_NGA_Ikorodu,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+01351_MYS_Ipoh,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+10353_CHN_Fushan,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+08766_IND_Firozabad,IND,0.8343,own country,IND,S28b,BSh,2760.0
+09521_CHN_Jinzhou,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+02614_VEN_Barquisimeto,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+06875_MEX_Merida,MEX,0.85,own country,MEX,S25,Aw,13730.0
+09879_CHN_Fushun,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+06745_COD_Bukavu,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+10779_CHN_Xinyu,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+09781_CHN_Jining,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+07929_CHN_Bazhong_City,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+03921_JPN_Okayama,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+06261_IRN_Kavar,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSh,4650.0
+05231_IRN_Qom,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+04387_YEM_Ibb,YEM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,740.0
+06695_IDN_Pontianak,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+01162_CHL_Valparaiso,CHL,0.8637,matched (climate major class),BGR,SUP_MTUS_BG2001,Csb,16960.0
+07470_BRA_Sao_Jose_dos_Campos,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+10176_IND_Guntur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07611_USA_Milwaukee,USA,0.869,own country,USA,S01,Dfa,88810.0
+04959_IRQ_Nasiriyah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+04021_NGA_Oshogbo,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+04134_MEX_Chihuahua,MEX,0.85,own country,MEX,S25,BSh,13730.0
+10101_CHN_Yueyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+03084_IRN_Kermanshah,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Csa,4650.0
+11608_IND_Imphal,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08252_IND_Muzaffarnagar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09716_IND_Erode,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11026_IND_Kotwali,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05056_PAK_Sukkur,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+10674_IND_Bakhtiyarpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06607_USA_New_Orleans,USA,0.869,own country,USA,S01,Cfa,88810.0
+04943_COL_Cucuta,COL,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,7900.0
+01949_BEN_Porto_Novo,BEN,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1600.0
+10029_CHN_Xiaogan,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+10904_IND_Munger,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03380_MYS_Kota_Kinabalu,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+06604_CHN_Deyang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+10335_CHN_Hengyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+07174_RUS_Chelyabinsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+11118_IND_Cuttack,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08616_IND_Kolhapur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08635_CHN_Ankang,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Cwa,14230.0
+01589_NGA_Abeokuta,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+07588_NGA_Nsukka,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03193_TZA_Arusha,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+02045_ZAF_Gqeberha,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,BSh,6270.0
+02155_BGD_Rajshahi,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+02258_BRA_Cuiaba,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+07646_PAK_Gujrat,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+06811_PAK_Abbottabad,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+06876_USA_St_Louis,USA,0.869,own country,USA,S01,Dfa,88810.0
+03472_SAU_Al_Ahsa,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+11251_CHN_Changshu,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+04576_UZB_Andijon,UZB,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,3670.0
+03002_NGA_Oyo,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+10160_IND_Bilaspur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00255_GNQ_Bata,GNQ,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5890.0
+08728_IND_Belagavi,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09703_CHN_Zhoukou,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+09814_IND_Warangal,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00769_BGD_Chapainawabganj,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+10169_CHN_Anqiu,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+00585_GRC_Thessaloniki,GRC,0.863,own country,GRC,SUP_EXP_GRC,BSk,25360.0
+05383_COD_Kamina,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+11015_CHN_Zhenjiang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+09761_CHN_Shangqiu,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+01924_MEX_Hermosillo,MEX,0.85,own country,MEX,S25,BWh,13730.0
+09774_IND_Jhusi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00472_YEM_Hodeidah,YEM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,740.0
+06949_COD_Goma,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+09023_CHN_Xingtai,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+06692_IND_Udaipur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+02558_GHA_Tamale,GHA,0.8343,matched (climate sub-class),IND,S28b,Aw,2630.0
+10025_CHN_Benxi,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+06943_CHN_Baoji,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Cwa,14230.0
+03082_IRQ_Al_Mushahidah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+05564_PAK_Nowshera,PAK,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,1500.0
+08536_CHN_Dazhou,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+10027_CHN_Yiyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+04446_GBR_Newcastle_upon_Tyne,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+09387_CHN_Nanyang,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+01069_BEL_Antwerp,BEL,0.853,own country,BEL,R8_BEL_1998_place,Cfb,59500.0
+03540_PHL_Lipa,PHL,0.84,own country,PHL,S23,Am,4850.0
+10006_IND_Vellore,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09160_IND_Amravati,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08169_CHN_Yuxi,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwa,14230.0
+08543_NGA_Yola,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+04666_ARG_La_Plata,ARG,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cfa,14650.0
+06371_TUR_Sanliurfa,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+03618_UKR_Dnipro,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+05881_RUS_Saratov,RUS,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,15960.0
+11262_IND_Kharagpur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+10283_CHN_Zucheng,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+09174_IND_Nanded,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04389_UZB_Fergana,UZB,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,3670.0
+11335_CHN_Wangjiangjing,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+10343_CHN_Mudanjiang,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+00176_MYS_George_Town,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+01396_DEU_Bonn,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+05080_RUS_Krasnodar,RUS,0.8637,matched (climate sub-class),BGR,SUP_MTUS_BG2001,Cfa,15960.0
+10397_CHN_Huangshi,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+02013_CAN_Winnipeg,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+10840_IND_Rourkela,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02883_NER_Zinder,NER,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,750.0
+00213_PRI_Bayamon_San_Juan,PRI,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,27320.0
+04015_MAR_Meknes,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+08648_IND_Jalgaon,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04008_USA_Fresno,USA,0.869,own country,USA,S01,BSh,88810.0
+03563_TUR_Kocaeli,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+05196_EGY_Mit_Ghamr,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+09141_CHN_Hengshui,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+04031_EGY_Faiyum,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+06867_RUS_Makhachkala,RUS,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,15960.0
+10502_IND_Dighwara,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07260_PAK_Bahawalpur,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+03564_ZAF_Evaton,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+03259_AFG_Mazar_i_sharif,AFG,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,390.0
+01362_MEX_Mexicali,MEX,0.85,own country,MEX,S25,BWh,13730.0
+09184_IND_Kalaburagi,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05873_MEX_Saltillo,MEX,0.85,own country,MEX,S25,BSh,13730.0
+05369_CHN_Donghe,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+00474_DJI_Djibouti,DJI,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3960.0
+01124_OMN_Muscat,OMN,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,19520.0
+06178_IND_Bhavnagar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+01796_ZMB_Kitwe,ZMB,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1200.0
+00076_GNQ_Malabo,GNQ,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5890.0
+03974_ESP_Bilbao,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Cfb,37120.0
+04438_PHL_Iloilo_City,PHL,0.84,own country,PHL,S23,Am,4850.0
+06971_CHN_Leshan,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+09489_CHN_Qinhuangdao,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+01313_SDN_Kebkabiya,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+06641_EGY_Damietta,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+08694_IND_Sangli,IND,0.8343,own country,IND,S28b,BSh,2760.0
+09113_CHN_Jiaozuo,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+03662_POL_Krakow,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+07833_USA_Cleveland,USA,0.869,own country,USA,S01,Dfa,88810.0
+11518_IND_Agartala,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07807_NGA_Zaria,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+11439_CHN_Yiwu,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+06920_NGA_Lokoja,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+10441_CHN_Dandong,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+00501_TWN_Hsinchu,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Cfa,14230.0
+05554_NGA_Akure,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+02268_FRA_Toulouse,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfa,48630.0
+05917_COD_Likasi,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+07052_BRA_Sorocaba,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+10863_CHN_Qingyuan,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+03005_ITA_Florence,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+01779_DEU_Dortmund,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+07012_USA_Tampa,USA,0.869,own country,USA,S01,Cfa,88810.0
+09731_CHN_Tai_an,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+06141_IRN_Shiraz,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Csa,4650.0
+09823_CHN_Jiamusi,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+02748_CIV_Bouake,CIV,0.8343,matched (climate sub-class),IND,S28b,Aw,2780.0
+00606_JOR_Irbid,JOR,0.85,own country,JOR,S24,Csa,5260.0
+09934_IND_Mirzapur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09409_CHN_Pingdingshan,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+03288_DZA_Blida,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+10305_CHN_Yitang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cwa,14230.0
+07944_IDN_Balikpapan,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+08485_CHN_Qujing,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwb,14230.0
+10973_CHN_Yangzhou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+02695_CMR_Garoua,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+08047_IND_Rasoi,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06269_USA_Arlington,USA,0.869,own country,USA,S01,Cfa,88810.0
+09693_CHN_Binzhou,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+02024_ESP_Seville,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+01446_LKA_Kandy,LKA,0.8125,own country,LKA,S44,Af,4670.0
+07788_IND_Panipat,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07047_IND_Patiala,IND,0.8343,own country,IND,S28b,BSh,2760.0
+08435_CHN_Yongchuan,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cfa,14230.0
+07638_PAK_Sahiwal,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+06571_PAK_Taxila,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+10178_IND_Nellore,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00173_THA_Chiang_Mai,THA,0.8125,matched (climate sub-class),LKA,S44,Aw,7690.0
+02082_KOR_Cheongju_si,KOR,0.9,own country,KOR,SUP_KIM2019,Dwa,37880.0
+04698_PHL_Bacolod,PHL,0.84,own country,PHL,S23,Af,4850.0
+04383_UKR_Donetsk,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+01689_CHE_Zurich,CHE,0.865,own country,CHE,SUP_EXP_CHE,Cfb,110330.0
+10592_IND_Runisaidpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04175_VEN_Barcelona,VEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,3860.0
+07712_CHN_Suining,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+08685_CHN_Yuncheng,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+10093_CHN_Loudi,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+05398_IDN_Cilegon,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+05114_YEM_Bi_r_Rubak,YEM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,740.0
+06961_BRA_Florianopolis,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+08294_IND_Haridwar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00879_IRN_Urmia,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+04659_PRK_Chongjin,PRK,0.884,matched (climate sub-class),CHN (吉林),SUP_CEFH_CHN_PROV2014_吉林,Dwa,800.8333333333334
+07429_IND_Vapi,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11209_CHN_Sha_Tin,CHN,0.883,Hong Kong survey,HKG,R8_HKG_1998_direc,Cwa,14230.0
+06998_IDN_Jepara,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+06054_BGD_Louhajang,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+03058_GBR_Bristol,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+06501_MEX_Veracruz,MEX,0.85,own country,MEX,S25,Aw,13730.0
+03858_SDN_Al_Ubayyid,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+07773_PAK_Okara,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+08962_IND_Jhansi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00798_DOM_Santiago_de_los_Caballeros,DOM,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10620.0
+05963_BGD_Mymensingh,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+02594_IND_Jamnagar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00043_GNB_Bissau,GNB,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1090.0
+07275_IDN_Tulungagung,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+02115_NER_Maradi,NER,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,750.0
+01537_ARE_Al_Ain,ARE,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,51550.0
+10447_CHN_Bengbu,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+09002_IND_Akola,IND,0.8343,own country,IND,S28b,BSh,2760.0
+02401_MEX_Culiacan,MEX,0.85,own country,MEX,S25,BSh,13730.0
+06593_BRA_Ribeirao_Preto,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+11273_CHN_Xingning,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+04663_MEX_Acapulco,MEX,0.85,own country,MEX,S25,Aw,13730.0
+03324_KOR_Changwon,KOR,0.9,own country,KOR,SUP_KIM2019,Cwa,37880.0
+04376_ITA_Palermo,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+11651_CHN_Longgang,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+02575_SDN_Al_Fashir,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+05758_EGY_Beni_Suef,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+00085_COG_Pointe_Noire,COG,0.8343,matched (climate sub-class),IND,S28b,Aw,2280.0
+01104_SSD_Nimule,SSD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1050.0
+04706_GBR_Sheffield,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+07767_IND_Panvel,IND,0.8343,own country,IND,S28b,Am,2760.0
+08143_NGA_Calabar,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+04064_DEU_Hanover,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+06844_CHN_Meishan,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+07774_IND_Yamunanagar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11365_CHN_Jiaxing,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+11157_CHN_Jiangyin,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+05021_IRQ_Amarah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+06115_BRA_Uberlandia,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+06215_IDN_Kuningan,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+05436_TUR_Mersin,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+06646_PAK_Rahim_Yar_Khan,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+09028_IND_Shahjahanpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01293_DEU_Wuppertal,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+03869_BGD_Bogura,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+05070_GBR_Nottingham,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+09215_CHN_Fengrun,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+02117_TUN_Sfax,TUN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,4300.0
+06477_TUR_Diyarbakir,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+10591_CHN_Xiashan,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+09757_CHN_Dongying,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+04981_DEU_Nuremberg,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+03104_USA_Bakersfield,USA,0.869,own country,USA,S01,BWh,88810.0
+00419_HRV_Zagreb,HRV,0.9139,own country,HRV,H_HRV,Cfa,25360.0
+05511_TUR_Samsun,TUR,0.8637,matched (climate sub-class),BGR,SUP_MTUS_BG2001,Cfa,16300.0
+01285_FRA_Bordeaux,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+01040_PER_Chiclayo,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWh,8430.0
+09899_CHN_Liaoyang,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+04519_BRA_Londrina,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+06662_IND_Anand,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05036_USA_El_Paso,USA,0.869,own country,USA,S01,BWh,88810.0
+07050_IDN_Kudus,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+03315_PAK_Bannu,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+02062_AZE_Sumgayit,AZE,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,7360.0
+08399_NGA_Bauchi,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+09281_CHN_Cangzhou,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+04364_MEX_Morelia,MEX,0.85,own country,MEX,S25,Cwb,13730.0
+03528_PAK_Larkana,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+00526_ARG_Salta,ARG,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,14650.0
+05958_RUS_Volgograd,RUS,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,15960.0
+02537_KOR_Jeonju,KOR,0.9,own country,KOR,SUP_KIM2019,Cwa,37880.0
+01529_KEN_Nakuru,KEN,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,2200.0
+09909_CHN_Bozhou,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cwa,14230.0
+04879_ARG_Mar_del_Plata,ARG,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,14650.0
+07248_RUS_Tyumen,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+01892_MOZ_Beira,MOZ,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,570.0
+09715_CHN_Jingzhou,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+09151_CHN_Enshi,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+03766_UKR_Zaporizhzhia,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+11517_CHN_Yuyao,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+02732_JPN_Kumamoto,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+04333_ESP_Zaragoza,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSk,37120.0
+06792_TUR_Van,TUR,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dsa,16300.0
+07882_USA_Norfolk,USA,0.869,own country,USA,S01,Cfa,88810.0
+10463_CHN_Liling,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+07008_IND_Ajmer,IND,0.8343,own country,IND,S28b,BSh,2760.0
+04012_CAN_Quebec,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+05287_AFG_Jalalabad,AFG,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,390.0
+10645_CHN_Chenzhou,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+06621_MEX_Reynosa,MEX,0.85,own country,MEX,S25,BSh,13730.0
+05601_NGA_Ado_Ekiti,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+08903_CHN_Chengde,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+06441_MEX_Tampico,MEX,0.85,own country,MEX,S25,Aw,13730.0
+11211_CHN_Shangrao,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+03890_DZA_Djelfa,DZA,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,5850.0
+07447_IND_Ambala,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08512_CHN_Beibei,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cwa,14230.0
+02389_BGD_Rangpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+06959_MEX_Cancun,MEX,0.85,own country,MEX,S25,Aw,13730.0
+07723_NGA_Katsina,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+04813_MAR_Oujda,MAR,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,4360.0
+11142_IND_Rajmahal,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04150_TUR_Eskisehir,TUR,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,16300.0
+06449_ETH_Adama,ETH,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1110.0
+03015_SDN_Ad_Da_ein,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+08422_IND_Dhule,IND,0.8343,own country,IND,S28b,BSh,2760.0
+11153_CHN_Jingjiang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+03494_CAN_Ottawa,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+01008_OMN_Seeb,OMN,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,19520.0
+00720_UKR_Lviv,UKR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,5510.0
+09793_CHN_Changde,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+11018_IND_Brahmapur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07219_USA_Atlanta,USA,0.869,own country,USA,S01,Cfa,88810.0
+11056_IND_Darjeeling,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10281_CHN_Gaomi,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+01088_LBY_Benghazi,LBY,0.8755,matched (climate major class),ZAF,SUP_ZAF2010,BSh,7250.0
+00075_SWE_Gothenburg,SWE,0.839,own country,SWE,R8_SWE_2000_place,Cfb,63010.0
+10728_IND_Bihar_Sharif,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01028_PHL_Baguio,PHL,0.84,own country,PHL,S23,Cwb,4850.0
+10433_CHN_Baishan,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+02251_COL_Pereira,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+10223_CHN_Beihai,CHN,0.7917,province,CHN (广西),Duan2015_province,Cwa,14230.0
+00795_JAM_Kingston,JAM,0.8125,matched (climate sub-class),LKA,S44,Aw,7790.0
+05952_BRA_Valparaiso_de_Goias,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+10835_CHN_Zhaoqing,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+04587_PHL_Zamboanga_City,PHL,0.84,own country,PHL,S23,Af,4850.0
+11172_IND_Jalpaiguri,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08895_CHN_Changzhi,CHN,0.8264,province,CHN (山西),Duan2015_province,Dwa,14230.0
+04874_JPN_Otsu,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+10286_IND_Bettiah,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11207_CHN_Huiyang,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+04878_COL_Valledupar,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+03171_MAR_Kenitra,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+03040_MYS_Kuching,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+07999_CHN_Zhangjiakou,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+02369_TZA_Mbeya,TZA,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,1270.0
+00134_SAU_Tabuk,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+10524_IND_Rajamahendravaram,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05304_DEU_Leipzig,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+10753_CHN_Huai_an_District,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+07042_EGY_Al_Ismailiya,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+10651_CHN_Maoming,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+05827_CHN_Tianshui,CHN,0.7604,province,CHN (甘肃),Duan2015_province,Dwa,14230.0
+06433_RUS_Izhevsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+10321_CHN_Ezhou,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+08909_CHN_Anshun,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cwa,14230.0
+06430_COD_Manono,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+03183_POL_Lodz,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+03350_AGO_Huambo,AGO,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,2860.0
+02377_SAU_Khamis_Mushayt,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+11110_IND_Siliguri,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09701_CHN_Panjin,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+09010_IND_Farrukhabad,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09330_IND_Ballari,IND,0.8343,own country,IND,S28b,BSh,2760.0
+08499_IND_Ujjain,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00129_SYR_Latakia,SYR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,720.0
+06726_MEX_Tuxtla_Gutierrez,MEX,0.85,own country,MEX,S25,Aw,13730.0
+09152_IND_Sagar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01609_BLR_Homel,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+10721_CHN_Jiujiang,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+05532_DEU_Dresden,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+10483_CHN_Huangdao_District,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+06639_NGA_Yenagoa,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+07915_CHN_Xianyang,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Cwa,14230.0
+10325_CHN_Yulin,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+08190_BRA_Feira_de_Santana,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+04780_NGA_Ondo,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03845_DZA_Boumerdes,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+10698_IND_Rahika,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07499_RUS_Krasnoyarsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+02130_ZMB_Ndola,ZMB,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1200.0
+08332_IDN_Ambon,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07132_EGY_Suez,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+00159_MUS_Port_Louis,MUS,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,14040.0
+06396_MEX_Xalapa,MEX,0.85,own country,MEX,S25,Cfb,13730.0
+03687_MMR_Pyinmana_Nay_Pyi_Taw,MMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1320.0
+01016_LKA_Galle,LKA,0.8125,own country,LKA,S44,Af,4670.0
+01209_EGY_Damanhur,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+06668_BRA_Joinville,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+05933_BRA_Novo_Hamburgo,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+06066_TUR_Kahramanmaras,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+08556_IND_Mathura,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07719_CHN_Luliang,CHN,0.8264,province,CHN (山西),Duan2015_province,Dwa,14230.0
+10102_IND_Deoria,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03627_IRN_Rasht,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Cfa,4650.0
+05235_BGD_Jashore,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+08039_PAK_Kasur,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+10462_IND_Chhapra,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08355_IND_Malegaon,IND,0.8343,own country,IND,S28b,BSh,2760.0
+11508_IND_Shillong,IND,0.8343,own country,IND,S28b,Cwb,2760.0
+07192_CHN_Chuxiong,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwa,14230.0
+04591_VEN_Ciudad_Guayana,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+00127_PSE_Khan_Yunis,PSE,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,3250.0
+04621_VNM_Long_Xuyen,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+05332_EGY_Al_Minya,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+08797_CHN_Chifeng,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+05976_TUR_Hatay,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+03274_MEX_Durango,MEX,0.85,own country,MEX,S25,BSk,13730.0
+05703_CHN_Dongsheng,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+03519_IRQ_Jafar_Muhammad_Ali,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+02239_MYS_Malacca_City,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+00193_USA_Honolulu,USA,0.869,own country,USA,S01,Am,88810.0
+07162_IRN_Zahedan,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+08102_IND_Alwar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07806_BRA_Juiz_de_Fora,BRA,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,10550.0
+09908_IND_Jaunpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07649_RUS_Khabarovsk,RUS,0.741,matched (climate sub-class),CHN (西藏),SUP_CEFH_CHN_PROV2014_西藏,Dwb,15960.0
+06664_CHN_Mianyang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+09150_IND_Thalassery,IND,0.8343,own country,IND,S28b,Am,2760.0
+01783_TUN_Sousse,TUN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,4300.0
+05561_SDN_Port_Sudan,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+09132_IND_Davanagere,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05639_IDN_Cipanas,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+10585_CHN_Weihai,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+05351_USA_Provo,USA,0.869,own country,USA,S01,Dsa,88810.0
+02508_SDN_Buram,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+08645_CHN_Bijie,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cwa,14230.0
+08758_IND_Rampur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10232_IND_Bhore,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01599_POL_Wroclaw,POL,0.9014,own country,POL,H_POL,Cfb,25520.0
+01402_POL_Poznan,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+09481_CHN_Liaocheng,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+07902_IDN_Selong,IDN,0.8125,matched (climate sub-class),LKA,S44,Aw,5120.0
+02186_GBR_Edinburgh,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+08218_IDN_Kupang,IDN,0.8125,matched (climate sub-class),LKA,S44,Aw,5120.0
+10334_IND_Ballia,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07538_BGD_Satkania,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+11556_IND_Silchar,IND,0.8343,own country,IND,S28b,Am,2760.0
+05327_GBR_Leicester,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+04323_JPN_Kanazawa,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+04604_ZAF_Polokwane,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,BSh,6270.0
+07146_COD_Bunia,COD,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,720.0
+01526_SSD_Torit,SSD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1050.0
+03668_RUS_Yaroslavl,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+11317_CHN_Meizhou,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+06648_BGD_Bajitpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+06106_PAK_Swabi,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+08419_CHN_Guang_an,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+06252_USA_North_Richland_Hills,USA,0.869,own country,USA,S01,Cfa,88810.0
+01074_ITA_Genoa,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+05628_TUR_Adana,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+11409_CHN_Zhuji,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+03115_ESP_Malaga,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+09435_CHN_Fuxin,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+02774_MOZ_Quelimane,MOZ,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,570.0
+07366_NGA_Madalla,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+06718_RUS_Astrakhan,RUS,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,15960.0
+01107_MOZ_Chimoio,MOZ,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cwa,570.0
+01951_NLD_Utrecht,NLD,0.872,own country,NLD,R8_NLD_2019_place,Cfb,68530.0
+06955_IND_Hisar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06696_MEX_Matamoros,MEX,0.85,own country,MEX,S25,Cfa,13730.0
+09444_IND_Bahraich,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09984_IND_Azamgarh,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03386_PER_Cusco,PER,0.901,own country,PER,SUP_MTUS_PE1966,Cwb,8430.0
+00102_LVA_Riga,LVA,0.9014,matched (climate sub-class),POL,H_POL,Dfb,24980.0
+07318_CHN_Ziyang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+10615_CHN_Gaozhou,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+09420_IND_Alappuzha,IND,0.8343,own country,IND,S28b,Am,2760.0
+06911_IRN_Kerman,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWk,4650.0
+03107_COL_Ibague,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+08975_CHN_Langfang,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+03238_CMR_Maroua,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+07711_IND_Rohtak,IND,0.8343,own country,IND,S28b,BSh,2760.0
+10546_IND_Kalyanpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02304_UZB_Qarshi,UZB,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,3670.0
+04285_JPN_Himeji,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+06183_MEX_Oaxaca_de_Juarez,MEX,0.85,own country,MEX,S25,BSh,13730.0
+06207_TUR_Malatya,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+01195_AGO_Benguela,AGO,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,2860.0
+08481_IND_Bulandshahr,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06214_CHN_Yulin,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,BSk,14230.0
+04070_ZAF_Masetjhaba_View,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+01695_AGO_Lobito,AGO,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,2860.0
+06379_IDN_Cilacap,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+00325_ARE_Abu_Dhabi,ARE,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,51550.0
+01668_CHL_Concepcion,CHL,0.8637,matched (climate major class),BGR,SUP_MTUS_BG2001,Csb,16960.0
+08741_CHN_Huiminxiang,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cfa,14230.0
+09671_CHN_Siping,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+10053_CHN_Hanchuan,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+04056_BRA_Maringa,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+06375_PAK_Dera_Ghazi_Khan,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+05303_DZA_Constantine,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+09692_IND_Sultanpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00220_SEN_M_bour,SEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1780.0
+07658_IDN_Jember,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+02249_ECU_Cuenca,ECU,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,6890.0
+07424_USA_Louisville,USA,0.869,own country,USA,S01,Cfa,88810.0
+09576_IND_Satna,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04868_BGD_Sirajganj,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+09673_CHN_Hegang,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+03522_IRN_Hamedan,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Dsa,4650.0
+08242_IDN_Gorontalo,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07544_PAK_Shahkot,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+10470_IND_Arrah,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06804_NGA_Minna,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+09108_IND_Kannur,IND,0.8343,own country,IND,S28b,Am,2760.0
+03666_TUR_Denizli,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+01459_AUS_Point_Cook,AUS,0.8333,own country,AUS,S22,Cfb,64120.0
+10553_CHN_Pingxiang,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+11403_CHN_Jinhe,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+05707_JPN_Toyohashi,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+06448_RUS_Naberezhnye_Chelny,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+09145_CHN_Tongliao,CHN,0.8153,province,CHN (内蒙古),Duan2015_province,BSk,14230.0
+00163_CHN_Kashgar,CHN,0.7951,province,CHN (新疆),Duan2015_province,BWk,14230.0
+00495_MYS_Bukit_Mertajam,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+09543_CHN_Huludao,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+05769_IDN_Purwakarta,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+05144_YEM_Adan,YEM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,740.0
+11514_IND_Moirabari,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10636_IND_Kakinada,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04259_NGA_Ife,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03273_USA_Riverside,USA,0.869,own country,USA,S01,BSh,88810.0
+09044_IND_Latur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06517_USA_Oklahoma_City,USA,0.869,own country,USA,S01,Cfa,88810.0
+06801_MEX_Villahermosa,MEX,0.85,own country,MEX,S25,Am,13730.0
+00117_ZWE_Bulawayo,ZWE,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,2660.0
+00514_PER_Piura,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWh,8430.0
+07847_USA_Pittsburgh,USA,0.869,own country,USA,S01,Dfa,88810.0
+10851_CHN_Yangjiang,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+10164_IND_Ghazipur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01719_SAU_At_Ta_if,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+07308_IDN_Kediri,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+02634_COD_Kikwit,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+06585_IRN_Yazd,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+04480_VEN_Maturin,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+03062_NGA_Ijebu_Ode,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+04684_IRQ_Al_Kut,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+08400_IND_Hapur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04567_ZAF_Pietermaritzburg,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cfa,6270.0
+07163_PAK_Jhang,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+00381_SEN_Thies,SEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1780.0
+03517_ETH_Bahir_Dar,ETH,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1110.0
+08284_IDN_Manado,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+02436_ZAF_Bloemfontein,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,BSk,6270.0
+09295_CHN_Gulin,CHN,0.8361,province,CHN (天津),Duan2015_province,BSk,14230.0
+04139_MAR_Tetouan,MAR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,4360.0
+07147_ETH_Dire_Dawa,ETH,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1110.0
+10046_IND_Tirupati,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06597_TUR_Batman,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+00628_KGZ_Osh,KGZ,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,2800.0
+05218_GBR_Portsmouth,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+10041_CHN_Shaoyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+08240_IND_Roorkee,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11343_CHN_Shanwei,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+11416_IND_Bazarati,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05615_VNM_Vung_Tau,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+07016_EGY_Tahta,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+08783_CHN_Fangshan,CHN,0.8472,province,CHN (北京),Duan2015_province,Dwa,14230.0
+06706_PAK_Mansehra,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+00030_TTO_Port_of_Spain,TTO,0.8125,matched (climate sub-class),LKA,S44,Aw,18550.0
+07255_BRA_Jundiai,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+07345_EGY_Aswan,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+10361_CHN_Jiaozhou,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+10110_IND_Mau,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05685_JPN_Takasaki_Maebashi,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+00818_FRA_Nantes,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+09414_IND_Fatehpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10571_CHN_Danzhou_City,CHN,0.8333,nearest province,CHN (广东),Duan2015_province,Am,14230.0
+05648_DZA_Annaba,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+09235_CHN_Zhaodong,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+03299_UKR_Kryvyi_Rih,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+01325_MOZ_Tete,MOZ,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,570.0
+05812_PHL_General_Santos,PHL,0.84,own country,PHL,S23,Af,4850.0
+07395_BRA_Praia_Grande,BRA,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,10550.0
+11180_IND_Siuri,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10813_CHN_Anqing,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+06906_NGA_Gusau,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03464_EGY_Shibin_Al_Kom,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+11511_CHN_Lishui,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+04552_MEX_Irapuato,MEX,0.85,own country,MEX,S25,Cwa,13730.0
+07725_IND_Karnal,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07626_IDN_Balung,IDN,0.8125,matched (climate sub-class),LKA,S44,Aw,5120.0
+05161_ESP_Palma_de_Mallorca,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+11101_CHN_Taixing,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+11159_CHN_Heyuan,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+11067_CHN_Dongtai,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+04843_USA_Tucson,USA,0.869,own country,USA,S01,BWh,88810.0
+08677_CHN_Yangquan,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+07368_RUS_Tomsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+04866_PAK_Kohat,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+02431_COD_Mbandaka,COD,0.84,matched (climate sub-class),PHL,S23,Af,720.0
+00029_ARG_San_Juan,ARG,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,14650.0
+07413_IDN_Jombang,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+10563_CHN_Zhanjiang,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+02518_IRQ_Ramadi,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+01645_THA_Phuket,THA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,7690.0
+09861_CHN_Zoucheng,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+11044_IND_Purnia,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05062_VNM_My_Tho,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+10880_IND_Saharsa,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11578_IND_Dimapur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05887_CHN_Pingliang,CHN,0.7604,province,CHN (甘肃),Duan2015_province,BSk,14230.0
+11011_CHN_Jingdezhen,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+01652_TWN_Chiayi,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Cwa,14230.0
+10995_CHN_Nankang,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+09351_CHN_Dezhou,CHN,0.866,province,CHN (山东),Duan2015_province,BSk,14230.0
+10437_CHN_Rizhao,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+08680_IND_Ichalkaranji,IND,0.8343,own country,IND,S28b,BSh,2760.0
+08946_IND_Etawah,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09218_IND_Lakhimpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10415_CHN_Liuyang,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+03065_ITA_Bologna,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Cfa,42080.0
+03346_DEU_Mannheim,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+07565_BGD_Ramu,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+07489_NGA_Dere,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+05915_GBR_Brighton,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+05453_USA_Albuquerque,USA,0.869,own country,USA,S01,BSk,88810.0
+08574_IND_Kedgaon,IND,0.8343,own country,IND,S28b,BSh,2760.0
+02989_PER_Huancayo,PER,0.901,own country,PER,SUP_MTUS_PE1966,Cwb,8430.0
+04820_ITA_Catania,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+09140_IND_Hardoi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04201_PAK_Shabqadar,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+03381_JPN_Kagoshima,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+11295_CHN_Haimen,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+11169_CHN_Yixing,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+00882_SOM_Kismayo,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+00994_KEN_Kisumu,KEN,0.84,matched (climate sub-class),PHL,S23,Af,2200.0
+02994_BRA_Macapa,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+10859_CHN_Shaoguan,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+08486_NGA_Titi,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+05434_COD_Kolwezi,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+00442_MDA_Chisinau,MDA,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,8050.0
+09579_CHN_Heze,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+09780_IND_Nagercoil,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00099_EST_Tallinn,EST,0.8861,own country,EST,H_EST,Dfb,32310.0
+00601_ISR_Haifa,ISR,0.9168,own country,ISR,SUP_MTUS_IL1991,Csa,56180.0
+03045_USA_Escondido,USA,0.869,own country,USA,S01,BSk,88810.0
+09299_CHN_Chaoyang,CHN,0.8542,province,CHN (辽宁),Duan2015_province,BSk,14230.0
+01782_ITA_Bergamo,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Cfa,42080.0
+02392_IDN_Pematang_Siantar,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+08572_CHN_Zheba,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cfa,14230.0
+04634_NGA_Ilesa,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+06769_CHN_Emeishan,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+02679_CAN_Hamilton,CAN,0.889,own country,CAN,S04,Dfa,56420.0
+08336_CHN_Luzhou,CHN,0.8125,province,CHN (四川),Duan2015_province,Cfa,14230.0
+05822_ETH_Hawassa,ETH,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1110.0
+05913_USA_Colorado_Springs,USA,0.869,own country,USA,S01,BSk,88810.0
+08812_IND_Haldwani,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07418_RUS_Barnaul,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+08506_CHN_Jinzhong,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+10125_CHN_Shi_Zhong_Qu,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+07981_BRA_Petrolina,BRA,0.85,matched (climate major class),MEX,S25,BSh,10550.0
+06092_VNM_Nha_Trang,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+05978_ETH_Shashamane,ETH,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,1110.0
+07775_CHN_Xingping,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Cwa,14230.0
+01360_PNG_Port_Moresby,PNG,0.8343,matched (climate sub-class),IND,S28b,Aw,2890.0
+09566_IND_Kurnool,IND,0.8343,own country,IND,S28b,BSh,2760.0
+02406_CUB_Santiago_de_Cuba,CUB,0.8125,matched (climate sub-class),LKA,S44,Aw,9010.0
+07049_CHN_Guangyuan,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+08038_NGA_Abakaliki,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+07980_USA_Buffalo,USA,0.869,own country,USA,S01,Dfa,88810.0
+01220_KEN_Eldoret,KEN,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,2200.0
+00094_RUS_Kaliningrad,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+05512_RUS_Cheboksary,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+04907_JPN_Niigata,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+00349_TWN_Zhanghua_City,TWN,0.8618,nearest province,CHN (福建),Duan2015_province,Cwa,14230.0
+10132_IND_Thanjavur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06339_TUR_Elazig,TUR,0.8542,matched (climate sub-class),CHN (青海),SUP_CEFH_CHN_PROV2014_青海,BSk,16300.0
+05528_BRA_Sao_Jose_do_Rio_Preto,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+04460_SDN_Kosti,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+04558_GBR_Coventry,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+01812_SOM_Baidoa,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+11444_IND_Canning,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00235_GBR_Belfast,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+08237_USA_Providence,USA,0.869,own country,USA,S01,Dfa,88810.0
+07673_RUS_Vladivostok,RUS,0.741,matched (climate sub-class),CHN (西藏),SUP_CEFH_CHN_PROV2014_西藏,Dwb,15960.0
+09588_IND_Gonda,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03429_THA_Hat_Yai,THA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,7690.0
+04839_VNM_Tay_Ninh,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+05462_RUS_Penza,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+08843_CHN_Ranghulu,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+10292_IND_Cuddalore,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07591_RUS_Irkutsk,RUS,0.741,matched (climate sub-class),CHN (西藏),SUP_CEFH_CHN_PROV2014_西藏,Dwb,15960.0
+09502_IND_Raebareli,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07013_BRA_Americana,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+06577_USA_Tulsa,USA,0.869,own country,USA,S01,Cfa,88810.0
+00069_CHE_Geneva,CHE,0.865,own country,CHE,SUP_EXP_CHE,Cfb,110330.0
+10267_CHN_Yuhu,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+06761_EGY_Al_Abbasa_al_Sharqiya,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+09236_IND_Sitapur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07419_PAK_Jhelum,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+09042_IND_Parbhani,IND,0.8343,own country,IND,S28b,Aw,2760.0
+03896_AGO_Saurimo,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+06586_PAK_Sadiqabad,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+02866_COL_Manizales,COL,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,7900.0
+11615_CHN_Beilun_District,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+06723_BGD_Barishal,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+06661_PAK_Haripur,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+01975_SSD_Riwoto,SSD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1050.0
+01743_KOR_Cheonan_si,KOR,0.9,own country,KOR,SUP_KIM2019,Dwa,37880.0
+07398_RUS_Kemerovo,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+11259_CHN_Huzhou,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+06273_COD_Kongolo,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+11078_IND_Katihar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00660_COL_Buenaventura,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+03436_PHL_Batangas_City,PHL,0.84,own country,PHL,S23,Aw,4850.0
+04111_ZAF_Chief_Albert_Luthuli_Park,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+04053_VEN_Guarenas,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+10979_CHN_Xinghua,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+09388_IND_Nizamabad,IND,0.8343,own country,IND,S28b,Aw,2760.0
+03709_NGA_Ogbomosho,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+08203_NGA_Makurdi,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+00894_CHN_Yining_Qulja,CHN,0.7951,province,CHN (新疆),Duan2015_province,BSk,14230.0
+11310_IND_Cooch_Behar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04152_RUS_Ryazan,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+02366_ZMB_Mansa,ZMB,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1200.0
+11061_CHN_Xuancheng,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+10805_CHN_Yanji,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+03180_DEU_Bremen,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+07269_ETH_Jijiga,ETH,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1110.0
+07015_COD_Butembo,COD,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,720.0
+04431_BGD_Pabna,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+04479_COL_Santa_Marta,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+11229_CHN_Huidong,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+03616_ZAF_Lenasia,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+01580_MLI_Sikasso,MLI,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1120.0
+07576_IDN_Probolinggo,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+01050_PRY_Ciudad_del_Este,PRY,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,6750.0
+06798_BGD_Chandpur,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+02391_THA_Lop_Buri,THA,0.8125,matched (climate sub-class),LKA,S44,Aw,7690.0
+08101_NGA_Oron,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+11333_CHN_Fuyang,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+02963_KEN_Garissa,KEN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,2200.0
+03642_JPN_Matsuyama,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+09602_IND_Chandrapur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+10683_CHN_Sanya,CHN,0.8333,nearest province,CHN (广东),Duan2015_province,Aw,14230.0
+10259_CHN_Xinxing,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+08905_CHN_Daqing,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+06209_ETH_Bishoftu,ETH,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,1110.0
+07465_IND_Bhilwara,IND,0.8343,own country,IND,S28b,BSh,2760.0
+08674_IND_Sambhal,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00755_KAZ_Aktobe,KAZ,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,13740.0
+02160_MYS_Kota_Bharu,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+02863_MEX_Tepic,MEX,0.85,own country,MEX,S25,Cwa,13730.0
+09514_IND_Anantapur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00525_BRA_Porto_Velho,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+04782_FRA_Strasbourg,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+02472_MEX_Mazatlan,MEX,0.85,own country,MEX,S25,Aw,13730.0
+08950_IND_Vijayapura,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06046_COD_Malemba_Nkulu,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+08879_CHN_Songzhuang,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+07559_USA_Indianapolis,USA,0.869,own country,USA,S01,Dfa,88810.0
+00429_NAM_Windhoek,NAM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,4340.0
+11361_CHN_Tongxiang,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+11420_IND_Jaynagar_Majilpur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08737_CHN_Changping,CHN,0.8472,province,CHN (北京),Duan2015_province,BSk,14230.0
+03280_ARG_Resistencia,ARG,0.8576,matched (climate sub-class),CHN (重庆),SUP_CEFH_CHN_PROV2014_重庆,Cfa,14650.0
+07589_PAK_Hafizabad,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+02944_DEU_Wiesbaden,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+10954_IND_Giridih,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+10191_CHN_Yongzhou,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+09820_IND_Basti,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01083_COD_Matadi,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+11150_IND_Raiganj,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08212_IDN_Kendari,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+03077_EGY_Sanhur,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+07672_CHN_Zigong,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+01102_PSE_Hebron,PSE,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,3250.0
+07627_USA_Cincinnati,USA,0.869,own country,USA,S01,Dfa,88810.0
+02956_RUS_Podolsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+10423_CHN_Jixi,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+07352_IDN_Blitar,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+06288_NGA_Bida,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+01639_IND_Khansahib,IND,0.8343,own country,IND,S28b,Dfb,2760.0
+03013_UKR_Mykolaiv,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+03129_COD_Gemena,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+11648_CHN_Huangyan_District,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+03960_IDN_Bengkulu,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07513_IDN_Gresik,IDN,0.8125,matched (climate sub-class),LKA,S44,Aw,5120.0
+10760_IND_Mansurchak,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05401_PHL_Iligan,PHL,0.84,own country,PHL,S23,Am,4850.0
+00447_EGY_Al_Wadi,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+06934_NGA_Asaba,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+03383_USA_Stockton,USA,0.869,own country,USA,S01,Csa,88810.0
+07836_PAK_Daska,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+03360_TZA_Morogoro,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+10241_CHN_Guiping,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+04317_BGD_Kushtia,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+03389_ARG_Corrientes,ARG,0.8576,matched (climate sub-class),CHN (重庆),SUP_CEFH_CHN_PROV2014_重庆,Cfa,14650.0
+09840_IND_Dindigul,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07018_RUS_Orenburg,RUS,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfa,15960.0
+01576_SEN_Kaolack,SEN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1780.0
+01515_TUR_Manisa,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+08999_CHN_Jiyuan,CHN,0.7812,province,CHN (河南),Duan2015_province,BSk,14230.0
+04682_SDN_Wad_Madani,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+00259_AGO_Mocamedes,AGO,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,2860.0
+11377_CHN_Qidong,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+07750_BRA_Volta_Redonda,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+05438_SDN_Kassala,SDN,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,900.0
+09064_IND_Shivamogga,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02964_IRN_Ardabil,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+11012_IND_Deoghar,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02906_SOM_Burao,SOM,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,640.0
+05612_BGD_Tangail,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+09109_CHN_Yanshi_District,CHN,0.7812,province,CHN (河南),Duan2015_province,BSk,14230.0
+00436_MKD_Skopje,MKD,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,9490.0
+09873_CHN_Tianmen,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+10189_CHN_Miluo,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+05795_BRA_Caxias_do_Sul,BRA,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,10550.0
+06757_USA_Memphis,USA,0.869,own country,USA,S01,Cfa,88810.0
+02080_MYS_Seremban,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+10925_CHN_Gaoyou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+08387_IDN_Timika,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+07252_CHN_Yan_an,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Dwa,14230.0
+11016_IND_Araria,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00704_AGO_Soyo,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+04436_PRK_Sariwon,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+05840_TUR_Sivas,TUR,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dsb,16300.0
+04647_IRQ_As_Samawah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+11349_CHN_Lili,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+04485_ESP_Alicante,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSh,37120.0
+08477_NGA_Potiskum,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+10105_CHN_Changyi,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+01133_BGD_Dinajpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+01400_CMR_Bamenda,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+00469_AZE_Ganja,AZE,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,7360.0
+01513_BLR_Mahiliou,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+06829_CHN_Longquanyi,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+07849_NGA_Ikot_Ekpene,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+01935_ARG_Santiago_del_Estero,ARG,0.7951,matched (climate major class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BSh,14650.0
+06697_USA_Kansas_City,USA,0.869,own country,USA,S01,Dfa,88810.0
+04328_VEN_Cumana,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+07099_IND_Bharuch,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02198_POL_Gdansk,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+06285_USA_The_Woodlands,USA,0.869,own country,USA,S01,Cfa,88810.0
+07167_IDN_Madiun,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+00280_BLR_Brest,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+06996_BGD_Bhola,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+07857_PAK_Kamoke,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+08920_IND_Bhind,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07286_IDN_Nganjuk,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+07361_BGD_Feni,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+02310_CHN_Shihezi,CHN,0.7951,province,CHN (新疆),Duan2015_province,BSk,14230.0
+09905_CHN_Haicheng,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+11105_CHN_Liyang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+08817_CHN_Wanzhou,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cwa,14230.0
+00105_BLR_Hrodna,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+02699_TCD_Abeche,TCD,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,970.0
+08544_IND_Bharatpur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+08652_IND_Hathras,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05588_IND_Bathinda,IND,0.8343,own country,IND,S28b,BSh,2760.0
+04733_PRK_Hamhung,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+01372_HTI_Gonaives,HTI,0.8343,matched (climate sub-class),IND,S28b,Aw,2010.0
+04746_FRA_Nice,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Csa,48630.0
+04555_ARG_Posadas,ARG,0.8576,matched (climate sub-class),CHN (重庆),SUP_CEFH_CHN_PROV2014_重庆,Cfa,14650.0
+01950_NGA_Saki,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+02031_BEN_Parakou,BEN,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1600.0
+05344_MMR_Pegu,MMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1320.0
+07283_IND_Navsari,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11397_CHN_Longyan,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+09168_IND_Vadakara,IND,0.8343,own country,IND,S28b,Am,2760.0
+01545_NPL_Pokhariya,NPL,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1570.0
+10204_IND_Kumbakonam,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11469_CHN_Dongyang,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+07546_IND_Silvassa,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09664_IND_Hosur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+10440_IND_Sahebganj,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01943_GBR_Cardiff,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+06791_EGY_Faqous,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02408_CAN_Kitchener,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+05919_TUR_Iskenderun,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+00164_IND_Kralpora,IND,0.8343,own country,IND,S28b,Cfa,2760.0
+05669_NGA_Ikere_Ekiti,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+00334_NPL_Laksmipur,NPL,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1570.0
+01416_SDN_Kas,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+09361_CHN_Kaili,CHN,0.8299,province,CHN (贵州),Duan2015_province,Cfa,14230.0
+08480_NGA_KUNDULUN,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+06257_EGY_Mit_Habib,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02841_IRN_Sareyn,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Dsb,4650.0
+07949_IND_Sonipat,IND,0.8343,own country,IND,S28b,BSh,2760.0
+04905_VNM_Hue,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Am,4970.0
+08804_IND_Jalna,IND,0.8343,own country,IND,S28b,BSh,2760.0
+05025_PAK_Charsadda,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+03486_MYS_Sandakan,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+04582_MMR_Taunggyi,MMR,0.8299,matched (climate sub-class),CHN (贵州),SUP_CEFH_CHN_PROV2014_贵州,Cwa,1320.0
+08124_BRA_Colina_de_Laranjeiras,BRA,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,10550.0
+04017_GBR_Bournemouth,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+08348_BRA_Campina_Grande,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+08467_CHN_Xuanwei,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwb,14230.0
+01310_BLR_Vitsebsk,BLR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,9160.0
+11387_CHN_Jiashan,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+01911_BGD_Gangachara,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+00186_TLS_Dili,TLS,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1510.0
+06277_ETH_Mek_ele,ETH,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1110.0
+05492_PAK_Dera_Ismail_Khan,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+07101_CHN_Jianyang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+04942_MEX_Celaya,MEX,0.85,own country,MEX,S25,BSh,13730.0
+02444_UGA_Mbale_City,UGA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1120.0
+06935_COD_Uvira,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+02577_EGY_Kafr_Al_Sheikh,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02962_IRQ_Fallujah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+07353_USA_Jacksonville,USA,0.869,own country,USA,S01,Cfa,88810.0
+03582_BGD_Lalpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+07976_PAK_Raiwind,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+11660_CHN_Fuqing,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+10453_CHN_Hezhou,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+10208_IND_Kanchipuram,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00672_ESP_Las_Palmas_de_Gran_Canaria,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSh,37120.0
+06031_RUS_Ulyanovsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+10849_CHN_Sihui,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+10368_IND_Eluru,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05163_DZA_Batna,DZA,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,5850.0
+10432_IND_Motihari,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03112_ARG_Santa_Fe,ARG,0.7917,matched (climate sub-class),CHN (广西),SUP_CEFH_CHN_PROV2014_广西,Cfa,14650.0
+02270_NGA_Iseyin,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+11442_IND_Minakhan,IND,0.8343,own country,IND,S28b,Aw,2760.0
+09864_IND_Kadapa,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01054_SLE_Bo,SLE,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,830.0
+06109_CHN_Ya_an,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+09397_CHN_Hulan,CHN,0.8347,province,CHN (黑龙江),Duan2015_province,Dwa,14230.0
+05701_IND_Mahesana,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06841_PAK_Joharabad,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+07660_BRA_Montes_Claros,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+02314_MMR_Myitkyina,MMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1320.0
+05326_BRA_Anapolis,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+00662_VEN_San_Cristobal,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+06967_IRN_Bandar_Abbas,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+11137_CHN_Ningguo,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+02514_UGA_Bukalasi,UGA,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1120.0
+06091_CHN_Dujiangyan,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+04595_GBR_Southampton,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+11346_IND_Debandi,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06076_JPN_Numazu,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+01778_BEL_Liege,BEL,0.853,own country,BEL,R8_BEL_1998_place,Cfb,59500.0
+10903_CHN_Enping,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+08054_IND_Bhiwadi,IND,0.8343,own country,IND,S28b,BSh,2760.0
+09069_CHN_Wuqing,CHN,0.8361,province,CHN (天津),Duan2015_province,BSk,14230.0
+06818_BRA_Piracicaba,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+03269_KOR_Pohang_si,KOR,0.9,own country,KOR,SUP_KIM2019,Cfa,37880.0
+11487_CHN_Yongkang,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+09037_CHN_Renqiu,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+07118_NGA_Abonnema,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+03465_ETH_Gonder,ETH,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,1110.0
+11135_CHN_Huangshan,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+09462_IND_Tumakuru,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07449_CHN_Hanzhong,CHN,0.8161,mean of the adjacent provinces,CHN (内蒙古+四川+宁夏+山西+河南+湖北+甘肃+重庆),Duan2015_province,Cwa,14230.0
+09806_IND_Tirunelveli,IND,0.8343,own country,IND,S28b,Aw,2760.0
+10400_IND_Turkaulia,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06815_IDN_Magelang,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+05523_PRK_Wonsan,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+10521_CHN_Wuzhou,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+02671_USA_Mission_Viejo,USA,0.869,own country,USA,S01,BSk,88810.0
+01187_NER_Tahoua,NER,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,750.0
+08754_IND_Morena,IND,0.8343,own country,IND,S28b,BSh,2760.0
+01224_ERI_Massawa,ERI,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,650.0
+01149_MEX_La_Paz,MEX,0.85,own country,MEX,S25,BWh,13730.0
+09853_CHN_Laiwu,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+08852_IND_Badaun,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08776_IND_Khandwa,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00524_BOL_Oruro,BOL,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,4420.0
+04071_RUS_Ivanovo,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+09452_IND_Palakkad,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06727_USA_Omaha,USA,0.869,own country,USA,S01,Dfa,88810.0
+05389_IRN_Pishva,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+05666_USA_McAllen,USA,0.869,own country,USA,S01,BSh,88810.0
+02387_CHN_Changji_Sanji,CHN,0.7951,province,CHN (新疆),Duan2015_province,BSk,14230.0
+06602_IND_Nadiad,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04635_DZA_Setif,DZA,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,5850.0
+10892_IND_Khagaria,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05989_BRA_Bauru,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+00087_MLT_Valletta,MLT,0.8864,matched (climate sub-class),ITA,SUP_EXP_ITA,Csa,41440.0
+03538_MYS_Tawau,MYS,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,12380.0
+11580_IND_Aizawl,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07493_BGD_Chandanaish,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+00373_CHL_Antofagasta,CHL,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,16960.0
+10517_CHN_Cenxi,CHN,0.7917,province,CHN (广西),Duan2015_province,Cfa,14230.0
+07107_EGY_Al_Manshah,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02255_CAN_London,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+00382_ESP_Santa_Cruz_de_Tenerife,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSh,37120.0
+03944_RUS_Belgorod,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+03254_IRN_Zanjan,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+10446_IND_Dehri,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04495_UKR_Mariupol,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+10909_CHN_Tongling,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+03215_JPN_Oita,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+10573_CHN_Shuyang,CHN,0.875,province,CHN (江苏),Duan2015_province,Cwa,14230.0
+03446_ESP_Granada,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+07311_NGA_Oyigbo,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+09686_IND_Rewa,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00172_IDN_Banda_Aceh,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+02496_NER_Agadez,NER,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,750.0
+00719_COG_Impfondo,COG,0.8343,matched (climate major class),IND,S28b,Am,2280.0
+10190_IND_Viluppuram,IND,0.8343,own country,IND,S28b,Aw,2760.0
+04027_TUR_Sakarya,TUR,0.8637,matched (climate sub-class),BGR,SUP_MTUS_BG2001,Cfa,16300.0
+02822_CMR_Ngaoundere,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+07460_USA_Aurora,USA,0.869,own country,USA,S01,Dfa,88810.0
+03986_ZAF_Centurion,ZAF,0.8755,own country,ZAF,SUP_ZAF2010,Cwb,6270.0
+10106_IND_Padrauna,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09284_IND_Yavatmal,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02090_ECU_Santo_Domingo_de_los_Tsachilas,ECU,0.901,matched (climate major class),PER,SUP_MTUS_PE1966,Am,6890.0
+04575_IRN_Arak,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Dsa,4650.0
+08614_IND_Dewas,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05781_RUS_Stavropol,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+03732_IND_Junagadh,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02782_UZB_Jizzakh,UZB,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,3670.0
+11589_CHN_Fu_an,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+06850_EGY_Al_Asafra,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02838_ETH_Jimma,ETH,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,1110.0
+11599_CHN_Xianyou,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+05770_JPN_Kofu,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+02044_UKR_Vinnytsia,UKR,0.855,matched (climate sub-class),ARM,SUP_ARM_GTUS2022,Dfb,5510.0
+03487_JPN_Fukuyama,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+11037_CHN_Taizhou,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+06743_BRA_Franca,BRA,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,10550.0
+03052_CHL_Temuco,CHL,0.8637,matched (climate major class),BGR,SUP_MTUS_BG2001,Csb,16960.0
+08304_NGA_Gboko,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+10068_IND_Waidhan,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01415_TUR_Cerkezkoy,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+09728_IND_Pratapgarh,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05311_IRN_Qarchak,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSh,4650.0
+10785_CHN_Gao_an,CHN,0.8306,province,CHN (江西),Duan2015_province,Cfa,14230.0
+01278_MAR_Safi,MAR,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,4360.0
+10212_IND_Tamkuhi_Raj,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00518_COL_Pasto,COL,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,7900.0
+08128_IDN_Palu,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+04938_PRK_Jakdo_dong,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+11585_CHN_Tong_an,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+07122_RUS_Magnitogorsk,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+05101_GBR_Middlesbrough,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+05497_IDN_Rangkasbitung,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+11321_CHN_Haifeng,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+07343_BRA_Francisco_Morato,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+11617_CHN_Ningde,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+09971_CHN_Shouguang,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+08949_CHN_Gaoping,CHN,0.8264,province,CHN (山西),Duan2015_province,Dwa,14230.0
+09831_CHN_Xinyang,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+00851_COG_Betou,COG,0.8343,matched (climate sub-class),IND,S28b,Aw,2280.0
+04362_PHL_Naga,PHL,0.84,own country,PHL,S23,Af,4850.0
+03155_VNM_Nam_Dinh,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Cwa,4970.0
+03829_VNM_Vinh,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Am,4970.0
+09051_CHN_Bo_ai,CHN,0.7812,province,CHN (河南),Duan2015_province,BSk,14230.0
+06205_COD_Mulongo,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+02183_CIV_Korhogo,CIV,0.8343,matched (climate sub-class),IND,S28b,Aw,2780.0
+05216_USA_Boise,USA,0.869,own country,USA,S01,BSk,88810.0
+09915_CHN_Dashiqiao,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+06556_PAK_Mirpur_Khas,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+04260_FRA_Grenoble,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfa,48630.0
+08156_IND_Ratlam,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00124_TZA_Kigoma,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+02842_SAU_Hafar_Al_Batin,SAU,0.9168,matched (climate sub-class),ISR,SUP_MTUS_IL1991,BWh,36070.0
+07171_EGY_Balyana,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+02214_SSD_Kapoeta,SSD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1050.0
+04274_IRN_Qazvin,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Csa,4650.0
+08466_IND_Satara,IND,0.8343,own country,IND,S28b,Aw,2760.0
+06111_IDN_Indramayu,IDN,0.8125,matched (climate sub-class),LKA,S44,Aw,5120.0
+01049_BRA_Boa_Vista,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+01614_EGY_Dusuq,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+07273_BGD_Golapganj,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+06977_EGY_Sidfa,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+01118_SOM_Borama,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+11040_IND_Purulia,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01160_HTI_Port_de_Paix,HTI,0.84,matched (climate sub-class),PHL,S23,Af,2010.0
+11629_CHN_Linhai,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+11008_IND_Bhagalpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11165_CHN_Shenglicun,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+09666_IND_Karimnagar,IND,0.8343,own country,IND,S28b,Aw,2760.0
+00661_JAM_Portmore,JAM,0.8125,matched (climate sub-class),LKA,S44,Aw,7790.0
+00121_RWA_Rubavu,RWA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1150.0
+04789_UKR_Luhansk,UKR,0.855,matched (climate major class),ARM,SUP_ARM_GTUS2022,Dfa,5510.0
+03746_PER_Tacna,PER,0.901,own country,PER,SUP_MTUS_PE1966,BWh,8430.0
+04257_ESP_Murcia,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,BSh,37120.0
+09911_CHN_Anlu,CHN,0.8097,province,CHN (湖北),Duan2015_province,Cfa,14230.0
+05869_VNM_Quang_Ngai,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Am,4970.0
+02278_AGO_M_banza_Congo,AGO,0.8343,matched (climate sub-class),IND,S28b,Aw,2860.0
+08947_CHN_Sanhe,CHN,0.8562,province,CHN (河北),Duan2015_province,Dwa,14230.0
+02095_HTI_Cap_Haitien,HTI,0.84,matched (climate sub-class),PHL,S23,Af,2010.0
+03792_VEN_Catia_La_Mar_La_Guaira,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+10326_IND_Korba,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07390_IND_Godhra,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11676_CHN_Wenling,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+00578_LTU_Vilnius,LTU,0.8861,matched (climate sub-class),EST,H_EST,Dfb,30500.0
+01704_RUS_Tver,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+10010_IND_Khammam,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08793_CHN_Huairou,CHN,0.8472,province,CHN (北京),Duan2015_province,BSk,14230.0
+00558_SWE_Malmo,SWE,0.839,own country,SWE,R8_SWE_2000_place,Cfb,63010.0
+08600_NGA_Gamboru,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+09959_CHN_Qingzhou,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+05313_AFG_Khost,AFG,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,390.0
+07822_PAK_Pakpattan,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+07344_NGA_Ogale,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+05043_DEU_Augsburg,DEU,0.879,own country,DEU,R8_DEU_2019_place,Cfb,60200.0
+06490_COD_Kasumbalesa,COD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,720.0
+04685_YEM_Dhamar,YEM,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,740.0
+03801_FRA_Montpellier,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Csa,48630.0
+05871_JPN_Utsunomiya,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+03880_MEX_Uruapan,MEX,0.85,own country,MEX,S25,Cwa,13730.0
+06826_PAK_Muzaffargarh,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+00276_ROU_Timisoara,ROU,0.8637,matched (climate sub-class),BGR,SUP_MTUS_BG2001,Cfa,20190.0
+08781_CHN_Nanchuan,CHN,0.8576,province,CHN (重庆),Duan2015_province,Cfa,14230.0
+08089_NGA_Daura,NGA,0.783,own country,NGA,R8_NGA_2002_occup,BSh,1360.0
+09930_IND_Thoothukudi,IND,0.8343,own country,IND,S28b,Aw,2760.0
+05930_PHL_Tagum,PHL,0.84,own country,PHL,S23,Af,4850.0
+03437_USA_Modesto,USA,0.869,own country,USA,S01,BSk,88810.0
+07590_IND_Kurukshetra,IND,0.8343,own country,IND,S28b,BSh,2760.0
+04327_COL_Villavicencio,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+10051_CHN_Yongcheng,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+08259_CHN_Xuanhua,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+02447_KEN_Embu,KEN,0.925,matched (climate major class),ALB,SUP_ALB_TUS2010,Csb,2200.0
+04994_PAK_Takht_Bhai,PAK,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,1500.0
+10875_CHN_Chizhou,CHN,0.8403,province,CHN (安徽),Duan2015_province,Cfa,14230.0
+07348_PAK_Gojra,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+08936_IND_Pilibhit,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05890_IDN_Hegarsari,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+09271_CHN_Botou,CHN,0.8562,province,CHN (河北),Duan2015_province,BSk,14230.0
+01692_CMR_Bafoussam,CMR,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1860.0
+10734_IND_Madhubani,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00285_BGR_Plovdiv,BGR,0.8637,own country,BGR,SUP_MTUS_BG2001,Cfa,17780.0
+05290_BGD_Sherpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+08514_IND_Khurja,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06045_NGA_Ikare,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+08780_IND_Burhanpur,IND,0.8343,own country,IND,S28b,Aw,2760.0
+02928_COL_Neiva,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+03536_PRK_Pyongsong,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+00211_BRA_Rio_Branco,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+04974_USA_Tacoma,USA,0.869,own country,USA,S01,Csb,88810.0
+02008_MEX_Ciudad_Obregon,MEX,0.85,own country,MEX,S25,BWh,13730.0
+02660_BGD_Naogaon,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+06488_BRA_Uberaba,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+03843_GBR_Stoke_on_Trent,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+09301_CHN_Chengtougu,CHN,0.8361,province,CHN (天津),Duan2015_province,BSk,14230.0
+04132_PHL_Lucena,PHL,0.84,own country,PHL,S23,Af,4850.0
+09877_CHN_Liaoyuan,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+06217_MEX_Ciudad_Victoria,MEX,0.85,own country,MEX,S25,BSh,13730.0
+07920_PAK_Muridke,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+05207_BGD_Jamalpur,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+05844_PAK_Yar_Hussain,PAK,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,1500.0
+06275_TUR_Trabzon,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+05716_EGY_Minya_Al_Qamh,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+11402_IND_Dhubri,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+11148_IND_Puri,IND,0.8343,own country,IND,S28b,Aw,2760.0
+03534_IDN_Duri,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+10949_CHN_Kaiping,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+05793_MEX_Pachuca,MEX,0.85,own country,MEX,S25,BSk,13730.0
+05944_BGD_Faridpur,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+08732_IND_Chandausi,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+03294_POL_Sosnowiec,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+03596_PER_Juliaca,PER,0.901,own country,PER,SUP_MTUS_PE1966,Cwb,8430.0
+10386_IND_Sasaram,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02803_COL_Monteria,COL,0.8125,matched (climate sub-class),LKA,S44,Aw,7900.0
+05589_BGD_Kalihati,BGD,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,2840.0
+04319_MMR_Lashio,MMR,0.8299,matched (climate sub-class),CHN (贵州),SUP_CEFH_CHN_PROV2014_贵州,Cwa,1320.0
+11642_CHN_Hui_an,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+04404_VEN_Ciudad_Bolivar,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+05879_EGY_Mallawi,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+07412_CHN_Shuozhou,CHN,0.8264,province,CHN (山西),Duan2015_province,BSk,14230.0
+08340_IND_Greater_Noida,IND,0.8343,own country,IND,S28b,BSh,2760.0
+10493_CHN_Pukou,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+01482_CIV_Daloa,CIV,0.8343,matched (climate sub-class),IND,S28b,Aw,2780.0
+03689_IDN_Dumai,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+02015_VEN_Barinas,VEN,0.8125,matched (climate sub-class),LKA,S44,Aw,3860.0
+05973_NGA_Sapele,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+11520_IND_Tezpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+02855_VNM_Hai_Duong,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Cwa,4970.0
+07145_EGY_Girga,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+10898_IND_Simri_Bakhtiarpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+04123_IND_Sri_Ganganagar,IND,0.8343,own country,IND,S28b,BWh,2760.0
+02545_COL_Armenia,COL,0.901,matched (climate sub-class),PER,SUP_MTUS_PE1966,Af,7900.0
+01023_KHM_Anlong_Veng,KHM,0.8343,matched (climate sub-class),IND,S28b,Aw,2750.0
+11571_CHN_Guankou,CHN,0.8618,province,CHN (福建),Duan2015_province,Cfa,14230.0
+10034_IND_Tiruvannamalai,IND,0.8343,own country,IND,S28b,Aw,2760.0
+08904_IND_Mainpuri,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06200_MEX_Orizaba,MEX,0.85,own country,MEX,S25,Cwa,13730.0
+03184_AGO_Ondjiva,AGO,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,2860.0
+00972_ROU_Cluj_Napoca,ROU,0.9014,matched (climate sub-class),POL,H_POL,Dfb,20190.0
+05934_GBR_Hull,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+08025_PAK_Narowal,PAK,0.8125,matched (climate sub-class),CHN (四川),SUP_CEFH_CHN_PROV2014_四川,Cwa,1500.0
+11524_IND_Nagaon,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07506_BRA_Taubate,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+10469_CHN_Xiao_Nan,CHN,0.866,province,CHN (山东),Duan2015_province,Cwa,14230.0
+03863_IRN_Famenin,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BSk,4650.0
+10316_IND_Nautan,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+08037_BRA_Campos_dos_Goytacazes,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+10069_CHN_Wafangdian,CHN,0.8542,province,CHN (辽宁),Duan2015_province,Dwa,14230.0
+07457_BGD_Nazirhat,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+07110_IRN_Narmashir,IRN,0.89,own country,IRN,R8_IRN_2014_direc,BWh,4650.0
+07386_NGA_Bonny,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Af,1360.0
+02126_TUR_Balikesir,TUR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,16300.0
+07654_PAK_Jaranwala,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+03305_TZA_Moshi,TZA,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1270.0
+07670_PAK_Wazirabad,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+09055_CHN_Baochi,CHN,0.8361,province,CHN (天津),Duan2015_province,BSk,14230.0
+05849_VNM_Buon_Ma_Thuot,VNM,0.9354,own country,VNM,SUP_VNM_TUS2022,Aw,4970.0
+00210_CHL_Iquique,CHL,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,BWk,16960.0
+05111_SDN_Al_Qadarif,SDN,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,900.0
+08686_IND_Thakurdwara,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+06591_MEX_Nuevo_Laredo,MEX,0.85,own country,MEX,S25,BSh,13730.0
+07831_CHN_Neijiang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+10371_CHN_Tonghua,CHN,0.884,province,CHN (吉林),Duan2015_province,Dwa,14230.0
+10826_IND_Birpur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01139_KHM_Siem_Reap,KHM,0.8343,matched (climate sub-class),IND,S28b,Aw,2750.0
+01650_PRK_Kanggye,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+09376_IND_Raichur,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07267_NGA_Gwagwalada,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Aw,1360.0
+04821_COD_Kasaji,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+08794_IND_Etah,IND,0.8343,own country,IND,S28b,BSh,2760.0
+07379_PAK_Chiniot,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+04247_JPN_Takamatsu,JPN,0.8589,own country,JPN,S21,Cfa,38340.0
+08814_IND_Rudrapur,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+07562_PAK_Burewala,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+02252_CUB_Holguin,CUB,0.8125,matched (climate sub-class),LKA,S44,Aw,9010.0
+05460_EGY_shblnj,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+01194_CZE_Brno,CZE,0.8668,own country,CZE,SUP_EXP_CZE,Dfb,32960.0
+06276_RUS_Timofeevka,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+08343_BRA_Caruaru,BRA,0.8125,matched (climate sub-class),LKA,S44,Aw,10550.0
+11057_CHN_Danyang_City,CHN,0.875,province,CHN (江苏),Duan2015_province,Cfa,14230.0
+05689_BRA_Ponta_Grossa,BRA,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,10550.0
+06463_RUS_Vladikavkaz,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+01544_CHN_Karamay,CHN,0.7951,province,CHN (新疆),Duan2015_province,BWk,14230.0
+10402_IND_Ekma,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+09399_CHN_Xinzheng,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+08133_CHN_Longchang,CHN,0.8125,province,CHN (四川),Duan2015_province,Cwa,14230.0
+03223_CAN_Oshawa,CAN,0.889,own country,CAN,S04,Dfb,56420.0
+11473_CHN_Jinshan,CHN,0.8778,province,CHN (上海),Duan2015_province,Cfa,14230.0
+05194_ITA_Bari,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Csa,42080.0
+09859_CHN_Linzi,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+00300_PSE_Deir_el_Balah,PSE,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,3250.0
+00080_POL_Szczecin,POL,0.9014,own country,POL,H_POL,Cfb,25520.0
+00838_LBY_Misrata,LBY,0.8755,matched (climate major class),ZAF,SUP_ZAF2010,BSh,7250.0
+01424_SYR_Qudsayya,SYR,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,720.0
+04851_DZA_Biskra,DZA,0.85,matched (climate sub-class),JOR,S24,BWh,5850.0
+04681_RUS_Tambov,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+11373_CHN_Lufeng,CHN,0.8333,province,CHN (广东),Duan2015_province,Cwa,14230.0
+09725_CHN_Zhangqiu,CHN,0.866,province,CHN (山东),Duan2015_province,Dwa,14230.0
+05928_IDN_Sumedang,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0
+05118_IND_Surendranagar,IND,0.8343,own country,IND,S28b,BSh,2760.0
+00089_SVK_Bratislava,SVK,0.9012,matched (climate sub-class),FRA,SUP_EXP_FRA,Cfb,26410.0
+02224_MDG_Antsiramandroso,MDG,0.84,matched (climate sub-class),PHL,S23,Af,560.0
+03510_COD_Ilebo,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+02997_ESP_Valladolid,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Csa,37120.0
+02903_IRN_Sanandaj,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Csa,4650.0
+03390_BRA_Cascavel,BRA,0.926,matched (climate sub-class),SRB,R8_SRB_2019_place,Cfa,10550.0
+08350_IND_Rishikesh,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00870_LBN_Tripoli,LBN,0.925,matched (climate sub-class),ALB,SUP_ALB_TUS2010,Csa,3560.0
+09227_CHN_Dengfeng,CHN,0.7812,province,CHN (河南),Duan2015_province,Dwa,14230.0
+02110_FRA_Rouen,FRA,0.9012,own country,FRA,SUP_EXP_FRA,Cfb,48630.0
+03818_IRN_Khorramabad,IRN,0.89,own country,IRN,R8_IRN_2014_direc,Csa,4650.0
+04895_IRQ_Al_Shatrah,IRQ,0.85,matched (climate sub-class),JOR,S24,BWh,5690.0
+00180_PRK_Sinuiju,PRK,0.8542,matched (climate sub-class),CHN (辽宁),SUP_CEFH_CHN_PROV2014_辽宁,Dwa,800.8333333333334
+05688_USA_Spokane,USA,0.869,own country,USA,S01,Dsa,88810.0
+11181_CHN_Fanling,CHN,0.883,Hong Kong survey,HKG,R8_HKG_1998_direc,Cwa,14230.0
+06973_USA_Cape_Coral,USA,0.869,own country,USA,S01,Aw,88810.0
+11644_CHN_Cangnan,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+02230_IND_Gandhidham,IND,0.8343,own country,IND,S28b,BSh,2760.0
+11485_CHN_Shangyu_District,CHN,0.8542,province,CHN (浙江),Duan2015_province,Cfa,14230.0
+04465_AFG_Taloqan,AFG,0.8755,matched (climate sub-class),ZAF,SUP_ZAF2010,BSk,390.0
+02925_MEX_Colima,MEX,0.85,own country,MEX,S25,Aw,13730.0
+11519_CHN_Raoping,CHN,0.8333,province,CHN (广东),Duan2015_province,Cfa,14230.0
+06756_MEX_Tapachula,MEX,0.85,own country,MEX,S25,Am,13730.0
+04408_GBR_Wakefield,GBR,0.8833,own country,GBR,SUP_EXP_GBR,Cfb,54550.0
+05681_CHN_Baoshan,CHN,0.7604,province,CHN (云南),Duan2015_province,Cwa,14230.0
+09536_IND_Katni,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00961_AUT_Graz,AUT,0.887,own country,AUT,R8_AUT_2019_place,Dfb,60360.0
+11366_IND_Mahishadal,IND,0.8343,own country,IND,S28b,Aw,2760.0
+03617_RUS_Tula,RUS,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,15960.0
+07430_BGD_Sandwip,BGD,0.8343,matched (climate major class),IND,S28b,Am,2840.0
+04920_COD_Mwene_Ditu,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+09149_CHN_Gongyi,CHN,0.7812,province,CHN (河南),Duan2015_province,Cwa,14230.0
+10060_IND_Ranipet,IND,0.8343,own country,IND,S28b,Aw,2760.0
+11290_IND_Balurghat,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+05868_MMR_Myeik,MMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1320.0
+03370_PAK_Jacobabad,PAK,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,1500.0
+02571_ROU_Iasi,ROU,0.892,matched (climate major class),HUN,SUP_MTUS_HU2009,Dfa,20190.0
+04339_POL_Lublin,POL,0.9014,own country,POL,H_POL,Dfb,25520.0
+05778_COD_Fungurume,COD,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,720.0
+00700_CMR_Kumba,CMR,0.783,matched (climate major class),NGA,R8_NGA_2002_occup,Am,1860.0
+02181_GIN_Siguiri,GIN,0.783,matched (climate sub-class),NGA,R8_NGA_2002_occup,Aw,1730.0
+09310_IND_Bidar,IND,0.8343,own country,IND,S28b,Aw,2760.0
+07399_PAK_Mandi_Bahauddin,PAK,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,1500.0
+08902_IND_Udupi,IND,0.8343,own country,IND,S28b,Am,2760.0
+01816_KAZ_Karaganda,KAZ,0.7951,matched (climate sub-class),CHN (新疆),SUP_CEFH_CHN_PROV2014_新疆,Dfb,13740.0
+06681_MEX_Coatzacoalcos,MEX,0.85,own country,MEX,S25,Am,13730.0
+03644_PHL_San_Pablo,PHL,0.84,own country,PHL,S23,Am,4850.0
+00954_ITA_Busto_Arsizio,ITA,0.8864,own country,ITA,SUP_EXP_ITA,Cfa,42080.0
+02365_EGY_Kafr_Al_Zaiyat,EGY,0.89,matched (climate sub-class),IRN,R8_IRN_2014_direc,BWh,3260.0
+10289_CHN_Xiangtan,CHN,0.8389,province,CHN (湖南),Duan2015_province,Cfa,14230.0
+04218_ESP_Pamplona,ESP,0.8867,own country,ESP,SUP_MTUS_ES2002,Cfb,37120.0
+07760_IND_Dahod,IND,0.8343,own country,IND,S28b,Aw,2760.0
+01971_ISR_Modiin_Maccabim_Reut,ISR,0.9168,own country,ISR,SUP_MTUS_IL1991,Csa,56180.0
+05423_IDN_Pandeglang,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+02717_SOM_Wanlaweyn,SOM,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,640.0
+08342_IDN_Sorong,IDN,0.84,matched (climate sub-class),PHL,S23,Af,5120.0
+06498_BGD_Shariatpur,BGD,0.8343,matched (climate sub-class),IND,S28b,Aw,2840.0
+10812_IND_Kodarma,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+01563_HND_La_Ceiba,HND,0.8343,matched (climate major class),IND,S28b,Am,3270.0
+02052_SYR_Hama,SYR,0.89,matched (climate major class),IRN,R8_IRN_2014_direc,BSh,720.0
+08704_IND_Bhusawal,IND,0.8343,own country,IND,S28b,BSh,2760.0
+06320_NGA_Ughelli,NGA,0.783,own country,NGA,R8_NGA_2002_occup,Am,1360.0
+11140_IND_Bankura,IND,0.8343,own country,IND,S28b,Cwa,2760.0
+00839_GAB_Franceville,GAB,0.8125,matched (climate sub-class),LKA,S44,Aw,8090.0
+06644_ETH_Dessie,ETH,0.7604,matched (climate sub-class),CHN (云南),SUP_CEFH_CHN_PROV2014_云南,Cwb,1110.0
+06620_IDN_Kebumen,IDN,0.9354,matched (climate major class),VNM,SUP_VNM_TUS2022,Am,5120.0

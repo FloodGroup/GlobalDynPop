@@ -83,15 +83,6 @@ class LocalPlaces:
         })
 
 
-def city_table(folders):
-    from stage_1_data_inputs.source_preparation import city_record
-    rows=[]
-    for folder in folders:
-        source=pyogrio.read_dataframe(folder/'urban_centres/urban_centre_boundary.gpkg',layer=configuration.UCDB_LAYER)
-        rows.append(city_record(source,folder.name))
-    return pd.DataFrame(rows).sort_values('pop2025',ascending=False).reset_index(drop=True)
-
-
 def prepare_settlement(folder, row, products, sub):
     target = cities.grid_of(row)
     patterns = {'pop': 'ghsl_resident_population_2025_*.tif',
@@ -143,16 +134,18 @@ def water_coverage(reader, target):
 
 
 def run_step(step, argv=None):
+    if step not in (1, 2, 3, 4):
+        raise ValueError('Stage 2 prepares layers on the existing Stage 1 grid')
     parser = argparse.ArgumentParser(description=f'Stage 2 step {step}: prepare the supplied raw city subsets. '
                                                 'Source extraction is performed in Stage 1.')
     parser.add_argument('--stems', nargs='*')
     parser.add_argument('--stems-file')
     parser.add_argument('--overwrite', action='store_true', help='accepted for compatibility; local subsets are always recomputed')
-    if step == 2:
+    if step == 1:
         parser.add_argument('--products', nargs='+', choices=['pop', 'vol', 'vol_nres', 'height'],
                             default=['pop', 'vol', 'vol_nres', 'height'])
         parser.add_argument('--sub', type=int, default=4)
-    if step == 4:
+    if step == 3:
         parser.add_argument('--strip-cells', type=int, default=500_000)
     args = parser.parse_args(argv)
     stems = list(args.stems or [])
@@ -163,37 +156,27 @@ def run_step(step, argv=None):
     missing = set(stems) - {folder.name for folder in folders}
     if missing or not folders:
         raise FileNotFoundError(f'Raw city folders not found: {sorted(missing) or configuration.RAW_INPUTS}')
-    if step == 1:
-        table = city_table(folders)
-        if stems and configuration.CITY_TABLE.exists():
-            existing = pd.read_csv(configuration.CITY_TABLE)
-            table = pd.concat([existing[~existing.stem.isin(table.stem)], table], ignore_index=True)
-            table = table.sort_values('pop2025', ascending=False).reset_index(drop=True)
-        configuration.CITY_TABLE.parent.mkdir(parents=True, exist_ok=True)
-        table.to_csv(configuration.CITY_TABLE, index=False)
-        print(json.dumps({'step': 1, 'cities': len(folders), 'output': str(configuration.CITY_TABLE)}), flush=True)
-        return
     table = cities.load_cities()
     selected = {folder.name for folder in folders}
     absent = selected - set(table.stem)
     if absent:
-        raise ValueError(f'Run 01_create_city_grids.py first: {sorted(absent)}')
+        raise ValueError(f'Run Stage 1 00_create_city_grids.py first: {sorted(absent)}')
     records = []
     for row in table[table.stem.isin(selected)].to_dict('records'):
         started = time.time()
         stem = row['stem']
         folder = configuration.RAW_INPUTS / stem
         record = {'step': step, 'stem': stem, 'source': str(folder)}
-        if step == 2:
+        if step == 1:
             prepare_settlement(folder, row, args.products, args.sub)
             record['products'] = args.products
-        elif step == 3:
+        elif step == 2:
             counts, stats = places.city_places(LocalPlaces(folder / 'places/overture_points_of_interest.parquet'), row)
             configuration.POI_OVERTURE.mkdir(parents=True, exist_ok=True)
             np.savez_compressed(configuration.POI_OVERTURE / (stem + '.npz'), **counts)
             record['statistics'] = stats
-        elif step == 4:
-            entry = importlib.import_module('stage_2_100m_layers.04_prepare_building_floor_area')
+        elif step == 3:
+            entry = importlib.import_module('stage_2_100m_layers.03_prepare_building_floor_area')
             rules, mixed = buildings.load_rules()
             height = np.load(configuration.ghsl_file('height', stem))
             area, stats = entry.floor_area(row, LocalOverture(folder),
@@ -201,12 +184,12 @@ def run_step(step, argv=None):
                           height, rules, mixed, args.strip_cells or None)
             if not np.isfinite(area).all() or (area < 0).any():
                 raise ValueError(f'{stem}: invalid floor area')
-            configuration.FLOOR_AREA.mkdir(parents=True, exist_ok=True)
-            np.savez_compressed(configuration.FLOOR_AREA / (stem + '.npz'), fa=area)
+            (configuration.INPUTS / 'buildings' / 'floor_area_legacy').mkdir(parents=True, exist_ok=True)
+            np.savez_compressed(configuration.INPUTS / 'buildings' / 'floor_area_legacy' / (stem + '.npz'), fa=area)
             record['statistics'] = stats
             record['sources'] = ['Overture buildings', 'OpenBuildingMap occupancy and height',
                                  'GHSL building height', 'Overture land-use polygons']
-        elif step == 5:
+        elif step == 4:
             from stage_2_100m_layers.building_sources.transportation import fetch
             target = cities.grid_of(row)
             reader = LocalOverture(folder)
@@ -217,8 +200,9 @@ def run_step(step, argv=None):
             configuration.ROAD_GRAPHS.mkdir(parents=True, exist_ok=True)
             network.save_graph(configuration.ROAD_GRAPHS / (stem + '.npz'), graph,
                                {'stem': stem, 'overture_release': configuration.OVERTURE_RELEASE})
-            configuration.WATER_COVERAGE_PERCENT.mkdir(parents=True, exist_ok=True)
-            np.savez_compressed(configuration.WATER_COVERAGE_PERCENT / (stem + '.npz'),
+            source_water = configuration.BASEMAP / 'overture_water'
+            source_water.mkdir(parents=True, exist_ok=True)
+            np.savez_compressed(source_water / (stem + '.npz'),
                                 water=water_coverage(reader, target),
                                 meta=json.dumps({'source': 'Overture water polygons', 'subcells': 4}))
         record['seconds'] = round(time.time() - started, 1)

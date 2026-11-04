@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/time_use/expolis_helsinki_published_values.csv",
+  "source": "https://doi.org/10.1038/sj.jes.7500490",
+  "role": "Published Table 1 numeric transcription supporting W_indoor; NOT individual diaries",
+  "operation": "Author-transcribed table values retained from the research archive. Formula uses participation-weighted indoor hours divided by 24.",
+  "bytes": 656,
+  "sha256": "388442faa413b7c74522ea8c7fcf01fcf70d9df9c932be333c65f1bbf6cd5864"
+}

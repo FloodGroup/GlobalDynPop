@@ -13,16 +13,21 @@ The [main README](../README.md) introduces the study, its data sources and the f
 
 The method guides follow each processing sequence through its numbered programs and calculation functions. The [code index](../02_code/) opens the implementation directories, whose README files provide commands, prerequisites and runtime options. The [time-use derivation](../04_intermediate/time_use.md) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
 
+The [indoor-share guide](../04_intermediate/w_indoor.md) documents W_indoor calculation, evidence sources and reference assignment.
+
 ## Figures
 
+- [Indoor share](figures/w_indoor_global.png): adopted values for 1,904 cities.
+- [Income](figures/gni_global.png): gross national income per capita, Atlas method.
+- [Climate](figures/climate_global.png): five main Köppen–Geiger classes.
+
 - [Study area](figures/study_area.png): the 1,904 study cities, time-use sources, kernel groups and population sizes.
-- [Time-use methods](figures/time_use_supplementary.png): national activity profiles, education-share adjustment and midday correction, also included in the [time-use guide](../04_intermediate/time_use.md).
 
 - [Workflow](figures/workflow.png): study overview. Routing zones are adaptive; 2 km is their starting size.
-- [Population distributions](figures/demo_population_distributions.png): the three example cities at 03:00-04:00, 08:00-09:00 and 13:00-14:00.
+- [Population changes](figures/demo_population_distributions.png): nighttime reference maps, changes from night to morning/midday, and midday workday-minus-rest-day differences for the three example cities.
 - [Time-use weights](figures/time_use_weights.png): the Finland and Japan workday/rest-day profiles used by the example.
 
-Stage 4 regenerates the population and time-use figures in this directory. Their metadata files record input hashes and plotting settings.
+This directory contains PNG images only. Stage 4 regenerates the population and time-use figures. Plotting data and JSON metadata are stored in `04_intermediate/figure_data/`; the metadata record input hashes and plotting settings. PDF exports of the indoor-share, income and climate maps are stored in `05_outputs/figure_exports/`.
 
 ## Reproduction and sources
 

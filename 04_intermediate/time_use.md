@@ -2,6 +2,8 @@
 
 The hourly location-share tables are Stage 2 intermediate products. This guide describes their derivation, numerical settings and use in the population model. The supplied tables are stored in [demo/stage_2/hourly_location_shares/](demo/stage_2/hourly_location_shares/).
 
+The companion [indoor-share guide](w_indoor.md) documents the separate W_indoor parameter, its sources and assignment to cities.
+
 ## Contents
 
 - [1. What the 24-by-7 matrix represents](#1-what-the-24-by-7-matrix-represents)
@@ -17,7 +19,6 @@ The hourly location-share tables are Stage 2 intermediate products. This guide d
 - [11. Numerical settings and their provenance](#11-numerical-settings-and-their-provenance)
 - [12. Sources and reproducibility boundaries](#12-sources-and-reproducibility-boundaries)
   - [Country-specific sources for 22 countries](#121-country-specific-day-type-data-sources)
-- [13. Time-use profiles and corrections](#13-time-use-profiles-and-corrections)
 
 ## 1. What the 24-by-7 matrix represents
 
@@ -75,7 +76,7 @@ Let K(h,a,c) denote minutes with a classified location. Let U8 and U7 denote the
 
 This preserves classified minutes and imputes only the unresolved part. The source routines can also retain the unresolved fractions as diagnostics. These fractions describe how much information was imputed; they are not uncertainty intervals.
 
-**Processing provenance.** tu_common.py: alloc_hours, accumulate, curves and V10.__init__. The GF table is read from the inherited harmonisation package, rather than estimated anew by these functions. Its original construction and input survey coverage require that package; the final 24 × 7 CSVs cannot recover them.
+**Processing provenance.** tu_common.py: alloc_hours, accumulate, curves and initialisation of the harmonisation tables. The GF table is read from the inherited harmonisation package, rather than estimated anew by these functions. Its original construction and input survey coverage require that package; the final 24 × 7 CSVs cannot recover them.
 
 ## 3. Published activity tables and daily totals
 
@@ -103,7 +104,7 @@ Each iteration scales the group columns to their target totals, then normalises 
 
 The adjusted group shares are split back into fine activities using the reference composition, then mapped to locations through GF. Where several timing references are specified, their reconstructed fine-activity profiles are averaged with equal weight. Source-specific average-day definitions are retained during this part of processing; they are not all interchangeable with a 5:2 weekly average.
 
-**Processing provenance.** pathb_common.py: split_to_fine and table_curves; tu_common.py: curves_from_fine and fit; src_pathc_v11.py: targets_for, fine_by_daytype, _curves and make_build. GM is read as GLOBAL_MINUTES and GF as GLOBAL_FINE. The tolerances and equal-weight rules are study-defined computational choices.
+**Processing provenance.** pathb_common.py: split_to_fine and table_curves; tu_common.py: curves_from_fine and fit; daily-constraint harmonisation: targets_for, fine_by_daytype, _curves and make_build. GM is read as GLOBAL_MINUTES and GF as GLOBAL_FINE. The tolerances and equal-weight rules are study-defined computational choices.
 
 ## 4. Workdays, rest days and donor transfer
 
@@ -176,7 +177,7 @@ Mexico has no Sunday travel curve in the selected input: Sunday is estimated fro
 
 The additive 0.002 is a study-defined stabiliser specific to this travel-diary transfer. It differs from the threshold-and-neutral-ratio rule in Section 4. Average days use (5 workdays + Saturday + Sunday)/7 for USA and Mexico, and (5 workdays + 2 rest days)/7 for Brazil. This is a representative weekly convention; it does not count public holidays.
 
-**Processing provenance.** travel_diary.py: presence, usa, mex and bra; build_daytype_v2.py: ratio_apply and main.
+**Processing provenance.** travel_diary.py: presence, usa, mex and bra; day-type profile construction: ratio_apply and main.
 
 ## 6. Adjusting imputed lunch-hour locations
 
@@ -234,7 +235,7 @@ Rest day, Saturday and Sunday remain unchanged. When a workday curve is modified
 
 The age counts and enrolment percentages are external data. Averaging the two enrolment rates for ages 10-14, comparing that estimate with the hourly education peak, reusing the existing timing shape, and retaining at least 5% residential presence are study-defined assumptions. This correction does not create complete activity diaries for children, and C3 may also contain adults attending education places.
 
-**Processing provenance.** age_coverage.py: wb and table; build_daytype_v2.py: school_floor. Indicator codes: SP.POP.TOTL; SP.POP.0509.MA/FE; SP.POP.1014.MA/FE; SE.PRM.TENR with SE.PRM.ENRR fallback; SE.SEC.NENR with SE.SEC.ENRR fallback.
+**Processing provenance.** age_coverage.py: wb and table; day-type profile construction: school_floor. Indicator codes: SP.POP.TOTL; SP.POP.0509.MA/FE; SP.POP.1014.MA/FE; SE.PRM.TENR with SE.PRM.ENRR fallback; SE.SEC.NENR with SE.SEC.ENRR fallback.
 
 **Data source.** World Bank, World Development Indicators. Population by age and sex, total population, and school enrolment indicators listed in Section 7; enrolment data supplied through UNESCO UIS. [https://data.worldbank.org/indicator/SE.SEC.NENR](https://data.worldbank.org/indicator/SE.SEC.NENR)
 
@@ -282,7 +283,7 @@ Helsinki uses the inherited Finland national average-day matrix. Its workday, re
 
 The school adjustment increases the workday education share using the existing Finnish education timing. The source index rounds its target to E = 0.100 and the preceding peak to 0.083. The supplied final workday education peak is 0.09987660984. The average-day file is rebuilt from the corrected workday and supplied rest day with weights 5/7 and 2/7. No timing calibration from Section 8 is applied.
 
-The supplied index identifies Finland’s baseline as a V11 national matrix. Its survey vintage, sample selection and fine-activity crosswalk require the upstream baseline package; these metadata are not stored in the supplied CSVs. The three donor countries determine the transferred day-type contrasts, not the origin of the Finnish baseline.
+The supplied index identifies Finland’s baseline as a National matrix. Its survey vintage, sample selection and fine-activity crosswalk require the upstream baseline package; these metadata are not stored in the supplied CSVs. The three donor countries determine the transferred day-type contrasts, not the origin of the Finnish baseline.
 
 ### 9.2 Kitakyushu and Takasaki-Maebashi: Japan (JPN)
 
@@ -300,7 +301,7 @@ The source index rounds Japan’s school target to E = 0.081 and the preceding p
 
 The supplied rest-day matrix differs from the mean of the final Saturday and Sunday matrices by up to 0.00081244 for Finland and 0.00714354 for Japan, or approximately 0.081 and 0.714 percentage points. Independent transfer/normalisation and the nonlinear lunch adjustment can prevent equality. The model uses the supplied rest-day file; it does not reconstruct that file from the two weekend-day files.
 
-**Processing provenance.** location_share_sources.csv in the supplied hourly_location_shares directory; src_jpn_stula.py: YEAR, AGE, tables and build; make_transfer.py; lunch_correction.py; build_daytype_v2.py: school_floor. Peak values and differences above are calculated from the supplied CSVs.
+**Processing provenance.** location_share_sources.csv in the supplied hourly_location_shares directory; src_jpn_stula.py: YEAR, AGE, tables and build; make_transfer.py; lunch_correction.py; day-type profile construction: school_floor. Peak values and differences above are calculated from the supplied CSVs.
 
 ## 10. Files, checks and model use
 
@@ -356,10 +357,10 @@ Each spatial component is normalised to the same city-domain population total. T
 | Regional day-type ratio | Neutral ratio 1 when average share ≤ 1e-6 | Study-defined stabilisation; make_transfer.py and tu_common.day_ratios. |
 | Donor pooling | Equal weights; donors listed in Section 4 | Study-defined transfer design; source-derived donor curves. |
 | Travel reconstruction | 10-minute intervals; depart down, arrive up | Study-defined discretisation; travel_diary.presence. |
-| Travel-gap ratio stabiliser | Add 0.002 to numerator and denominator | Study-defined; build_daytype_v2.EPS. |
+| Travel-gap ratio stabiliser | Add 0.002 to numerator and denominator | Study-defined; day-type profile construction: EPS. |
 | Lunch adjustment | Hours 12,13; reference hours 11,14; excess > 1e-6; dips > 1e-9 | Study-defined imputation adjustment; lunch_correction.py. |
 | School target E | Age 5-9 and 10-14 shares × enrolment; formula in Section 7 | Source-derived indicators; [data reference in Section 7.3](#73-source-values-and-study-assumptions); age-band mapping and peak comparison are study-defined. |
-| Residential lower bound | 0.05 during the school adjustment | Study-defined; build_daytype_v2.school_floor. |
+| Residential lower bound | 0.05 during the school adjustment | Study-defined; day-type profile construction: school_floor. |
 | Weekly aggregation | 5:2 or 5:1:1 where specified | Study weekly convention; source-specific initial averages can differ. |
 | Timing search / acceptance | delta {0,0.25,0.5} h; beta {0,0.1}; gain ≥ 0.25 | Study-defined search and rule. Adopted values are calibrated; Section 8. |
 | CSV precision | 10 significant digits in upstream writers | Computational storage setting; rows normalised on reading. |
@@ -405,12 +406,12 @@ Two other sources appear earlier in the processing chain: the US American Time U
 
 | Processing step | Source implementation locator |
 | --- | --- |
-| Episode harmonisation | timeuse_daytype/tu_common.py: alloc_hours; accumulate; curves; V10.__init__ |
+| Episode harmonisation | timeuse_daytype/tu_common.py: alloc_hours; accumulate; curves; initialisation of the harmonisation tables |
 | Published tables and Japan | timeuse_daytype/pathb_common.py: table_curves; src_jpn_stula.py: tables, build |
-| Daily constraints | timeuse_daytype/src_pathc_v11.py: fine_by_daytype; tu_common.py: fit |
+| Daily constraints | timeuse_daytype/daily-constraint harmonisation: fine_by_daytype; tu_common.py: fit |
 | Day types and transfer | timeuse_daytype/build_daytype.py: diary_source, ratio_on_city; make_transfer.py: main |
-| Travel presence and replacements | timeuse_daytype/travel_diary.py: presence; build_daytype_v2.py: ratio_apply, main |
-| Lunch and school rules | timeuse_daytype/lunch_correction.py: correct; age_coverage.py: table; build_daytype_v2.py: school_floor |
+| Travel presence and replacements | timeuse_daytype/travel_diary.py: presence; day-type profile construction: ratio_apply, main |
+| Lunch and school rules | timeuse_daytype/lunch_correction.py: correct; age_coverage.py: table; day-type profile construction: school_floor |
 | Timing calibration | timeuse_daytype/timing_correction.py: correct; calibrate/timing_calibration.py: main, write_tables |
 
 Locators above are relative to the source package’s 02_code directory and identify the implementation examined for this guide. They identify upstream processing scripts that are not distributed in this repository. The supplied reader is [time_use.py](../02_code/stage_2_100m_layers/time_use.py), function `daytype_shares`.
@@ -420,9 +421,3 @@ Locators above are relative to the source package’s 02_code directory and iden
 The demonstration can read the supplied matrices and recompute population allocation and hourly grids. Rebuilding the matrices from scratch additionally requires the surveys or published tables, original-to-fine activity and location crosswalks, GF/GM harmonisation tables, inherited national baselines, demographic/enrolment inputs and any calibration observations. Some of those inputs have separate access conditions. A complete survey-to-weight rebuild cannot be inferred from the ten final CSVs.
 
 The reader first uses the source index, then a conventional country/day-type filename. Its final legacy fallback requires an external national-matrix package; that package is not supplied for an arbitrary missing country. The provided Finland and Japan files resolve through the supplied index.
-
-## 13. Time-use profiles and corrections
-
-![National activity profiles, education-share adjustment and midday correction](../06_docs/figures/time_use_supplementary.png)
-
-**National profiles and temporal adjustments.** (a) Workday and rest-day shares away from home for six countries, split across C2-C7. (b) Education peaks compared with the enrolled share of children aged 5-14. (c) The midday correction to the home share for the Republic of Korea. Sections 2-7 describe these methods; Sections 9-10 describe the Finland and Japan profiles used in the three-city example.

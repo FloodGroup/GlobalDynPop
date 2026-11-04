@@ -2,43 +2,24 @@
 
 Helsinki (Finland), Kitakyushu (Japan) and Takasaki-Maebashi (Japan) provide complete examples on the original 100 m model grids, including the surrounding model domain. They were selected from the held-out validation set for good population-distribution agreement and manageable file sizes. They are illustrative successful cases, not a representative estimate of performance across all cities.
 
-| City | Validation case | Nighttime rho | Daytime rho | Day/night-ratio rho | Grade |
-|---|---|---:|---:|---:|---|
-| Helsinki | FI01 | 0.896 | 0.937 | 0.838 | good |
-| Kitakyushu | JP03 holiday | 0.899 | 0.925 | 0.846 | good |
-| Kitakyushu | JP03 weekday | 0.906 | 0.962 | 0.765 | good |
-| Takasaki-Maebashi | JP03 holiday | 0.958 | 0.941 | 0.750 | good |
-| Takasaki-Maebashi | JP03 weekday | 0.959 | 0.964 | 0.824 | good |
-
-Rho denotes Spearman correlation; the ratio column compares day/night population ratios. These are held-out validation cases graded good. The evaluation uses the kilometre grids recorded below, rather than the 100 m output cells. Validation observations are external.
-
-| City and day type | Case identifier | Evaluation grid | Units evaluated (n) | Daytime CPC |
-|---|---|---|---:|---:|
-| Helsinki, FI01 | `944_FI_Helsinki:FI01` | 1/2 km | 80 | 0.868 |
-| Kitakyushu, holiday | `01027_JPN_Kitakyushu:JP03:holiday` | 1km/2 km | 116 | 0.884 |
-| Kitakyushu, weekday | `01027_JPN_Kitakyushu:JP03:weekday` | 1km/2 km | 116 | 0.898 |
-| Takasaki-Maebashi, holiday | `05685_JPN_Takasaki_Maebashi:JP03:holiday` | 1km/2 km | 71 | 0.896 |
-| Takasaki-Maebashi, weekday | `05685_JPN_Takasaki_Maebashi:JP03:weekday` | 1km/2 km | 71 | 0.895 |
-
-All five cases belong to the validation sample. Helsinki's source record has `weekday=True` without a separate day-type label; the Japan records explicitly distinguish weekday and holiday. City stems are listed in [the run configuration](../../03_run/demo_configuration/city_demo_stems.txt).
-
 ## Run and numerical checks
 
-Follow the [run guide](../../03_run/README.md) to install the environment and run all four stages or a selected stage. `run_city_demo.py run` verifies the supplied raw subsets, rebuilds the Stage 2 spatial layers, computes Stage 3 allocations, writes Stage 4 outputs and updates the PNG figures. The separate [Stage 1 extraction command](../../02_code/stage_1_data_inputs/README.md#extract-city-subsets) regenerates raw subsets when external source access and matching indexes are available. It adopts the supplied time-use shares and allocation settings. Original survey harmonisation and kernel calibration require external source records.
+Run `python 03_run/run_city_demo.py run` to reconstruct the four-stage chain from raw spatial subsets. Then run `python 03_run/run_city_demo.py check` to verify the generated results. Sequential `run --stage 1`, `2`, `3`, `4` commands perform the same calculations and must use the same `--out` directory. Stage 3 recalculates road/rail transit, and Stage 4 reads that run's components. See the [execution guide](../../03_run/README.md).
 
-`run_city_demo.py check` checks processed-input file hashes and exact decoded-array fingerprints. Reproduction uses the same intermediate/output directories; running replaces the included results in place. File metadata is excluded from numerical comparisons. Observation-based validation separately requires the external observation records.
-
-The runner reads three files under `03_run/demo_configuration/`: [city stems](../../03_run/demo_configuration/city_demo_stems.txt), [file manifest](../../03_run/demo_configuration/city_demo_files.csv) and [numerical fingerprints](../../03_run/demo_configuration/city_demo_array_checksums.json).
+Results are written under `04_intermediate/demo/reproduction/`. Missing inputs or failed calculations produce a nonzero exit code. Bundled reference arrays are used only for optional comparisons; differences are reported separately from internal consistency. Survey-derived hourly shares and calibrated parameters remain adopted non-spatial inputs.
 
 ## Data and products
 
-Raw spatial subsets are under `01_inputs/demo/raw/`. Stage 2 stores prepared grids, residents, buildings, places, graphs and adopted settings; Stage 3 stores attractiveness, destination allocations and transit. Final components, 144 single-band hourly rasters and functional land use are under `05_outputs/demo/`. See the [raw-source guide](../../01_inputs/demo/raw/README.md), [intermediate-data dictionary](../../04_intermediate/README.md) and [output dictionary](../../05_outputs/README.md) for file contents and units.
+Three-city GlobalBuildingAtlas/Overture/OBM/GHSL source subsets are provided under `01_inputs/demo/raw/`. The raw folder also contains native WorldCover and JRC GSW windows, plus public parameter-source tables and reports. `run_raw_reconstruction.py` rebuilds the spatial chain offline and reports its own comparison results. Survey microdata and calibration observations are outside that command’s scope. Stage 1 stores city grid definitions; Stage 2 stores prepared residents, GBA capacity, permanent water, typed open space, places, graphs and adopted settings; Stage 3 stores attractiveness, destination allocations and transit. Final components, 144 single-band hourly rasters and functional land use are under `05_outputs/demo/`. See the [raw-source guide](../../01_inputs/demo/raw/README.md), [intermediate-data dictionary](../../04_intermediate/README.md) and [output dictionary](../../05_outputs/README.md) for file contents and units.
 
 The resident grid covers the urban-centre bounding box plus its margin; its total can differ from the urban-centre population in the city table. The model conserves the full domain population. Component compression permits small encoding differences; hourly float32 rasters use lossless DEFLATE. Each file represents one local hour, with 24 files per city and day type.
 
 Helsinki uses the Finland time-use profile with rest-day timing contrasts borrowed from GBR, ESP and BEL. Both Japanese cities use the Japan profile, including the documented workday school adjustment. See the [time-use guide](../../04_intermediate/time_use.md).
 
 ## Data sources and attribution
+
+GBA-derived inputs and outputs are subject to the non-commercial conditions in [LICENSE_DATA.md](../../LICENSE_DATA.md). See the [source inventory](../methods/data_sources.md) for GlobalBuildingAtlas, WorldCover, JRC, indoor-time and outdoor-microenvironment sources.
+
 
 
 The table below identifies input dataset versions, providers and data terms. The transformations include city-grid reprojection, aggregation, classification, graph construction and population modelling. The source data licences continue to apply; the software licence does not replace them.

@@ -1,0 +1,15 @@
+source_family,availability,scope,location
+GHS-UCDB,included,Urban boundaries for the three model grids,*/urban_centres/
+GHSL POP/V/H,included,"Native population, total/nonresidential volume and net-height windows",*/population/
+Overture buildings/places/transport/base,included,Complete selected features and attributes; water is OSM-derived,"*/buildings/, */places/, */road_and_rail/, */supporting_land_features/"
+OpenBuildingMap,included,Complete selected buildings with 0.003-degree matching margin,*/buildings/
+GlobalBuildingAtlas,included,Original building records in the model domains,*/buildings/
+ESA WorldCover 2021 v200,included,Native pixel windows,*/land_cover/
+JRC GSW 1.4 transitions,included,Native pixel windows,*/land_cover/
+Public national time-use tables,included_public_tables,Japan STULA workbooks; Finland Eurostat activity table,*/time_use/
+World Bank age/enrolment,included_public_records,Country records from archived WDI responses,*/time_use/
+HAPEM-MS3,included_public_report,Original Appendix A; adopted 72 durations verified,*/time_use/
+EXPOLIS Helsinki,published_values_only,Published numerical-table transcription; participant diaries not supplied,00572_FIN_Helsinki/time_use/
+Global activity/location harmonisation and donor diaries,not_fully_included,Provider access conditions apply; adopted aggregate matrices used,04_intermediate/demo/stage_2/time_use/
+Kernel calibration and independent validation samples,not_included,"Upstream calibration/validation observations, including restricted records; not needed to execute the three-city spatial preprocessing",04_intermediate/demo/stage_2/allocation_parameters/
+OSM planet POIs / China inputs,not_required_for_examples,Three examples use Overture POIs and are outside China,

@@ -118,7 +118,11 @@ def main(argv=None):
             if not j.with_suffix(".tif").exists() and a.move_damaged:
                 set_aside(j)
     bad = {}
-    if fs:
+    if fs and a.jobs == 1:
+        for f in fs:
+            why = check(f)
+            if why: bad[f] = why
+    elif fs:
         with ProcessPoolExecutor(max_workers=max(1, min(a.jobs, len(fs)))) as ex:
             for f, why in zip(fs, ex.map(check, fs, chunksize=8)):
                 if why:
@@ -134,7 +138,7 @@ def main(argv=None):
           flush=True)
     for f, w in list(bad.items())[:20]:
         print("   ", Path(f).name, w, flush=True)
-    return 0
+    return 1 if bad or not fs else 0
 
 
 if __name__ == "__main__":

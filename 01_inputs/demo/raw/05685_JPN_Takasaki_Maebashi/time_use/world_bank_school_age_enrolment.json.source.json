@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/time_use/world_bank_school_age_enrolment.json",
+  "source": "https://api.worldbank.org/v2/country/JPN/indicator/",
+  "role": "WDI source observations for school-age population and enrolment",
+  "operation": "Select the country records from the archived indicator API responses; preserve original fields and values. Response metadata describe the original full response.",
+  "bytes": 40104,
+  "sha256": "9e6bcd913587fc0101c46f8f37d69856fe2f65e23311ea59b5fb6dec380abdae"
+}

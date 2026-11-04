@@ -2,6 +2,7 @@
 
 The package has one folder per role (README.md in the package root):
 
+  04_intermediate/demo/stage_1/        city projection, domain and 100 m grid definitions
   04_intermediate/demo/stage_2/        inputs of the model, prepared from the downloaded sources (running the model needs no download)
   02_code/          model library and named processing programs
   03_run/           Windows command files, one per step
@@ -11,7 +12,7 @@ The package has one folder per role (README.md in the package root):
 
 Optional validation or restricted observation trees are not shipped. Point DYNAMIC_POPULATION_VALIDATION / DYNAMIC_POPULATION_RESTRICTED
 at your own folders when needed. Data that may not be published use names ending in _NOT_PUBLIC.
-Every folder can be moved with an environment variable: DYNAMIC_POPULATION_ROOT for the whole package; DYNAMIC_POPULATION_STAGE2, DYNAMIC_POPULATION_WORK,
+Every folder can be moved with an environment variable: DYNAMIC_POPULATION_ROOT for the whole package; DYNAMIC_POPULATION_STAGE1, DYNAMIC_POPULATION_STAGE2, DYNAMIC_POPULATION_WORK,
 DYNAMIC_POPULATION_OUTPUTS, DYNAMIC_POPULATION_VALIDATION, DYNAMIC_POPULATION_RESULTS, DYNAMIC_POPULATION_RESTRICTED and DYNAMIC_POPULATION_INPUTS_RESTRICTED for single folders
 (03_run/environment.cmd)."""
 from __future__ import annotations
@@ -37,32 +38,32 @@ DOCS = ROOT / "06_docs"
 VALIDATION = _env("DYNAMIC_POPULATION_VALIDATION", ROOT / "validation")  # optional external tree; not shipped
 
 # ------------------------------------------------------------------------------------------------ 01_inputs
-CITIES_DIR = INPUTS / "local_grids"                       # city table and GHS Urban Centre Database
+STAGE1 = _env("DYNAMIC_POPULATION_STAGE1", ROOT / "04_intermediate" / "demo" / "stage_1")
+CITIES_DIR = STAGE1 / "local_grids"                       # city table and GHS Urban Centre Database
 CITY_TABLE = CITIES_DIR / "city_grid_definitions.csv"
 UCDB = _env("DYNAMIC_POPULATION_UCDB", RAW_INPUTS / "GHS_UCDB_GLOBE_R2024A.gpkg")
 UCDB_LAYER = "GHSL_UCDB_THEME_GENERAL_CHARACTERISTICS_GLOBE_R2024A"
-# GHSL R2023A on the 100 m grid of every city (02_prepare_settlement_layers.py): residents (static population), built volume
+# GHSL R2023A on the 100 m grid of every city (01_prepare_settlement_layers.py): residents (static population), built volume
 # (total and non-residential) and building height
 GHSL = {"pop": INPUTS / "resident_population",
         "vol": INPUTS / "buildings" / "total_building_volume",
         "vol_nres": INPUTS / "buildings" / "non_residential_building_volume",
         "height": INPUTS / "buildings" / "building_height"}
-FLOOR_AREA = INPUTS / "buildings" / "floor_area_by_use"     # floor area by use (04_prepare_building_floor_area.py)
-POI_OVERTURE = INPUTS / "point_of_interest_counts" / "overture"           # Overture Maps places by class (03_prepare_destination_counts.py)
+FLOOR_AREA = INPUTS / "buildings" / "floor_area_by_use"     # floor area by use (03_prepare_building_floor_area.py)
+POI_OVERTURE = INPUTS / "point_of_interest_counts" / "overture"           # Overture Maps places by class (02_prepare_destination_counts.py)
 POI_OSM = INPUTS / "point_of_interest_counts" / "openstreetmap"           # OpenStreetMap POIs by class
 POI_CHINA = INPUTS / "point_of_interest_counts" / "china"                 # China POI counts and Amap POIs
 CNPOI_INFO = POI_CHINA / "coverage"                  # coverage of the China POI data (counts per city)
-ROAD_GRAPHS = _env("DYNAMIC_POPULATION_ROAD_GRAPHS", INPUTS / "road_and_rail_graphs")   # road and rail network of every city (05_prepare_transport_graphs.py)
+ROAD_GRAPHS = _env("DYNAMIC_POPULATION_ROAD_GRAPHS", INPUTS / "road_and_rail_graphs")   # road and rail network of every city (04_prepare_transport_graphs.py)
 TIMEUSE = INPUTS / "time_use"                        # hourly activity-location shares and their sources
 PARAMS = INPUTS / "allocation_parameters"                       # model parameters
 WATER_COVERAGE_PERCENT = INPUTS / "water_coverage_percent"  # uint8 water coverage, 0-100 percent, on each city grid
-# inputs that may not be published: raw China POI data, Amap exports, time-use package V10
+# inputs that may not be published: raw China POI data, Amap exports, time-use survey microdata
 INPUTS_RESTRICTED = _env("DYNAMIC_POPULATION_INPUTS_RESTRICTED", INPUTS / "restricted_NOT_PUBLIC")
 CN_POI_RAW = _env("DYNAMIC_POPULATION_CN_POI", INPUTS_RESTRICTED / "CN_POI")
 AMAP_EXPORT = _env("DYNAMIC_POPULATION_AMAP_EXPORT", INPUTS_RESTRICTED / "amap_export_model")
 CNPOI_COMPACT = INPUTS_RESTRICTED / "cn_poi_compact"   # compact copy of the raw China POIs
 AOI_AMAP = INPUTS_RESTRICTED / "aoi_amap"            # Amap areas of interest by city
-TIMEUSE_V10 = _env("DYNAMIC_POPULATION_V10", INPUTS_RESTRICTED / "time_use_V10")
 
 # hourly activity-location shares read by the model: hourly_location_shares; DYNAMIC_POPULATION_DAYTYPE selects
 # another input folder with the same location-share schema
@@ -120,3 +121,12 @@ def ghsl_file(product: str, stem: str) -> Path:
 
 STAGE3 = _env("DYNAMIC_POPULATION_STAGE3", WORK / "stage_3")
 DESTINATION_POPULATION = STAGE3 / "destination_population"
+
+# Destination inputs on the city grids.
+LOAD_GBA = os.environ.get("GDP_GBA", "1") == "1"
+LOAD_OS = os.environ.get("GDP_OS", "1") == "1"
+GBA = INPUTS / "buildings" / "gba"
+GBA_CELLS = INPUTS / "buildings" / "gba_cells"
+BASEMAP = INPUTS / "basemap"
+OPEN_SPACE = BASEMAP / "open_space"
+SOURCE_INDEX = INPUTS / "source_index"

@@ -1,0 +1,45 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/land_cover/JRC_transitions_20E_70Nv1_4_2021.tif",
+  "source": "https://storage.googleapis.com/global-surface-water/downloads2021/transitions/transitions_20E_70Nv1_4_2021.tif",
+  "operation": "Native integer pixel-window subset; original CRS, pixel spacing, alignment and values retained. No resampling.",
+  "bounds_wgs84": [
+    24.40178015834014,
+    60.01764981044589,
+    25.414930808618625,
+    60.44806111981316
+  ],
+  "source_window": [
+    17604,
+    38204,
+    4059,
+    1729
+  ],
+  "source_shape": [
+    40000,
+    40000
+  ],
+  "crs": "EPSG:4326",
+  "nodata": null,
+  "dtype": "uint8",
+  "shape": [
+    1,
+    1729,
+    4059
+  ],
+  "bytes": 121142,
+  "sha256": "b826998b290c800744cd189d3f2dc06adc632155f88bf15822ed127f67f1b521",
+  "native_values_verified": true,
+  "city": "00572_FIN_Helsinki",
+  "source_transform": [
+    0.00025,
+    0.0,
+    20.0,
+    0.0,
+    -0.00025,
+    70.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+}

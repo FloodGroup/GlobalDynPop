@@ -1,19 +1,27 @@
-# Run Stage 2: 100 m layers
+# Stage 2: 100 m layers
 
-Run from the repository root in the environment defined by [environment.yml](../../environment.yml).
-
-Required inputs: Stage 1 raw source subsets and manifests, plus the supplied hourly location shares and allocation settings.
+Stage 2 rebuilds the spatial inputs from the raw city subsets on the grids created by Stage 1. Run Stage 1 first, then:
 
 ```console
 python 03_run/run_city_demo.py run --stage 2
 ```
 
-On Windows, use [02_RUN.cmd](../../03_run/stage_2_100m_layers/02_RUN.cmd). The runner executes the stage's numbered programs in order. Required earlier-stage products must already exist.
+## Programs
 
-Default output directories: `04_intermediate/demo/stage_2/`.
+Execute in numerical order. The three example cities do not require the China-only program 08.
 
-To inspect an individual program's options, for example:
+- [01_prepare_settlement_layers.py](01_prepare_settlement_layers.py)
+- [02_prepare_destination_counts.py](02_prepare_destination_counts.py)
+- [03_prepare_building_floor_area.py](03_prepare_building_floor_area.py)
+- [04_prepare_transport_graphs.py](04_prepare_transport_graphs.py)
+- [05_prepare_permanent_water.py](05_prepare_permanent_water.py)
+- [06_prepare_outdoor_recreation.py](06_prepare_outdoor_recreation.py)
+- [07_prepare_land_use.py](07_prepare_land_use.py)
+- [08_prepare_china_land_use.py](08_prepare_china_land_use.py)
+- [09_prepare_global_building_atlas.py](09_prepare_global_building_atlas.py)
+- [10_prepare_buildings_open_space.py](10_prepare_buildings_open_space.py)
+- [11_save_model_layers.py](11_save_model_layers.py)
 
-```console
-python 02_code/stage_2_100m_layers/04_prepare_building_floor_area.py --help
-```
+Results are written inside `04_intermediate/demo/reproduction/`, or the directory selected with `--out`. Use the same directory for all stages. Missing or failed upstream stages stop execution. See the [run guide](../../03_run/README.md) and [method guide](../../06_docs/methods/stage_2_100m_layers.md).
+
+Programs 03 and 10 write different products: classified source capacity in `buildings/floor_area_legacy/`, followed by fused capacity in `buildings/floor_area_by_use/`. Program 11 exports smoothed POIs and effective kernels only after permanent water, GBA and open space are available. Program 05 also writes the final water-coverage layer used by Stage 4.

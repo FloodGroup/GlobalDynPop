@@ -1,5 +1,5 @@
 {
-  "version": "mixed_floor_area_70_30_v1",
+  "name": "mixed_floor_area_70_30",
   "basis": "用户于2026-10-24确认的项目分配规则；不是OBM实测楼面比例",
   "lookup": "lu_code为MIX时使用obm_occupancy中的MIX1至MIX6；未细分的MIX使用C7。已明确赋为C1至C7的建筑保留当前类别。",
   "fractions": {

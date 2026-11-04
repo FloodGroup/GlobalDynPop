@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/00572_FIN_Helsinki/time_use/hapem_ms3_appendix_a.pdf",
+  "source": "https://webarchive.library.unt.edu/eot2008/20081105055914id_/http://epa.gov/otaq/regs/toxics/hapem-co/e-mecd.pdf",
+  "role": "EPA HAPEM-MS3 Appendix A (1998), annual outdoor duration source",
+  "operation": "Unmodified provider publication or source download retained from the supplied research archive.",
+  "bytes": 762944,
+  "sha256": "43d2799fd365ecbafe5c2fb440bdc349a64996584aec1d3508a5c1c97df0c97a"
+}

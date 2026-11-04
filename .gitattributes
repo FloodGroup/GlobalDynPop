@@ -1,3 +1,6 @@
 # Keep checksummed text consistent across Windows and Linux checkouts.
 *.csv text eol=lf
 *.json text eol=lf
+
+# Preserve original source bytes for SHA-256 integrity checks.
+01_inputs/demo/raw/** -text

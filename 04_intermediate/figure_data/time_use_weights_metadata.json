@@ -1,0 +1,84 @@
+{
+  "source_directory": "04_intermediate/demo/stage_2/hourly_location_shares",
+  "time_basis": "local hour",
+  "shape": [
+    24,
+    7
+  ],
+  "normalisation": "each row divided by its sum, as in the model reader",
+  "colors": {
+    "Home (C1)": "#D9D9D9",
+    "Work and commerce (C2)": "#2878D0",
+    "Education (C3)": "#21A899",
+    "Services (C4)": "#7651C8",
+    "Leisure (C5)": "#EC6544",
+    "In transit (C6)": "#E6AC16",
+    "Other (C7)": "#CC79A7"
+  },
+  "inputs": [
+    {
+      "country": "FIN",
+      "daytype": "workday",
+      "file": "FIN_workday.csv",
+      "sha256": "a0e12b9eb30c5df1a38b448f2b11a236b2248a63069d5d999cd96156c0855de5",
+      "source": {
+        "file": "FIN_workday.csv",
+        "method": "National matrix x donor day-type ratios; + school children E=0.100 (C3 peak 0.083 -> 0.100)",
+        "donors": "GBR+ESP+BEL"
+      },
+      "raw_row_sum_max_error": 5.000000413701855e-11,
+      "model_row_sum_max_error": 2.220446049250313e-16
+    },
+    {
+      "country": "FIN",
+      "daytype": "restday",
+      "file": "FIN_restday.csv",
+      "sha256": "e59fdd3eaf5412213023131d8efa85ad7380e3c04508647d2aea84c1216d80c5",
+      "source": {
+        "file": "FIN_restday.csv",
+        "method": "National matrix x donor day-type ratios",
+        "donors": "GBR+ESP+BEL"
+      },
+      "raw_row_sum_max_error": 6.000011598672472e-11,
+      "model_row_sum_max_error": 2.220446049250313e-16
+    },
+    {
+      "country": "JPN",
+      "daytype": "workday",
+      "file": "JPN_workday.csv",
+      "sha256": "b2585cef81b67f57057c7763d633669ab8b720480972db909ca348344f28ef97",
+      "source": {
+        "file": "JPN_workday.csv",
+        "method": "own survey (build_daytype.py); + school children E=0.081 (C3 peak 0.056 -> 0.081)",
+        "donors": ""
+      },
+      "raw_row_sum_max_error": 5.019995530375354e-11,
+      "model_row_sum_max_error": 2.220446049250313e-16
+    },
+    {
+      "country": "JPN",
+      "daytype": "restday",
+      "file": "JPN_restday.csv",
+      "sha256": "690312dd40098ea5d9ab358562ac78c9836f70840eebdc126d9068aca45b1429",
+      "source": {
+        "file": "JPN_restday.csv",
+        "method": "own survey (build_daytype.py)",
+        "donors": ""
+      },
+      "raw_row_sum_max_error": 6.099987182039968e-11,
+      "model_row_sum_max_error": 2.220446049250313e-16
+    }
+  ],
+  "output_format": "png",
+  "dpi": 360,
+  "layout": {
+    "figure_inches": [
+      11,
+      6.6
+    ],
+    "title_fontsize": 24,
+    "subtitle_fontsize": 12.5,
+    "tick_fontsize": 12,
+    "font_family": "DejaVu Sans"
+  }
+}

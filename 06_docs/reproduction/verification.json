@@ -1,0 +1,1173 @@
+{
+  "status": "passed",
+  "mode": "run",
+  "stage": "all",
+  "network": "adopted network layers",
+  "input_cities": [
+    {
+      "stem": "00572_FIN_Helsinki",
+      "shape": [
+        434,
+        536
+      ],
+      "population": 1285587.0091246548,
+      "w_indoor": 0.8687
+    },
+    {
+      "stem": "01027_JPN_Kitakyushu",
+      "shape": [
+        538,
+        562
+      ],
+      "population": 1795042.3255934026,
+      "w_indoor": 0.8589
+    },
+    {
+      "stem": "05685_JPN_Takasaki_Maebashi",
+      "shape": [
+        357,
+        529
+      ],
+      "population": 1358742.8553233643,
+      "w_indoor": 0.8589
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "00572_FIN_Helsinki.tif",
+      "max_abs_people": 0.0,
+      "max_relative_total": 0.0
+    },
+    {
+      "file": "01027_JPN_Kitakyushu.tif",
+      "max_abs_people": 0.0,
+      "max_relative_total": 0.0
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi.tif",
+      "max_abs_people": 0.0,
+      "max_relative_total": 0.0
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_00.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.035426955887028e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_01.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.1716997231507599e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_02.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.4191356094033306e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_03.tif",
+      "max_abs_people": 0.0009999945759773254,
+      "max_relative_total": 1.8897611245438124e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_04.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.3901764862183667e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_05.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.0020084459838886e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_06.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.4669531679008296e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_07.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.426535140453852e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_08.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.969872175559064e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_09.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.5113019266022777e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_10.tif",
+      "max_abs_people": 0.001000046730041504,
+      "max_relative_total": 1.7894722478960542e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_11.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.376202099037498e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_12.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 7.625165746366098e-08
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_13.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.5682443190372695e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_14.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.873953036375991e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_15.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.1741369662285005e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_16.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.0340138766613814e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_17.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 7.495106038789252e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_18.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.978614294747823e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_19.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.398188589921946e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_20.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.1247554343991494e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_21.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.2586392395232604e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_22.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 9.828005910858865e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_workday_hour_23.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.53657387184842e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_00.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.272952384605983e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_01.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 9.09735020820302e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_02.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.509158798136404e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_03.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.658677392358787e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_04.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.37765276645571e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_05.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.0430208726457323e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_06.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.628124796765555e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_07.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.877332832355058e-08
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_08.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 8.573463909807677e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_09.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.0030299149637372e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_10.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.213418528219869e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_11.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.2337157896784494e-06
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_12.tif",
+      "max_abs_people": 0.001000046730041504,
+      "max_relative_total": 8.92366145785956e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_13.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.567732369395558e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_14.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.4156684937691814e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_15.tif",
+      "max_abs_people": 0.0009999629110097885,
+      "max_relative_total": 5.258486190383551e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_16.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.9132096184801485e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_17.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.633889391853747e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_18.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 7.830754682571961e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_19.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.6218338815312253e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_20.tif",
+      "max_abs_people": 0.0009999275207519531,
+      "max_relative_total": 3.432732200821512e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_21.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.0844110729061e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_22.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.506026943233167e-07
+    },
+    {
+      "file": "00572_FIN_Helsinki_rest_day_hour_23.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.6896784654599847e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_00.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 6.754398009425826e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_01.tif",
+      "max_abs_people": 0.0009999661706387997,
+      "max_relative_total": 5.19885354953089e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_02.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.236659848007818e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_03.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.1985829601150596e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_04.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.886335992001371e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_05.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.875659478529864e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_06.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.145642538079673e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_07.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.539183946202376e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_08.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.9665531141621134e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_09.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.2064816080310512e-06
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_10.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 7.260257010530889e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_11.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 7.732452433355801e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_12.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 8.57299690831074e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_13.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.4174391580829242e-06
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_14.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.227627652972966e-06
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_15.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 6.864439387911212e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_16.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.99544487644583e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_17.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.2941866671294044e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_18.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.440661629815613e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_19.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.4713724605028286e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_20.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.3009818010535938e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_21.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.2016221972524738e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_22.tif",
+      "max_abs_people": 0.0009999573230743408,
+      "max_relative_total": 5.574614673200636e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_workday_hour_23.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 6.596183556106137e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_00.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.913451065851139e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_01.tif",
+      "max_abs_people": 0.000999949872493744,
+      "max_relative_total": 4.022420527382831e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_02.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.7682914566906777e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_03.tif",
+      "max_abs_people": 0.0009999573230743408,
+      "max_relative_total": 3.9707996497757066e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_04.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.0543796046779478e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_05.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 5.821947785436722e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_06.tif",
+      "max_abs_people": 0.0009999275207519531,
+      "max_relative_total": 1.3937242173491086e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_07.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.35129628521956e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_08.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 3.984727048017507e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_09.tif",
+      "max_abs_people": 0.001000046730041504,
+      "max_relative_total": 1.4854226281250085e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_10.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 1.2041845379524452e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_11.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.235937024388604e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_12.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.4641694927899274e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_13.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.9303694927847886e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_14.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 9.854743059448769e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_15.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.147027370068243e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_16.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.8768621977399057e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_17.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 5.602624927683684e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_18.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.943128290303796e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_19.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 4.643862115981212e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_20.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.211455854963532e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_21.tif",
+      "max_abs_people": 0.0009999275207519531,
+      "max_relative_total": 7.818864907922762e-08
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_22.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.7211345992662754e-07
+    },
+    {
+      "file": "01027_JPN_Kitakyushu_rest_day_hour_23.tif",
+      "max_abs_people": 0.000999949872493744,
+      "max_relative_total": 2.445264987278103e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_00.tif",
+      "max_abs_people": 0.0009999573230743408,
+      "max_relative_total": 1.4470222450512345e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_01.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.1891395649212078e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_02.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.698480385734679e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_03.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.89881113766041e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_04.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.136195253407327e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_05.tif",
+      "max_abs_people": 0.0009999573230743408,
+      "max_relative_total": 9.526360827594545e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_06.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.99749571099422e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_07.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.8081915792558987e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_08.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 3.2030253328913495e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_09.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 1.3399389970171397e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_10.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 6.122842400984846e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_11.tif",
+      "max_abs_people": 0.0010000020265579224,
+      "max_relative_total": 9.104231860924347e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_12.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.700114166606211e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_13.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.0628157213145092e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_14.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 2.202092219310681e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_15.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.5089695017981467e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_16.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.699292552543846e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_17.tif",
+      "max_abs_people": 0.001007080078125,
+      "max_relative_total": 1.4413140086574452e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_18.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.109930221865875e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_19.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.336259612728861e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_20.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.96608038853058e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_21.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 6.118182642118932e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_22.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.425044379639275e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_workday_hour_23.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 9.058239554130876e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_00.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.09403774406545e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_01.tif",
+      "max_abs_people": 0.0009999386966228485,
+      "max_relative_total": 9.95984872588141e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_02.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.4111162760316688e-06
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_03.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 9.902153074206884e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_04.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 9.758411553534094e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_05.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 6.779215965115833e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_06.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.587931374277666e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_07.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.148469501522093e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_08.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.774890024598993e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_09.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.610320140712763e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_10.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.7121243107093904e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_11.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.568420444419341e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_12.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 5.969541790731238e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_13.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 3.842410838870959e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_14.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 3.591812287985775e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_15.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.20120099761739e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_16.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.2675916838856297e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_17.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 2.6849747939658984e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_18.tif",
+      "max_abs_people": 0.001000046730041504,
+      "max_relative_total": 8.725219056610241e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_19.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.812772859433133e-08
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_20.tif",
+      "max_abs_people": 0.0009999871253967285,
+      "max_relative_total": 1.4289481846244167e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_21.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 1.4789993000118215e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_22.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 4.0471273847460427e-07
+    },
+    {
+      "file": "05685_JPN_Takasaki_Maebashi_rest_day_hour_23.tif",
+      "max_abs_people": 0.0010004043579101562,
+      "max_relative_total": 7.615344476278148e-07
+    }
+  ],
+  "tolerance_people_per_cell": {
+    "components": 0.01,
+    "hourly": 0.005
+  },
+  "report": "Numerical reproduction of the bundled examples",
+  "environment": {
+    "python": "3.12.9",
+    "platform": "Windows",
+    "numpy": "1.26.4",
+    "rasterio": "1.4.3"
+  },
+  "method_checks": {
+    "country_inheritance": "passed",
+    "source_reconstruction": "passed",
+    "arrays": [
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "floor_area",
+        "key": "fa",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "gba_cells",
+        "key": "foot_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "gba_cells",
+        "key": "vol_m3",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "gba_cells",
+        "key": "floor_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "gba_cells",
+        "key": "h_mean",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "gba_cells",
+        "key": "share_imputed",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "street",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "parking",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "plaza",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "park",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "grass",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "rec",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "campus",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "cons",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "01027_JPN_Kitakyushu",
+        "layer": "open_space",
+        "key": "open",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "floor_area",
+        "key": "fa",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "gba_cells",
+        "key": "foot_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "gba_cells",
+        "key": "vol_m3",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "gba_cells",
+        "key": "floor_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "gba_cells",
+        "key": "h_mean",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "gba_cells",
+        "key": "share_imputed",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "street",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "parking",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "plaza",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "park",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "grass",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "rec",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "campus",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "cons",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "00572_FIN_Helsinki",
+        "layer": "open_space",
+        "key": "open",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "floor_area",
+        "key": "fa",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "gba_cells",
+        "key": "foot_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "gba_cells",
+        "key": "vol_m3",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "gba_cells",
+        "key": "floor_m2",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "gba_cells",
+        "key": "h_mean",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "gba_cells",
+        "key": "share_imputed",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "street",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "parking",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "plaza",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "park",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "grass",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "rec",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "campus",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "cons",
+        "maximum_difference": 0.0
+      },
+      {
+        "stem": "05685_JPN_Takasaki_Maebashi",
+        "layer": "open_space",
+        "key": "open",
+        "maximum_difference": 0.0
+      }
+    ]
+  },
+  "gba_raw_reconstruction": [
+    {
+      "stem": "01027_JPN_Kitakyushu",
+      "raw_records": 431435,
+      "statistics": {
+        "rows_read": 431435,
+        "buildings": 430568,
+        "with_height": 430568,
+        "split": 4422,
+        "bytes": 72480110,
+        "H_city": 6.56,
+        "storeys_city": 2.2,
+        "foot_km2": 72.002,
+        "share_foot_with_h": 1.0
+      },
+      "reference_comparison": {
+        "foot_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "foot_noh_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "vol_h_m3": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "floor_h_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "n": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "stem": "00572_FIN_Helsinki",
+      "raw_records": 274831,
+      "statistics": {
+        "rows_read": 274831,
+        "buildings": 273601,
+        "with_height": 273574,
+        "split": 3631,
+        "bytes": 60232993,
+        "H_city": 8.51,
+        "storeys_city": 2.86,
+        "foot_km2": 61.01,
+        "share_foot_with_h": 1.0
+      },
+      "reference_comparison": {
+        "foot_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "foot_noh_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "vol_h_m3": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "floor_h_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "n": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "stem": "05685_JPN_Takasaki_Maebashi",
+      "raw_records": 841012,
+      "statistics": {
+        "rows_read": 841012,
+        "buildings": 839004,
+        "with_height": 839004,
+        "split": 4716,
+        "bytes": 161320263,
+        "H_city": 4.35,
+        "storeys_city": 1.47,
+        "foot_km2": 119.125,
+        "share_foot_with_h": 1.0
+      },
+      "reference_comparison": {
+        "foot_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "foot_noh_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "vol_h_m3": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "floor_h_m2": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        },
+        "n": {
+          "max_abs_difference": 0.0,
+          "exact": true
+        }
+      }
+    }
+  ],
+  "scope": "Numerical model reproduction from bundled prepared inputs. Raw-source reconstruction has an independent report generated by run_raw_reconstruction.py; this record does not certify full raw-source equality."
+}

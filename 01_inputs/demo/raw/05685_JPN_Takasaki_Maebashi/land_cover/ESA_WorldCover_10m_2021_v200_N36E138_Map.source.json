@@ -1,0 +1,45 @@
+{
+  "path": "01_inputs/demo/raw/05685_JPN_Takasaki_Maebashi/land_cover/ESA_WorldCover_10m_2021_v200_N36E138_Map.tif",
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N36E138_Map.tif",
+  "operation": "Native integer pixel-window subset; original CRS, pixel spacing, alignment and values retained. No resampling.",
+  "bounds_wgs84": [
+    138.69634802832564,
+    36.182050612504405,
+    139.3269885473044,
+    36.54420832459432
+  ],
+  "source_window": [
+    8353,
+    29466,
+    7574,
+    4353
+  ],
+  "source_shape": [
+    36000,
+    36000
+  ],
+  "crs": "EPSG:4326",
+  "nodata": 0.0,
+  "dtype": "uint8",
+  "shape": [
+    1,
+    4353,
+    7574
+  ],
+  "bytes": 2140780,
+  "sha256": "9627e7545fac79be57d0c1c5a3e6f2f339c983a215983dcc23622969227e3175",
+  "native_values_verified": true,
+  "city": "05685_JPN_Takasaki_Maebashi",
+  "source_transform": [
+    8.333333333333333e-05,
+    0.0,
+    138.0,
+    0.0,
+    -8.333333333333333e-05,
+    39.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+}

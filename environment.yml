@@ -14,6 +14,7 @@ dependencies:
   - pyogrio
   - rasterio
   - matplotlib
+  - cartopy
   - numba
   - psutil
   - pillow

@@ -20,7 +20,7 @@ BANDS = ["N", "C2", "C3", "C4", "C5", "C6", "C7"]
 
 def shares_for(iso3: str, daytype: str, base=None):
     sh, info = daytype_shares(iso3, daytype, base=base)
-    if info.get("file") == "V11" and daytype in ("saturday", "sunday"):
+    if info.get("file") == "national_average" and daytype in ("saturday", "sunday"):
         sh, info = daytype_shares(iso3, "restday", base=base)
     return sh, info
 

@@ -17,6 +17,7 @@ from rasterio.warp import transform_bounds
 import shapely
 
 from stage_1_data_inputs import configuration
+from stage_1_data_inputs.city_definitions import city_record, fix_text, select_urban_centres, source_city_table, write_city_table
 from stage_1_data_inputs.ghsl_sources import fetch_tile, tiles_for_bounds, tile_url
 
 VECTOR_FILES = {
@@ -30,42 +31,6 @@ VECTOR_FILES = {
 RASTER_NAMES = {'pop': 'resident_population_2025', 'vol': 'total_building_volume_2025',
                 'vol_nres': 'non_residential_building_volume_2025', 'height': 'building_height_2018'}
 BUILDING_MARGIN_DEGREES = 0.003
-
-
-def fix_text(value):
-    if not isinstance(value, str):
-        return ''
-    try:
-        return value.encode('latin-1').decode('utf-8')
-    except (UnicodeEncodeError, UnicodeDecodeError):
-        return value
-
-
-def city_record(source, stem):
-    """Define the extraction domain; Stage 2 writes its model-grid descriptor."""
-    if len(source) != 1:
-        raise ValueError(f'{stem}: expected one urban-centre feature')
-    row = source.iloc[0]
-    geometry = row.geometry
-    centre = shapely.centroid(geometry)
-    lon, lat = Transformer.from_crs(source.crs, 4326, always_xy=True).transform(centre.x, centre.y)
-    crs = CRS.from_proj4(f'+proj=laea +lat_0={lat:.6f} +lon_0={lon:.6f} +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs')
-    transform = Transformer.from_crs(source.crs, crs, always_xy=True)
-    polygon = shapely.transform(shapely.segmentize(geometry, 200.),
-                                lambda xy: np.column_stack(transform.transform(xy[:, 0], xy[:, 1])))
-    x0, y0, x1, y1 = polygon.bounds
-    cell, margin = configuration.CELL, configuration.BUFFER_M
-    x0 = np.floor((x0 - margin) / cell) * cell
-    y0 = np.floor((y0 - margin) / cell) * cell
-    x1 = np.ceil((x1 + margin) / cell) * cell
-    y1 = np.ceil((y1 + margin) / cell) * cell
-    nx, ny = int(round((x1 - x0) / cell)), int(round((y1 - y0) / cell))
-    return dict(uc_id=int(row.ID_UC_G0), stem=stem,
-                name=fix_text(row.GC_UCN_MAI_2025), country=fix_text(row.GC_CNT_UNN_2025),
-                iso3=stem.split('_')[1], pop2025=float(row.GC_POP_TOT_2025),
-                uc_area_km2=float(row.GC_UCA_KM2_2025), lon0=round(lon, 6), lat0=round(lat, 6),
-                x0=x0, y1=y1, nx=nx, ny=ny, cell=cell, domain_km2=nx * ny * cell ** 2 / 1e6,
-                uc_wkt_laea=shapely.to_wkt(polygon, rounding_precision=1))
 
 
 def source_bounds(row, margin=0.):
@@ -195,10 +160,8 @@ def record_file(path, root, **metadata):
 
 def prepare(args):
     """Write only original-source subsets and provenance under the raw-data directory."""
-    from unidecode import unidecode
-    import country_converter
     root, out = configuration.ROOT, args.output.resolve()
-    # Manifest paths are repository-relative, as required by the raw verifier.
+    # Source record paths are relative to the repository.
     out.relative_to(root.resolve())
     if out.exists() and any(out.iterdir()) and not args.overwrite:
         raise FileExistsError(f'{out}: use --overwrite to replace source subsets')
@@ -207,13 +170,9 @@ def prepare(args):
                    if folder.is_dir() and folder.name.split('_')[0].isdigit()}
         if old_ids - set(args.city_ids):
             raise ValueError('Output contains other cities; choose an empty output directory')
-    source = pyogrio.read_dataframe(args.urban_centres,layer=configuration.UCDB_LAYER)
-    source = source[source.ID_UC_G0.astype(int).isin(args.city_ids)]
-    missing = set(args.city_ids) - set(source.ID_UC_G0.astype(int))
-    if missing:
-        raise ValueError(f'Urban-centre IDs not found: {sorted(missing)}')
-    if source.GC_POP_TOT_2025.astype(float).lt(configuration.POP_MIN).any():
-        raise ValueError('Selected urban centres must have at least 300,000 residents in 2025')
+    source = select_urban_centres(args.urban_centres, args.city_ids)
+    table = source_city_table(source)
+    write_city_table(table, merge=True)
     indexes = {}
     for kind,path in [('overture',args.overture_index),('places',args.places_index),('buildings',args.building_index)]:
         if not path.is_file() and args.build_missing_indexes:
@@ -221,16 +180,11 @@ def prepare(args):
                 raise ValueError('Build remote source indexes before using --offline')
             build_source_index(kind,path)
         indexes[kind] = pd.read_parquet(path)
-    regular, rasters, buildings = [], [], []
+    regular, rasters = [], []
     for _, feature in source.iterrows():
         selected = source.loc[[feature.name]]
-        country = fix_text(feature.GC_CNT_UNN_2025)
-        iso = 'TWN' if country == 'China, Taiwan Province of China' else country_converter.convert(country,to='ISO3')
-        if not isinstance(iso,str) or len(iso)!=3:
-            raise ValueError(f'Cannot resolve ISO3 for {country}')
-        name = re.sub(r'[^A-Za-z0-9]+','_',unidecode(fix_text(feature.GC_UCN_MAI_2025))).strip('_')[:40] or 'UC'
-        stem = f'{int(feature.ID_UC_G0):05d}_{iso}_{name}'
-        row = city_record(selected,stem)
+        row = table.loc[table.uc_id == int(feature.ID_UC_G0)].iloc[0].to_dict()
+        stem = row['stem']
         dest = out/stem/'urban_centres/urban_centre_boundary.gpkg'
         dest.parent.mkdir(parents=True,exist_ok=True)
         if dest.exists():
@@ -246,7 +200,7 @@ def prepare(args):
                                        processing_margin_degrees=margin,**metadata))
         dest = out/stem/'buildings/open_building_map_buildings.parquet'
         metadata = extract_vectors(indexes['buildings'],'building',source_bounds(row,BUILDING_MARGIN_DEGREES),dest)
-        buildings.append(record_file(dest,root,city=stem,layer='building',source_release='OpenBuildingMap 2025',
+        regular.append(record_file(dest,root,city=stem,layer='building',source_release='OpenBuildingMap 2025',
                                      processing_margin_degrees=BUILDING_MARGIN_DEGREES,**metadata))
         bounds = source_bounds(row)
         mollweide = transform_bounds(4326,configuration.MOLLWEIDE,*bounds,densify_pts=30)
@@ -264,6 +218,4 @@ def prepare(args):
             if count == 0:
                 raise FileNotFoundError(f'{stem}: no {product} source pixels')
         print(json.dumps({'city':stem,'stage':1,'status':'extracted'}),flush=True)
-    for name, records in [('source_manifest.json',regular),('raster_manifest.json',rasters),('open_building_map_manifest.json',buildings)]:
-        (out/name).write_text(json.dumps(records,indent=2),encoding='utf-8')
-    return len(regular)+len(rasters)+len(buildings)
+    return len(regular)+len(rasters)

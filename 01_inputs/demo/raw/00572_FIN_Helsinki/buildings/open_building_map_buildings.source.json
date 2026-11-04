@@ -2,15 +2,15 @@
   "path": "01_inputs/demo/raw/00572_FIN_Helsinki/buildings/open_building_map_buildings.parquet",
   "city": "00572_FIN_Helsinki",
   "layer": "building",
-  "records": 282768,
+  "records": 284702,
   "bounds_wgs84": [
-    24.42178015834014,
-    60.03764981044589,
-    25.394930808618625,
-    60.42806111981316
+    24.41878015834014,
+    60.03464981044589,
+    25.397930808618625,
+    60.43106111981316
   ],
   "source_release": "OpenBuildingMap 2025; doi:10.5880/GFZ.LKUT.2025.002; Source Cooperative mirror",
-  "operation": "Select whole source features whose original bounding boxes intersect the model-domain bounding box. All source fields, geometry and coordinate reference system retained.",
+  "operation": "Complete source features whose bounding boxes intersect the model domain plus 0.003-degree reading margin required by the building-use matcher; original fields and geometry retained.",
   "sources": [
     {
       "path": "s3://us-west-2.opendata.source.coop/tge-labs/openbuildingmap/building.120120.parquet",
@@ -37,9 +37,11 @@
         64,
         65,
         66
-      ]
+      ],
+      "etag": "\"518e9c71aa5c894aaa5b946aa2a93b6f-24\"",
+      "size": 194567883
     }
   ],
-  "bytes": 37781599,
-  "sha256": "e65446ff43ba6edbb6db528c93ccc9312ef2d2008261b1f40454e16408694046"
+  "bytes": 37992108,
+  "sha256": "8cff5345fa3ee21d00eb22fce5aaa9227d21125382fe5377835f9f8b80f420f8"
 }

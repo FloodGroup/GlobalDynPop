@@ -11,5 +11,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'  # package requires >=3.11; CI pins one supported minor
-      - run: pip install numpy rasterio "affine<3"
+      - run: pip install numpy scipy pandas "shapely>=2" pyproj rasterio "affine<3" pyarrow pyogrio geopandas matplotlib numba psutil unidecode country_converter requests
+      - run: python 03_run/run_city_demo.py run
       - run: python 03_run/run_city_demo.py check

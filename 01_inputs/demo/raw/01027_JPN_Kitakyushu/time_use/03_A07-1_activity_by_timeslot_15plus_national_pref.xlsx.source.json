@@ -1,0 +1,8 @@
+{
+  "path": "01_inputs/demo/raw/01027_JPN_Kitakyushu/time_use/03_A07-1_activity_by_timeslot_15plus_national_pref.xlsx",
+  "source": "https://www.stat.go.jp/data/shakai/2016/gaiyou.html",
+  "role": "STULA 2016 official published participation/location tables; no respondent microdata",
+  "operation": "Unmodified provider publication or source download retained from the supplied research archive.",
+  "bytes": 19778818,
+  "sha256": "ef187babfd7d0145f731c1390c9d2246e30489f93f3e809e3841bb7055722e85"
+}

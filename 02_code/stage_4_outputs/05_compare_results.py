@@ -1,4 +1,4 @@
-"""Compare requested v4 outputs; missing, empty or incompatible inputs fail."""
+"""Compare requested model outputs; missing, empty or incompatible inputs fail."""
 from pathlib import Path
 import argparse,json
 import numpy as np
@@ -42,7 +42,10 @@ def main(argv=None):
                         results.append(compare_arrays({k:a[k] for k in ['T_workday','T_restday']},{k:b[k] for k in ['T_workday','T_restday']},args.tol))
                 if args.hourly_a:
                     for dt in ['workday','rest_day']:
-                        name=f'{stem}_{dt}.tif';results.append(rasters(Path(args.hourly_a)/stem/name,Path(args.hourly_b)/stem/name,args.tol))
+                        for hour in range(24):
+                            name=f'{stem}_{dt}_hour_{hour:02d}.tif'
+                            result=rasters(Path(args.hourly_a)/stem/dt/name,Path(args.hourly_b)/stem/dt/name,args.tol)
+                            results.append(dict(stem=stem,daytype=dt,hour=hour,**result))
             except (OSError,ValueError,KeyError,ImportError) as e:errors.append(f'{stem}: {type(e).__name__}: {e}')
     ok=bool(results) and not errors and all(x['reproduced'] for x in results)
     print(json.dumps({'reproduced':ok,'comparisons':len(results),'tolerance':args.tol if np.isfinite(args.tol) else None,'results':results,'errors':errors},allow_nan=False));return 0 if ok else 1
