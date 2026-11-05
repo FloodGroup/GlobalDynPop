@@ -15,7 +15,7 @@ All layers use the [Stage 1 grid definitions](../stage_1/local_grids/city_grid_d
 | `buildings/` supporting layers | Building height and volume | Metres for height; m3 for total/non-residential volumes |
 | `water_coverage_percent/` | Permanent-water coverage for plots and spatial constraints | NPZ key `water`, uint8 percent from 0 to 100 |
 
-The derivation of the hourly location shares is documented in [time_use.md](../../time_use.md).
+The derivation of the hourly location shares is documented in [time_use.md](../../time_use/time_use.md).
 
 Activity-specific place layers use keys such as `C2_workday` and `C2_restday`; their source selection and smoothing follow the effective settings for that city/day type. The kernel JSON represents the function used in allocation rather than a saved two-dimensional convolution matrix.
 

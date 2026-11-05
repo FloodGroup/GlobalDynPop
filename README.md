@@ -47,7 +47,7 @@ GHSL population grids provide the resident population at each origin. GlobalBuil
 
 Outdoor activity areas are derived from Overture land-use polygons and road geometry, excluding building footprints and permanent water. These layers distinguish streets, parks, plazas, campus grounds and other open spaces for allocating outdoor population. Overture road and rail networks support trip routing. ESA WorldCover, JRC Global Surface Water and OSM water polygons supplied through Overture jointly define permanent-water fractions. The [raw-data guide](01_inputs/demo/raw/README.md) documents the source subsets, file organisation and offline reconstruction for the three example cities.
 
-Temporal inputs describe hourly activity-location shares and time spent indoors. The [time-use guide](04_intermediate/time_use.md) documents survey and diary sources, the 22 countries with country-specific workday/rest-day evidence, and profile construction and transfer. The [indoor-share guide](04_intermediate/w_indoor.md) explains how exposure-factor and time-use evidence informs W_indoor and its assignment to cities. Outdoor micro-environment weights are drawn from HAPEM-MS3.
+Temporal inputs describe hourly activity-location shares and time spent indoors. The [time-use guide](04_intermediate/time_use/time_use.md) documents survey and diary sources, the 22 countries with country-specific workday/rest-day evidence, and profile construction and transfer. The [indoor-share guide](04_intermediate/w_indoor/w_indoor.md) explains how exposure-factor and time-use evidence informs W_indoor and its assignment to cities. Outdoor micro-environment weights are drawn from HAPEM-MS3.
 
 Source datasets differ in reference year and coverage. See the [data attribution guide](06_docs/reproduction/city_demo.md#data-sources-and-attribution) for versions and terms of use, and the [methods](06_docs/README.md#methods) for processing steps, fallback rules and parameter derivation.
 
@@ -89,7 +89,7 @@ Figure 3 shows the hourly location shares used for Finland and Japan. Home accou
 
 ![Figure 3. Finland and Japan hourly location shares for workdays and rest days](06_docs/figures/time_use_weights.png)
 
-**Figure 3. Temporal weights applied to the population components.** Columns distinguish workdays and rest days; rows distinguish Finland and Japan. The seven coloured shares represent home, work and commerce, education, services, leisure, transit and other locations, and sum to one at every hour. Helsinki uses the Finland profile; both Japanese cities use the Japan profile. The [time-use guide](04_intermediate/time_use.md) documents the survey mapping, donor transfer and corrections used to construct these profiles.
+**Figure 3. Temporal weights applied to the population components.** Columns distinguish workdays and rest days; rows distinguish Finland and Japan. The seven coloured shares represent home, work and commerce, education, services, leisure, transit and other locations, and sum to one at every hour. Helsinki uses the Finland profile; both Japanese cities use the Japan profile. The [time-use guide](04_intermediate/time_use/time_use.md) documents the survey mapping, donor transfer and corrections used to construct these profiles.
 
 ### Example population distributions
 

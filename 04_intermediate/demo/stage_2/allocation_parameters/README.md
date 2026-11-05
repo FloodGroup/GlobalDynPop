@@ -34,6 +34,8 @@
 
 The distance function is `f(d) = (d + 250 m)^(-beta) * exp(-d/kappa)`. The 250 m offset and numerical search-radius limits are implemented in the code; they are not separate fields in this JSON.
 
+The China specifications for C2, C3, C4, C5 and C7 explicitly include the same typed `outdoor_pool` rules as their global counterparts, while retaining China-specific POI selection and work parameters. Country overrides merge each activity specification by field, preserving unspecified global fields. The outdoor rules apply on both workdays and rest days.
+
 ## Effective settings for the three cities
 
 | Activity | Helsinki: kappa / beta, workday | Kitakyushu and Takasaki-Maebashi: kappa / beta, workday | Rest-day change |

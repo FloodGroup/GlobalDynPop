@@ -13,6 +13,32 @@ Y_ORIGIN = 9_000_000.0
 RES = 100.0
 
 
+def raster_resolution(source):
+    """Read the actual north-up raster resolution; tile names do not locate pixels."""
+    transform = source.transform
+    if transform.b != 0 or transform.d != 0:
+        raise ValueError(f'Rotated raster is not supported: {source.name}')
+    resx, resy = transform.a, -transform.e
+    if resx <= 0 or resy <= 0:
+        raise ValueError(f'Expected a north-up raster with positive resolution: {source.name}')
+    return resx, resy
+
+
+def file_window(source, x0, y0, x1, y1):
+    """Round bounds outwards and clip to the actual file, in its own CRS.
+
+    Published tiles may be cropped within their nominal grid. Use the file's
+    affine transform and dimensions for pixel indices, including edge windows.
+    """
+    resx, resy = raster_resolution(source)
+    transform = source.transform
+    c0 = int(np.floor((x0 - transform.c) / resx + 1e-9))
+    c1 = int(np.ceil((x1 - transform.c) / resx - 1e-9))
+    r0 = int(np.floor((transform.f - y1) / resy + 1e-9))
+    r1 = int(np.ceil((transform.f - y0) / resy - 1e-9))
+    return max(c0, 0), max(r0, 0), min(c1, source.width), min(r1, source.height)
+
+
 def tile_bounds(r: int, c: int):
     x0 = X_ORIGIN + (c - 1) * TILE
     y1 = Y_ORIGIN - (r - 1) * TILE

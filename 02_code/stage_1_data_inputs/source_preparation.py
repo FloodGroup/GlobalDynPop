@@ -12,13 +12,13 @@ import pyarrow.parquet as pq
 import pyogrio
 from pyproj import CRS, Transformer
 import rasterio
-from rasterio.windows import from_bounds, Window
+from rasterio.windows import Window
 from rasterio.warp import transform_bounds
 import shapely
 
 from stage_1_data_inputs import configuration
 from stage_1_data_inputs.city_definitions import city_record, fix_text, select_urban_centres, source_city_table, write_city_table
-from stage_1_data_inputs.ghsl_sources import fetch_tile, tiles_for_bounds, tile_url
+from stage_1_data_inputs.ghsl_sources import fetch_tile, tiles_for_bounds, tile_url, file_window
 
 VECTOR_FILES = {
     'building': 'buildings/overture_buildings.parquet',
@@ -132,10 +132,8 @@ def extract_vectors(index, layer, bounds, destination):
 def crop_raster(source, destination, bounds):
     """Copy an integer pixel window; the source raster supplies its actual transform."""
     with rasterio.open(source) as src:
-        window = from_bounds(*transform_bounds('EPSG:4326', src.crs, *bounds, densify_pts=30), transform=src.transform)
-        col, line = max(0,int(np.floor(window.col_off))), max(0,int(np.floor(window.row_off)))
-        right = min(src.width,int(np.ceil(window.col_off+window.width)))
-        bottom = min(src.height,int(np.ceil(window.row_off+window.height)))
+        projected_bounds = transform_bounds('EPSG:4326', src.crs, *bounds, densify_pts=30)
+        col, line, right, bottom = file_window(src, *projected_bounds)
         if right <= col or bottom <= line:
             return None
         window = Window(col,line,right-col,bottom-line)

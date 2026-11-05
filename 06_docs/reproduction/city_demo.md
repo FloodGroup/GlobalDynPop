@@ -14,7 +14,7 @@ Three-city GlobalBuildingAtlas/Overture/OBM/GHSL source subsets are provided und
 
 The resident grid covers the urban-centre bounding box plus its margin; its total can differ from the urban-centre population in the city table. The model conserves the full domain population. Component compression permits small encoding differences; hourly float32 rasters use lossless DEFLATE. Each file represents one local hour, with 24 files per city and day type.
 
-Helsinki uses the Finland time-use profile with rest-day timing contrasts borrowed from GBR, ESP and BEL. Both Japanese cities use the Japan profile, including the documented workday school adjustment. See the [time-use guide](../../04_intermediate/time_use.md).
+Helsinki uses the Finland time-use profile with rest-day timing contrasts borrowed from GBR, ESP and BEL. Both Japanese cities use the Japan profile, including the documented workday school adjustment. See the [time-use guide](../../04_intermediate/time_use/time_use.md).
 
 ## Data sources and attribution
 

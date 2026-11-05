@@ -149,7 +149,14 @@
      "poi_mask": "host",
      "water_mask": true,
      "two_pool": true,
-     "outdoor_sigma_m": 300
+     "outdoor_sigma_m": 300,
+     "outdoor_pool": {
+      "near": {
+       "street": 0.5755,
+       "park+grass+rec+plaza": 0.114,
+       "parking+campus+cons+open": 0.3105
+      }
+     }
     },
     "C3": {
      "poi_w": 0.5,
@@ -161,7 +168,17 @@
      "poi_mask": "host",
      "water_mask": true,
      "two_pool": true,
-     "outdoor_sigma_m": 300
+     "outdoor_sigma_m": 300,
+     "outdoor_pool": {
+      "near": {
+       "campus": 1.0
+      },
+      "fallback": {
+       "street": 0.5688,
+       "park+grass+rec+plaza": 0.1244,
+       "parking+campus+cons+open": 0.3068
+      }
+     }
     },
     "C4": {
      "poi_w": 0.5,
@@ -173,7 +190,14 @@
      "poi_mask": "host",
      "water_mask": true,
      "two_pool": true,
-     "outdoor_sigma_m": 300
+     "outdoor_sigma_m": 300,
+     "outdoor_pool": {
+      "near": {
+       "street": 0.5688,
+       "park+grass+rec+plaza": 0.1244,
+       "parking+campus+cons+open": 0.3068
+      }
+     }
     },
     "C5": {
      "poi_w": 0.5,
@@ -185,7 +209,18 @@
      "poi_mask": "host",
      "water_mask": true,
      "two_pool": true,
-     "outdoor_sigma_m": 300
+     "outdoor_sigma_m": 300,
+     "outdoor_pool": {
+      "near": {
+       "street": 0.5688,
+       "park+grass+rec+plaza": 0.1244,
+       "parking+campus+cons+open": 0.3068
+      },
+      "free": {
+       "park+rec+plaza": 1.0
+      },
+      "free_share": 0.5
+     }
     },
     "C7": {
      "poi_w": 0.5,
@@ -197,7 +232,18 @@
      "poi_mask": "host",
      "water_mask": true,
      "two_pool": true,
-     "outdoor_sigma_m": 300
+     "outdoor_sigma_m": 300,
+     "outdoor_pool": {
+      "near": {
+       "street": 0.5688,
+       "park+grass+rec+plaza": 0.1244,
+       "parking+campus+cons+open": 0.3068
+      },
+      "free": {
+       "park+rec+plaza": 1.0
+      },
+      "free_share": 0.5
+     }
     }
    },
    "beta": {

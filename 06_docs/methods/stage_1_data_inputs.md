@@ -34,7 +34,7 @@ Per-file provenance records identify the source files, selected Parquet row grou
 
 ## Connection to later stages
 
-Stage 2 reads the raw spatial subsets and derives model layers. It also reads the adopted 24-by-7 hourly location shares and distance-decay settings. These are processed research products: their survey harmonisation and commuting calibration precede the example run. The [time-use guide](../../04_intermediate/time_use.md) explains how the shares were constructed.
+Stage 2 reads the raw spatial subsets and derives model layers. It also reads the adopted 24-by-7 hourly location shares and distance-decay settings. These are processed research products: their survey harmonisation and commuting calibration precede the example run. The [time-use guide](../../04_intermediate/time_use/time_use.md) explains how the shares were constructed.
 
 ## Processing sequence and implementation
 
@@ -46,7 +46,7 @@ The extraction entry point [01_prepare_raw_sources.py](../../02_code/stage_1_dat
 2. **Define and save the city grid.** `city_definitions.city_record` projects the boundary to the local equal-area coordinate system and calculates the buffered, aligned domain. The grid table is saved before extraction. `source_bounds` transforms its densified perimeter to WGS84 for vector selection.
 3. **Locate source records.** `build_source_index` reads Parquet bounding-box statistics when an index must be generated. Existing indexes identify candidate files and row groups; the exact feature-level bounding-box test follows during extraction.
 4. **Extract vectors.** `extract_vectors` reads candidate row groups and retains whole source records whose bounding boxes intersect the extraction bounds. It preserves all source fields and performs no activity classification or geometric clipping.
-5. **Extract native raster windows.** [ghsl_sources.fetch_tile](../../02_code/stage_1_data_inputs/ghsl_sources.py) locates or downloads source tiles. `crop_raster` transforms the domain bounds into each tile's own CRS and copies an integer window using that tile's actual affine transform.
+5. **Extract native raster windows.** [ghsl_sources.fetch_tile](../../02_code/stage_1_data_inputs/ghsl_sources.py) locates or downloads source tiles. `crop_raster` transforms the domain bounds into each tile's own CRS. `ghsl_sources.file_window` rounds the window outwards and clips it to the file dimensions using the actual affine transform. Nominal tile row/column identifiers select source files only; they do not define pixel origins. Cropped tiles and non-overlapping windows are handled explicitly; rotated or non-north-up rasters are rejected.
 6. **Record and verify provenance.** `record_file` stores paths, source selection details and SHA-256 fingerprints in per-file metadata. The same per-file records describe the GHSL, Overture, OpenBuildingMap and GlobalBuildingAtlas subsets. [02_verify_raw_sources.py](../../02_code/stage_1_data_inputs/02_verify_raw_sources.py) checks file existence and fingerprints against these records.
 
 Domain construction is implemented in [city_definitions.py](../../02_code/stage_1_data_inputs/city_definitions.py). The extraction functions are defined in [source_preparation.py](../../02_code/stage_1_data_inputs/source_preparation.py). [configuration.py](../../02_code/stage_1_data_inputs/configuration.py) supplies shared paths and settings.

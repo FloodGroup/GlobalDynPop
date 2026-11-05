@@ -17,6 +17,7 @@ from pyproj import Transformer
 import shapely
 
 import stage_1_data_inputs.configuration as configuration
+from stage_1_data_inputs.ghsl_sources import raster_resolution
 from stage_2_100m_layers import buildings, cities, grid, places
 from stage_2_100m_layers.building_sources import overture_reader, open_building_map_reader
 from stage_3_activity_allocation import network
@@ -96,10 +97,13 @@ def prepare_settlement(folder, row, products, sub):
         output = np.zeros(target.shape, np.float64)
         for path in paths:
             with rasterio.open(path) as source:
+                resx, resy = raster_resolution(source)
+                if key != 'height' and abs(resx - resy) > 1e-6:
+                    raise ValueError(f'Count resampling requires square pixels: {path}')
                 array = source.read(1)
                 if key != 'height':
                     output = grid.resample_counts(array, source.transform.c, source.transform.f,
-                                                  source.res[0], source.crs, target, out=output,
+                                                  resx, source.crs, target, out=output,
                                                   sub=sub, nodata=source.nodata)
                 else:
                     xs, ys = target.centres()

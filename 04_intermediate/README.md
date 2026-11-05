@@ -4,8 +4,8 @@
 
 The [Stage 1 dictionary](demo/stage_1/README.md), [Stage 2 dictionary](demo/stage_2/README.md) and [Stage 3 dictionary](demo/stage_3/README.md) describe their files and units. Original sources are under `01_inputs/demo/raw/`; final products are under `05_outputs/demo/`.
 
-[Share of the day spent indoors](w_indoor.md) documents W_indoor sources, provincial values, reference assignment and the global indoor-share, income and climate maps.
+[Indoor time share (W_indoor): data sources and methods](w_indoor/w_indoor.md) documents W_indoor sources, provincial values, reference assignment and the global indoor-share, income and climate maps.
 
-[Time use: derivation of hourly location shares](time_use.md) documents survey processing, day-type transfer, corrections, parameter sources and the supplied Finland and Japan profiles.
+[Hourly location shares: data sources and methods](time_use/time_use.md) documents survey processing, day-type transfer, corrections, parameter sources and the supplied Finland and Japan profiles.
 
-Documentation images are stored in `06_docs/figures/`.
+The `time_use/` and `w_indoor/` subfolders contain the parameter reports; the activity-location heatmap accompanies the time-use report. Other PNG figures are stored in `06_docs/figures/`, with PDF exports in `05_outputs/figure_exports/`.

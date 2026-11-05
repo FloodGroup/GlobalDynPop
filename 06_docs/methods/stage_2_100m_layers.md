@@ -5,7 +5,7 @@
 Programs 01–04 prepare settlement, POI, classified-building and graph layers; programs 05–10 prepare water, recreation, land use, GBA and typed open space. Program 11 exports model-ready layers last. Steps 01–04 call `local_raw_preparation.run_step`, which dispatches the corresponding settlement, POI, floor-area or transport calculation. Step 11 derives model-ready place layers and records the effective kernels. The products are consumed by Stage 3; hourly shares also feed Stage 4 directly.
 
 Stage 2 reads the projection, extent, dimensions and urban-centre geometry from the [Stage 1 grid table](../../04_intermediate/demo/stage_1/local_grids/city_grid_definitions.csv). Grid definition is completed before raw-data extraction and spatial processing.
-1. **Settlement layers.** Resample population and total/non-residential building volumes as extensive counts using source-pixel sub-sampling. Sample height using each raster's own CRS and affine transform. A cropped edge tile must retain its actual transform. Save population in people, volume in cubic metres and height in metres.
+1. **Settlement layers.** Resample population and total/non-residential building volumes as extensive counts using source-pixel sub-sampling. Sample height using each raster's own CRS and affine transform. All four products use the file's actual transform, including cropped edge tiles. Population and volume resampling require square, north-up pixels; height indices use the source transform and file dimensions. Nominal GHSL tile origins are not used for pixel placement. Save population in people, volume in cubic metres and height in metres.
 2. **Places.** Filter and classify Overture records, then count them in the destination classes on the local grid. Step 11 applies the configured Gaussian smoothing (300 m in the supplied settings). The stored OpenStreetMap counts remain supplementary; automatic selection uses Overture for these cities.
 3. **Floor area.** Combine footprint geometry with building-use evidence from Overture, OpenBuildingMap and land-use polygons. Apply the mixed-use rules where needed. Use evidence is prioritised as OpenBuildingMap occupancy, Overture class/subtype, then containing land-use polygons for these cities. Estimate storeys from reported floors, heights and fallback evidence; multiply footprint area by storeys and aggregate to the grid by use. Buildings up to 2,500 square metres are assigned by an internal point; larger footprints are split between cells in proportion to intersection area. OpenBuildingMap supplies both occupancy and height evidence. The stored `fa` array has nine layers: C1-C7, unknown use and industrial floor area; the industrial layer is a subset of C2 and must not be added again to total area.
 4. **Transport and water.** Construct a road/rail graph with nodes, edges, travel times and grid sampling positions. Class-specific speeds set edge times. Compute water coverage from source polygons on a finer sampling grid. Stage 3 performs population assignment on this graph.
@@ -35,7 +35,7 @@ The three-city GBA original building subsets are bundled under `01_inputs/demo/r
 
 Each time-use matrix has 24 rows (local hours) and seven location columns, C1-C7. Each row is normalised to one when read. These are seven location classes, not seven weekdays. Separate matrices represent workdays and rest days. Helsinki uses FIN; Kitakyushu and Takasaki-Maebashi both use JPN. The [time-use figure](../figures/time_use_weights.png) shows the actual normalised matrices used by the model.
 
-The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/time_use.md) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
+The supplied survey-derived matrices and allocation parameter JSON remain in Stage 2 as adopted research products. Their original diaries and calibration observations are not bundled. The detailed [time-use derivation](../../04_intermediate/time_use/time_use.md) describes survey harmonisation, transfer of day-type profiles, and the education and midday adjustments.
 
 ## Numbered programs, function calls and products
 
@@ -53,7 +53,7 @@ For the three examples, spatial source preparation reads the bundled original su
 
 The Stage 2 launcher executes programs 01–11 in dependency order from the bundled raw subsets, then verifies required arrays, fractions and hourly shares. The local-source preparation functions are in [local_raw_preparation.py](../../02_code/stage_2_100m_layers/local_raw_preparation.py). `preparation_metadata/` records source paths and processing statistics. Processing stops on a missing source or a calculation error.
 
-Hourly location shares and calibrated allocation parameters are adopted study products. The example reads these products without repeating survey harmonisation or calibration. The [time-use guide](../../04_intermediate/time_use.md) documents the derivation of the 24-by-7 location-share matrices and the Finland and Japan profiles. The supplied OpenStreetMap place counts are supplementary processed data; the three cities have sufficient Overture coverage for the model's automatic source selection to use Overture alone.
+Hourly location shares and calibrated allocation parameters are adopted study products. The example reads these products without repeating survey harmonisation or calibration. The [time-use guide](../../04_intermediate/time_use/time_use.md) documents the derivation of the 24-by-7 location-share matrices and the Finland and Japan profiles. The supplied OpenStreetMap place counts are supplementary processed data; the three cities have sufficient Overture coverage for the model's automatic source selection to use Overture alone.
 
 The routing graph contains topology, travel times and sampling locations. Population assignment to the graph occurs in Stage 3. Routing zones start at 2 km and can expand for large domains. Raster conversion uses the GeoTIFF's own bounds, CRS and transform, including clipped edge tiles.
 
@@ -87,7 +87,7 @@ Routing-graph preparation calls graph-building functions in Stage 3's `network.p
 
 Graph preparation calls [network.py](../../02_code/stage_3_activity_allocation/network.py); model-layer export calls [model.py](../../02_code/stage_3_activity_allocation/model.py). These shared calls do not run population assignment during Stage 2.
 
-[Section 13 of the time-use guide](../../04_intermediate/time_use.md#13-time-use-profiles-and-corrections) illustrates representative national profiles and the education and midday adjustments.
+[Section 6 of the time-use guide](../../04_intermediate/time_use/time_use.md#6-profile-adjustments) describes the education, midday and timing adjustments.
 
 ## Parameter values and sources
 
@@ -104,6 +104,6 @@ The [Stage 3 parameter tables](stage_3_activity_allocation.md#parameter-values-a
 
 Li, R., Sun, T., Ghaffarian, S., Tsamados, M. and Ni, G. (2024). GLAMOUR: GLobAl building MOrphology dataset for URban hydroclimate modelling. *Scientific Data*, 11, 618. [doi:10.1038/s41597-024-03446-2](https://doi.org/10.1038/s41597-024-03446-2). The paper converts floor counts to heights for its Baidu reference buildings in China. Here the same relation is inverted to estimate storeys from heights. Applying a uniform storey height globally is a study assumption.
 
-Time-use processing settings and their evidence are documented in [Section 11 of the time-use guide](../../04_intermediate/time_use.md#11-numerical-settings-and-their-provenance).
+Time-use methods and data sources are documented in the [time-use guide](../../04_intermediate/time_use/time_use.md).
 
 [Return to project README](../../README.md)

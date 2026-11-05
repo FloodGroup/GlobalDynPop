@@ -1,4 +1,4 @@
-# Share of the day spent indoors (W_indoor): sources, calculation and assignment to cities
+# Indoor time share (W_indoor): data sources and methods
 
 `W_indoor` is the share of a 24-hour day spent inside buildings. GlobalDynPop uses this parameter to divide destinations away from home between buildings and nearby open space. This report documents the data sources, calculation conventions and city-assignment method used by GlobalDynPop.
 
@@ -6,7 +6,7 @@
 
 The study assigns a value to each of its **1,904 urban centres**. A city receives a provincial value in mainland China, an adopted national or city-survey value where one is available for its country or territory, or a value transferred from selected reference countries. The map shows the existing adopted city parameters.
 
-![Global distribution of adopted W_indoor values](../06_docs/figures/w_indoor_global.png)
+![Global distribution of adopted W_indoor values](../../06_docs/figures/w_indoor_global.png)
 
 *Figure 1. Adopted W_indoor at the 1,904 urban centres. Each point represents one city; colour indicates the share of the day spent indoors. Point size is constant and does not encode population, sample size or evidence quality. Values assigned from another country are model parameters rather than independent measurements in the recipient city. Equal Earth projection.*
 
@@ -20,26 +20,30 @@ $$
 W_{\mathrm{indoor}}=\frac{T_{\mathrm{inside\ buildings}}}{1440}.
 $$
 
-The corresponding denominator is 24 when time is reported in hours. Time in vehicles is excluded from the indoor numerator where the source identifies it separately. The original source's population, observation period, day type, weighting and summary statistic remain part of the estimate.
+The corresponding denominator is 24 when time is reported in hours. Time in vehicles is excluded from the indoor numerator where the source identifies it separately. Each value describes the population, observation period and day type covered by its source. A published mean or median is converted to a fraction of the day without an additional weighting step; a median is not converted into a population mean. Where individual diary records are aggregated, the calculation below distinguishes recorded durations from survey weights.
 
 | Available information | Calculation | Interpretation |
 |---|---|---|
-| Diary episodes with explicit indoor/outdoor codes | Sum durations coded indoors and divide by the full-day duration, retaining the source's weighting convention. | Direct classification of recorded time. |
+| Diary episodes with explicit indoor/outdoor codes | Sum indoor minutes within each person-day; calculate the mean across person-days using the applicable diary survey weights, then divide by 1,440. Use equal weights only for an explicitly unweighted estimate. | Direct classification of recorded time. |
 | Time by place | Sum time at home, workplaces and schools, other dwellings, restaurants and shops; divide by 1,440 minutes. | A location-based estimate; all other places and travel remain outside the indoor numerator. |
 | Published indoor mean or median | Divide the published duration by 24 hours or 1,440 minutes, or use the published proportion. | Preserve the distinction between means and medians. |
 | Reported outdoor time | Use `(24 − outdoor hours) / 24` where this is the adopted source calculation. | A complement-based estimate whose meaning depends on the source's outdoor and travel definitions. |
 | Exposure guideline or activity-based estimate | Use the stated guideline duration or the source's identified indoor activities. | Retain its evidence category; it is not a directly observed city-wide indoor/outdoor diary. |
 
-For complete person-day records, a weighted expression is
+### Survey weighting
+
+For each complete daily diary `d`, let `T_d,indoor` be total indoor minutes and `q_d` the survey agency's record weight:
 
 $$
 W_{\mathrm{indoor}}=
-\frac{\sum_d q_d T_{d,\mathrm{indoor}}}{1440\sum_d q_d},
+\frac{\sum_d q_d T_{d,\mathrm{indoor}}}{1440\sum_d q_d}.
 $$
 
-where `q_d` is the weight specified for that source. Equal weighting is the special case `q_d = 1`. This expression does not imply that every source uses survey weights or that published summaries were re-estimated in a common microdata analysis.
+Weights may adjust for unequal sampling probabilities, response rates, and population or diary-date composition. They reflect population representation, not activity importance; their construction is survey-specific.
 
-Unclassified locations are not automatically assigned to the indoor numerator. A fixed full-day denominator means that `1 − W_indoor` can include unclassified or in-vehicle time in addition to explicitly outdoor time. Weekday estimates are retained where available; mixed-day summaries are not relabelled as weekday-only estimates.
+This formula applies to diary-derived means. Published statistics are used without reweighting; selected reference countries are averaged equally (Section 4).
+
+Source day-type definitions are retained. Because unclassified or in-vehicle time may fall outside the indoor numerator, `1 − W_indoor` is not necessarily outdoor time alone.
 
 ### Interpreting heterogeneous sources
 
@@ -98,17 +102,27 @@ An adopted domestic source takes precedence over international matching. Only ci
 
 ### Income and climate inputs
 
-**Income.** The economic measure is World Bank **gross national income (GNI) per capita, Atlas method, current United States dollars**, indicator `NY.GNP.PCAP.CD`. It is distinct from gross domestic product (GDP) per capita and purchasing-power-parity income. The archived application programming interface (API) response records a data update of **8 October 2026** and requests the most recent non-empty observation for each economy. Consequently, observation years can differ between economies. The raw observation and its year should remain distinguishable from any filled value used for matching. Broad income groups do not replace the continuous GNI ratio in the assignment rule. [World Bank indicator](https://data.worldbank.org/indicator/NY.GNP.PCAP.CD).
+**Income.** Economic similarity between target and reference countries was assessed using World Bank gross national income (GNI) per capita, calculated using the Atlas method and expressed in current United States dollars (indicator `NY.GNP.PCAP.CD`). The latest available observation for each economy in the archived dataset was used, so reference years varied across economies. Matching used continuous GNI ratios rather than income-group categories. [World Bank](https://data.worldbank.org/indicator/NY.GNP.PCAP.CD).
 
-![Global distribution of GNI per capita](../06_docs/figures/gni_global.png)
+![Global distribution of GNI per capita](../../06_docs/figures/gni_global.png)
 
 *Figure 2. Gross national income (GNI) per capita, Atlas method, in current United States dollars, using the original World Bank observations retained in the archived country table. Colours use a logarithmic scale. Economies without an original observation or an exact geographic join are grey; imputed matching values are not presented as observed income. The latest available year differs by economy. Equal Earth projection; Natural Earth geographic context.*
 
 **Climate.** Climate information comes from the Beck et al. Köppen–Geiger classification, version 2, 1991–2020, at approximately 1-km resolution. Climate is represented by the main classes **tropical (A), arid (B), temperate (C), cold (D) and polar (E)**. The source raster and its accompanying legend are used for the contextual map below. The current assignment treats the main climate class as the final ranking criterion after income, geography and evidence. [Beck et al. (2023)](https://doi.org/10.1038/s41597-023-02549-6); [Köppen–Geiger classification dataset](https://doi.org/10.6084/m9.figshare.21789074).
 
-![Global distribution of main climate classes](../06_docs/figures/climate_global.png)
+![Global distribution of main climate classes](../../06_docs/figures/climate_global.png)
 
 *Figure 3. Main Köppen–Geiger climate classes derived from the source climate raster using its original class legend: codes 1–3 become A, 4–7 B, 8–16 C, 17–28 D and 29–30 E. The raster is sampled by nearest neighbour to a 1,440 × 720 display grid before grouping for this global overview; this display grid is not used to recompute city climate classes or W_indoor. Unclassified pixels are uncoloured. Equal Earth projection.*
+
+### Evidence grades
+
+| Grade | Definition |
+|---|---|
+| 0 | A nationally representative survey since 2000, or a large population-based survey of the main city since 2000. |
+| 1 | A survey before 2000, an EXPOLIS city sample, an exposure guideline, or an indirect estimate from indoor activities. |
+| 2 | A special population group or a small sample. |
+
+These study-defined grades summarise source type, survey period and population coverage for reference selection; they are not a standardised evidence rating or a measure of statistical uncertainty. A source can still be adopted for its own country when its grade is 1 or 2. Evidence type, survey coverage and grade should therefore be read together.
 
 ### Reference selection
 
@@ -119,7 +133,7 @@ R(c,r)=\max\left(\frac{g_c}{g_r},\frac{g_r}{g_c}\right).
 $$
 
 1. **Choose the first non-empty income tier:** `R ≤ 2`; otherwise `R ≤ 3`; otherwise `R ≤ 5`; otherwise allow any income ratio.
-2. **Within that tier, prefer geographic proximity:** the same United Nations (UN) sub-region, then the same continent, then another continent. The former Soviet republics are treated as one sub-region.
+2. **Within that tier, prefer geographic proximity:** the same United Nations (UN) sub-region, then the same continent, then another continent.
 3. **Prefer the stronger evidence grade** within that geographic level: grade 0 before grade 1 before grade 2.
 4. **Order the remaining candidates by closest income**, then preference for the same Köppen–Geiger main class.
 5. **Average up to three references** sharing the best candidate's income tier, geographic level and evidence grade. Where more than three qualify, retain the first three in the ranking. In the final, unbounded income tier, use only the best reference.
@@ -133,17 +147,11 @@ $$
 
 The matching procedure transfers empirical or guideline values; it does not fit a regression of indoor time on income or climate. Climatic similarity can resolve a late-stage ranking choice but cannot override the earlier income, geography and evidence criteria. China contributes its national mean as described in Section 3.
 
-## 5. Evidence grades and adopted source references
+## 5. Adopted source references
 
-| Grade | Definition |
-|---|---|
-| 0 | A nationally representative survey since 2000, or a large population-based survey of the main city since 2000. |
-| 1 | A survey before 2000, an EXPOLIS city sample, an exposure guideline, or an indirect estimate from indoor activities. |
-| 2 | A special population group or a small sample. |
+The source register covers **41 countries and territories**. Of the **1,904 cities**, **1,103 (57.9%)** use adopted source values for their country or province, including the Hong Kong survey. The remaining **801 (42.1%)** use transferred values: **783** through international reference matching and **18** from neighbouring or nearest provinces.
 
-The grade guides reference selection and does not quantify a confidence interval. A source can still be adopted for its own country when its grade is 1 or 2. Evidence type, survey coverage and grade should therefore be read together.
-
-The following register lists the adopted sources, survey periods, sampled populations and parameter values. Survey periods can differ from publication years. Values are displayed to three decimal places; calculations retain the precision in the city parameter table.
+The register lists survey periods, sampled populations and adopted values. Survey periods may differ from publication years; displayed values are rounded to three decimal places, while calculations retain the stored precision.
 
 | Country or territory | W_indoor | Survey / source period | Evidence | Population and sample | Reference |
 | --- | --- | --- | --- | --- | --- |
@@ -198,22 +206,6 @@ D_c=W_{\mathrm{indoor},c}D_{\mathrm{in},c}
  +(1-W_{\mathrm{indoor},c})D_{\mathrm{out},c}.
 $$
 
-The source statistic measures the **whole-day indoor share**, including time at home. Its use as the indoor allocation weight for destinations away from home is a modelling assumption: it is not an empirical estimate of the conditional quantity `P(indoors | away from home)`. It also does not determine the hourly share of the population that stays at home; hourly activity shares are supplied separately.
+The source statistic measures the **whole-day indoor share**, including time at home. Its use as the indoor allocation weight for destinations away from home is a modelling assumption: it is not an empirical estimate of the conditional quantity `P(indoors | away from home)`. Comparable hourly indoor–outdoor time-use data are difficult to obtain across all study cities, so the model holds `W_indoor` constant across hours. Hourly home and other activity-location shares are derived separately from time-use surveys and travel diaries, as described in the [time-use guide](../time_use/time_use.md).
 
 The parameter is read from `w_indoor_cities.csv` using the city identifier `stem`. In the open-source package, this table is under `04_intermediate/demo/stage_2/time_use/w_indoor/`; the accompanying source and provincial tables retain the provenance. An alternative table can be selected through `GDP_WINDOOR`.
-
-### Sensitivity configurations
-
-Three alternative parameter tables support sensitivity analysis: an alternative assignment using one climate-matched reference with the closest income, and uniform shifts of −0.05 and +0.05 in the indoor share. Select an alternative table with `GDP_WINDOOR` and recompute the destination distributions and population outputs before comparing results. These scenarios test the model's response to the parameter; they do not validate the assigned share in individual cities.
-
-### Data and figure provenance
-
-- **Adopted source register:** Section 5 provides the survey, publication and dataset references supporting the adopted values; provincial inputs are documented in Section 3.
-- **City values and coordinates:** the adopted GlobalDynPop parameters and urban-centre locations based on the [Global Human Settlement (GHS) Urban Centre Database R2024A](https://doi.org/10.2905/1A338BE6-7EAF-480C-9664-3A8ADE88CBCD).
-- **Income:** the archived original Atlas-method GNI observations and their years; the [World Bank API query](https://api.worldbank.org/v2/country/all/indicator/NY.GNP.PCAP.CD?format=json&per_page=20000&mrnev=1) identifies the upstream series, while this report's figure uses the archived snapshot.
-- **Climate:** `koppen_geiger_0p00833333.tif` and its original `legend.txt`; Beck et al. (2023), cited above. The contextual map uses a resampled display grid; native-resolution climate data are available from the cited source dataset.
-- **Geographic context:** Natural Earth country geometry. Country boundaries are used for the income map and dissolved to land outlines for the other maps. [Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/).
-
-The companion [time-use guide](time_use.md) describes the hourly location shares.
-
-All three figures share the same projection, map extent, typography and layout. Continuous quantities use a common blue sequential colour family; climate classes use a colour-blind-aware categorical palette. The 300-dpi PNG figures are in `06_docs/figures/`; PDF exports are in `05_outputs/figure_exports/`. The global maps are supplied as report illustrations; their auxiliary plotting datasets are not included in this repository.

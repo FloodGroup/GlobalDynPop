@@ -11,9 +11,9 @@ The [main README](../README.md) introduces the study, its data sources and the f
 | [Stage 3: Allocation of daily activities](methods/stage_3_activity_allocation.md) | Attractiveness, gravity allocation, in-transit assignment and component storage. |
 | [Stage 4: Outputs](methods/stage_4_outputs.md) | Hourly mixtures, functional land use, numerical checks and figures. |
 
-The method guides follow each processing sequence through its numbered programs and calculation functions. The [code index](../02_code/) opens the implementation directories, whose README files provide commands, prerequisites and runtime options. The [time-use derivation](../04_intermediate/time_use.md) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
+The method guides follow each processing sequence through its numbered programs and calculation functions. The [code index](../02_code/) opens the implementation directories, whose README files provide commands, prerequisites and runtime options. The [time-use derivation](../04_intermediate/time_use/time_use.md) explains the 24-by-7 shares in detail. Model assumptions are described in the stage methods; the [three-city guide](reproduction/city_demo.md) defines the scope of reproduction. Parameter values and sources are included in the corresponding stage methods.
 
-The [indoor-share guide](../04_intermediate/w_indoor.md) documents W_indoor calculation, evidence sources and reference assignment.
+The [indoor-share guide](../04_intermediate/w_indoor/w_indoor.md) documents W_indoor calculation, evidence sources and reference assignment.
 
 ## Figures
 
