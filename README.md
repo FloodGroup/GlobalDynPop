@@ -1,6 +1,6 @@
-# GlobalDynPop
+# GlobalDynPop-100m
 
-GlobalDynPop models hourly urban population distributions at 100 m resolution for typical workdays and rest days using a production-constrained gravity model. Its global application covers 1,904 urban centres across 152 countries, delineated by the Global Human Settlement Layer Urban Centre Database (GHS-UCDB R2024A) and selected for populations of at least 300,000 in 2025.
+GlobalDynPop-100m models hourly urban population distributions at 100 m resolution for typical workdays and rest days using a production-constrained gravity model. Its global application covers 1,904 urban centres across 152 countries, delineated by the Global Human Settlement Layer Urban Centre Database (GHS-UCDB R2024A) and selected for populations of at least 300,000 in 2025.
 
 The model combines three types of evidence: spatial data define where people live, where activities take place and how locations are connected; time-use surveys and travel diaries describe how population shares across home, activity destinations and transit vary by hour; and census commuting records, mobile-phone-derived origin–destination flows and published commuting-distance statistics inform the gravity model's distance-decay parameters.
 
@@ -128,4 +128,4 @@ When reusing the data, also cite the relevant original datasets listed under [Da
 
 ## Licence and data terms
 
-GlobalDynPop software is licensed under the [GNU General Public License v2.0](LICENSE) (GPL-2.0). The GBA-derived example inputs and population products have non-commercial data terms described in [data terms](06_docs/methods/data_sources.md#licence-of-the-example-layers-and-outputs). Source datasets and derived database layers retain their applicable data licences and attribution requirements, documented under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
+GlobalDynPop-100m software is licensed under the [GNU General Public License v2.0](LICENSE) (GPL-2.0). The GBA-derived example inputs and population products have non-commercial data terms described in [data terms](06_docs/methods/data_sources.md#licence-of-the-example-layers-and-outputs). Source datasets and derived database layers retain their applicable data licences and attribution requirements, documented under [Data sources and attribution](06_docs/reproduction/city_demo.md#data-sources-and-attribution).
