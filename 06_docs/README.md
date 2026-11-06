@@ -17,7 +17,7 @@ The [indoor-share guide](../04_intermediate/w_indoor/w_indoor.md) documents W_in
 
 ## Figures
 
-- [Indoor share](figures/w_indoor_global.png): adopted values for 1,904 cities.
+- [Indoor share](figures/w_indoor_global.png): adopted values for 1,904 cities, regional distributions and income relationships.
 - [Income](figures/gni_global.png): gross national income per capita, Atlas method.
 - [Climate](figures/climate_global.png): five main Köppen–Geiger classes.
 

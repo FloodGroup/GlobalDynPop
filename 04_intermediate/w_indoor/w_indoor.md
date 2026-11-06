@@ -4,11 +4,11 @@
 
 ## 1. Adopted values across the study cities
 
-The study assigns a value to each of its **1,904 urban centres**. A city receives a provincial value in mainland China, an adopted national or city-survey value where one is available for its country or territory, or a value transferred from selected reference countries. The map shows the existing adopted city parameters.
+The study assigns a value to each of its **1,904 urban centres**. A city receives a provincial value in mainland China, an adopted national or city-survey value where one is available for its country or territory, or a value transferred from selected reference countries. Figure 1 shows their global and regional distributions and their relationship with gross national income (GNI) per capita.
 
-![Global distribution of adopted W_indoor values](../../06_docs/figures/w_indoor_global.png)
+![Adopted W_indoor values: global distribution, regional patterns and income](../../06_docs/figures/w_indoor_global.png)
 
-*Figure 1. Adopted W_indoor at the 1,904 urban centres. Each point represents one city; colour indicates the share of the day spent indoors. Point size is constant and does not encode population, sample size or evidence quality. Values assigned from another country are model parameters rather than independent measurements in the recipient city. Equal Earth projection.*
+*Figure 1. Adopted indoor time shares across 1,904 urban centres. (a) City values, coloured by W_indoor: circles indicate domestic surveys or guidelines (751 cities), squares indicate Chinese assignments (370 cities, including the Hong Kong survey and provincial fallback assignments), and triangles indicate international reference matching (783 cities). (b) City values by region; black bars mark regional medians and numbers give city counts. E. Europe, C. Asia and N. Africa denote Eastern Europe, Central Asia and North Africa. (c) Country-level median city values versus gross national income (GNI) per capita, Atlas method, in current United States dollars (US$), on a logarithmic income axis. Colours identify continents, symbol sizes indicate city counts, and the vertical line for China shows the range of assigned city values. USA denotes the United States.*
 
 ## 2. From source records to an indoor share
 
